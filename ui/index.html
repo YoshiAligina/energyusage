@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NJ Zipcode Map Viewer</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="panel">
+      <h1>NJ Zipcode Viewer</h1>
+      <p class="subtle">Click a zipcode on the map to view details.</p>
+
+      <label for="zipSearch">Jump to ZIP code</label>
+      <div class="search-row">
+        <input id="zipSearch" type="text" maxlength="5" placeholder="e.g. 07030" />
+        <button id="searchBtn" type="button">Find</button>
+      </div>
+
+      <label for="yearSelect">Year</label>
+      <select id="yearSelect" class="year-select"></select>
+
+      <div id="info" class="info-card">
+        <h2>No ZIP selected</h2>
+        <p>Select an area on the map.</p>
+      </div>
+
+      <p class="footnote">
+        Base map: OpenStreetMap. ZIP boundaries: OpenDataDE NJ ZIP GeoJSON.
+      </p>
+    </aside>
+
+    <main>
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="app.js"></script>
+</body>
+</html>
