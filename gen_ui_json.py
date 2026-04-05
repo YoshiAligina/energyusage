@@ -61,35 +61,42 @@ def build_ui_json(csv_path="nj_zip_lmp_jan1_2020_2025.csv", output_path="ui/nj_z
         raise FileNotFoundError(f"CSV not found: {csv_path}")
     
     df = pd.read_csv(csv_path)
+    df["zip"] = df["zip"].astype(float).astype(int).astype(str).str.zfill(5)
+    df["county"] = df["zip"].apply(get_county_for_zip)
+
+    year_cols = [f"lmp_{y}" for y in range(2020, 2026) if f"lmp_{y}" in df.columns]
+    for col in year_cols:
+        df[col] = pd.to_numeric(df[col], errors="coerce").round(3)
+    if "pct_chg_2020_2025" in df.columns:
+        df["pct_chg_2020_2025"] = pd.to_numeric(df["pct_chg_2020_2025"], errors="coerce").round(3)
+
     payload = {}
-    
-    for _, row in df.iterrows():
-        zip_code = str(int(row["zip"])).zfill(5)
-        
-        yearly_lmp = {}
-        for year in range(2020, 2026):
-            col = f"lmp_{year}"
-            if col in df.columns:
-                val = row[col]
-                yearly_lmp[str(year)] = round(float(val), 3) if pd.notna(val) else None
-        
-        pct_chg = row.get("pct_chg_2020_2025")
-        pct_chg = round(float(pct_chg), 3) if pd.notna(pct_chg) else None
-        
-        lmp_2020 = yearly_lmp.get("2020")
-        lmp_2025 = yearly_lmp.get("2025")
-        
+    for row in df.itertuples(index=False):
+        zip_code = row.zip
+        yearly_lmp = {
+            str(y): (v if not (isinstance(v, float) and v != v) else None)
+            for y in range(2020, 2026)
+            for col, v in [(f"lmp_{y}", getattr(row, f"lmp_{y}", None))]
+            if col in df.columns
+        }
+        pct_chg = getattr(row, "pct_chg_2020_2025", None)
+        pct_chg = float(pct_chg) if pct_chg is not None and pct_chg == pct_chg else None
+
+        dist = getattr(row, "dist_miles", None)
+        node = getattr(row, "nearest_node", "N/A")
+        zone = getattr(row, "node_zone", "N/A")
+
         payload[zip_code] = {
-            "county": get_county_for_zip(zip_code),
-            "avg_lmp_2020": lmp_2020,
-            "avg_lmp_2025": lmp_2025,
+            "county": row.county,
+            "avg_lmp_2020": yearly_lmp.get("2020"),
+            "avg_lmp_2025": yearly_lmp.get("2025"),
             "pct_change": pct_chg,
             "yearly_lmp": yearly_lmp,
             "selected_year": "2025",
-            "nearest_node": str(row.get("nearest_node", "")),
-            "node_zone": str(row.get("node_zone", "")),
-            "dist_miles": float(row.get("dist_miles", 0)) if pd.notna(row.get("dist_miles")) else None,
-            "notes": f"Nearest PJM node: {row.get('nearest_node', 'N/A')} ({row.get('node_zone', 'N/A')}) — {row.get('dist_miles', 'N/A')} miles away"
+            "nearest_node": str(node),
+            "node_zone": str(zone),
+            "dist_miles": float(dist) if dist is not None and dist == dist else None,
+            "notes": f"Nearest PJM node: {node} ({zone}) — {dist if dist is not None else 'N/A'} miles away",
         }
     
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)

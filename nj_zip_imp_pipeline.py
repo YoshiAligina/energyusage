@@ -150,6 +150,7 @@ def extract_substation_name(pnode_name: str) -> str:
 def fuzzy_match_nodes(node_names: list[str], osm_df: pd.DataFrame) -> dict:
     """Return {pnode_name: (lat, lon, method)} for all fuzzy/exact matches (score >= 75)."""
     osm_choices = osm_df["name_clean"].tolist()
+    osm_index = {name: i for i, name in enumerate(osm_choices)}  # O(1) lookup
     results = {}
     for name in node_names:
         sub = extract_substation_name(name)
@@ -162,9 +163,10 @@ def fuzzy_match_nodes(node_names: list[str], osm_df: pd.DataFrame) -> dict:
         # Fuzzy
         match = process.extractOne(sub, osm_choices, scorer=fuzz.token_set_ratio)
         if match and match[1] >= 75:
-            idx = osm_choices.index(match[0])
-            row = osm_df.iloc[idx]
-            results[name] = (row["lat"], row["lon"], "fuzzy")
+            idx = osm_index.get(match[0])
+            if idx is not None:
+                row = osm_df.iloc[idx]
+                results[name] = (row["lat"], row["lon"], "fuzzy")
     return results
 
 
@@ -272,22 +274,33 @@ def haversine_miles(lat1, lon1, lat2, lon2):
 
 
 def assign_zips_to_nodes(zips: pd.DataFrame, nodes: pd.DataFrame) -> pd.DataFrame:
-    """For each zip centroid, find the nearest PJM node."""
-    nlats = nodes["lat"].values.astype(float)
-    nlons = nodes["lon"].values.astype(float)
+    """For each zip centroid, find the nearest PJM node (vectorized haversine)."""
+    R = 3958.8
+    zlats = np.radians(zips["zip_lat"].values.astype(float))
+    zlons = np.radians(zips["zip_lon"].values.astype(float))
+    nlats = np.radians(nodes["lat"].values.astype(float))
+    nlons = np.radians(nodes["lon"].values.astype(float))
+
+    # Shape: (n_zips, n_nodes) — fully vectorized, no Python loop over nodes
+    dlat = nlats[np.newaxis, :] - zlats[:, np.newaxis]
+    dlon = nlons[np.newaxis, :] - zlons[:, np.newaxis]
+    a = (np.sin(dlat / 2) ** 2
+         + np.cos(zlats[:, np.newaxis]) * np.cos(nlats[np.newaxis, :]) * np.sin(dlon / 2) ** 2)
+    dist_matrix = R * 2 * np.arcsin(np.sqrt(a))  # (n_zips, n_nodes)
+
+    best_idx = np.argmin(dist_matrix, axis=1)
+
     results = []
-    for _, zrow in zips.iterrows():
-        zlat, zlon = float(zrow["zip_lat"]), float(zrow["zip_lon"])
-        dists = np.array([haversine_miles(zlat, zlon, nlat, nlon) for nlat, nlon in zip(nlats, nlons)])
-        idx = int(np.argmin(dists))
-        bn = nodes.iloc[idx]
+    for i, (_, zrow) in enumerate(zips.iterrows()):
+        idx = best_idx[i]
+        bn  = nodes.iloc[idx]
         results.append({
-            "zip": str(zrow["zip"]).replace(".0","").zfill(5),
-            "zip_lat": round(zlat, 5),
-            "zip_lon": round(zlon, 5),
+            "zip": str(zrow["zip"]).replace(".0", "").zfill(5),
+            "zip_lat": round(float(zrow["zip_lat"]), 5),
+            "zip_lon": round(float(zrow["zip_lon"]), 5),
             "nearest_node": bn["pnode_name"],
             "node_zone": bn["zone"],
-            "dist_miles": round(dists[idx], 2),
+            "dist_miles": round(dist_matrix[i, idx], 2),
             "coord_method": bn["coord_method"],
         })
     return pd.DataFrame(results)

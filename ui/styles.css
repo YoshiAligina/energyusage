@@ -117,6 +117,92 @@ button {
   padding: 2px 6px;
 }
 
+/* Loading overlay */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--accent);
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+}
+
+/* Choropleth legend */
+.legend {
+  background: white;
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+  min-width: 160px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.legend-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.legend-bar {
+  height: 10px;
+  border-radius: 4px;
+  background: linear-gradient(to right, rgb(68, 170, 213), rgb(255, 209, 102), rgb(239, 71, 111));
+  margin-bottom: 4px;
+}
+
+.legend-labels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.legend-na {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: #cccccc;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Sparkline in info panel */
+.sparkline-wrap {
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.sparkline-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.sparkline {
+  display: block;
+  overflow: visible;
+}
+
+/* Delta indicators */
+.delta-up   { color: #dc2626; font-weight: 600; }
+.delta-down { color: #16a34a; font-weight: 600; }
+
 @media (max-width: 900px) {
   .app-shell {
     grid-template-columns: 1fr;
