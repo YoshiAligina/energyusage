@@ -97,6 +97,26 @@ button {
   font-size: 0.95rem;
 }
 
+.heatmap-row {
+  margin-bottom: 14px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
 .footnote {
   margin-top: 16px;
   color: var(--muted);

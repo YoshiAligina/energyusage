@@ -1,6 +1,6 @@
 {
   "07001": {
-    "county": "North Jersey",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.3,
@@ -19,7 +19,7 @@
     "notes": "Nearest PJM node: SEWAREN (PSEG) \u2014 1.85 miles away"
   },
   "07002": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.8,
@@ -38,7 +38,7 @@
     "notes": "Nearest PJM node: GRENVIL (PSEG) \u2014 1.83 miles away"
   },
   "07003": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.195,
     "avg_lmp_2025": 22.12,
     "pct_change": 21.6,
@@ -57,7 +57,7 @@
     "notes": "Nearest PJM node: COOKRD (PSEG) \u2014 0.5 miles away"
   },
   "07004": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.01,
     "pct_change": 21.4,
@@ -76,7 +76,7 @@
     "notes": "Nearest PJM node: WCALDWEL (PSEG) \u2014 3.28 miles away"
   },
   "07005": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.6,
@@ -95,7 +95,7 @@
     "notes": "Nearest PJM node: TAYLORLN (JCPL) \u2014 0.63 miles away"
   },
   "07006": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.01,
     "pct_change": 21.4,
@@ -114,7 +114,7 @@
     "notes": "Nearest PJM node: WCALDWEL (PSEG) \u2014 0.85 miles away"
   },
   "07008": {
-    "county": "North Jersey",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.183,
     "avg_lmp_2025": 22.102,
     "pct_change": 21.6,
@@ -133,7 +133,7 @@
     "notes": "Nearest PJM node: LINDEN (PSEG) \u2014 1.97 miles away"
   },
   "07009": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.92,
     "pct_change": 21.0,
@@ -152,7 +152,7 @@
     "notes": "Nearest PJM node: CEDAR (AECO) \u2014 0.9 miles away"
   },
   "07010": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.21,
     "pct_change": null,
@@ -171,7 +171,7 @@
     "notes": "Nearest PJM node: CLIFFS (PSEG) \u2014 0.41 miles away"
   },
   "07011": {
-    "county": "North Jersey",
+    "county": "Passaic",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.8,
@@ -190,7 +190,7 @@
     "notes": "Nearest PJM node: KULLERRD (PSEG) \u2014 1.12 miles away"
   },
   "07012": {
-    "county": "North Jersey",
+    "county": "Passaic",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.192,
     "pct_change": 21.5,
@@ -209,7 +209,7 @@
     "notes": "Nearest PJM node: ATHENIA (PSEG) \u2014 1.04 miles away"
   },
   "07013": {
-    "county": "North Jersey",
+    "county": "Passaic",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 22.14,
     "pct_change": 21.5,
@@ -228,7 +228,7 @@
     "notes": "Nearest PJM node: CLIF PS (PSEG) \u2014 0.67 miles away"
   },
   "07014": {
-    "county": "North Jersey",
+    "county": "Passaic",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.1,
     "pct_change": 21.5,
@@ -247,7 +247,7 @@
     "notes": "Nearest PJM node: LINVFT (PSEG) \u2014 0.6 miles away"
   },
   "07016": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.5,
@@ -266,7 +266,7 @@
     "notes": "Nearest PJM node: STANLEYT (PSEG) \u2014 0.25 miles away"
   },
   "07017": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 22.11,
     "pct_change": 21.6,
@@ -285,7 +285,7 @@
     "notes": "Nearest PJM node: QTS (PSEG) \u2014 0.78 miles away"
   },
   "07018": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.02,
     "pct_change": 21.3,
@@ -304,7 +304,7 @@
     "notes": "Nearest PJM node: MINUEST (PSEG) \u2014 0.45 miles away"
   },
   "07020": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.21,
     "pct_change": null,
@@ -323,7 +323,7 @@
     "notes": "Nearest PJM node: CLIFFS (PSEG) \u2014 1.17 miles away"
   },
   "07021": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.01,
     "pct_change": 21.4,
@@ -342,7 +342,7 @@
     "notes": "Nearest PJM node: WCALDWEL (PSEG) \u2014 0.79 miles away"
   },
   "07022": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.21,
     "pct_change": null,
@@ -361,7 +361,7 @@
     "notes": "Nearest PJM node: CLIFFS (PSEG) \u2014 0.38 miles away"
   },
   "07023": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.2,
@@ -380,7 +380,7 @@
     "notes": "Nearest PJM node: FANWOOD (PSEG) \u2014 0.46 miles away"
   },
   "07024": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": 18.25,
     "avg_lmp_2025": 22.2,
     "pct_change": 21.6,
@@ -399,7 +399,7 @@
     "notes": "Nearest PJM node: LEONIA (PSEG) \u2014 1.61 miles away"
   },
   "07026": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.22,
     "pct_change": null,
@@ -418,7 +418,7 @@
     "notes": "Nearest PJM node: PLAUDERV (PSEG) \u2014 1.11 miles away"
   },
   "07027": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.5,
@@ -437,7 +437,7 @@
     "notes": "Nearest PJM node: STANLEYT (PSEG) \u2014 1.34 miles away"
   },
   "07028": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.195,
     "avg_lmp_2025": 22.12,
     "pct_change": 21.6,
@@ -456,7 +456,7 @@
     "notes": "Nearest PJM node: COOKRD (PSEG) \u2014 1.46 miles away"
   },
   "07029": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.77,
     "pct_change": null,
@@ -475,7 +475,7 @@
     "notes": "Nearest PJM node: TEXAVE (PSEG) \u2014 0.73 miles away"
   },
   "07030": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.22,
     "pct_change": null,
@@ -494,7 +494,7 @@
     "notes": "Nearest PJM node: MADISNPS (PSEG) \u2014 0.61 miles away"
   },
   "07031": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": 18.194,
     "avg_lmp_2025": 22.14,
     "pct_change": 21.7,
@@ -513,7 +513,7 @@
     "notes": "Nearest PJM node: KINGSLAN (PSEG) \u2014 0.55 miles away"
   },
   "07032": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.14,
     "pct_change": 21.7,
@@ -532,7 +532,7 @@
     "notes": "Nearest PJM node: TURNPIKE (PSEG) \u2014 0.65 miles away"
   },
   "07033": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.05,
     "pct_change": 21.5,
@@ -551,7 +551,7 @@
     "notes": "Nearest PJM node: ALDENE (PSEG) \u2014 1.52 miles away"
   },
   "07034": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.09,
     "avg_lmp_2025": 22.0,
     "pct_change": 21.6,
@@ -570,7 +570,7 @@
     "notes": "Nearest PJM node: MONTVILL (JCPL) \u2014 2.46 miles away"
   },
   "07035": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -589,7 +589,7 @@
     "notes": "Nearest PJM node: SADDLEBR (PSEG) \u2014 2.94 miles away"
   },
   "07036": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.183,
     "avg_lmp_2025": 22.102,
     "pct_change": 21.6,
@@ -608,7 +608,7 @@
     "notes": "Nearest PJM node: LINDEN (PSEG) \u2014 1.09 miles away"
   },
   "07039": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.99,
     "pct_change": null,
@@ -627,7 +627,7 @@
     "notes": "Nearest PJM node: LIVINGPS (PSEG) \u2014 0.81 miles away"
   },
   "07040": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.12,
     "pct_change": null,
@@ -646,7 +646,7 @@
     "notes": "Nearest PJM node: VAUXHALL (PSEG) \u2014 2.75 miles away"
   },
   "07041": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.12,
     "pct_change": null,
@@ -665,7 +665,7 @@
     "notes": "Nearest PJM node: VAUXHALL (PSEG) \u2014 3.19 miles away"
   },
   "07042": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.195,
     "avg_lmp_2025": 22.12,
     "pct_change": 21.6,
@@ -684,7 +684,7 @@
     "notes": "Nearest PJM node: COOKRD (PSEG) \u2014 2.13 miles away"
   },
   "07043": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.92,
     "pct_change": 21.0,
@@ -703,7 +703,7 @@
     "notes": "Nearest PJM node: CEDAR (AECO) \u2014 1.79 miles away"
   },
   "07044": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.01,
     "pct_change": 21.4,
@@ -722,7 +722,7 @@
     "notes": "Nearest PJM node: WCALDWEL (PSEG) \u2014 1.9 miles away"
   },
   "07045": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.09,
     "avg_lmp_2025": 22.0,
     "pct_change": 21.6,
@@ -741,7 +741,7 @@
     "notes": "Nearest PJM node: MONTVILL (JCPL) \u2014 0.43 miles away"
   },
   "07046": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.6,
@@ -760,7 +760,7 @@
     "notes": "Nearest PJM node: TAYLORLN (JCPL) \u2014 3.65 miles away"
   },
   "07047": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": 18.25,
     "avg_lmp_2025": 22.24,
     "pct_change": 21.9,
@@ -779,7 +779,7 @@
     "notes": "Nearest PJM node: TONNELLE (PSEG) \u2014 0.98 miles away"
   },
   "07050": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.02,
     "pct_change": null,
@@ -798,7 +798,7 @@
     "notes": "Nearest PJM node: ORANGEHT (PSEG) \u2014 0.13 miles away"
   },
   "07052": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 22.15,
     "pct_change": 21.6,
@@ -817,7 +817,7 @@
     "notes": "Nearest PJM node: MARION (PSEG) \u2014 0.56 miles away"
   },
   "07054": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.4,
@@ -836,7 +836,7 @@
     "notes": "Nearest PJM node: WHIPPANY (JCPL) \u2014 2.67 miles away"
   },
   "07055": {
-    "county": "North Jersey",
+    "county": "Passaic",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.23,
     "pct_change": null,
@@ -855,7 +855,7 @@
     "notes": "Nearest PJM node: PASSAIC (PSEG) \u2014 0.57 miles away"
   },
   "07057": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.23,
     "pct_change": null,
@@ -874,7 +874,7 @@
     "notes": "Nearest PJM node: PASSAIC (PSEG) \u2014 0.98 miles away"
   },
   "07058": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.09,
     "avg_lmp_2025": 22.0,
     "pct_change": 21.6,
@@ -893,7 +893,7 @@
     "notes": "Nearest PJM node: MONTVILL (JCPL) \u2014 3.18 miles away"
   },
   "07059": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.11,
     "pct_change": 21.8,
@@ -912,7 +912,7 @@
     "notes": "Nearest PJM node: GREENBRO (PSEG) \u2014 3.11 miles away"
   },
   "07060": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 22.12,
     "pct_change": 21.7,
@@ -931,7 +931,7 @@
     "notes": "Nearest PJM node: PLAINFIE (PSEG) \u2014 0.09 miles away"
   },
   "07062": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.2,
@@ -950,7 +950,7 @@
     "notes": "Nearest PJM node: FANWOOD (PSEG) \u2014 0.79 miles away"
   },
   "07063": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 22.12,
     "pct_change": 21.7,
@@ -969,7 +969,7 @@
     "notes": "Nearest PJM node: PLAINFIE (PSEG) \u2014 1.36 miles away"
   },
   "07064": {
-    "county": "North Jersey",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.3,
@@ -988,7 +988,7 @@
     "notes": "Nearest PJM node: SEWAREN (PSEG) \u2014 0.59 miles away"
   },
   "07065": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 22.02,
     "pct_change": 21.4,
@@ -1007,7 +1007,7 @@
     "notes": "Nearest PJM node: WESTFIEL (PSEG) \u2014 2.67 miles away"
   },
   "07066": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 22.02,
     "pct_change": 21.4,
@@ -1026,7 +1026,7 @@
     "notes": "Nearest PJM node: WESTFIEL (PSEG) \u2014 0.87 miles away"
   },
   "07067": {
-    "county": "North Jersey",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.25,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.7,
@@ -1045,7 +1045,7 @@
     "notes": "Nearest PJM node: HCS (PSEG) \u2014 1.35 miles away"
   },
   "07068": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.98,
     "pct_change": 21.2,
@@ -1064,7 +1064,7 @@
     "notes": "Nearest PJM node: WILLIAM1 (PSEG) \u2014 0.97 miles away"
   },
   "07069": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 22.12,
     "pct_change": 21.7,
@@ -1083,7 +1083,7 @@
     "notes": "Nearest PJM node: PLAINFIE (PSEG) \u2014 1.92 miles away"
   },
   "07070": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": 18.262,
     "avg_lmp_2025": 22.198,
     "pct_change": 21.6,
@@ -1102,7 +1102,7 @@
     "notes": "Nearest PJM node: ERUTHERF (PSEG) \u2014 0.11 miles away"
   },
   "07071": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": 18.194,
     "avg_lmp_2025": 22.14,
     "pct_change": 21.7,
@@ -1121,7 +1121,7 @@
     "notes": "Nearest PJM node: KINGSLAN (PSEG) \u2014 0.47 miles away"
   },
   "07072": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.6,
@@ -1140,7 +1140,7 @@
     "notes": "Nearest PJM node: CARLSTAD (PSEG) \u2014 0.47 miles away"
   },
   "07073": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": 18.25,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.5,
@@ -1159,7 +1159,7 @@
     "notes": "Nearest PJM node: VANWINKL (PSEG) \u2014 1.08 miles away"
   },
   "07074": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.6,
@@ -1178,7 +1178,7 @@
     "notes": "Nearest PJM node: CARLSTAD (PSEG) \u2014 1.36 miles away"
   },
   "07075": {
-    "county": "North Jersey",
+    "county": "Bergen",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.1,
     "pct_change": null,
@@ -1197,7 +1197,7 @@
     "notes": "Nearest PJM node: DRTTOTO (PSEG) \u2014 0.99 miles away"
   },
   "07076": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.2,
@@ -1216,7 +1216,7 @@
     "notes": "Nearest PJM node: FANWOOD (PSEG) \u2014 0.92 miles away"
   },
   "07077": {
-    "county": "North Jersey",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.3,
@@ -1235,7 +1235,7 @@
     "notes": "Nearest PJM node: SEWAREN (PSEG) \u2014 0.46 miles away"
   },
   "07078": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.7,
@@ -1254,7 +1254,7 @@
     "notes": "Nearest PJM node: TRAYNOR (JCPL) \u2014 2.76 miles away"
   },
   "07079": {
-    "county": "North Jersey",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.02,
     "pct_change": null,
@@ -1273,7 +1273,7 @@
     "notes": "Nearest PJM node: ORANGEHT (PSEG) \u2014 2.03 miles away"
   },
   "07080": {
-    "county": "North Jersey",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.165,
     "avg_lmp_2025": 22.125,
     "pct_change": 21.8,
@@ -1292,7 +1292,7 @@
     "notes": "Nearest PJM node: LAKENELS (PSEG) \u2014 2.47 miles away"
   },
   "07081": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.155,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.5,
@@ -1311,7 +1311,7 @@
     "notes": "Nearest PJM node: SUMM JC (JCPL) \u2014 1.2 miles away"
   },
   "07082": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.09,
     "avg_lmp_2025": 22.0,
     "pct_change": 21.6,
@@ -1330,7 +1330,7 @@
     "notes": "Nearest PJM node: MONTVILL (JCPL) \u2014 1.37 miles away"
   },
   "07083": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.12,
     "pct_change": null,
@@ -1349,7 +1349,7 @@
     "notes": "Nearest PJM node: VAUXHALL (PSEG) \u2014 0.96 miles away"
   },
   "07086": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.7,
@@ -1368,7 +1368,7 @@
     "notes": "Nearest PJM node: HOBOKEN (PSEG) \u2014 1.02 miles away"
   },
   "07087": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.7,
@@ -1387,7 +1387,7 @@
     "notes": "Nearest PJM node: HOBOKEN (PSEG) \u2014 0.71 miles away"
   },
   "07088": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.12,
     "pct_change": null,
@@ -1406,7 +1406,7 @@
     "notes": "Nearest PJM node: VAUXHALL (PSEG) \u2014 2.27 miles away"
   },
   "07090": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 22.02,
     "pct_change": 21.4,
@@ -1425,7 +1425,7 @@
     "notes": "Nearest PJM node: WESTFIEL (PSEG) \u2014 1.98 miles away"
   },
   "07092": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.155,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.5,
@@ -1444,7 +1444,7 @@
     "notes": "Nearest PJM node: SUMM JC (JCPL) \u2014 1.18 miles away"
   },
   "07093": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.25,
     "pct_change": 21.9,
@@ -1463,7 +1463,7 @@
     "notes": "Nearest PJM node: RIVERROA (PSEG) \u2014 0.94 miles away"
   },
   "07094": {
-    "county": "North Jersey",
+    "county": "Hudson",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.7,
@@ -1482,7 +1482,7 @@
     "notes": "Nearest PJM node: HOMESTEA (PSEG) \u2014 1.35 miles away"
   },
   "07095": {
-    "county": "North Jersey",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.9,
@@ -1501,7 +1501,7 @@
     "notes": "Nearest PJM node: WOODBRDG (JCPL) \u2014 0.87 miles away"
   },
   "07102": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 22.15,
     "pct_change": 21.8,
@@ -1520,7 +1520,7 @@
     "notes": "Nearest PJM node: NEWARKEC (PSEG) \u2014 0.06 miles away"
   },
   "07103": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 23.42,
     "pct_change": 28.8,
@@ -1539,7 +1539,7 @@
     "notes": "Nearest PJM node: MACARTHR (RECO) \u2014 0.53 miles away"
   },
   "07104": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.11,
     "pct_change": null,
@@ -1558,7 +1558,7 @@
     "notes": "Nearest PJM node: CLAYSTR (PSEG) \u2014 1.2 miles away"
   },
   "07105": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.245,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.6,
@@ -1577,7 +1577,7 @@
     "notes": "Nearest PJM node: NEWARK (PSEG) \u2014 0.45 miles away"
   },
   "07106": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.21,
     "pct_change": null,
@@ -1596,7 +1596,7 @@
     "notes": "Nearest PJM node: HOWEAVE (PSEG) \u2014 1.4 miles away"
   },
   "07107": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.56,
     "pct_change": null,
@@ -1615,7 +1615,7 @@
     "notes": "Nearest PJM node: NICHLSN (PSEG) \u2014 0.23 miles away"
   },
   "07108": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.9,
@@ -1634,7 +1634,7 @@
     "notes": "Nearest PJM node: SFIFTHST (PSEG) \u2014 1.27 miles away"
   },
   "07109": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.83,
     "pct_change": 20.4,
@@ -1653,7 +1653,7 @@
     "notes": "Nearest PJM node: BELLEMDT (PSEG) \u2014 0.49 miles away"
   },
   "07110": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.17,
     "pct_change": null,
@@ -1672,7 +1672,7 @@
     "notes": "Nearest PJM node: HARVEY (PSEG) \u2014 0.81 miles away"
   },
   "07111": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -1691,7 +1691,7 @@
     "notes": "Nearest PJM node: DOREMUSP (PSEG) \u2014 1.94 miles away"
   },
   "07112": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -1710,7 +1710,7 @@
     "notes": "Nearest PJM node: DOREMUSP (PSEG) \u2014 1.17 miles away"
   },
   "07114": {
-    "county": "Bergen",
+    "county": "Essex",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.15,
     "pct_change": 21.5,
@@ -1729,7 +1729,7 @@
     "notes": "Nearest PJM node: NWRKARPT (PSEG) \u2014 0.61 miles away"
   },
   "07201": {
-    "county": "Bergen",
+    "county": "Union",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.76,
     "pct_change": 20.2,
@@ -1748,7 +1748,7 @@
     "notes": "Nearest PJM node: Z650TAP (PSEG) \u2014 1.24 miles away"
   },
   "07202": {
-    "county": "Bergen",
+    "county": "Union",
     "avg_lmp_2020": 18.21,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.5,
@@ -1767,7 +1767,7 @@
     "notes": "Nearest PJM node: BAYWAY (PSEG) \u2014 0.78 miles away"
   },
   "07203": {
-    "county": "Bergen",
+    "county": "Union",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.1,
@@ -1786,7 +1786,7 @@
     "notes": "Nearest PJM node: MTROSEPS (PSEG) \u2014 0.46 miles away"
   },
   "07204": {
-    "county": "Bergen",
+    "county": "Union",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.1,
@@ -1805,7 +1805,7 @@
     "notes": "Nearest PJM node: MTROSEPS (PSEG) \u2014 0.7 miles away"
   },
   "07205": {
-    "county": "Bergen",
+    "county": "Union",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -1824,7 +1824,7 @@
     "notes": "Nearest PJM node: DOREMUSP (PSEG) \u2014 0.31 miles away"
   },
   "07206": {
-    "county": "Bergen",
+    "county": "Union",
     "avg_lmp_2020": 18.21,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.5,
@@ -1843,7 +1843,7 @@
     "notes": "Nearest PJM node: BAYWAY (PSEG) \u2014 1.27 miles away"
   },
   "07208": {
-    "county": "Bergen",
+    "county": "Union",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.12,
     "pct_change": null,
@@ -1862,7 +1862,7 @@
     "notes": "Nearest PJM node: ELIZABTH (PSEG) \u2014 0.66 miles away"
   },
   "07302": {
-    "county": "Essex",
+    "county": "Hudson",
     "avg_lmp_2020": 18.07,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.4,
@@ -1881,7 +1881,7 @@
     "notes": "Nearest PJM node: LIBRTYST (PSEG) \u2014 0.11 miles away"
   },
   "07304": {
-    "county": "Essex",
+    "county": "Hudson",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.82,
     "pct_change": 20.4,
@@ -1900,7 +1900,7 @@
     "notes": "Nearest PJM node: CJN (PSEG) \u2014 0.33 miles away"
   },
   "07305": {
-    "county": "Essex",
+    "county": "Hudson",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.8,
@@ -1919,7 +1919,7 @@
     "notes": "Nearest PJM node: GRENVIL (PSEG) \u2014 1.58 miles away"
   },
   "07306": {
-    "county": "Essex",
+    "county": "Hudson",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.26,
     "pct_change": 21.9,
@@ -1938,7 +1938,7 @@
     "notes": "Nearest PJM node: NEWPORT (AECO) \u2014 1.22 miles away"
   },
   "07307": {
-    "county": "Essex",
+    "county": "Hudson",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.0,
     "pct_change": null,
@@ -1957,7 +1957,7 @@
     "notes": "Nearest PJM node: 14STREET (PSEG) \u2014 0.24 miles away"
   },
   "07310": {
-    "county": "Essex",
+    "county": "Hudson",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.26,
     "pct_change": 21.9,
@@ -1976,7 +1976,7 @@
     "notes": "Nearest PJM node: NEWPORT (AECO) \u2014 0.86 miles away"
   },
   "07311": {
-    "county": "Essex",
+    "county": "Hudson",
     "avg_lmp_2020": 18.07,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.4,
@@ -1995,7 +1995,7 @@
     "notes": "Nearest PJM node: LIBRTYST (PSEG) \u2014 0.56 miles away"
   },
   "07401": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 23.42,
     "pct_change": 28.8,
@@ -2014,7 +2014,7 @@
     "notes": "Nearest PJM node: ALLENDAL (RECO) \u2014 0.71 miles away"
   },
   "07403": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -2033,7 +2033,7 @@
     "notes": "Nearest PJM node: SADDLEBR (PSEG) \u2014 5.12 miles away"
   },
   "07405": {
-    "county": "Hudson",
+    "county": "Morris",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -2052,7 +2052,7 @@
     "notes": "Nearest PJM node: SADDLEBR (PSEG) \u2014 2.9 miles away"
   },
   "07407": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 22.22,
     "pct_change": null,
@@ -2071,7 +2071,7 @@
     "notes": "Nearest PJM node: PLAUDERV (PSEG) \u2014 1.05 miles away"
   },
   "07410": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.253,
     "avg_lmp_2025": 22.153,
     "pct_change": 21.4,
@@ -2090,7 +2090,7 @@
     "notes": "Nearest PJM node: FAIRLAWN (PSEG) \u2014 1.11 miles away"
   },
   "07416": {
-    "county": "Hudson",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2109,7 +2109,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 0.83 miles away"
   },
   "07417": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.31,
     "avg_lmp_2025": 23.62,
     "pct_change": 29.0,
@@ -2128,7 +2128,7 @@
     "notes": "Nearest PJM node: OAKLAND (RECO) \u2014 1.99 miles away"
   },
   "07418": {
-    "county": "Hudson",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2147,7 +2147,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 10.95 miles away"
   },
   "07419": {
-    "county": "Hudson",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2166,7 +2166,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 3.78 miles away"
   },
   "07420": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.31,
     "avg_lmp_2025": 23.62,
     "pct_change": 29.0,
@@ -2185,7 +2185,7 @@
     "notes": "Nearest PJM node: OAKLAND (RECO) \u2014 3.69 miles away"
   },
   "07421": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.187,
     "avg_lmp_2025": 23.427,
     "pct_change": 28.8,
@@ -2204,7 +2204,7 @@
     "notes": "Nearest PJM node: SMAWA (RECO) \u2014 9.89 miles away"
   },
   "07422": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2223,7 +2223,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 8.54 miles away"
   },
   "07423": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.49,
     "pct_change": 23.6,
@@ -2242,7 +2242,7 @@
     "notes": "Nearest PJM node: WALDWICK (PSEG) \u2014 1.93 miles away"
   },
   "07424": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.4,
@@ -2261,7 +2261,7 @@
     "notes": "Nearest PJM node: GRNOTCH (PSEG) \u2014 0.53 miles away"
   },
   "07430": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 23.42,
     "pct_change": 28.8,
@@ -2280,7 +2280,7 @@
     "notes": "Nearest PJM node: DARLNGTO (RECO) \u2014 1.36 miles away"
   },
   "07432": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.49,
     "pct_change": 23.6,
@@ -2299,7 +2299,7 @@
     "notes": "Nearest PJM node: WALDWICK (PSEG) \u2014 1.67 miles away"
   },
   "07435": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.88,
     "pct_change": 20.8,
@@ -2318,7 +2318,7 @@
     "notes": "Nearest PJM node: NEWPROSP (JCPL) \u2014 6.36 miles away"
   },
   "07436": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.31,
     "avg_lmp_2025": 23.62,
     "pct_change": 29.0,
@@ -2337,7 +2337,7 @@
     "notes": "Nearest PJM node: OAKLAND (RECO) \u2014 0.48 miles away"
   },
   "07438": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.88,
     "pct_change": 20.8,
@@ -2356,7 +2356,7 @@
     "notes": "Nearest PJM node: NEWPROSP (JCPL) \u2014 2.84 miles away"
   },
   "07439": {
-    "county": "Hudson",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2375,7 +2375,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 1.69 miles away"
   },
   "07440": {
-    "county": "Hudson",
+    "county": "Morris",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -2394,7 +2394,7 @@
     "notes": "Nearest PJM node: SADDLEBR (PSEG) \u2014 3.34 miles away"
   },
   "07442": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.31,
     "avg_lmp_2025": 23.62,
     "pct_change": 29.0,
@@ -2413,7 +2413,7 @@
     "notes": "Nearest PJM node: OAKLAND (RECO) \u2014 3.35 miles away"
   },
   "07444": {
-    "county": "Hudson",
+    "county": "Morris",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -2432,7 +2432,7 @@
     "notes": "Nearest PJM node: SADDLEBR (PSEG) \u2014 2.9 miles away"
   },
   "07446": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.22,
     "avg_lmp_2025": 23.5,
     "pct_change": 29.0,
@@ -2451,7 +2451,7 @@
     "notes": "Nearest PJM node: SUMMITAV (RECO) \u2014 0.81 miles away"
   },
   "07450": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.27,
     "avg_lmp_2025": 22.17,
     "pct_change": 21.3,
@@ -2470,7 +2470,7 @@
     "notes": "Nearest PJM node: PARAMUS (PSEG) \u2014 2.13 miles away"
   },
   "07452": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.253,
     "avg_lmp_2025": 22.153,
     "pct_change": 21.4,
@@ -2489,7 +2489,7 @@
     "notes": "Nearest PJM node: FAIRLAWN (PSEG) \u2014 0.71 miles away"
   },
   "07456": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.187,
     "avg_lmp_2025": 23.427,
     "pct_change": 28.8,
@@ -2508,7 +2508,7 @@
     "notes": "Nearest PJM node: SMAWA (RECO) \u2014 3.88 miles away"
   },
   "07457": {
-    "county": "Hudson",
+    "county": "Morris",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.6,
@@ -2527,7 +2527,7 @@
     "notes": "Nearest PJM node: SADDLEBR (PSEG) \u2014 3.92 miles away"
   },
   "07458": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 23.48,
     "pct_change": 29.1,
@@ -2546,7 +2546,7 @@
     "notes": "Nearest PJM node: HARINGSC (RECO) \u2014 1.3 miles away"
   },
   "07460": {
-    "county": "Hudson",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2565,7 +2565,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 4.52 miles away"
   },
   "07461": {
-    "county": "Hudson",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2584,7 +2584,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 10.31 miles away"
   },
   "07462": {
-    "county": "Hudson",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -2603,7 +2603,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 8.07 miles away"
   },
   "07463": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.49,
     "pct_change": 23.6,
@@ -2622,7 +2622,7 @@
     "notes": "Nearest PJM node: WALDWICK (PSEG) \u2014 0.24 miles away"
   },
   "07465": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.31,
     "avg_lmp_2025": 23.62,
     "pct_change": 29.0,
@@ -2641,7 +2641,7 @@
     "notes": "Nearest PJM node: OAKLAND (RECO) \u2014 3.46 miles away"
   },
   "07470": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.1,
     "pct_change": 21.4,
@@ -2660,7 +2660,7 @@
     "notes": "Nearest PJM node: HINCHMAN (PSEG) \u2014 1.35 miles away"
   },
   "07480": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.31,
     "avg_lmp_2025": 23.62,
     "pct_change": 29.0,
@@ -2679,7 +2679,7 @@
     "notes": "Nearest PJM node: OAKLAND (RECO) \u2014 8.6 miles away"
   },
   "07481": {
-    "county": "Hudson",
+    "county": "Bergen",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.1,
     "pct_change": 21.4,
@@ -2698,7 +2698,7 @@
     "notes": "Nearest PJM node: HAWTHORN (PSEG) \u2014 2.46 miles away"
   },
   "07501": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.2,
     "pct_change": 21.6,
@@ -2717,7 +2717,7 @@
     "notes": "Nearest PJM node: NPATERSO (PSEG) \u2014 0.5 miles away"
   },
   "07502": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.2,
     "pct_change": 21.6,
@@ -2736,7 +2736,7 @@
     "notes": "Nearest PJM node: NPATERSO (PSEG) \u2014 1.06 miles away"
   },
   "07503": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.8,
@@ -2755,7 +2755,7 @@
     "notes": "Nearest PJM node: KULLERRD (PSEG) \u2014 0.97 miles away"
   },
   "07504": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.2,
     "pct_change": 21.6,
@@ -2774,7 +2774,7 @@
     "notes": "Nearest PJM node: NPATERSO (PSEG) \u2014 1.83 miles away"
   },
   "07505": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.2,
     "pct_change": 21.6,
@@ -2793,7 +2793,7 @@
     "notes": "Nearest PJM node: NPATERSO (PSEG) \u2014 0.19 miles away"
   },
   "07506": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.1,
     "pct_change": 21.4,
@@ -2812,7 +2812,7 @@
     "notes": "Nearest PJM node: HAWTHORN (PSEG) \u2014 0.77 miles away"
   },
   "07508": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.02,
     "pct_change": 21.3,
@@ -2831,7 +2831,7 @@
     "notes": "Nearest PJM node: MARIONDR (PSEG) \u2014 1.74 miles away"
   },
   "07512": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.4,
@@ -2850,7 +2850,7 @@
     "notes": "Nearest PJM node: TOTOWA (PSEG) \u2014 0.64 miles away"
   },
   "07513": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.23,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.8,
@@ -2869,7 +2869,7 @@
     "notes": "Nearest PJM node: KULLERRD (PSEG) \u2014 1.52 miles away"
   },
   "07514": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.02,
     "pct_change": 21.3,
@@ -2888,7 +2888,7 @@
     "notes": "Nearest PJM node: MARIONDR (PSEG) \u2014 1.19 miles away"
   },
   "07522": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.2,
     "pct_change": 21.6,
@@ -2907,7 +2907,7 @@
     "notes": "Nearest PJM node: NPATERSO (PSEG) \u2014 0.41 miles away"
   },
   "07524": {
-    "county": "Hudson",
+    "county": "Passaic",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.02,
     "pct_change": 21.3,
@@ -3667,7 +3667,7 @@
     "notes": "Nearest PJM node: HILLSDAL (PSEG) \u2014 1.5 miles away"
   },
   "07701": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3686,7 +3686,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 0.94 miles away"
   },
   "07702": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3705,7 +3705,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 1.73 miles away"
   },
   "07703": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3724,7 +3724,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 2.74 miles away"
   },
   "07704": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3743,7 +3743,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 2.21 miles away"
   },
   "07711": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -3762,7 +3762,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 2.36 miles away"
   },
   "07712": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -3781,7 +3781,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 1.84 miles away"
   },
   "07716": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3800,7 +3800,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 4.35 miles away"
   },
   "07717": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -3819,7 +3819,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 2.62 miles away"
   },
   "07718": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3838,7 +3838,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 5.05 miles away"
   },
   "07719": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -3857,7 +3857,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 3.88 miles away"
   },
   "07720": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -3876,7 +3876,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 2.24 miles away"
   },
   "07721": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.5,
@@ -3895,7 +3895,7 @@
     "notes": "Nearest PJM node: MCCLEABD (PSEG) \u2014 1.76 miles away"
   },
   "07722": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 17.903,
     "avg_lmp_2025": 21.84,
     "pct_change": 22.0,
@@ -3914,7 +3914,7 @@
     "notes": "Nearest PJM node: GLENGARD (JCPL) \u2014 1.13 miles away"
   },
   "07723": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -3933,7 +3933,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 3.08 miles away"
   },
   "07724": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3952,7 +3952,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 3.35 miles away"
   },
   "07726": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.122,
     "avg_lmp_2025": 21.977,
     "pct_change": 21.3,
@@ -3971,7 +3971,7 @@
     "notes": "Nearest PJM node: ENGLISHT (JCPL) \u2014 2.05 miles away"
   },
   "07727": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -3990,7 +3990,7 @@
     "notes": "Nearest PJM node: ATLANTIC (JCPL) \u2014 3.94 miles away"
   },
   "07728": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.85,
     "pct_change": 20.7,
@@ -4009,7 +4009,7 @@
     "notes": "Nearest PJM node: SMITHBUR (JCPL) \u2014 4.29 miles away"
   },
   "07730": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.6,
@@ -4028,7 +4028,7 @@
     "notes": "Nearest PJM node: FRENEAU (JCPL) \u2014 4.08 miles away"
   },
   "07731": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.6,
@@ -4047,7 +4047,7 @@
     "notes": "Nearest PJM node: NJTABERD (JCPL) \u2014 1.48 miles away"
   },
   "07732": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4066,7 +4066,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 7.31 miles away"
   },
   "07733": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.6,
@@ -4085,7 +4085,7 @@
     "notes": "Nearest PJM node: FRENEAU (JCPL) \u2014 3.97 miles away"
   },
   "07734": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.6,
@@ -4104,7 +4104,7 @@
     "notes": "Nearest PJM node: FRENEAU (JCPL) \u2014 6.44 miles away"
   },
   "07735": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.5,
@@ -4123,7 +4123,7 @@
     "notes": "Nearest PJM node: MCCLEABD (PSEG) \u2014 2.96 miles away"
   },
   "07737": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4142,7 +4142,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 4.17 miles away"
   },
   "07738": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4161,7 +4161,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 3.1 miles away"
   },
   "07739": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4180,7 +4180,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 2.29 miles away"
   },
   "07740": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4199,7 +4199,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 5.77 miles away"
   },
   "07746": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 17.903,
     "avg_lmp_2025": 21.84,
     "pct_change": 22.0,
@@ -4218,7 +4218,7 @@
     "notes": "Nearest PJM node: GLENGARD (JCPL) \u2014 4.13 miles away"
   },
   "07747": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.5,
@@ -4237,7 +4237,7 @@
     "notes": "Nearest PJM node: MCCLEABD (PSEG) \u2014 0.16 miles away"
   },
   "07748": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4256,7 +4256,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 3.98 miles away"
   },
   "07750": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4275,7 +4275,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 4.82 miles away"
   },
   "07751": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.13,
     "pct_change": 21.6,
@@ -4294,7 +4294,7 @@
     "notes": "Nearest PJM node: FRENEAU (JCPL) \u2014 2.8 miles away"
   },
   "07753": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -4313,7 +4313,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 1.67 miles away"
   },
   "07755": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -4332,7 +4332,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 3.16 miles away"
   },
   "07756": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -4351,7 +4351,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 2.15 miles away"
   },
   "07757": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4370,7 +4370,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 3.75 miles away"
   },
   "07758": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4389,7 +4389,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 6.16 miles away"
   },
   "07760": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -4408,7 +4408,7 @@
     "notes": "Nearest PJM node: REDBAJCT (JCPL) \u2014 4.15 miles away"
   },
   "07762": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -4427,7 +4427,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 4.72 miles away"
   },
   "07764": {
-    "county": "Bergen",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -4446,7 +4446,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 4.81 miles away"
   },
   "07801": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 22.035,
     "pct_change": 21.6,
@@ -4465,7 +4465,7 @@
     "notes": "Nearest PJM node: STON JC (JCPL) \u2014 0.65 miles away"
   },
   "07803": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.047,
     "avg_lmp_2025": 22.07,
     "pct_change": 22.3,
@@ -4484,7 +4484,7 @@
     "notes": "Nearest PJM node: WWHARTON (JCPL) \u2014 2.01 miles away"
   },
   "07820": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.95,
     "avg_lmp_2025": 22.03,
     "pct_change": 22.7,
@@ -4503,7 +4503,7 @@
     "notes": "Nearest PJM node: DOTWWHAR (JCPL) \u2014 2.32 miles away"
   },
   "07821": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 18.115,
     "avg_lmp_2025": 21.96,
     "pct_change": 21.2,
@@ -4522,7 +4522,7 @@
     "notes": "Nearest PJM node: NEWDOVER (PSEG) \u2014 1.35 miles away"
   },
   "07822": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.99,
     "pct_change": 23.3,
@@ -4541,7 +4541,7 @@
     "notes": "Nearest PJM node: NEWTON (JCPL) \u2014 5.97 miles away"
   },
   "07823": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.95,
     "avg_lmp_2025": 21.86,
     "pct_change": 21.8,
@@ -4560,7 +4560,7 @@
     "notes": "Nearest PJM node: PEQUESTR (JCPL) \u2014 3.44 miles away"
   },
   "07825": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.69,
     "avg_lmp_2025": 21.96,
     "pct_change": 24.1,
@@ -4579,7 +4579,7 @@
     "notes": "Nearest PJM node: KITTATIN (JCPL) \u2014 3.91 miles away"
   },
   "07826": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.99,
     "pct_change": 23.3,
@@ -4598,7 +4598,7 @@
     "notes": "Nearest PJM node: NEWTON (JCPL) \u2014 8.4 miles away"
   },
   "07827": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 18.32,
     "avg_lmp_2025": 23.61,
     "pct_change": 28.9,
@@ -4617,7 +4617,7 @@
     "notes": "Nearest PJM node: FRANKLAK (RECO) \u2014 14.8 miles away"
   },
   "07828": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 22.08,
     "pct_change": 21.9,
@@ -4636,7 +4636,7 @@
     "notes": "Nearest PJM node: DRAKESTO (JCPL) \u2014 2.85 miles away"
   },
   "07830": {
-    "county": "Bergen",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.81,
     "pct_change": 21.8,
@@ -4655,7 +4655,7 @@
     "notes": "Nearest PJM node: TEWKSBRY (JCPL) \u2014 1.29 miles away"
   },
   "07831": {
-    "county": "Bergen",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.9,
@@ -4674,7 +4674,7 @@
     "notes": "Nearest PJM node: SAYRECON (JCPL) \u2014 2.32 miles away"
   },
   "07832": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.83,
     "pct_change": 21.9,
@@ -4693,7 +4693,7 @@
     "notes": "Nearest PJM node: COLUMBJC (JCPL) \u2014 1.77 miles away"
   },
   "07833": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.83,
     "pct_change": 21.9,
@@ -4712,7 +4712,7 @@
     "notes": "Nearest PJM node: COLUMBJC (JCPL) \u2014 2.37 miles away"
   },
   "07834": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.075,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.7,
@@ -4731,7 +4731,7 @@
     "notes": "Nearest PJM node: GREYSTON (JCPL) \u2014 2.62 miles away"
   },
   "07836": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.165,
     "pct_change": 22.1,
@@ -4750,7 +4750,7 @@
     "notes": "Nearest PJM node: FLANDERS (JCPL) \u2014 1.57 miles away"
   },
   "07838": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.5,
@@ -4769,7 +4769,7 @@
     "notes": "Nearest PJM node: WARRENPT (PSEG) \u2014 1.97 miles away"
   },
   "07840": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.99,
     "pct_change": 23.1,
@@ -4788,7 +4788,7 @@
     "notes": "Nearest PJM node: ELASTIMO (JCPL) \u2014 1.95 miles away"
   },
   "07842": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 22.035,
     "pct_change": 21.6,
@@ -4807,7 +4807,7 @@
     "notes": "Nearest PJM node: STON JC (JCPL) \u2014 3.84 miles away"
   },
   "07843": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 18.28,
     "avg_lmp_2025": 21.73,
     "pct_change": 18.9,
@@ -4826,7 +4826,7 @@
     "notes": "Nearest PJM node: HOPATCON (PSEG) \u2014 3.83 miles away"
   },
   "07844": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 18.07,
     "avg_lmp_2025": 21.66,
     "pct_change": 19.9,
@@ -4845,7 +4845,7 @@
     "notes": "Nearest PJM node: WIND JC (JCPL) \u2014 3.54 miles away"
   },
   "07846": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.95,
     "avg_lmp_2025": 22.03,
     "pct_change": 22.7,
@@ -4864,7 +4864,7 @@
     "notes": "Nearest PJM node: DOTWWHAR (JCPL) \u2014 5.32 miles away"
   },
   "07847": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.047,
     "avg_lmp_2025": 22.07,
     "pct_change": 22.3,
@@ -4883,7 +4883,7 @@
     "notes": "Nearest PJM node: WWHARTON (JCPL) \u2014 1.81 miles away"
   },
   "07848": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.99,
     "pct_change": 23.3,
@@ -4902,7 +4902,7 @@
     "notes": "Nearest PJM node: NEWTON (JCPL) \u2014 4.27 miles away"
   },
   "07849": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.28,
     "avg_lmp_2025": 21.73,
     "pct_change": 18.9,
@@ -4921,7 +4921,7 @@
     "notes": "Nearest PJM node: HOPATCON (PSEG) \u2014 2.24 miles away"
   },
   "07850": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.047,
     "avg_lmp_2025": 22.07,
     "pct_change": 22.3,
@@ -4940,7 +4940,7 @@
     "notes": "Nearest PJM node: WWHARTON (JCPL) \u2014 3.27 miles away"
   },
   "07851": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.99,
     "pct_change": 23.3,
@@ -4959,7 +4959,7 @@
     "notes": "Nearest PJM node: NEWTON (JCPL) \u2014 11.67 miles away"
   },
   "07852": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.165,
     "pct_change": 22.1,
@@ -4978,7 +4978,7 @@
     "notes": "Nearest PJM node: FLANDERS (JCPL) \u2014 2.32 miles away"
   },
   "07853": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.09,
     "avg_lmp_2025": 21.825,
     "pct_change": 20.6,
@@ -4997,7 +4997,7 @@
     "notes": "Nearest PJM node: DEVILSBR (PSEG) \u2014 3.56 miles away"
   },
   "07856": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.047,
     "avg_lmp_2025": 22.07,
     "pct_change": 22.3,
@@ -5016,7 +5016,7 @@
     "notes": "Nearest PJM node: WWHARTON (JCPL) \u2014 1.7 miles away"
   },
   "07857": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.165,
     "pct_change": 22.1,
@@ -5035,7 +5035,7 @@
     "notes": "Nearest PJM node: FLANDERS (JCPL) \u2014 2.28 miles away"
   },
   "07860": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.99,
     "pct_change": 23.3,
@@ -5054,7 +5054,7 @@
     "notes": "Nearest PJM node: NEWTON (JCPL) \u2014 3.25 miles away"
   },
   "07863": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.95,
     "avg_lmp_2025": 21.86,
     "pct_change": 21.8,
@@ -5073,7 +5073,7 @@
     "notes": "Nearest PJM node: PEQUESTR (JCPL) \u2014 1.72 miles away"
   },
   "07865": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.97,
     "pct_change": 23.3,
@@ -5092,7 +5092,7 @@
     "notes": "Nearest PJM node: POHATCON (JCPL) \u2014 3.5 miles away"
   },
   "07866": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 22.035,
     "pct_change": 21.6,
@@ -5111,7 +5111,7 @@
     "notes": "Nearest PJM node: STON JC (JCPL) \u2014 4.82 miles away"
   },
   "07869": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 17.79,
     "avg_lmp_2025": 21.73,
     "pct_change": 22.1,
@@ -5130,7 +5130,7 @@
     "notes": "Nearest PJM node: MORRISPA (JCPL) \u2014 2.72 miles away"
   },
   "07870": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.99,
     "pct_change": 23.1,
@@ -5149,7 +5149,7 @@
     "notes": "Nearest PJM node: ELASTIMO (JCPL) \u2014 1.95 miles away"
   },
   "07871": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.88,
     "pct_change": 20.8,
@@ -5168,7 +5168,7 @@
     "notes": "Nearest PJM node: NEWPROSP (JCPL) \u2014 3.53 miles away"
   },
   "07874": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 18.115,
     "avg_lmp_2025": 21.96,
     "pct_change": 21.2,
@@ -5187,7 +5187,7 @@
     "notes": "Nearest PJM node: NEWDOVER (PSEG) \u2014 4.08 miles away"
   },
   "07876": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.165,
     "pct_change": 22.1,
@@ -5206,7 +5206,7 @@
     "notes": "Nearest PJM node: FLANDERS (JCPL) \u2014 2.7 miles away"
   },
   "07878": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.075,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.7,
@@ -5225,7 +5225,7 @@
     "notes": "Nearest PJM node: GREYSTON (JCPL) \u2014 2.13 miles away"
   },
   "07880": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 18.26,
     "avg_lmp_2025": 22.18,
     "pct_change": 21.5,
@@ -5244,7 +5244,7 @@
     "notes": "Nearest PJM node: WARRENPT (PSEG) \u2014 0.63 miles away"
   },
   "07881": {
-    "county": "Bergen",
+    "county": "Sussex",
     "avg_lmp_2020": 17.69,
     "avg_lmp_2025": 21.96,
     "pct_change": 24.1,
@@ -5263,7 +5263,7 @@
     "notes": "Nearest PJM node: KITTATIN (JCPL) \u2014 10.02 miles away"
   },
   "07882": {
-    "county": "Bergen",
+    "county": "Warren",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.7,
@@ -5282,7 +5282,7 @@
     "notes": "Nearest PJM node: WASHINGT (AECO) \u2014 1.46 miles away"
   },
   "07885": {
-    "county": "Bergen",
+    "county": "Morris",
     "avg_lmp_2020": 18.047,
     "avg_lmp_2025": 22.07,
     "pct_change": 22.3,
@@ -5301,7 +5301,7 @@
     "notes": "Nearest PJM node: WWHARTON (JCPL) \u2014 0.3 miles away"
   },
   "07901": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.155,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.5,
@@ -5320,7 +5320,7 @@
     "notes": "Nearest PJM node: SUMM JC (JCPL) \u2014 1.29 miles away"
   },
   "07920": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.7,
@@ -5339,7 +5339,7 @@
     "notes": "Nearest PJM node: GILLETTE (JCPL) \u2014 4.8 miles away"
   },
   "07921": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 17.99,
     "avg_lmp_2025": 21.99,
     "pct_change": 22.2,
@@ -5358,7 +5358,7 @@
     "notes": "Nearest PJM node: CHESTJCT (JCPL) \u2014 2.07 miles away"
   },
   "07922": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.7,
@@ -5377,7 +5377,7 @@
     "notes": "Nearest PJM node: GILLETTE (JCPL) \u2014 1.87 miles away"
   },
   "07924": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 17.96,
     "avg_lmp_2025": 21.67,
     "pct_change": 20.7,
@@ -5396,7 +5396,7 @@
     "notes": "Nearest PJM node: CHESTERF (PSEG) \u2014 7.37 miles away"
   },
   "07926": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.075,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.7,
@@ -5415,7 +5415,7 @@
     "notes": "Nearest PJM node: GREYSTON (JCPL) \u2014 4.73 miles away"
   },
   "07927": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.98,
     "pct_change": 21.4,
@@ -5434,7 +5434,7 @@
     "notes": "Nearest PJM node: MORRISTO (JCPL) \u2014 1.71 miles away"
   },
   "07928": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.7,
@@ -5453,7 +5453,7 @@
     "notes": "Nearest PJM node: TRAYNOR (JCPL) \u2014 1.97 miles away"
   },
   "07930": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 17.96,
     "avg_lmp_2025": 21.67,
     "pct_change": 20.7,
@@ -5472,7 +5472,7 @@
     "notes": "Nearest PJM node: CHESTERF (PSEG) \u2014 1.21 miles away"
   },
   "07931": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 17.99,
     "avg_lmp_2025": 21.99,
     "pct_change": 22.2,
@@ -5491,7 +5491,7 @@
     "notes": "Nearest PJM node: CHESTJCT (JCPL) \u2014 5.64 miles away"
   },
   "07932": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.4,
@@ -5510,7 +5510,7 @@
     "notes": "Nearest PJM node: WHIPPANY (JCPL) \u2014 3.0 miles away"
   },
   "07933": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.7,
@@ -5529,7 +5529,7 @@
     "notes": "Nearest PJM node: GILLETTE (JCPL) \u2014 1.22 miles away"
   },
   "07934": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 17.96,
     "avg_lmp_2025": 21.67,
     "pct_change": 20.7,
@@ -5548,7 +5548,7 @@
     "notes": "Nearest PJM node: CHESTERF (PSEG) \u2014 4.78 miles away"
   },
   "07935": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.7,
@@ -5567,7 +5567,7 @@
     "notes": "Nearest PJM node: TRAYNOR (JCPL) \u2014 3.79 miles away"
   },
   "07936": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.4,
@@ -5586,7 +5586,7 @@
     "notes": "Nearest PJM node: WHIPPANY (JCPL) \u2014 0.76 miles away"
   },
   "07939": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.7,
@@ -5605,7 +5605,7 @@
     "notes": "Nearest PJM node: GILLETTE (JCPL) \u2014 4.75 miles away"
   },
   "07940": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.135,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.7,
@@ -5624,7 +5624,7 @@
     "notes": "Nearest PJM node: TRAYNOR (JCPL) \u2014 2.85 miles away"
   },
   "07945": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 17.96,
     "avg_lmp_2025": 21.67,
     "pct_change": 20.7,
@@ -5643,7 +5643,7 @@
     "notes": "Nearest PJM node: CHESTERF (PSEG) \u2014 5.18 miles away"
   },
   "07946": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.7,
@@ -5662,7 +5662,7 @@
     "notes": "Nearest PJM node: GILLETTE (JCPL) \u2014 2.4 miles away"
   },
   "07950": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.075,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.7,
@@ -5681,7 +5681,7 @@
     "notes": "Nearest PJM node: GREYSTON (JCPL) \u2014 1.53 miles away"
   },
   "07960": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.98,
     "pct_change": 21.4,
@@ -5700,7 +5700,7 @@
     "notes": "Nearest PJM node: MORRISTO (JCPL) \u2014 2.31 miles away"
   },
   "07961": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.98,
     "pct_change": 21.4,
@@ -5719,7 +5719,7 @@
     "notes": "Nearest PJM node: MORRISTO (JCPL) \u2014 2.22 miles away"
   },
   "07970": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.075,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.7,
@@ -5738,7 +5738,7 @@
     "notes": "Nearest PJM node: GREYSTON (JCPL) \u2014 4.38 miles away"
   },
   "07974": {
-    "county": "North Jersey",
+    "county": "Union",
     "avg_lmp_2020": 18.155,
     "avg_lmp_2025": 22.065,
     "pct_change": 21.5,
@@ -5757,7 +5757,7 @@
     "notes": "Nearest PJM node: SUMM JC (JCPL) \u2014 2.43 miles away"
   },
   "07976": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.7,
@@ -5776,7 +5776,7 @@
     "notes": "Nearest PJM node: GILLETTE (JCPL) \u2014 3.56 miles away"
   },
   "07977": {
-    "county": "North Jersey",
+    "county": "Somerset",
     "avg_lmp_2020": 17.99,
     "avg_lmp_2025": 21.99,
     "pct_change": 22.2,
@@ -5795,7 +5795,7 @@
     "notes": "Nearest PJM node: CHESTJCT (JCPL) \u2014 6.09 miles away"
   },
   "07979": {
-    "county": "North Jersey",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.81,
     "pct_change": 21.8,
@@ -5814,7 +5814,7 @@
     "notes": "Nearest PJM node: TEWKSBRY (JCPL) \u2014 2.1 miles away"
   },
   "07980": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.7,
@@ -5833,7 +5833,7 @@
     "notes": "Nearest PJM node: GILLETTE (JCPL) \u2014 1.68 miles away"
   },
   "07981": {
-    "county": "North Jersey",
+    "county": "Morris",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.99,
     "pct_change": 21.4,
@@ -5852,7 +5852,7 @@
     "notes": "Nearest PJM node: WHIPPANY (JCPL) \u2014 2.54 miles away"
   },
   "08001": {
-    "county": "Atlantic",
+    "county": "Salem",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.84,
     "pct_change": 21.2,
@@ -5871,7 +5871,7 @@
     "notes": "Nearest PJM node: QUINTON (AECO) \u2014 3.39 miles away"
   },
   "08002": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 21.8,
     "pct_change": 20.2,
@@ -5890,7 +5890,7 @@
     "notes": "Nearest PJM node: PENNSNEC (PSEG) \u2014 1.41 miles away"
   },
   "08003": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.5,
     "pct_change": 20.5,
@@ -5909,7 +5909,7 @@
     "notes": "Nearest PJM node: MARLTON (PSEG) \u2014 2.33 miles away"
   },
   "08004": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.85,
     "avg_lmp_2025": 21.52,
     "pct_change": 20.6,
@@ -5928,7 +5928,7 @@
     "notes": "Nearest PJM node: ATCO (AECO) \u2014 4.12 miles away"
   },
   "08005": {
-    "county": "Atlantic",
+    "county": "Ocean",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.96,
     "pct_change": 21.0,
@@ -5947,7 +5947,7 @@
     "notes": "Nearest PJM node: BARNEGAT (AECO) \u2014 1.74 miles away"
   },
   "08006": {
-    "county": "Atlantic",
+    "county": "Ocean",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -5966,7 +5966,7 @@
     "notes": "Nearest PJM node: OYSTERCR (JCPL) \u2014 7.3 miles away"
   },
   "08007": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.96,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.2,
@@ -5985,7 +5985,7 @@
     "notes": "Nearest PJM node: RUNNEMED (PSEG) \u2014 0.92 miles away"
   },
   "08008": {
-    "county": "Atlantic",
+    "county": "Ocean",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.8,
@@ -6004,7 +6004,7 @@
     "notes": "Nearest PJM node: MOTTS (AECO) \u2014 7.89 miles away"
   },
   "08009": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.8,
     "avg_lmp_2025": 21.47,
     "pct_change": 20.6,
@@ -6023,7 +6023,7 @@
     "notes": "Nearest PJM node: TANSBORO (AECO) \u2014 0.53 miles away"
   },
   "08010": {
-    "county": "Atlantic",
+    "county": "Burlington",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.53,
     "pct_change": 20.5,
@@ -6042,7 +6042,7 @@
     "notes": "Nearest PJM node: LEVITTOW (PSEG) \u2014 2.68 miles away"
   },
   "08011": {
-    "county": "Atlantic",
+    "county": "Burlington",
     "avg_lmp_2020": 17.9,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.5,
@@ -6061,7 +6061,7 @@
     "notes": "Nearest PJM node: MTHOLLY (PSEG) \u2014 4.11 miles away"
   },
   "08012": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.59,
     "pct_change": 20.5,
@@ -6080,7 +6080,7 @@
     "notes": "Nearest PJM node: TERRACE (AECO) \u2014 0.47 miles away"
   },
   "08014": {
-    "county": "Atlantic",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.95,
     "avg_lmp_2025": 21.69,
     "pct_change": 20.8,
@@ -6099,7 +6099,7 @@
     "notes": "Nearest PJM node: MONSANTO (AECO) \u2014 2.16 miles away"
   },
   "08015": {
-    "county": "Atlantic",
+    "county": "Burlington",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 21.98,
     "pct_change": 21.0,
@@ -6118,7 +6118,7 @@
     "notes": "Nearest PJM node: WHITINGS (JCPL) \u2014 8.9 miles away"
   },
   "08016": {
-    "county": "Atlantic",
+    "county": "Burlington",
     "avg_lmp_2020": 17.867,
     "avg_lmp_2025": 21.533,
     "pct_change": 20.5,
@@ -6137,7 +6137,7 @@
     "notes": "Nearest PJM node: BURLINGT (PSEG) \u2014 2.24 miles away"
   },
   "08019": {
-    "county": "Atlantic",
+    "county": "Burlington",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.61,
     "pct_change": 20.5,
@@ -6156,7 +6156,7 @@
     "notes": "Nearest PJM node: TABERNAC (AECO) \u2014 11.45 miles away"
   },
   "08020": {
-    "county": "Atlantic",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.49,
     "pct_change": 20.6,
@@ -6175,7 +6175,7 @@
     "notes": "Nearest PJM node: MICKLETO (AECO) \u2014 1.88 miles away"
   },
   "08021": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.86,
     "avg_lmp_2025": 21.53,
     "pct_change": 20.5,
@@ -6194,7 +6194,7 @@
     "notes": "Nearest PJM node: STRATFOR (AECO) \u2014 1.42 miles away"
   },
   "08022": {
-    "county": "Atlantic",
+    "county": "Burlington",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.63,
     "pct_change": null,
@@ -6213,7 +6213,7 @@
     "notes": "Nearest PJM node: MANSFLD (PSEG) \u2014 3.26 miles away"
   },
   "08023": {
-    "county": "Atlantic",
+    "county": "Salem",
     "avg_lmp_2020": 17.75,
     "avg_lmp_2025": 21.47,
     "pct_change": 21.0,
@@ -6232,7 +6232,7 @@
     "notes": "Nearest PJM node: CHAMBERS (AECO) \u2014 0.77 miles away"
   },
   "08026": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -6251,7 +6251,7 @@
     "notes": "Nearest PJM node: LINDENWO (AECO) \u2014 0.95 miles away"
   },
   "08027": {
-    "county": "Atlantic",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.86,
     "avg_lmp_2025": 21.5,
     "pct_change": 20.4,
@@ -6270,7 +6270,7 @@
     "notes": "Nearest PJM node: VALERO (AECO) \u2014 0.68 miles away"
   },
   "08028": {
-    "county": "Atlantic",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.7,
@@ -6289,7 +6289,7 @@
     "notes": "Nearest PJM node: GLASSBOR (AECO) \u2014 0.42 miles away"
   },
   "08029": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.5,
     "pct_change": null,
@@ -6308,7 +6308,7 @@
     "notes": "Nearest PJM node: HILLTPPS (PSEG) \u2014 0.92 miles away"
   },
   "08030": {
-    "county": "Burlington",
+    "county": "Camden",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.51,
     "pct_change": 20.6,
@@ -6327,7 +6327,7 @@
     "notes": "Nearest PJM node: GLOUCEST (PSEG) \u2014 1.07 miles away"
   },
   "08031": {
-    "county": "Burlington",
+    "county": "Camden",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.49,
     "pct_change": 20.6,
@@ -6346,7 +6346,7 @@
     "notes": "Nearest PJM node: BEAVERBR (PSEG) \u2014 0.86 miles away"
   },
   "08032": {
-    "county": "Burlington",
+    "county": "Camden",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.59,
     "pct_change": 20.5,
@@ -6365,7 +6365,7 @@
     "notes": "Nearest PJM node: TERRACE (AECO) \u2014 0.2 miles away"
   },
   "08033": {
-    "county": "Burlington",
+    "county": "Camden",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.62,
     "pct_change": 20.3,
@@ -6384,7 +6384,7 @@
     "notes": "Nearest PJM node: LAWNSIDE (PSEG) \u2014 2.4 miles away"
   },
   "08034": {
-    "county": "Burlington",
+    "county": "Camden",
     "avg_lmp_2020": 17.99,
     "avg_lmp_2025": 21.65,
     "pct_change": 20.3,
@@ -6403,7 +6403,7 @@
     "notes": "Nearest PJM node: MAPLESHD (PSEG) \u2014 2.82 miles away"
   },
   "08035": {
-    "county": "Burlington",
+    "county": "Camden",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.49,
     "pct_change": 20.6,
@@ -6441,7 +6441,7 @@
     "notes": "Nearest PJM node: BURL_TAP (AECO) \u2014 2.06 miles away"
   },
   "08037": {
-    "county": "Burlington",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.01,
     "avg_lmp_2025": 21.86,
     "pct_change": 21.4,
@@ -6460,7 +6460,7 @@
     "notes": "Nearest PJM node: DACOSTA (AECO) \u2014 1.21 miles away"
   },
   "08038": {
-    "county": "Burlington",
+    "county": "Salem",
     "avg_lmp_2020": 17.64,
     "avg_lmp_2025": 21.23,
     "pct_change": 20.4,
@@ -6479,7 +6479,7 @@
     "notes": "Nearest PJM node: SALEM (PSEG) \u2014 2.31 miles away"
   },
   "08039": {
-    "county": "Burlington",
+    "county": "Gloucester",
     "avg_lmp_2020": 18.0,
     "avg_lmp_2025": 21.73,
     "pct_change": 20.7,
@@ -6498,7 +6498,7 @@
     "notes": "Nearest PJM node: LINCOLN1 (AECO) \u2014 1.94 miles away"
   },
   "08041": {
-    "county": "Camden",
+    "county": "Burlington",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.63,
     "pct_change": null,
@@ -6517,7 +6517,7 @@
     "notes": "Nearest PJM node: MANSFLD (PSEG) \u2014 5.54 miles away"
   },
   "08042": {
-    "county": "Camden",
+    "county": "Burlington",
     "avg_lmp_2020": 17.9,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.5,
@@ -6574,7 +6574,7 @@
     "notes": "Nearest PJM node: LAWNSIDE (PSEG) \u2014 0.73 miles away"
   },
   "08046": {
-    "county": "Camden",
+    "county": "Burlington",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.53,
     "pct_change": 20.5,
@@ -6593,7 +6593,7 @@
     "notes": "Nearest PJM node: LEVITTOW (PSEG) \u2014 0.36 miles away"
   },
   "08048": {
-    "county": "Camden",
+    "county": "Burlington",
     "avg_lmp_2020": 17.88,
     "avg_lmp_2025": 21.55,
     "pct_change": 20.5,
@@ -6631,7 +6631,7 @@
     "notes": "Nearest PJM node: RUNNEMED (PSEG) \u2014 0.75 miles away"
   },
   "08050": {
-    "county": "Cape May",
+    "county": "Ocean",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.96,
     "pct_change": 21.0,
@@ -6650,7 +6650,7 @@
     "notes": "Nearest PJM node: BARNEGAT (AECO) \u2014 3.88 miles away"
   },
   "08051": {
-    "county": "Cape May",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.56,
     "pct_change": 20.2,
@@ -6669,7 +6669,7 @@
     "notes": "Nearest PJM node: MANTUA (AECO) \u2014 0.27 miles away"
   },
   "08052": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 17.99,
     "avg_lmp_2025": 21.65,
     "pct_change": 20.3,
@@ -6688,7 +6688,7 @@
     "notes": "Nearest PJM node: MAPLESHD (PSEG) \u2014 1.52 miles away"
   },
   "08053": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.48,
     "pct_change": null,
@@ -6707,7 +6707,7 @@
     "notes": "Nearest PJM node: ECHELON (PSEG) \u2014 1.89 miles away"
   },
   "08054": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.66,
     "pct_change": null,
@@ -6726,7 +6726,7 @@
     "notes": "Nearest PJM node: BURL_TAP (AECO) \u2014 3.52 miles away"
   },
   "08055": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.59,
     "pct_change": 20.5,
@@ -6745,7 +6745,7 @@
     "notes": "Nearest PJM node: MEDFORD2 (PSEG) \u2014 3.07 miles away"
   },
   "08056": {
-    "county": "Cape May",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.49,
     "pct_change": 20.6,
@@ -6764,7 +6764,7 @@
     "notes": "Nearest PJM node: MICKLETO (AECO) \u2014 1.97 miles away"
   },
   "08057": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.525,
     "pct_change": 20.5,
@@ -6783,7 +6783,7 @@
     "notes": "Nearest PJM node: CINNAMIN (PSEG) \u2014 1.9 miles away"
   },
   "08059": {
-    "county": "Cape May",
+    "county": "Camden",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.51,
     "pct_change": 20.6,
@@ -6802,7 +6802,7 @@
     "notes": "Nearest PJM node: GLOUCEST (PSEG) \u2014 0.42 miles away"
   },
   "08060": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 17.9,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.5,
@@ -6821,7 +6821,7 @@
     "notes": "Nearest PJM node: MTHOLLY (PSEG) \u2014 1.18 miles away"
   },
   "08061": {
-    "county": "Cape May",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.56,
     "pct_change": 20.2,
@@ -6840,7 +6840,7 @@
     "notes": "Nearest PJM node: MANTUA (AECO) \u2014 2.14 miles away"
   },
   "08062": {
-    "county": "Cape May",
+    "county": "Gloucester",
     "avg_lmp_2020": 18.0,
     "avg_lmp_2025": 21.73,
     "pct_change": 20.7,
@@ -6859,7 +6859,7 @@
     "notes": "Nearest PJM node: LINCOLN1 (AECO) \u2014 1.8 miles away"
   },
   "08063": {
-    "county": "Cape May",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.785,
     "avg_lmp_2025": 21.495,
     "pct_change": 20.9,
@@ -6878,7 +6878,7 @@
     "notes": "Nearest PJM node: THOROFAR (PSEG) \u2014 2.09 miles away"
   },
   "08064": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 17.9,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.6,
@@ -6897,7 +6897,7 @@
     "notes": "Nearest PJM node: SAMPTON (PSEG) \u2014 6.8 miles away"
   },
   "08065": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.4,
@@ -6916,7 +6916,7 @@
     "notes": "Nearest PJM node: DELAIR (PSEG) \u2014 1.75 miles away"
   },
   "08066": {
-    "county": "Cape May",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.66,
     "avg_lmp_2025": 21.49,
     "pct_change": 21.7,
@@ -6935,7 +6935,7 @@
     "notes": "Nearest PJM node: CROWNPNT (AECO) \u2014 0.74 miles away"
   },
   "08067": {
-    "county": "Cape May",
+    "county": "Salem",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.65,
     "pct_change": 20.7,
@@ -6954,7 +6954,7 @@
     "notes": "Nearest PJM node: OLDMAN (AECO) \u2014 2.09 miles away"
   },
   "08068": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 17.9,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.6,
@@ -6973,7 +6973,7 @@
     "notes": "Nearest PJM node: SAMPTON (PSEG) \u2014 5.21 miles away"
   },
   "08069": {
-    "county": "Cape May",
+    "county": "Salem",
     "avg_lmp_2020": 17.75,
     "avg_lmp_2025": 21.47,
     "pct_change": 21.0,
@@ -6992,7 +6992,7 @@
     "notes": "Nearest PJM node: CHAMBERS (AECO) \u2014 1.91 miles away"
   },
   "08070": {
-    "county": "Cumberland",
+    "county": "Salem",
     "avg_lmp_2020": 17.74,
     "avg_lmp_2025": 21.49,
     "pct_change": 21.1,
@@ -7011,7 +7011,7 @@
     "notes": "Nearest PJM node: CHURCHTO (AECO) \u2014 3.92 miles away"
   },
   "08071": {
-    "county": "Cumberland",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.6,
     "pct_change": 20.5,
@@ -7030,7 +7030,7 @@
     "notes": "Nearest PJM node: LAMB (AECO) \u2014 1.09 miles away"
   },
   "08072": {
-    "county": "Cumberland",
+    "county": "Salem",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.84,
     "pct_change": 21.2,
@@ -7049,7 +7049,7 @@
     "notes": "Nearest PJM node: QUINTON (AECO) \u2014 0.33 miles away"
   },
   "08073": {
-    "county": "Cumberland",
+    "county": "Burlington",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.66,
     "pct_change": null,
@@ -7068,7 +7068,7 @@
     "notes": "Nearest PJM node: BURL_TAP (AECO) \u2014 1.08 miles away"
   },
   "08074": {
-    "county": "Cumberland",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.6,
     "pct_change": 20.5,
@@ -7087,7 +7087,7 @@
     "notes": "Nearest PJM node: LAMB (AECO) \u2014 1.0 miles away"
   },
   "08075": {
-    "county": "Cumberland",
+    "county": "Burlington",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.5,
@@ -7106,7 +7106,7 @@
     "notes": "Nearest PJM node: RIVRSDPS (PSEG) \u2014 1.03 miles away"
   },
   "08077": {
-    "county": "Cumberland",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.525,
     "pct_change": 20.5,
@@ -7125,7 +7125,7 @@
     "notes": "Nearest PJM node: CINNAMIN (PSEG) \u2014 1.24 miles away"
   },
   "08078": {
-    "county": "Cumberland",
+    "county": "Camden",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.69,
     "pct_change": null,
@@ -7144,7 +7144,7 @@
     "notes": "Nearest PJM node: AIRCOAE (AECO) \u2014 0.49 miles away"
   },
   "08079": {
-    "county": "Cumberland",
+    "county": "Salem",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.84,
     "pct_change": 21.2,
@@ -7163,7 +7163,7 @@
     "notes": "Nearest PJM node: QUINTON (AECO) \u2014 1.24 miles away"
   },
   "08080": {
-    "county": "Cumberland",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.81,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -7182,7 +7182,7 @@
     "notes": "Nearest PJM node: CARNEYPT (AECO) \u2014 0.96 miles away"
   },
   "08081": {
-    "county": "Cumberland",
+    "county": "Camden",
     "avg_lmp_2020": 17.73,
     "avg_lmp_2025": 21.37,
     "pct_change": 20.5,
@@ -7201,7 +7201,7 @@
     "notes": "Nearest PJM node: SICKLER (AECO) \u2014 0.21 miles away"
   },
   "08083": {
-    "county": "Cumberland",
+    "county": "Camden",
     "avg_lmp_2020": 17.8,
     "avg_lmp_2025": 21.51,
     "pct_change": 20.8,
@@ -7220,7 +7220,7 @@
     "notes": "Nearest PJM node: UPPERPIT (AECO) \u2014 1.39 miles away"
   },
   "08084": {
-    "county": "Cumberland",
+    "county": "Camden",
     "avg_lmp_2020": 17.86,
     "avg_lmp_2025": 21.53,
     "pct_change": 20.5,
@@ -7239,7 +7239,7 @@
     "notes": "Nearest PJM node: STRATFOR (AECO) \u2014 0.4 miles away"
   },
   "08085": {
-    "county": "Cumberland",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.89,
     "avg_lmp_2025": 21.62,
     "pct_change": 20.8,
@@ -7258,7 +7258,7 @@
     "notes": "Nearest PJM node: BECKETT (AECO) \u2014 1.24 miles away"
   },
   "08086": {
-    "county": "Cumberland",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.785,
     "avg_lmp_2025": 21.495,
     "pct_change": 20.9,
@@ -7277,7 +7277,7 @@
     "notes": "Nearest PJM node: THOROFAR (PSEG) \u2014 0.99 miles away"
   },
   "08087": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.8,
@@ -7296,7 +7296,7 @@
     "notes": "Nearest PJM node: MOTTS (AECO) \u2014 2.26 miles away"
   },
   "08088": {
-    "county": "Cumberland",
+    "county": "Burlington",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.61,
     "pct_change": 20.5,
@@ -7315,7 +7315,7 @@
     "notes": "Nearest PJM node: TABERNAC (AECO) \u2014 1.62 miles away"
   },
   "08089": {
-    "county": "Cumberland",
+    "county": "Camden",
     "avg_lmp_2020": 17.79,
     "avg_lmp_2025": 21.47,
     "pct_change": 20.7,
@@ -7353,7 +7353,7 @@
     "notes": "Nearest PJM node: MANTUA (AECO) \u2014 1.7 miles away"
   },
   "08091": {
-    "county": "Gloucester",
+    "county": "Camden",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.5,
     "pct_change": 20.5,
@@ -7372,7 +7372,7 @@
     "notes": "Nearest PJM node: BERLIN (AECO) \u2014 0.91 miles away"
   },
   "08092": {
-    "county": "Gloucester",
+    "county": "Ocean",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.8,
@@ -7429,7 +7429,7 @@
     "notes": "Nearest PJM node: SILVERLA (AECO) \u2014 4.04 miles away"
   },
   "08095": {
-    "county": "Gloucester",
+    "county": "Camden",
     "avg_lmp_2020": 17.79,
     "avg_lmp_2025": 21.47,
     "pct_change": 20.7,
@@ -7486,7 +7486,7 @@
     "notes": "Nearest PJM node: WOODBURY (PSEG) \u2014 2.06 miles away"
   },
   "08098": {
-    "county": "Gloucester",
+    "county": "Salem",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.71,
     "pct_change": 20.8,
@@ -7505,7 +7505,7 @@
     "notes": "Nearest PJM node: WOODSTOW (AECO) \u2014 0.66 miles away"
   },
   "08102": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.92,
     "avg_lmp_2025": 21.61,
     "pct_change": 20.6,
@@ -7524,7 +7524,7 @@
     "notes": "Nearest PJM node: LOCUSTPS (PSEG) \u2014 1.29 miles away"
   },
   "08103": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.92,
     "avg_lmp_2025": 21.61,
     "pct_change": 20.6,
@@ -7543,7 +7543,7 @@
     "notes": "Nearest PJM node: LOCUSTPS (PSEG) \u2014 0.68 miles away"
   },
   "08104": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.92,
     "avg_lmp_2025": 21.59,
     "pct_change": 20.5,
@@ -7562,7 +7562,7 @@
     "notes": "Nearest PJM node: HOLTEC (PSEG) \u2014 0.44 miles away"
   },
   "08105": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.92,
     "avg_lmp_2025": 21.61,
     "pct_change": 20.6,
@@ -7581,7 +7581,7 @@
     "notes": "Nearest PJM node: LOCUSTPS (PSEG) \u2014 1.92 miles away"
   },
   "08106": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.84,
     "avg_lmp_2025": 21.51,
     "pct_change": 20.6,
@@ -7600,7 +7600,7 @@
     "notes": "Nearest PJM node: GLOUCEST (PSEG) \u2014 1.33 miles away"
   },
   "08107": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.59,
     "pct_change": null,
@@ -7619,7 +7619,7 @@
     "notes": "Nearest PJM node: WOODLYNN (PSEG) \u2014 0.92 miles away"
   },
   "08108": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.86,
     "avg_lmp_2025": 21.52,
     "pct_change": 20.5,
@@ -7638,7 +7638,7 @@
     "notes": "Nearest PJM node: CUTHBERT (PSEG) \u2014 1.37 miles away"
   },
   "08109": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 21.8,
     "pct_change": 20.2,
@@ -7657,7 +7657,7 @@
     "notes": "Nearest PJM node: PENNSNEC (PSEG) \u2014 0.66 miles away"
   },
   "08110": {
-    "county": "Atlantic",
+    "county": "Camden",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.4,
@@ -7676,7 +7676,7 @@
     "notes": "Nearest PJM node: DELAIR (PSEG) \u2014 0.68 miles away"
   },
   "08201": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.01,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.9,
@@ -7695,7 +7695,7 @@
     "notes": "Nearest PJM node: ABSECON (AECO) \u2014 1.57 miles away"
   },
   "08202": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.9,
     "pct_change": 21.0,
@@ -7714,7 +7714,7 @@
     "notes": "Nearest PJM node: PEERMONT (AECO) \u2014 1.36 miles away"
   },
   "08203": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 21.93,
     "pct_change": 20.6,
@@ -7733,7 +7733,7 @@
     "notes": "Nearest PJM node: HURON (AECO) \u2014 4.07 miles away"
   },
   "08204": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.01,
     "pct_change": 20.9,
@@ -7752,7 +7752,7 @@
     "notes": "Nearest PJM node: CAPEMAY (AECO) \u2014 2.47 miles away"
   },
   "08205": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.01,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.9,
@@ -7771,7 +7771,7 @@
     "notes": "Nearest PJM node: ABSECON (AECO) \u2014 4.85 miles away"
   },
   "08210": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.92,
     "pct_change": 21.0,
@@ -7790,7 +7790,7 @@
     "notes": "Nearest PJM node: COURT (AECO) \u2014 2.12 miles away"
   },
   "08212": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.01,
     "pct_change": 20.9,
@@ -7809,7 +7809,7 @@
     "notes": "Nearest PJM node: CAPEMAY (AECO) \u2014 2.13 miles away"
   },
   "08215": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.03,
     "avg_lmp_2025": 21.92,
     "pct_change": 21.6,
@@ -7828,7 +7828,7 @@
     "notes": "Nearest PJM node: EGGHARBO (AECO) \u2014 5.57 miles away"
   },
   "08217": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.01,
     "avg_lmp_2025": 21.86,
     "pct_change": 21.4,
@@ -7847,7 +7847,7 @@
     "notes": "Nearest PJM node: DACOSTA (AECO) \u2014 4.04 miles away"
   },
   "08221": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.7,
@@ -7866,7 +7866,7 @@
     "notes": "Nearest PJM node: MARVENAE (AECO) \u2014 3.47 miles away"
   },
   "08223": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.8,
@@ -7885,7 +7885,7 @@
     "notes": "Nearest PJM node: ENGLAND (AECO) \u2014 1.8 miles away"
   },
   "08224": {
-    "county": "Monmouth",
+    "county": "Burlington",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.8,
@@ -7904,7 +7904,7 @@
     "notes": "Nearest PJM node: MOTTS (AECO) \u2014 6.51 miles away"
   },
   "08225": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.7,
@@ -7923,7 +7923,7 @@
     "notes": "Nearest PJM node: MARVENAE (AECO) \u2014 2.33 miles away"
   },
   "08226": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.9,
@@ -7942,7 +7942,7 @@
     "notes": "Nearest PJM node: MERION (AECO) \u2014 0.9 miles away"
   },
   "08230": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.01,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.8,
@@ -7961,7 +7961,7 @@
     "notes": "Nearest PJM node: CORSON (AECO) \u2014 1.88 miles away"
   },
   "08232": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.0,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -7980,7 +7980,7 @@
     "notes": "Nearest PJM node: LEWIS (AECO) \u2014 2.17 miles away"
   },
   "08234": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.95,
     "avg_lmp_2025": 21.68,
     "pct_change": 20.8,
@@ -7999,7 +7999,7 @@
     "notes": "Nearest PJM node: CARDIFF (AECO) \u2014 2.73 miles away"
   },
   "08240": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.795,
     "pct_change": null,
@@ -8018,7 +8018,7 @@
     "notes": "Nearest PJM node: FAATC (AECO) \u2014 2.97 miles away"
   },
   "08241": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.91,
     "pct_change": 21.6,
@@ -8037,7 +8037,7 @@
     "notes": "Nearest PJM node: LENOX AE (AECO) \u2014 7.21 miles away"
   },
   "08242": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.94,
     "pct_change": 21.0,
@@ -8056,7 +8056,7 @@
     "notes": "Nearest PJM node: RIOGRAND (AECO) \u2014 0.67 miles away"
   },
   "08243": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.015,
     "avg_lmp_2025": 21.765,
     "pct_change": 20.8,
@@ -8075,7 +8075,7 @@
     "notes": "Nearest PJM node: SEAISLE (AECO) \u2014 0.2 miles away"
   },
   "08244": {
-    "county": "Monmouth",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.8,
@@ -8094,7 +8094,7 @@
     "notes": "Nearest PJM node: ENGLAND (AECO) \u2014 2.69 miles away"
   },
   "08245": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.03,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.8,
@@ -8113,7 +8113,7 @@
     "notes": "Nearest PJM node: SWAINTON (AECO) \u2014 3.89 miles away"
   },
   "08246": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.01,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.8,
@@ -8132,7 +8132,7 @@
     "notes": "Nearest PJM node: CORSON (AECO) \u2014 1.58 miles away"
   },
   "08247": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.9,
     "pct_change": 21.0,
@@ -8151,7 +8151,7 @@
     "notes": "Nearest PJM node: PEERMONT (AECO) \u2014 3.11 miles away"
   },
   "08248": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.015,
     "avg_lmp_2025": 21.765,
     "pct_change": 20.8,
@@ -8170,7 +8170,7 @@
     "notes": "Nearest PJM node: SEAISLE (AECO) \u2014 3.48 miles away"
   },
   "08251": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.94,
     "pct_change": 21.0,
@@ -8189,7 +8189,7 @@
     "notes": "Nearest PJM node: RIOGRAND (AECO) \u2014 3.03 miles away"
   },
   "08260": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.94,
     "pct_change": 21.0,
@@ -8208,7 +8208,7 @@
     "notes": "Nearest PJM node: RIOGRAND (AECO) \u2014 2.03 miles away"
   },
   "08270": {
-    "county": "Monmouth",
+    "county": "Cape May",
     "avg_lmp_2020": 17.98,
     "avg_lmp_2025": 21.75,
     "pct_change": 21.0,
@@ -8227,7 +8227,7 @@
     "notes": "Nearest PJM node: TUCKAHOE (AECO) \u2014 3.48 miles away"
   },
   "08302": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.04,
     "pct_change": 21.1,
@@ -8246,7 +8246,7 @@
     "notes": "Nearest PJM node: LAUREL (AECO) \u2014 1.71 miles away"
   },
   "08310": {
-    "county": "Morris",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.8,
@@ -8265,7 +8265,7 @@
     "notes": "Nearest PJM node: MINOTOLA (AECO) \u2014 3.21 miles away"
   },
   "08311": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.51,
     "pct_change": null,
@@ -8284,7 +8284,7 @@
     "notes": "Nearest PJM node: VALEPKTP (AECO) \u2014 4.75 miles away"
   },
   "08312": {
-    "county": "Morris",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.81,
     "avg_lmp_2025": 21.49,
     "pct_change": 20.7,
@@ -8303,7 +8303,7 @@
     "notes": "Nearest PJM node: CLAYTNAE (AECO) \u2014 0.74 miles away"
   },
   "08314": {
-    "county": "Morris",
+    "county": "Cape May",
     "avg_lmp_2020": 18.03,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.8,
@@ -8322,7 +8322,7 @@
     "notes": "Nearest PJM node: SWAINTON (AECO) \u2014 10.39 miles away"
   },
   "08316": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.8,
@@ -8341,7 +8341,7 @@
     "notes": "Nearest PJM node: UNION (AECO) \u2014 6.79 miles away"
   },
   "08317": {
-    "county": "Morris",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.66,
     "pct_change": 20.8,
@@ -8360,7 +8360,7 @@
     "notes": "Nearest PJM node: DOROTHY (AECO) \u2014 3.84 miles away"
   },
   "08318": {
-    "county": "Morris",
+    "county": "Salem",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.89,
     "pct_change": 20.6,
@@ -8379,7 +8379,7 @@
     "notes": "Nearest PJM node: SMILLVIL (AECO) \u2014 4.29 miles away"
   },
   "08319": {
-    "county": "Morris",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.66,
     "pct_change": 20.8,
@@ -8398,7 +8398,7 @@
     "notes": "Nearest PJM node: DOROTHY (AECO) \u2014 4.7 miles away"
   },
   "08320": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.51,
     "pct_change": null,
@@ -8417,7 +8417,7 @@
     "notes": "Nearest PJM node: VALEPKTP (AECO) \u2014 2.22 miles away"
   },
   "08321": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.51,
     "pct_change": null,
@@ -8436,7 +8436,7 @@
     "notes": "Nearest PJM node: VALEPKTP (AECO) \u2014 9.76 miles away"
   },
   "08322": {
-    "county": "Morris",
+    "county": "Gloucester",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.47,
     "pct_change": 20.5,
@@ -8455,7 +8455,7 @@
     "notes": "Nearest PJM node: SILVERLA (AECO) \u2014 3.95 miles away"
   },
   "08323": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.2,
@@ -8474,7 +8474,7 @@
     "notes": "Nearest PJM node: ROADSTOW (AECO) \u2014 4.89 miles away"
   },
   "08324": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.8,
@@ -8493,7 +8493,7 @@
     "notes": "Nearest PJM node: UNION (AECO) \u2014 10.93 miles away"
   },
   "08326": {
-    "county": "Morris",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.8,
@@ -8512,7 +8512,7 @@
     "notes": "Nearest PJM node: MINOTOLA (AECO) \u2014 2.61 miles away"
   },
   "08327": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.8,
@@ -8531,7 +8531,7 @@
     "notes": "Nearest PJM node: UNION (AECO) \u2014 8.46 miles away"
   },
   "08328": {
-    "county": "Morris",
+    "county": "Gloucester",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.89,
     "pct_change": 20.6,
@@ -8550,7 +8550,7 @@
     "notes": "Nearest PJM node: SMILLVIL (AECO) \u2014 2.69 miles away"
   },
   "08329": {
-    "county": "Morris",
+    "county": "Cumberland",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.8,
@@ -8569,7 +8569,7 @@
     "notes": "Nearest PJM node: UNION (AECO) \u2014 7.01 miles away"
   },
   "08330": {
-    "county": "Passaic",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.66,
     "pct_change": 20.8,
@@ -8588,7 +8588,7 @@
     "notes": "Nearest PJM node: DOROTHY (AECO) \u2014 2.95 miles away"
   },
   "08332": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": 17.96,
     "avg_lmp_2025": 21.68,
     "pct_change": 20.7,
@@ -8607,7 +8607,7 @@
     "notes": "Nearest PJM node: CUMB AE (AECO) \u2014 2.5 miles away"
   },
   "08340": {
-    "county": "Passaic",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.8,
@@ -8626,7 +8626,7 @@
     "notes": "Nearest PJM node: UNION (AECO) \u2014 2.44 miles away"
   },
   "08341": {
-    "county": "Passaic",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.8,
@@ -8645,7 +8645,7 @@
     "notes": "Nearest PJM node: MINOTOLA (AECO) \u2014 1.51 miles away"
   },
   "08343": {
-    "county": "Passaic",
+    "county": "Salem",
     "avg_lmp_2020": 17.81,
     "avg_lmp_2025": 21.49,
     "pct_change": 20.7,
@@ -8664,7 +8664,7 @@
     "notes": "Nearest PJM node: CLAYTNAE (AECO) \u2014 4.15 miles away"
   },
   "08344": {
-    "county": "Passaic",
+    "county": "Gloucester",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.64,
     "pct_change": null,
@@ -8683,7 +8683,7 @@
     "notes": "Nearest PJM node: MANNMILL (AECO) \u2014 0.81 miles away"
   },
   "08345": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.51,
     "pct_change": null,
@@ -8702,7 +8702,7 @@
     "notes": "Nearest PJM node: VALEPKTP (AECO) \u2014 5.31 miles away"
   },
   "08346": {
-    "county": "Passaic",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.03,
     "avg_lmp_2025": 21.86,
     "pct_change": 21.2,
@@ -8721,7 +8721,7 @@
     "notes": "Nearest PJM node: MOSSMILL (AECO) \u2014 0.52 miles away"
   },
   "08348": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": 17.97,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.8,
@@ -8740,7 +8740,7 @@
     "notes": "Nearest PJM node: UNION (AECO) \u2014 4.86 miles away"
   },
   "08349": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.51,
     "pct_change": null,
@@ -8759,7 +8759,7 @@
     "notes": "Nearest PJM node: VALEPKTP (AECO) \u2014 8.06 miles away"
   },
   "08350": {
-    "county": "Passaic",
+    "county": "Atlantic",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.8,
@@ -8778,7 +8778,7 @@
     "notes": "Nearest PJM node: MINOTOLA (AECO) \u2014 3.85 miles away"
   },
   "08352": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.76,
     "pct_change": 20.8,
@@ -8797,7 +8797,7 @@
     "notes": "Nearest PJM node: SHERMAN (AECO) \u2014 4.1 miles away"
   },
   "08353": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": 18.13,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.2,
@@ -8816,7 +8816,7 @@
     "notes": "Nearest PJM node: ROADSTOW (AECO) \u2014 1.65 miles away"
   },
   "08360": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.84,
     "pct_change": 20.7,
@@ -8835,7 +8835,7 @@
     "notes": "Nearest PJM node: VINELAND (AECO) \u2014 1.27 miles away"
   },
   "08361": {
-    "county": "Passaic",
+    "county": "Cumberland",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.58,
     "pct_change": 20.8,
@@ -8854,7 +8854,7 @@
     "notes": "Nearest PJM node: MINOTOLA (AECO) \u2014 3.77 miles away"
   },
   "08401": {
-    "county": "Sussex",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 21.93,
     "pct_change": 20.5,
@@ -8873,7 +8873,7 @@
     "notes": "Nearest PJM node: ONTARIO (AECO) \u2014 0.71 miles away"
   },
   "08402": {
-    "county": "Sussex",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.7,
@@ -8892,7 +8892,7 @@
     "notes": "Nearest PJM node: MARVENAE (AECO) \u2014 0.98 miles away"
   },
   "08403": {
-    "county": "Sussex",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.7,
@@ -8911,7 +8911,7 @@
     "notes": "Nearest PJM node: MARVENAE (AECO) \u2014 2.73 miles away"
   },
   "08406": {
-    "county": "Sussex",
+    "county": "Atlantic",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.7,
@@ -8930,7 +8930,7 @@
     "notes": "Nearest PJM node: MARVENAE (AECO) \u2014 0.92 miles away"
   },
   "08501": {
-    "county": "Mercer",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.91,
     "pct_change": 20.6,
@@ -8949,7 +8949,7 @@
     "notes": "Nearest PJM node: SANDHILL (PSEG) \u2014 1.56 miles away"
   },
   "08502": {
-    "county": "Mercer",
+    "county": "Somerset",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.87,
     "pct_change": 20.7,
@@ -8968,7 +8968,7 @@
     "notes": "Nearest PJM node: MONTGOPS (PSEG) \u2014 1.97 miles away"
   },
   "08505": {
-    "county": "Mercer",
+    "county": "Burlington",
     "avg_lmp_2020": 17.8,
     "avg_lmp_2025": 21.47,
     "pct_change": 20.6,
@@ -8987,7 +8987,7 @@
     "notes": "Nearest PJM node: WILLIAMS (AECO) \u2014 1.49 miles away"
   },
   "08510": {
-    "county": "Mercer",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.85,
     "pct_change": 20.7,
@@ -9006,7 +9006,7 @@
     "notes": "Nearest PJM node: SMITHBUR (JCPL) \u2014 3.54 miles away"
   },
   "08511": {
-    "county": "Mercer",
+    "county": "Burlington",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.8,
@@ -9025,7 +9025,7 @@
     "notes": "Nearest PJM node: COOKSTOW (JCPL) \u2014 1.29 miles away"
   },
   "08512": {
-    "county": "Mercer",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.07,
     "pct_change": 21.3,
@@ -9044,7 +9044,7 @@
     "notes": "Nearest PJM node: EATONCST (JCPL) \u2014 2.21 miles away"
   },
   "08514": {
-    "county": "Mercer",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.91,
     "pct_change": 20.6,
@@ -9063,7 +9063,7 @@
     "notes": "Nearest PJM node: SANDHILL (PSEG) \u2014 4.83 miles away"
   },
   "08515": {
-    "county": "Mercer",
+    "county": "Burlington",
     "avg_lmp_2020": 17.8,
     "avg_lmp_2025": 21.47,
     "pct_change": 20.6,
@@ -9082,7 +9082,7 @@
     "notes": "Nearest PJM node: WILLIAMS (AECO) \u2014 1.64 miles away"
   },
   "08518": {
-    "county": "Mercer",
+    "county": "Burlington",
     "avg_lmp_2020": 17.93,
     "avg_lmp_2025": 21.6,
     "pct_change": 20.5,
@@ -9101,7 +9101,7 @@
     "notes": "Nearest PJM node: BUSTLETO (PSEG) \u2014 2.74 miles away"
   },
   "08520": {
-    "county": "Middlesex",
+    "county": "Mercer",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 21.86,
     "pct_change": 20.5,
@@ -9120,7 +9120,7 @@
     "notes": "Nearest PJM node: WYCKOFF (JCPL) \u2014 1.52 miles away"
   },
   "08525": {
-    "county": "Middlesex",
+    "county": "Mercer",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 21.8,
     "pct_change": 20.2,
@@ -9139,7 +9139,7 @@
     "notes": "Nearest PJM node: PRNCTNPS (PSEG) \u2014 6.54 miles away"
   },
   "08527": {
-    "county": "Middlesex",
+    "county": "Ocean",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.85,
     "pct_change": 20.7,
@@ -9177,7 +9177,7 @@
     "notes": "Nearest PJM node: HUNTGLEN (PSEG) \u2014 2.1 miles away"
   },
   "08530": {
-    "county": "Mercer",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.98,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.7,
@@ -9196,7 +9196,7 @@
     "notes": "Nearest PJM node: ROCKTOWN (JCPL) \u2014 1.02 miles away"
   },
   "08533": {
-    "county": "Mercer",
+    "county": "Ocean",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.8,
@@ -9234,7 +9234,7 @@
     "notes": "Nearest PJM node: HOPEWEL1 (PSEG) \u2014 2.05 miles away"
   },
   "08535": {
-    "county": "Mercer",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.87,
     "pct_change": 20.8,
@@ -9348,7 +9348,7 @@
     "notes": "Nearest PJM node: CLARKSVI (PSEG) \u2014 3.7 miles away"
   },
   "08551": {
-    "county": "Mercer",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.04,
     "avg_lmp_2025": 21.72,
     "pct_change": 20.4,
@@ -9367,7 +9367,7 @@
     "notes": "Nearest PJM node: EFLEMING (JCPL) \u2014 3.99 miles away"
   },
   "08553": {
-    "county": "Mercer",
+    "county": "Somerset",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.77,
     "pct_change": null,
@@ -9386,7 +9386,7 @@
     "notes": "Nearest PJM node: HUNTGLEN (PSEG) \u2014 0.78 miles away"
   },
   "08554": {
-    "county": "Mercer",
+    "county": "Burlington",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.63,
     "pct_change": null,
@@ -9405,7 +9405,7 @@
     "notes": "Nearest PJM node: MANSFLD (PSEG) \u2014 1.91 miles away"
   },
   "08555": {
-    "county": "Mercer",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 21.86,
     "pct_change": 20.5,
@@ -9424,7 +9424,7 @@
     "notes": "Nearest PJM node: WYCKOFF (JCPL) \u2014 4.5 miles away"
   },
   "08558": {
-    "county": "Mercer",
+    "county": "Somerset",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.77,
     "pct_change": null,
@@ -9443,7 +9443,7 @@
     "notes": "Nearest PJM node: HUNTGLEN (PSEG) \u2014 2.75 miles away"
   },
   "08559": {
-    "county": "Mercer",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.98,
     "avg_lmp_2025": 21.7,
     "pct_change": 20.7,
@@ -9462,7 +9462,7 @@
     "notes": "Nearest PJM node: ROCKTOWN (JCPL) \u2014 5.6 miles away"
   },
   "08560": {
-    "county": "Union",
+    "county": "Mercer",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -9481,7 +9481,7 @@
     "notes": "Nearest PJM node: HOPEWEL1 (PSEG) \u2014 3.89 miles away"
   },
   "08561": {
-    "county": "Union",
+    "county": "Mercer",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 21.86,
     "pct_change": 20.5,
@@ -9500,7 +9500,7 @@
     "notes": "Nearest PJM node: WYCKOFF (JCPL) \u2014 3.75 miles away"
   },
   "08562": {
-    "county": "Union",
+    "county": "Burlington",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.8,
@@ -9519,7 +9519,7 @@
     "notes": "Nearest PJM node: COOKSTOW (JCPL) \u2014 2.26 miles away"
   },
   "08608": {
-    "county": "Union",
+    "county": "Mercer",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.3,
@@ -9538,7 +9538,7 @@
     "notes": "Nearest PJM node: EWING (PSEG) \u2014 1.81 miles away"
   },
   "08609": {
-    "county": "Union",
+    "county": "Mercer",
     "avg_lmp_2020": 18.06,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.4,
@@ -9595,7 +9595,7 @@
     "notes": "Nearest PJM node: MERCER (PSEG) \u2014 0.47 miles away"
   },
   "08618": {
-    "county": "Monmouth",
+    "county": "Mercer",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.3,
@@ -9614,7 +9614,7 @@
     "notes": "Nearest PJM node: EWING (PSEG) \u2014 1.25 miles away"
   },
   "08619": {
-    "county": "Monmouth",
+    "county": "Mercer",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.74,
     "pct_change": 20.6,
@@ -9633,7 +9633,7 @@
     "notes": "Nearest PJM node: TRENTON (PSEG) \u2014 1.18 miles away"
   },
   "08620": {
-    "county": "Cape May",
+    "county": "Mercer",
     "avg_lmp_2020": 18.0,
     "avg_lmp_2025": 21.69,
     "pct_change": 20.5,
@@ -9652,7 +9652,7 @@
     "notes": "Nearest PJM node: YARDVILL (PSEG) \u2014 0.3 miles away"
   },
   "08628": {
-    "county": "Cape May",
+    "county": "Mercer",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -9671,7 +9671,7 @@
     "notes": "Nearest PJM node: HOPEWEL1 (PSEG) \u2014 3.29 miles away"
   },
   "08629": {
-    "county": "Cape May",
+    "county": "Mercer",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.74,
     "pct_change": 20.6,
@@ -9690,7 +9690,7 @@
     "notes": "Nearest PJM node: TRENTON (PSEG) \u2014 1.64 miles away"
   },
   "08638": {
-    "county": "Cape May",
+    "county": "Mercer",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.78,
     "pct_change": 20.3,
@@ -9709,7 +9709,7 @@
     "notes": "Nearest PJM node: EWING (PSEG) \u2014 0.63 miles away"
   },
   "08640": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.8,
@@ -9728,7 +9728,7 @@
     "notes": "Nearest PJM node: COOKSTOW (JCPL) \u2014 3.62 miles away"
   },
   "08641": {
-    "county": "Cape May",
+    "county": "Burlington",
     "avg_lmp_2020": 18.02,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.8,
@@ -9747,7 +9747,7 @@
     "notes": "Nearest PJM node: COOKSTOW (JCPL) \u2014 3.14 miles away"
   },
   "08648": {
-    "county": "Cape May",
+    "county": "Mercer",
     "avg_lmp_2020": 18.07,
     "avg_lmp_2025": 21.74,
     "pct_change": 20.3,
@@ -9766,7 +9766,7 @@
     "notes": "Nearest PJM node: LAWRESUB (PSEG) \u2014 0.95 miles away"
   },
   "08690": {
-    "county": "Cape May",
+    "county": "Mercer",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.74,
     "pct_change": null,
@@ -9785,7 +9785,7 @@
     "notes": "Nearest PJM node: WHITHRSE (PSEG) \u2014 0.72 miles away"
   },
   "08691": {
-    "county": "Cape May",
+    "county": "Mercer",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.74,
     "pct_change": null,
@@ -9804,7 +9804,7 @@
     "notes": "Nearest PJM node: WHITHRSE (PSEG) \u2014 2.81 miles away"
   },
   "08701": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -9823,7 +9823,7 @@
     "notes": "Nearest PJM node: LAKEWOOD (JCPL) \u2014 1.99 miles away"
   },
   "08720": {
-    "county": "Cumberland",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.95,
     "pct_change": 20.9,
@@ -9842,7 +9842,7 @@
     "notes": "Nearest PJM node: LARRABEE (JCPL) \u2014 4.13 miles away"
   },
   "08721": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -9861,7 +9861,7 @@
     "notes": "Nearest PJM node: LEISUREV (JCPL) \u2014 1.5 miles away"
   },
   "08722": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.145,
     "avg_lmp_2025": 21.987,
     "pct_change": 21.2,
@@ -9880,7 +9880,7 @@
     "notes": "Nearest PJM node: LAKEAVEN (AECO) \u2014 0.99 miles away"
   },
   "08723": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -9899,7 +9899,7 @@
     "notes": "Nearest PJM node: LAKEWOOD (JCPL) \u2014 3.33 miles away"
   },
   "08724": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -9918,7 +9918,7 @@
     "notes": "Nearest PJM node: LAKEWOOD (JCPL) \u2014 3.48 miles away"
   },
   "08730": {
-    "county": "Cumberland",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -9937,7 +9937,7 @@
     "notes": "Nearest PJM node: LAKEWOOD (JCPL) \u2014 6.45 miles away"
   },
   "08731": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.145,
     "avg_lmp_2025": 21.987,
     "pct_change": 21.2,
@@ -9956,7 +9956,7 @@
     "notes": "Nearest PJM node: LAKEAVEN (AECO) \u2014 6.07 miles away"
   },
   "08732": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -9975,7 +9975,7 @@
     "notes": "Nearest PJM node: LEISUREV (JCPL) \u2014 2.18 miles away"
   },
   "08733": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.93,
     "pct_change": 21.1,
@@ -9994,7 +9994,7 @@
     "notes": "Nearest PJM node: MANCHEST (JCPL) \u2014 4.48 miles away"
   },
   "08734": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10013,7 +10013,7 @@
     "notes": "Nearest PJM node: OYSTERCR (JCPL) \u2014 2.5 miles away"
   },
   "08735": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10032,7 +10032,7 @@
     "notes": "Nearest PJM node: LAKEWOOD (JCPL) \u2014 6.49 miles away"
   },
   "08736": {
-    "county": "Cumberland",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -10051,7 +10051,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 6.99 miles away"
   },
   "08738": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10070,7 +10070,7 @@
     "notes": "Nearest PJM node: LAKEWOOD (JCPL) \u2014 6.22 miles away"
   },
   "08740": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10089,7 +10089,7 @@
     "notes": "Nearest PJM node: LEISUREV (JCPL) \u2014 2.85 miles away"
   },
   "08741": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10108,7 +10108,7 @@
     "notes": "Nearest PJM node: LEISUREV (JCPL) \u2014 0.91 miles away"
   },
   "08742": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10127,7 +10127,7 @@
     "notes": "Nearest PJM node: LAKEWOOD (JCPL) \u2014 5.88 miles away"
   },
   "08750": {
-    "county": "Cumberland",
+    "county": "Monmouth",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.06,
     "pct_change": 21.3,
@@ -10146,7 +10146,7 @@
     "notes": "Nearest PJM node: OCEANVIE (JCPL) \u2014 6.06 miles away"
   },
   "08751": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10165,7 +10165,7 @@
     "notes": "Nearest PJM node: LEISUREV (JCPL) \u2014 5.59 miles away"
   },
   "08752": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10184,7 +10184,7 @@
     "notes": "Nearest PJM node: OYSTERCR (JCPL) \u2014 2.09 miles away"
   },
   "08753": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 21.97,
     "pct_change": 21.0,
@@ -10203,7 +10203,7 @@
     "notes": "Nearest PJM node: LEISUREV (JCPL) \u2014 3.86 miles away"
   },
   "08755": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 17.94,
     "avg_lmp_2025": 21.82,
     "pct_change": 21.6,
@@ -10222,7 +10222,7 @@
     "notes": "Nearest PJM node: MERRILCR (JCPL) \u2014 0.77 miles away"
   },
   "08757": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 21.98,
     "pct_change": 21.0,
@@ -10241,7 +10241,7 @@
     "notes": "Nearest PJM node: MANITOU (JCPL) \u2014 2.24 miles away"
   },
   "08758": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.96,
     "pct_change": 21.0,
@@ -10260,7 +10260,7 @@
     "notes": "Nearest PJM node: BARNEGAT (AECO) \u2014 2.76 miles away"
   },
   "08759": {
-    "county": "Cumberland",
+    "county": "Ocean",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 21.98,
     "pct_change": 21.0,
@@ -10279,7 +10279,7 @@
     "notes": "Nearest PJM node: WHITINGS (JCPL) \u2014 1.17 miles away"
   },
   "08801": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.76,
     "pct_change": 20.1,
@@ -10298,7 +10298,7 @@
     "notes": "Nearest PJM node: CSQ_HOPE (PSEG) \u2014 5.51 miles away"
   },
   "08802": {
-    "county": "Cumberland",
+    "county": "Warren",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.7,
@@ -10317,7 +10317,7 @@
     "notes": "Nearest PJM node: WASHINGT (AECO) \u2014 5.95 miles away"
   },
   "08804": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.68,
     "pct_change": 21.7,
@@ -10336,7 +10336,7 @@
     "notes": "Nearest PJM node: GILBERT (JCPL) \u2014 6.42 miles away"
   },
   "08805": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.7,
@@ -10355,7 +10355,7 @@
     "notes": "Nearest PJM node: SENTINEL (PSEG) \u2014 2.22 miles away"
   },
   "08807": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.93,
     "pct_change": 21.1,
@@ -10374,7 +10374,7 @@
     "notes": "Nearest PJM node: BRIDGEWA (PSEG) \u2014 0.82 miles away"
   },
   "08809": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.9,
@@ -10393,7 +10393,7 @@
     "notes": "Nearest PJM node: SAYRECON (JCPL) \u2014 5.14 miles away"
   },
   "08810": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.04,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.6,
@@ -10412,7 +10412,7 @@
     "notes": "Nearest PJM node: DEANS (PSEG) \u2014 2.6 miles away"
   },
   "08812": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.11,
     "pct_change": 21.8,
@@ -10431,7 +10431,7 @@
     "notes": "Nearest PJM node: GREENBRO (PSEG) \u2014 0.41 miles away"
   },
   "08816": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 21.93,
     "pct_change": 20.7,
@@ -10450,7 +10450,7 @@
     "notes": "Nearest PJM node: HARTSLAN (PSEG) \u2014 1.09 miles away"
   },
   "08817": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.097,
     "avg_lmp_2025": 21.88,
     "pct_change": 20.9,
@@ -10469,7 +10469,7 @@
     "notes": "Nearest PJM node: MEADOWRD (PSEG) \u2014 1.23 miles away"
   },
   "08820": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.25,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.7,
@@ -10488,7 +10488,7 @@
     "notes": "Nearest PJM node: HCS (PSEG) \u2014 2.41 miles away"
   },
   "08821": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 17.66,
     "avg_lmp_2025": 21.25,
     "pct_change": 20.3,
@@ -10507,7 +10507,7 @@
     "notes": "Nearest PJM node: HOPECREE (PSEG) \u2014 3.12 miles away"
   },
   "08822": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.04,
     "avg_lmp_2025": 21.72,
     "pct_change": 20.4,
@@ -10526,7 +10526,7 @@
     "notes": "Nearest PJM node: EFLEMING (JCPL) \u2014 1.44 miles away"
   },
   "08823": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.075,
     "avg_lmp_2025": 21.79,
     "pct_change": 20.6,
@@ -10545,7 +10545,7 @@
     "notes": "Nearest PJM node: BENNETTS (PSEG) \u2014 3.73 miles away"
   },
   "08824": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.04,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.6,
@@ -10564,7 +10564,7 @@
     "notes": "Nearest PJM node: DEANS (PSEG) \u2014 3.73 miles away"
   },
   "08825": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.74,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -10583,7 +10583,7 @@
     "notes": "Nearest PJM node: BRIDGEPO (AECO) \u2014 4.17 miles away"
   },
   "08826": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.9,
@@ -10602,7 +10602,7 @@
     "notes": "Nearest PJM node: SAYRECON (JCPL) \u2014 0.23 miles away"
   },
   "08827": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.9,
@@ -10621,7 +10621,7 @@
     "notes": "Nearest PJM node: SAYRECON (JCPL) \u2014 4.66 miles away"
   },
   "08828": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.04,
     "avg_lmp_2025": 21.75,
     "pct_change": 20.6,
@@ -10640,7 +10640,7 @@
     "notes": "Nearest PJM node: DEANS (PSEG) \u2014 3.76 miles away"
   },
   "08829": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.76,
     "pct_change": 20.1,
@@ -10659,7 +10659,7 @@
     "notes": "Nearest PJM node: CSQ_HOPE (PSEG) \u2014 2.95 miles away"
   },
   "08830": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.25,
     "avg_lmp_2025": 22.21,
     "pct_change": 21.7,
@@ -10678,7 +10678,7 @@
     "notes": "Nearest PJM node: HCS (PSEG) \u2014 0.22 miles away"
   },
   "08831": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.122,
     "avg_lmp_2025": 21.977,
     "pct_change": 21.3,
@@ -10697,7 +10697,7 @@
     "notes": "Nearest PJM node: ENGLISHT (JCPL) \u2014 3.75 miles away"
   },
   "08832": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 22.16,
     "pct_change": 21.9,
@@ -10716,7 +10716,7 @@
     "notes": "Nearest PJM node: NEJESCO (JCPL) \u2014 2.37 miles away"
   },
   "08833": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.12,
     "avg_lmp_2025": 21.76,
     "pct_change": 20.1,
@@ -10735,7 +10735,7 @@
     "notes": "Nearest PJM node: CSQ_HOPE (PSEG) \u2014 4.74 miles away"
   },
   "08835": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.47,
     "pct_change": null,
@@ -10754,7 +10754,7 @@
     "notes": "Nearest PJM node: MANVILTP (AECO) \u2014 0.06 miles away"
   },
   "08836": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.93,
     "pct_change": 21.1,
@@ -10773,7 +10773,7 @@
     "notes": "Nearest PJM node: BRIDGEWA (PSEG) \u2014 2.46 miles away"
   },
   "08837": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 17.82,
     "avg_lmp_2025": 21.505,
     "pct_change": 20.7,
@@ -10792,7 +10792,7 @@
     "notes": "Nearest PJM node: EAGLEGEN (PSEG) \u2014 1.22 miles away"
   },
   "08840": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.11,
     "avg_lmp_2025": 21.93,
     "pct_change": 21.1,
@@ -10811,7 +10811,7 @@
     "notes": "Nearest PJM node: METUCHEN (PSEG) \u2014 0.35 miles away"
   },
   "08844": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 17.66,
     "avg_lmp_2025": 21.25,
     "pct_change": 20.3,
@@ -10830,7 +10830,7 @@
     "notes": "Nearest PJM node: HOPECREE (PSEG) \u2014 1.33 miles away"
   },
   "08846": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.11,
     "pct_change": 21.8,
@@ -10849,7 +10849,7 @@
     "notes": "Nearest PJM node: GREENBRO (PSEG) \u2014 1.67 miles away"
   },
   "08848": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.74,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -10868,7 +10868,7 @@
     "notes": "Nearest PJM node: BRIDGEPO (AECO) \u2014 3.46 miles away"
   },
   "08850": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.08,
     "avg_lmp_2025": 21.8,
     "pct_change": 20.6,
@@ -10887,7 +10887,7 @@
     "notes": "Nearest PJM node: BRUNSWIC (PSEG) \u2014 1.11 miles away"
   },
   "08852": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.15,
     "avg_lmp_2025": 21.86,
     "pct_change": 20.4,
@@ -10906,7 +10906,7 @@
     "notes": "Nearest PJM node: DOWJONES (PSEG) \u2014 2.7 miles away"
   },
   "08853": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 17.66,
     "avg_lmp_2025": 21.25,
     "pct_change": 20.3,
@@ -10925,7 +10925,7 @@
     "notes": "Nearest PJM node: HOPECREE (PSEG) \u2014 5.19 miles away"
   },
   "08854": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 22.1,
     "pct_change": 21.5,
@@ -10944,7 +10944,7 @@
     "notes": "Nearest PJM node: BARCLAYS (PSEG) \u2014 0.55 miles away"
   },
   "08857": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.5,
@@ -10963,7 +10963,7 @@
     "notes": "Nearest PJM node: DEEPRN (JCPL) \u2014 0.68 miles away"
   },
   "08858": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.91,
     "avg_lmp_2025": 21.81,
     "pct_change": 21.8,
@@ -10982,7 +10982,7 @@
     "notes": "Nearest PJM node: TEWKSBRY (JCPL) \u2014 2.75 miles away"
   },
   "08859": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.16,
     "avg_lmp_2025": 22.15,
     "pct_change": 22.0,
@@ -11001,7 +11001,7 @@
     "notes": "Nearest PJM node: PARLIN (JCPL) \u2014 1.19 miles away"
   },
   "08861": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.9,
@@ -11020,7 +11020,7 @@
     "notes": "Nearest PJM node: WERNER (JCPL) \u2014 2.15 miles away"
   },
   "08863": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.06,
     "avg_lmp_2025": 21.77,
     "pct_change": 20.5,
@@ -11039,7 +11039,7 @@
     "notes": "Nearest PJM node: SUNNYMEA (PSEG) \u2014 1.15 miles away"
   },
   "08865": {
-    "county": "Cumberland",
+    "county": "Warren",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.7,
@@ -11058,7 +11058,7 @@
     "notes": "Nearest PJM node: WASHINGT (AECO) \u2014 9.29 miles away"
   },
   "08867": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.74,
     "avg_lmp_2025": null,
     "pct_change": null,
@@ -11077,7 +11077,7 @@
     "notes": "Nearest PJM node: BRIDGEPO (AECO) \u2014 7.14 miles away"
   },
   "08869": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.1,
     "avg_lmp_2025": 21.88,
     "pct_change": 20.9,
@@ -11096,7 +11096,7 @@
     "notes": "Nearest PJM node: SOMERVIL (PSEG) \u2014 1.83 miles away"
   },
   "08872": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 22.18,
     "pct_change": 22.0,
@@ -11115,7 +11115,7 @@
     "notes": "Nearest PJM node: SAYREVIL (JCPL) \u2014 1.07 miles away"
   },
   "08873": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.075,
     "avg_lmp_2025": 21.79,
     "pct_change": 20.6,
@@ -11134,7 +11134,7 @@
     "notes": "Nearest PJM node: BENNETTS (PSEG) \u2014 0.99 miles away"
   },
   "08876": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.14,
     "avg_lmp_2025": 21.85,
     "pct_change": 20.5,
@@ -11153,7 +11153,7 @@
     "notes": "Nearest PJM node: READINGT (JCPL) \u2014 0.68 miles away"
   },
   "08879": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.2,
     "avg_lmp_2025": 22.19,
     "pct_change": 21.9,
@@ -11172,7 +11172,7 @@
     "notes": "Nearest PJM node: WERNER (JCPL) \u2014 1.64 miles away"
   },
   "08880": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": 18.19,
     "avg_lmp_2025": 21.96,
     "pct_change": 20.7,
@@ -11191,7 +11191,7 @@
     "notes": "Nearest PJM node: SENTINEL (PSEG) \u2014 1.37 miles away"
   },
   "08882": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.17,
     "avg_lmp_2025": 21.93,
     "pct_change": 20.7,
@@ -11210,7 +11210,7 @@
     "notes": "Nearest PJM node: HARTSLAN (PSEG) \u2014 1.5 miles away"
   },
   "08884": {
-    "county": "Cumberland",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.18,
     "avg_lmp_2025": 22.09,
     "pct_change": 21.5,
@@ -11229,7 +11229,7 @@
     "notes": "Nearest PJM node: DEEPRN (JCPL) \u2014 2.71 miles away"
   },
   "08886": {
-    "county": "Cumberland",
+    "county": "Warren",
     "avg_lmp_2020": 17.87,
     "avg_lmp_2025": 21.57,
     "pct_change": 20.7,
@@ -11248,7 +11248,7 @@
     "notes": "Nearest PJM node: WASHINGT (AECO) \u2014 8.05 miles away"
   },
   "08887": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 18.04,
     "avg_lmp_2025": 21.72,
     "pct_change": 20.4,
@@ -11267,7 +11267,7 @@
     "notes": "Nearest PJM node: EFLEMING (JCPL) \u2014 3.79 miles away"
   },
   "08889": {
-    "county": "Cumberland",
+    "county": "Hunterdon",
     "avg_lmp_2020": 17.99,
     "avg_lmp_2025": 21.99,
     "pct_change": 22.2,
@@ -11286,7 +11286,7 @@
     "notes": "Nearest PJM node: CHESTJCT (JCPL) \u2014 3.16 miles away"
   },
   "08890": {
-    "county": "Cumberland",
+    "county": "Somerset",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.47,
     "pct_change": null,
@@ -11305,7 +11305,7 @@
     "notes": "Nearest PJM node: MANVILTP (AECO) \u2014 0.72 miles away"
   },
   "08901": {
-    "county": "Gloucester",
+    "county": "Middlesex",
     "avg_lmp_2020": 17.86,
     "avg_lmp_2025": 21.53,
     "pct_change": 20.5,
@@ -11324,7 +11324,7 @@
     "notes": "Nearest PJM node: COXSCORN (PSEG) \u2014 1.32 miles away"
   },
   "08902": {
-    "county": "Gloucester",
+    "county": "Middlesex",
     "avg_lmp_2020": 18.08,
     "avg_lmp_2025": 21.8,
     "pct_change": 20.6,
@@ -11343,7 +11343,7 @@
     "notes": "Nearest PJM node: ADAMS (PSEG) \u2014 1.3 miles away"
   },
   "08904": {
-    "county": "Gloucester",
+    "county": "Middlesex",
     "avg_lmp_2020": null,
     "avg_lmp_2025": 21.85,
     "pct_change": null,
