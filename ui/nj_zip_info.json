@@ -1,9 +1,9 @@
 {
   "07001": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.314,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.66,
@@ -20,9 +20,9 @@
   },
   "07002": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.789,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 22.2,
@@ -39,9 +39,9 @@
   },
   "07003": {
     "county": "Essex",
-    "avg_lmp_2020": 18.195,
-    "avg_lmp_2025": 22.12,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.195,
+    "avg_lmp_last": 22.12,
+    "pct_change": 21.572,
     "yearly_lmp": {
       "2020": 18.195,
       "2021": 24.25,
@@ -58,9 +58,9 @@
   },
   "07004": {
     "county": "Essex",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.01,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.01,
+    "pct_change": 21.368,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.73,
@@ -77,9 +77,9 @@
   },
   "07005": {
     "county": "Morris",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.593,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.99,
@@ -96,9 +96,9 @@
   },
   "07006": {
     "county": "Essex",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.01,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.01,
+    "pct_change": 21.368,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.73,
@@ -115,9 +115,9 @@
   },
   "07008": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.183,
-    "avg_lmp_2025": 22.102,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.183,
+    "avg_lmp_last": 22.102,
+    "pct_change": 21.553,
     "yearly_lmp": {
       "2020": 18.183,
       "2021": 20.7,
@@ -134,9 +134,9 @@
   },
   "07009": {
     "county": "Essex",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.92,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.92,
+    "pct_change": 20.971,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 18.27,
@@ -153,15 +153,10 @@
   },
   "07010": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 22.21,
+    "avg_lmp_last": 22.21,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
       "2025": 22.21
     },
     "selected_year": "2025",
@@ -172,9 +167,9 @@
   },
   "07011": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.832,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.11,
@@ -191,9 +186,9 @@
   },
   "07012": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.192,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.192,
+    "pct_change": 21.533,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 25.175,
@@ -210,9 +205,9 @@
   },
   "07013": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 22.14,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 22.14,
+    "pct_change": 21.515,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 25.99,
@@ -229,9 +224,9 @@
   },
   "07014": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.1,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.1,
+    "pct_change": 21.495,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 19.37,
@@ -248,9 +243,9 @@
   },
   "07016": {
     "county": "Union",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.531,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.88,
@@ -267,9 +262,9 @@
   },
   "07017": {
     "county": "Essex",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 22.11,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 22.11,
+    "pct_change": 21.617,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 17.85,
@@ -286,9 +281,9 @@
   },
   "07018": {
     "county": "Essex",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.02,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.02,
+    "pct_change": 21.256,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 19.26,
@@ -305,15 +300,10 @@
   },
   "07020": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 22.21,
+    "avg_lmp_last": 22.21,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
       "2025": 22.21
     },
     "selected_year": "2025",
@@ -324,9 +314,9 @@
   },
   "07021": {
     "county": "Essex",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.01,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.01,
+    "pct_change": 21.368,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.73,
@@ -343,15 +333,10 @@
   },
   "07022": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 22.21,
+    "avg_lmp_last": 22.21,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
       "2025": 22.21
     },
     "selected_year": "2025",
@@ -362,9 +347,9 @@
   },
   "07023": {
     "county": "Union",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.247,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 17.71,
@@ -381,9 +366,9 @@
   },
   "07024": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.644,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.77,
@@ -400,13 +385,10 @@
   },
   "07026": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.22,
-    "pct_change": null,
+    "avg_lmp_first": 26.1,
+    "avg_lmp_last": 22.22,
+    "pct_change": -14.866,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 26.1,
       "2024": 19.01,
       "2025": 22.22
@@ -419,9 +401,9 @@
   },
   "07027": {
     "county": "Union",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.531,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.88,
@@ -438,9 +420,9 @@
   },
   "07028": {
     "county": "Essex",
-    "avg_lmp_2020": 18.195,
-    "avg_lmp_2025": 22.12,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.195,
+    "avg_lmp_last": 22.12,
+    "pct_change": 21.572,
     "yearly_lmp": {
       "2020": 18.195,
       "2021": 24.25,
@@ -457,13 +439,10 @@
   },
   "07029": {
     "county": "Hudson",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.77,
-    "pct_change": null,
+    "avg_lmp_first": 23.39,
+    "avg_lmp_last": 21.77,
+    "pct_change": -6.926,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.39,
       "2024": 17.73,
       "2025": 21.77
@@ -476,11 +455,10 @@
   },
   "07030": {
     "county": "Hudson",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.22,
-    "pct_change": null,
+    "avg_lmp_first": 23.93,
+    "avg_lmp_last": 22.22,
+    "pct_change": -7.146,
     "yearly_lmp": {
-      "2020": null,
       "2021": 23.93,
       "2022": 23.75,
       "2023": 26.07,
@@ -495,9 +473,9 @@
   },
   "07031": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.194,
-    "avg_lmp_2025": 22.14,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.194,
+    "avg_lmp_last": 22.14,
+    "pct_change": 21.688,
     "yearly_lmp": {
       "2020": 18.194,
       "2021": 23.17,
@@ -514,9 +492,9 @@
   },
   "07032": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.14,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.14,
+    "pct_change": 21.715,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 23.135,
@@ -533,9 +511,9 @@
   },
   "07033": {
     "county": "Union",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.05,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.05,
+    "pct_change": 21.488,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.76,
@@ -552,9 +530,9 @@
   },
   "07034": {
     "county": "Morris",
-    "avg_lmp_2020": 18.09,
-    "avg_lmp_2025": 22.0,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.09,
+    "avg_lmp_last": 22.0,
+    "pct_change": 21.614,
     "yearly_lmp": {
       "2020": 18.09,
       "2021": 16.84,
@@ -571,9 +549,9 @@
   },
   "07035": {
     "county": "Morris",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.55,
@@ -590,9 +568,9 @@
   },
   "07036": {
     "county": "Union",
-    "avg_lmp_2020": 18.183,
-    "avg_lmp_2025": 22.102,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.183,
+    "avg_lmp_last": 22.102,
+    "pct_change": 21.553,
     "yearly_lmp": {
       "2020": 18.183,
       "2021": 20.7,
@@ -609,15 +587,10 @@
   },
   "07039": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.99,
-    "pct_change": null,
+    "avg_lmp_first": 21.99,
+    "avg_lmp_last": 21.99,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
       "2025": 21.99
     },
     "selected_year": "2025",
@@ -628,12 +601,10 @@
   },
   "07040": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.12,
-    "pct_change": null,
+    "avg_lmp_first": 20.64,
+    "avg_lmp_last": 22.12,
+    "pct_change": 7.171,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 20.64,
       "2023": 25.39,
       "2024": 18.68,
@@ -647,12 +618,10 @@
   },
   "07041": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.12,
-    "pct_change": null,
+    "avg_lmp_first": 20.64,
+    "avg_lmp_last": 22.12,
+    "pct_change": 7.171,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 20.64,
       "2023": 25.39,
       "2024": 18.68,
@@ -666,9 +635,9 @@
   },
   "07042": {
     "county": "Essex",
-    "avg_lmp_2020": 18.195,
-    "avg_lmp_2025": 22.12,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.195,
+    "avg_lmp_last": 22.12,
+    "pct_change": 21.572,
     "yearly_lmp": {
       "2020": 18.195,
       "2021": 24.25,
@@ -685,9 +654,9 @@
   },
   "07043": {
     "county": "Essex",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.92,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.92,
+    "pct_change": 20.971,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 18.27,
@@ -704,9 +673,9 @@
   },
   "07044": {
     "county": "Essex",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.01,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.01,
+    "pct_change": 21.368,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.73,
@@ -723,9 +692,9 @@
   },
   "07045": {
     "county": "Morris",
-    "avg_lmp_2020": 18.09,
-    "avg_lmp_2025": 22.0,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.09,
+    "avg_lmp_last": 22.0,
+    "pct_change": 21.614,
     "yearly_lmp": {
       "2020": 18.09,
       "2021": 16.84,
@@ -742,9 +711,9 @@
   },
   "07046": {
     "county": "Morris",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.593,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.99,
@@ -761,9 +730,9 @@
   },
   "07047": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.24,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.24,
+    "pct_change": 21.863,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.32,
@@ -780,14 +749,10 @@
   },
   "07050": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.02,
-    "pct_change": null,
+    "avg_lmp_first": 18.63,
+    "avg_lmp_last": 22.02,
+    "pct_change": 18.196,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 18.63,
       "2025": 22.02
     },
@@ -799,9 +764,9 @@
   },
   "07052": {
     "county": "Essex",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 22.15,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 22.15,
+    "pct_change": 21.57,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 22.33,
@@ -818,9 +783,9 @@
   },
   "07054": {
     "county": "Morris",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.358,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 16.88,
@@ -837,11 +802,10 @@
   },
   "07055": {
     "county": "Passaic",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.23,
-    "pct_change": null,
+    "avg_lmp_first": 24.98,
+    "avg_lmp_last": 22.23,
+    "pct_change": -11.009,
     "yearly_lmp": {
-      "2020": null,
       "2021": 24.98,
       "2022": 24.78,
       "2023": 26.07,
@@ -856,11 +820,10 @@
   },
   "07057": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.23,
-    "pct_change": null,
+    "avg_lmp_first": 24.98,
+    "avg_lmp_last": 22.23,
+    "pct_change": -11.009,
     "yearly_lmp": {
-      "2020": null,
       "2021": 24.98,
       "2022": 24.78,
       "2023": 26.07,
@@ -875,9 +838,9 @@
   },
   "07058": {
     "county": "Morris",
-    "avg_lmp_2020": 18.09,
-    "avg_lmp_2025": 22.0,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.09,
+    "avg_lmp_last": 22.0,
+    "pct_change": 21.614,
     "yearly_lmp": {
       "2020": 18.09,
       "2021": 16.84,
@@ -894,9 +857,9 @@
   },
   "07059": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.11,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.11,
+    "pct_change": 21.751,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.575,
@@ -913,9 +876,9 @@
   },
   "07060": {
     "county": "Union",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 22.12,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 22.12,
+    "pct_change": 21.739,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 17.71,
@@ -932,9 +895,9 @@
   },
   "07062": {
     "county": "Union",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.247,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 17.71,
@@ -951,9 +914,9 @@
   },
   "07063": {
     "county": "Union",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 22.12,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 22.12,
+    "pct_change": 21.739,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 17.71,
@@ -970,9 +933,9 @@
   },
   "07064": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.314,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.66,
@@ -989,9 +952,9 @@
   },
   "07065": {
     "county": "Union",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 22.02,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 22.02,
+    "pct_change": 21.389,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.71,
@@ -1008,9 +971,9 @@
   },
   "07066": {
     "county": "Union",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 22.02,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 22.02,
+    "pct_change": 21.389,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.71,
@@ -1027,9 +990,9 @@
   },
   "07067": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.699,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.8,
@@ -1046,9 +1009,9 @@
   },
   "07068": {
     "county": "Essex",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.98,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.98,
+    "pct_change": 21.236,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 16.47,
@@ -1065,9 +1028,9 @@
   },
   "07069": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 22.12,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 22.12,
+    "pct_change": 21.739,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 17.71,
@@ -1084,9 +1047,9 @@
   },
   "07070": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.262,
-    "avg_lmp_2025": 22.198,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.262,
+    "avg_lmp_last": 22.198,
+    "pct_change": 21.553,
     "yearly_lmp": {
       "2020": 18.262,
       "2021": 24.988,
@@ -1103,9 +1066,9 @@
   },
   "07071": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.194,
-    "avg_lmp_2025": 22.14,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.194,
+    "avg_lmp_last": 22.14,
+    "pct_change": 21.688,
     "yearly_lmp": {
       "2020": 18.194,
       "2021": 23.17,
@@ -1122,9 +1085,9 @@
   },
   "07072": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.632,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 24.44,
@@ -1141,9 +1104,9 @@
   },
   "07073": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.534,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.03,
@@ -1160,9 +1123,9 @@
   },
   "07074": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.632,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 24.44,
@@ -1179,12 +1142,10 @@
   },
   "07075": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.1,
-    "pct_change": null,
+    "avg_lmp_first": 26.56,
+    "avg_lmp_last": 22.1,
+    "pct_change": -16.792,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 26.56,
       "2023": 24.62,
       "2024": 18.83,
@@ -1198,9 +1159,9 @@
   },
   "07076": {
     "county": "Union",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.247,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 17.71,
@@ -1217,9 +1178,9 @@
   },
   "07077": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.314,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.66,
@@ -1236,9 +1197,9 @@
   },
   "07078": {
     "county": "Essex",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.671,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.19,
@@ -1255,14 +1216,10 @@
   },
   "07079": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.02,
-    "pct_change": null,
+    "avg_lmp_first": 18.63,
+    "avg_lmp_last": 22.02,
+    "pct_change": 18.196,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 18.63,
       "2025": 22.02
     },
@@ -1274,8 +1231,8 @@
   },
   "07080": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.165,
-    "avg_lmp_2025": 22.125,
+    "avg_lmp_first": 18.165,
+    "avg_lmp_last": 22.125,
     "pct_change": 21.8,
     "yearly_lmp": {
       "2020": 18.165,
@@ -1293,9 +1250,9 @@
   },
   "07081": {
     "county": "Union",
-    "avg_lmp_2020": 18.155,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.155,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.537,
     "yearly_lmp": {
       "2020": 18.155,
       "2021": 17.215,
@@ -1312,9 +1269,9 @@
   },
   "07082": {
     "county": "Morris",
-    "avg_lmp_2020": 18.09,
-    "avg_lmp_2025": 22.0,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.09,
+    "avg_lmp_last": 22.0,
+    "pct_change": 21.614,
     "yearly_lmp": {
       "2020": 18.09,
       "2021": 16.84,
@@ -1331,12 +1288,10 @@
   },
   "07083": {
     "county": "Union",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.12,
-    "pct_change": null,
+    "avg_lmp_first": 20.64,
+    "avg_lmp_last": 22.12,
+    "pct_change": 7.171,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 20.64,
       "2023": 25.39,
       "2024": 18.68,
@@ -1350,9 +1305,9 @@
   },
   "07086": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.734,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 23.98,
@@ -1369,9 +1324,9 @@
   },
   "07087": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.734,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 23.98,
@@ -1388,12 +1343,10 @@
   },
   "07088": {
     "county": "Union",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.12,
-    "pct_change": null,
+    "avg_lmp_first": 20.64,
+    "avg_lmp_last": 22.12,
+    "pct_change": 7.171,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 20.64,
       "2023": 25.39,
       "2024": 18.68,
@@ -1407,9 +1360,9 @@
   },
   "07090": {
     "county": "Union",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 22.02,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 22.02,
+    "pct_change": 21.389,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.71,
@@ -1426,9 +1379,9 @@
   },
   "07092": {
     "county": "Union",
-    "avg_lmp_2020": 18.155,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.155,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.537,
     "yearly_lmp": {
       "2020": 18.155,
       "2021": 17.215,
@@ -1445,9 +1398,9 @@
   },
   "07093": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.25,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.25,
+    "pct_change": 21.851,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 24.54,
@@ -1464,9 +1417,9 @@
   },
   "07094": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.734,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 24.065,
@@ -1483,9 +1436,9 @@
   },
   "07095": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.892,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 17.79,
@@ -1502,9 +1455,9 @@
   },
   "07102": {
     "county": "Essex",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 22.15,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 22.15,
+    "pct_change": 21.837,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 23.29,
@@ -1521,9 +1474,9 @@
   },
   "07103": {
     "county": "Essex",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 23.42,
-    "pct_change": 28.8,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 23.42,
+    "pct_change": 28.752,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 22.08,
@@ -1540,11 +1493,10 @@
   },
   "07104": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.11,
-    "pct_change": null,
+    "avg_lmp_first": 22.34,
+    "avg_lmp_last": 22.11,
+    "pct_change": -1.03,
     "yearly_lmp": {
-      "2020": null,
       "2021": 22.34,
       "2022": 22.88,
       "2023": 25.63,
@@ -1559,9 +1511,9 @@
   },
   "07105": {
     "county": "Essex",
-    "avg_lmp_2020": 18.245,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.245,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.568,
     "yearly_lmp": {
       "2020": 18.245,
       "2021": 22.46,
@@ -1578,14 +1530,10 @@
   },
   "07106": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 18.91,
+    "avg_lmp_last": 22.21,
+    "pct_change": 17.451,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 18.91,
       "2025": 22.21
     },
@@ -1597,15 +1545,10 @@
   },
   "07107": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.56,
-    "pct_change": null,
+    "avg_lmp_first": 21.56,
+    "avg_lmp_last": 21.56,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
       "2025": 21.56
     },
     "selected_year": "2025",
@@ -1616,9 +1559,9 @@
   },
   "07108": {
     "county": "Essex",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.935,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 23.62,
@@ -1635,9 +1578,9 @@
   },
   "07109": {
     "county": "Essex",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.83,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.83,
+    "pct_change": 20.408,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.24,
@@ -1654,12 +1597,10 @@
   },
   "07110": {
     "county": "Essex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.17,
-    "pct_change": null,
+    "avg_lmp_first": 24.9,
+    "avg_lmp_last": 22.17,
+    "pct_change": -10.964,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 24.9,
       "2023": 26.12,
       "2024": 18.91,
@@ -1673,9 +1614,9 @@
   },
   "07111": {
     "county": "Essex",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 22.36,
@@ -1692,9 +1633,9 @@
   },
   "07112": {
     "county": "Essex",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 22.36,
@@ -1711,9 +1652,9 @@
   },
   "07114": {
     "county": "Essex",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.15,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.15,
+    "pct_change": 21.503,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 22.05,
@@ -1730,9 +1671,9 @@
   },
   "07201": {
     "county": "Union",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.76,
-    "pct_change": 20.2,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.76,
+    "pct_change": 20.221,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.25,
@@ -1749,9 +1690,9 @@
   },
   "07202": {
     "county": "Union",
-    "avg_lmp_2020": 18.21,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.21,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.527,
     "yearly_lmp": {
       "2020": 18.21,
       "2021": 22.01,
@@ -1768,9 +1709,9 @@
   },
   "07203": {
     "county": "Union",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.1,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.077,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.3,
@@ -1787,9 +1728,9 @@
   },
   "07204": {
     "county": "Union",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.1,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.077,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.3,
@@ -1806,9 +1747,9 @@
   },
   "07205": {
     "county": "Union",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 22.36,
@@ -1825,9 +1766,9 @@
   },
   "07206": {
     "county": "Union",
-    "avg_lmp_2020": 18.21,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.21,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.527,
     "yearly_lmp": {
       "2020": 18.21,
       "2021": 22.01,
@@ -1844,15 +1785,10 @@
   },
   "07208": {
     "county": "Union",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.12,
-    "pct_change": null,
+    "avg_lmp_first": 22.12,
+    "avg_lmp_last": 22.12,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
       "2025": 22.12
     },
     "selected_year": "2025",
@@ -1863,9 +1799,9 @@
   },
   "07302": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.07,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.07,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.365,
     "yearly_lmp": {
       "2020": 18.07,
       "2021": 18.33,
@@ -1882,9 +1818,9 @@
   },
   "07304": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.82,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.82,
+    "pct_change": 20.353,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.25,
@@ -1901,9 +1837,9 @@
   },
   "07305": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.789,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 22.2,
@@ -1920,9 +1856,9 @@
   },
   "07306": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.26,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.26,
+    "pct_change": 21.906,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 18.66,
@@ -1939,13 +1875,10 @@
   },
   "07307": {
     "county": "Hudson",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.0,
-    "pct_change": null,
+    "avg_lmp_first": 23.35,
+    "avg_lmp_last": 22.0,
+    "pct_change": -5.782,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.35,
       "2024": 18.15,
       "2025": 22.0
@@ -1958,9 +1891,9 @@
   },
   "07310": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.26,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.26,
+    "pct_change": 21.906,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 18.66,
@@ -1977,9 +1910,9 @@
   },
   "07311": {
     "county": "Hudson",
-    "avg_lmp_2020": 18.07,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.07,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.365,
     "yearly_lmp": {
       "2020": 18.07,
       "2021": 18.33,
@@ -1996,9 +1929,9 @@
   },
   "07401": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 23.42,
-    "pct_change": 28.8,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 23.42,
+    "pct_change": 28.752,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 22.08,
@@ -2015,9 +1948,9 @@
   },
   "07403": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.55,
@@ -2034,9 +1967,9 @@
   },
   "07405": {
     "county": "Morris",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.55,
@@ -2053,13 +1986,10 @@
   },
   "07407": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.22,
-    "pct_change": null,
+    "avg_lmp_first": 26.1,
+    "avg_lmp_last": 22.22,
+    "pct_change": -14.866,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 26.1,
       "2024": 19.01,
       "2025": 22.22
@@ -2072,9 +2002,9 @@
   },
   "07410": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.253,
-    "avg_lmp_2025": 22.153,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.253,
+    "avg_lmp_last": 22.153,
+    "pct_change": 21.366,
     "yearly_lmp": {
       "2020": 18.253,
       "2021": 25.017,
@@ -2091,9 +2021,9 @@
   },
   "07416": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2110,9 +2040,9 @@
   },
   "07417": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.31,
-    "avg_lmp_2025": 23.62,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 23.62,
+    "pct_change": 29.001,
     "yearly_lmp": {
       "2020": 18.31,
       "2021": 22.17,
@@ -2129,9 +2059,9 @@
   },
   "07418": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2148,9 +2078,9 @@
   },
   "07419": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2167,9 +2097,9 @@
   },
   "07420": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.31,
-    "avg_lmp_2025": 23.62,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 23.62,
+    "pct_change": 29.001,
     "yearly_lmp": {
       "2020": 18.31,
       "2021": 22.17,
@@ -2186,9 +2116,9 @@
   },
   "07421": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.187,
-    "avg_lmp_2025": 23.427,
-    "pct_change": 28.8,
+    "avg_lmp_first": 18.187,
+    "avg_lmp_last": 23.427,
+    "pct_change": 28.812,
     "yearly_lmp": {
       "2020": 18.187,
       "2021": 22.06,
@@ -2205,9 +2135,9 @@
   },
   "07422": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2224,9 +2154,9 @@
   },
   "07423": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.49,
-    "pct_change": 23.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.49,
+    "pct_change": 23.571,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 25.305,
@@ -2243,9 +2173,9 @@
   },
   "07424": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.374,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 27.29,
@@ -2262,9 +2192,9 @@
   },
   "07430": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 23.42,
-    "pct_change": 28.8,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 23.42,
+    "pct_change": 28.752,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 22.08,
@@ -2281,9 +2211,9 @@
   },
   "07432": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.49,
-    "pct_change": 23.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.49,
+    "pct_change": 23.571,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 25.305,
@@ -2300,9 +2230,9 @@
   },
   "07435": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.88,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.88,
+    "pct_change": 20.817,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.15,
@@ -2319,9 +2249,9 @@
   },
   "07436": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.31,
-    "avg_lmp_2025": 23.62,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 23.62,
+    "pct_change": 29.001,
     "yearly_lmp": {
       "2020": 18.31,
       "2021": 22.17,
@@ -2338,9 +2268,9 @@
   },
   "07438": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.88,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.88,
+    "pct_change": 20.817,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.15,
@@ -2357,9 +2287,9 @@
   },
   "07439": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2376,9 +2306,9 @@
   },
   "07440": {
     "county": "Morris",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.55,
@@ -2395,9 +2325,9 @@
   },
   "07442": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.31,
-    "avg_lmp_2025": 23.62,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 23.62,
+    "pct_change": 29.001,
     "yearly_lmp": {
       "2020": 18.31,
       "2021": 22.17,
@@ -2414,9 +2344,9 @@
   },
   "07444": {
     "county": "Morris",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.55,
@@ -2433,9 +2363,9 @@
   },
   "07446": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 23.5,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 23.5,
+    "pct_change": 28.979,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 22.02,
@@ -2452,9 +2382,9 @@
   },
   "07450": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.27,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.27,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.346,
     "yearly_lmp": {
       "2020": 18.27,
       "2021": 25.36,
@@ -2471,9 +2401,9 @@
   },
   "07452": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.253,
-    "avg_lmp_2025": 22.153,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.253,
+    "avg_lmp_last": 22.153,
+    "pct_change": 21.366,
     "yearly_lmp": {
       "2020": 18.253,
       "2021": 25.017,
@@ -2490,9 +2420,9 @@
   },
   "07456": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.187,
-    "avg_lmp_2025": 23.427,
-    "pct_change": 28.8,
+    "avg_lmp_first": 18.187,
+    "avg_lmp_last": 23.427,
+    "pct_change": 28.812,
     "yearly_lmp": {
       "2020": 18.187,
       "2021": 22.06,
@@ -2509,9 +2439,9 @@
   },
   "07457": {
     "county": "Morris",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.558,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.55,
@@ -2528,9 +2458,9 @@
   },
   "07458": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 23.48,
-    "pct_change": 29.1,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 23.48,
+    "pct_change": 29.082,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 21.97,
@@ -2547,9 +2477,9 @@
   },
   "07460": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2566,9 +2496,9 @@
   },
   "07461": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2585,9 +2515,9 @@
   },
   "07462": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -2604,9 +2534,9 @@
   },
   "07463": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.49,
-    "pct_change": 23.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.49,
+    "pct_change": 23.571,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 25.305,
@@ -2623,9 +2553,9 @@
   },
   "07465": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.31,
-    "avg_lmp_2025": 23.62,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 23.62,
+    "pct_change": 29.001,
     "yearly_lmp": {
       "2020": 18.31,
       "2021": 22.17,
@@ -2642,9 +2572,9 @@
   },
   "07470": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.1,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.1,
+    "pct_change": 21.429,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 27.22,
@@ -2661,9 +2591,9 @@
   },
   "07480": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.31,
-    "avg_lmp_2025": 23.62,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 23.62,
+    "pct_change": 29.001,
     "yearly_lmp": {
       "2020": 18.31,
       "2021": 22.17,
@@ -2680,9 +2610,9 @@
   },
   "07481": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.1,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.1,
+    "pct_change": 21.429,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 26.71,
@@ -2699,9 +2629,9 @@
   },
   "07501": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.577,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 26.0,
@@ -2718,9 +2648,9 @@
   },
   "07502": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.577,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 26.0,
@@ -2737,9 +2667,9 @@
   },
   "07503": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.832,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.11,
@@ -2756,9 +2686,9 @@
   },
   "07504": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.577,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 26.0,
@@ -2775,9 +2705,9 @@
   },
   "07505": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.577,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 26.0,
@@ -2794,9 +2724,9 @@
   },
   "07506": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.1,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.1,
+    "pct_change": 21.429,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 26.71,
@@ -2813,9 +2743,9 @@
   },
   "07508": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.02,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.02,
+    "pct_change": 21.322,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.895,
@@ -2832,9 +2762,9 @@
   },
   "07512": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.374,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 26.98,
@@ -2851,9 +2781,9 @@
   },
   "07513": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.832,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 25.11,
@@ -2870,9 +2800,9 @@
   },
   "07514": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.02,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.02,
+    "pct_change": 21.322,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.895,
@@ -2889,9 +2819,9 @@
   },
   "07522": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.577,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 26.0,
@@ -2908,9 +2838,9 @@
   },
   "07524": {
     "county": "Passaic",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.02,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.02,
+    "pct_change": 21.322,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.895,
@@ -2927,14 +2857,10 @@
   },
   "07601": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 19.01,
+    "avg_lmp_last": 22.21,
+    "pct_change": 16.833,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 19.01,
       "2025": 22.21
     },
@@ -2946,14 +2872,10 @@
   },
   "07603": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 19.01,
+    "avg_lmp_last": 22.21,
+    "pct_change": 16.833,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 19.01,
       "2025": 22.21
     },
@@ -2965,14 +2887,10 @@
   },
   "07604": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 19.01,
+    "avg_lmp_last": 22.21,
+    "pct_change": 16.833,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 19.01,
       "2025": 22.21
     },
@@ -2984,9 +2902,9 @@
   },
   "07605": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.644,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.77,
@@ -3003,14 +2921,10 @@
   },
   "07606": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.21,
-    "pct_change": null,
+    "avg_lmp_first": 19.01,
+    "avg_lmp_last": 22.21,
+    "pct_change": 16.833,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 19.01,
       "2025": 22.21
     },
@@ -3022,9 +2936,9 @@
   },
   "07607": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.243,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.243,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.526,
     "yearly_lmp": {
       "2020": 18.243,
       "2021": 25.117,
@@ -3041,12 +2955,10 @@
   },
   "07608": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.1,
-    "pct_change": null,
+    "avg_lmp_first": 26.56,
+    "avg_lmp_last": 22.1,
+    "pct_change": -16.792,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 26.56,
       "2023": 24.62,
       "2024": 18.83,
@@ -3060,9 +2972,9 @@
   },
   "07620": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 23.5,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 23.5,
+    "pct_change": 28.908,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 21.98,
@@ -3079,9 +2991,9 @@
   },
   "07621": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.479,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.65,
@@ -3098,9 +3010,9 @@
   },
   "07624": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 23.5,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 23.5,
+    "pct_change": 28.908,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 21.98,
@@ -3117,9 +3029,9 @@
   },
   "07626": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 23.52,
-    "pct_change": 29.1,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 23.52,
+    "pct_change": 29.089,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 21.99,
@@ -3136,9 +3048,9 @@
   },
   "07627": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.22,
-    "avg_lmp_2025": 23.52,
-    "pct_change": 29.1,
+    "avg_lmp_first": 18.22,
+    "avg_lmp_last": 23.52,
+    "pct_change": 29.089,
     "yearly_lmp": {
       "2020": 18.22,
       "2021": 21.99,
@@ -3155,9 +3067,9 @@
   },
   "07628": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.468,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 24.89,
@@ -3174,9 +3086,9 @@
   },
   "07630": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.24,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.24,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.327,
     "yearly_lmp": {
       "2020": 18.24,
       "2021": 24.5,
@@ -3193,9 +3105,9 @@
   },
   "07631": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.27,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.27,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.565,
     "yearly_lmp": {
       "2020": 18.27,
       "2021": 24.74,
@@ -3212,9 +3124,9 @@
   },
   "07632": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.27,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.27,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.565,
     "yearly_lmp": {
       "2020": 18.27,
       "2021": 24.74,
@@ -3231,9 +3143,9 @@
   },
   "07640": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 23.5,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 23.5,
+    "pct_change": 28.908,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 21.98,
@@ -3250,9 +3162,9 @@
   },
   "07641": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.468,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 24.89,
@@ -3269,9 +3181,9 @@
   },
   "07642": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.24,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.24,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.327,
     "yearly_lmp": {
       "2020": 18.24,
       "2021": 24.5,
@@ -3288,8 +3200,8 @@
   },
   "07643": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.244,
-    "avg_lmp_2025": 22.203,
+    "avg_lmp_first": 18.244,
+    "avg_lmp_last": 22.203,
     "pct_change": 21.7,
     "yearly_lmp": {
       "2020": 18.244,
@@ -3307,9 +3219,9 @@
   },
   "07644": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.243,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.243,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.526,
     "yearly_lmp": {
       "2020": 18.243,
       "2021": 25.117,
@@ -3326,9 +3238,9 @@
   },
   "07645": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.21,
-    "avg_lmp_2025": 23.49,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.21,
+    "avg_lmp_last": 23.49,
+    "pct_change": 28.995,
     "yearly_lmp": {
       "2020": 18.21,
       "2021": 22.0,
@@ -3345,9 +3257,9 @@
   },
   "07646": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.479,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.65,
@@ -3364,9 +3276,9 @@
   },
   "07647": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 23.5,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 23.5,
+    "pct_change": 28.908,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 21.98,
@@ -3383,9 +3295,9 @@
   },
   "07648": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.23,
-    "avg_lmp_2025": 23.5,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.23,
+    "avg_lmp_last": 23.5,
+    "pct_change": 28.908,
     "yearly_lmp": {
       "2020": 18.23,
       "2021": 21.98,
@@ -3402,9 +3314,9 @@
   },
   "07649": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.479,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.65,
@@ -3421,8 +3333,8 @@
   },
   "07650": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.244,
-    "avg_lmp_2025": 22.203,
+    "avg_lmp_first": 18.244,
+    "avg_lmp_last": 22.203,
     "pct_change": 21.7,
     "yearly_lmp": {
       "2020": 18.244,
@@ -3440,9 +3352,9 @@
   },
   "07652": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.27,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.27,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.346,
     "yearly_lmp": {
       "2020": 18.27,
       "2021": 25.36,
@@ -3459,9 +3371,9 @@
   },
   "07656": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.21,
-    "avg_lmp_2025": 23.49,
-    "pct_change": 29.0,
+    "avg_lmp_first": 18.21,
+    "avg_lmp_last": 23.49,
+    "pct_change": 28.995,
     "yearly_lmp": {
       "2020": 18.21,
       "2021": 22.0,
@@ -3478,8 +3390,8 @@
   },
   "07657": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.244,
-    "avg_lmp_2025": 22.203,
+    "avg_lmp_first": 18.244,
+    "avg_lmp_last": 22.203,
     "pct_change": 21.7,
     "yearly_lmp": {
       "2020": 18.244,
@@ -3497,8 +3409,8 @@
   },
   "07660": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.244,
-    "avg_lmp_2025": 22.203,
+    "avg_lmp_first": 18.244,
+    "avg_lmp_last": 22.203,
     "pct_change": 21.7,
     "yearly_lmp": {
       "2020": 18.244,
@@ -3516,9 +3428,9 @@
   },
   "07661": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.28,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.28,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.335,
     "yearly_lmp": {
       "2020": 18.28,
       "2021": 25.35,
@@ -3535,9 +3447,9 @@
   },
   "07662": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.243,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.243,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.526,
     "yearly_lmp": {
       "2020": 18.243,
       "2021": 25.117,
@@ -3554,13 +3466,10 @@
   },
   "07663": {
     "county": "Bergen",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 22.22,
-    "pct_change": null,
+    "avg_lmp_first": 26.1,
+    "avg_lmp_last": 22.22,
+    "pct_change": -14.866,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 26.1,
       "2024": 19.01,
       "2025": 22.22
@@ -3573,9 +3482,9 @@
   },
   "07666": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.2,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.2,
+    "pct_change": 21.577,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 24.78,
@@ -3592,9 +3501,9 @@
   },
   "07670": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.27,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.27,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.565,
     "yearly_lmp": {
       "2020": 18.27,
       "2021": 24.74,
@@ -3611,9 +3520,9 @@
   },
   "07675": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.24,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.24,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.327,
     "yearly_lmp": {
       "2020": 18.24,
       "2021": 24.5,
@@ -3630,9 +3539,9 @@
   },
   "07676": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.27,
-    "avg_lmp_2025": 22.17,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.27,
+    "avg_lmp_last": 22.17,
+    "pct_change": 21.346,
     "yearly_lmp": {
       "2020": 18.27,
       "2021": 25.36,
@@ -3649,9 +3558,9 @@
   },
   "07677": {
     "county": "Bergen",
-    "avg_lmp_2020": 18.24,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.24,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.327,
     "yearly_lmp": {
       "2020": 18.24,
       "2021": 24.5,
@@ -3668,9 +3577,9 @@
   },
   "07701": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3687,9 +3596,9 @@
   },
   "07702": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3706,9 +3615,9 @@
   },
   "07703": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3725,9 +3634,9 @@
   },
   "07704": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3744,9 +3653,9 @@
   },
   "07711": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -3763,9 +3672,9 @@
   },
   "07712": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -3782,9 +3691,9 @@
   },
   "07716": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3801,9 +3710,9 @@
   },
   "07717": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -3820,9 +3729,9 @@
   },
   "07718": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3839,9 +3748,9 @@
   },
   "07719": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -3858,9 +3767,9 @@
   },
   "07720": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -3877,9 +3786,9 @@
   },
   "07721": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.522,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 25.9,
@@ -3896,9 +3805,9 @@
   },
   "07722": {
     "county": "Monmouth",
-    "avg_lmp_2020": 17.903,
-    "avg_lmp_2025": 21.84,
-    "pct_change": 22.0,
+    "avg_lmp_first": 17.903,
+    "avg_lmp_last": 21.84,
+    "pct_change": 21.991,
     "yearly_lmp": {
       "2020": 17.903,
       "2021": 17.487,
@@ -3915,9 +3824,9 @@
   },
   "07723": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -3934,9 +3843,9 @@
   },
   "07724": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3953,9 +3862,9 @@
   },
   "07726": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.122,
-    "avg_lmp_2025": 21.977,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.122,
+    "avg_lmp_last": 21.977,
+    "pct_change": 21.272,
     "yearly_lmp": {
       "2020": 18.122,
       "2021": 18.135,
@@ -3972,9 +3881,9 @@
   },
   "07727": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -3991,9 +3900,9 @@
   },
   "07728": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.85,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.85,
+    "pct_change": 20.652,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.18,
@@ -4010,9 +3919,9 @@
   },
   "07730": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.593,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.99,
@@ -4029,9 +3938,9 @@
   },
   "07731": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.593,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.99,
@@ -4048,9 +3957,9 @@
   },
   "07732": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4067,9 +3976,9 @@
   },
   "07733": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.593,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.99,
@@ -4086,9 +3995,9 @@
   },
   "07734": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.593,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.99,
@@ -4105,9 +4014,9 @@
   },
   "07735": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.522,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 25.9,
@@ -4124,9 +4033,9 @@
   },
   "07737": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4143,9 +4052,9 @@
   },
   "07738": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4162,9 +4071,9 @@
   },
   "07739": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4181,9 +4090,9 @@
   },
   "07740": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4200,9 +4109,9 @@
   },
   "07746": {
     "county": "Monmouth",
-    "avg_lmp_2020": 17.903,
-    "avg_lmp_2025": 21.84,
-    "pct_change": 22.0,
+    "avg_lmp_first": 17.903,
+    "avg_lmp_last": 21.84,
+    "pct_change": 21.991,
     "yearly_lmp": {
       "2020": 17.903,
       "2021": 17.487,
@@ -4219,9 +4128,9 @@
   },
   "07747": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.522,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 25.9,
@@ -4238,9 +4147,9 @@
   },
   "07748": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4257,9 +4166,9 @@
   },
   "07750": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4276,9 +4185,9 @@
   },
   "07751": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.13,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.13,
+    "pct_change": 21.593,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.99,
@@ -4295,9 +4204,9 @@
   },
   "07753": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -4314,9 +4223,9 @@
   },
   "07755": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -4333,9 +4242,9 @@
   },
   "07756": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -4352,9 +4261,9 @@
   },
   "07757": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4371,9 +4280,9 @@
   },
   "07758": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4390,9 +4299,9 @@
   },
   "07760": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -4409,9 +4318,9 @@
   },
   "07762": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -4428,9 +4337,9 @@
   },
   "07764": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -4447,9 +4356,9 @@
   },
   "07801": {
     "county": "Morris",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 22.035,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 22.035,
+    "pct_change": 21.606,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 17.015,
@@ -4466,9 +4375,9 @@
   },
   "07803": {
     "county": "Morris",
-    "avg_lmp_2020": 18.047,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 22.3,
+    "avg_lmp_first": 18.047,
+    "avg_lmp_last": 22.07,
+    "pct_change": 22.292,
     "yearly_lmp": {
       "2020": 18.047,
       "2021": 17.267,
@@ -4485,9 +4394,9 @@
   },
   "07820": {
     "county": "Warren",
-    "avg_lmp_2020": 17.95,
-    "avg_lmp_2025": 22.03,
-    "pct_change": 22.7,
+    "avg_lmp_first": 17.95,
+    "avg_lmp_last": 22.03,
+    "pct_change": 22.73,
     "yearly_lmp": {
       "2020": 17.95,
       "2021": 17.26,
@@ -4504,9 +4413,9 @@
   },
   "07821": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.115,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.115,
+    "avg_lmp_last": 21.96,
+    "pct_change": 21.226,
     "yearly_lmp": {
       "2020": 18.115,
       "2021": 18.35,
@@ -4523,9 +4432,9 @@
   },
   "07822": {
     "county": "Sussex",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 23.3,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.99,
+    "pct_change": 23.262,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 17.175,
@@ -4542,9 +4451,9 @@
   },
   "07823": {
     "county": "Warren",
-    "avg_lmp_2020": 17.95,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 21.8,
+    "avg_lmp_first": 17.95,
+    "avg_lmp_last": 21.86,
+    "pct_change": 21.783,
     "yearly_lmp": {
       "2020": 17.95,
       "2021": 17.57,
@@ -4561,9 +4470,9 @@
   },
   "07825": {
     "county": "Warren",
-    "avg_lmp_2020": 17.69,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 24.1,
+    "avg_lmp_first": 17.69,
+    "avg_lmp_last": 21.96,
+    "pct_change": 24.138,
     "yearly_lmp": {
       "2020": 17.69,
       "2021": 17.48,
@@ -4580,9 +4489,9 @@
   },
   "07826": {
     "county": "Sussex",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 23.3,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.99,
+    "pct_change": 23.262,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 17.175,
@@ -4599,9 +4508,9 @@
   },
   "07827": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.32,
-    "avg_lmp_2025": 23.61,
-    "pct_change": 28.9,
+    "avg_lmp_first": 18.32,
+    "avg_lmp_last": 23.61,
+    "pct_change": 28.876,
     "yearly_lmp": {
       "2020": 18.32,
       "2021": 22.16,
@@ -4618,9 +4527,9 @@
   },
   "07828": {
     "county": "Morris",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 22.08,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 22.08,
+    "pct_change": 21.922,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 17.52,
@@ -4637,9 +4546,9 @@
   },
   "07830": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.81,
-    "pct_change": 21.8,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.81,
+    "pct_change": 21.776,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 17.3,
@@ -4656,9 +4565,9 @@
   },
   "07831": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.923,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.8,
@@ -4675,9 +4584,9 @@
   },
   "07832": {
     "county": "Warren",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.83,
-    "pct_change": 21.9,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.83,
+    "pct_change": 21.887,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 17.67,
@@ -4694,9 +4603,9 @@
   },
   "07833": {
     "county": "Warren",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.83,
-    "pct_change": 21.9,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.83,
+    "pct_change": 21.887,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 17.67,
@@ -4713,9 +4622,9 @@
   },
   "07834": {
     "county": "Morris",
-    "avg_lmp_2020": 18.075,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.075,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.66,
     "yearly_lmp": {
       "2020": 18.075,
       "2021": 17.035,
@@ -4732,9 +4641,9 @@
   },
   "07836": {
     "county": "Morris",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.165,
-    "pct_change": 22.1,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.165,
+    "pct_change": 22.054,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.605,
@@ -4751,9 +4660,9 @@
   },
   "07838": {
     "county": "Warren",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.468,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 25.85,
@@ -4770,9 +4679,9 @@
   },
   "07840": {
     "county": "Warren",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 23.1,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.99,
+    "pct_change": 23.055,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 17.34,
@@ -4789,9 +4698,9 @@
   },
   "07842": {
     "county": "Morris",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 22.035,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 22.035,
+    "pct_change": 21.606,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 17.015,
@@ -4808,9 +4717,9 @@
   },
   "07843": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.28,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 18.9,
+    "avg_lmp_first": 18.28,
+    "avg_lmp_last": 21.73,
+    "pct_change": 18.873,
     "yearly_lmp": {
       "2020": 18.28,
       "2021": 18.4,
@@ -4827,9 +4736,9 @@
   },
   "07844": {
     "county": "Warren",
-    "avg_lmp_2020": 18.07,
-    "avg_lmp_2025": 21.66,
-    "pct_change": 19.9,
+    "avg_lmp_first": 18.07,
+    "avg_lmp_last": 21.66,
+    "pct_change": 19.867,
     "yearly_lmp": {
       "2020": 18.07,
       "2021": 18.15,
@@ -4846,9 +4755,9 @@
   },
   "07846": {
     "county": "Warren",
-    "avg_lmp_2020": 17.95,
-    "avg_lmp_2025": 22.03,
-    "pct_change": 22.7,
+    "avg_lmp_first": 17.95,
+    "avg_lmp_last": 22.03,
+    "pct_change": 22.73,
     "yearly_lmp": {
       "2020": 17.95,
       "2021": 17.26,
@@ -4865,9 +4774,9 @@
   },
   "07847": {
     "county": "Morris",
-    "avg_lmp_2020": 18.047,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 22.3,
+    "avg_lmp_first": 18.047,
+    "avg_lmp_last": 22.07,
+    "pct_change": 22.292,
     "yearly_lmp": {
       "2020": 18.047,
       "2021": 17.267,
@@ -4884,9 +4793,9 @@
   },
   "07848": {
     "county": "Sussex",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 23.3,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.99,
+    "pct_change": 23.262,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 17.175,
@@ -4903,9 +4812,9 @@
   },
   "07849": {
     "county": "Morris",
-    "avg_lmp_2020": 18.28,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 18.9,
+    "avg_lmp_first": 18.28,
+    "avg_lmp_last": 21.73,
+    "pct_change": 18.873,
     "yearly_lmp": {
       "2020": 18.28,
       "2021": 18.4,
@@ -4922,9 +4831,9 @@
   },
   "07850": {
     "county": "Morris",
-    "avg_lmp_2020": 18.047,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 22.3,
+    "avg_lmp_first": 18.047,
+    "avg_lmp_last": 22.07,
+    "pct_change": 22.292,
     "yearly_lmp": {
       "2020": 18.047,
       "2021": 17.267,
@@ -4941,9 +4850,9 @@
   },
   "07851": {
     "county": "Sussex",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 23.3,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.99,
+    "pct_change": 23.262,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 17.175,
@@ -4960,9 +4869,9 @@
   },
   "07852": {
     "county": "Morris",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.165,
-    "pct_change": 22.1,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.165,
+    "pct_change": 22.054,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.605,
@@ -4979,9 +4888,9 @@
   },
   "07853": {
     "county": "Morris",
-    "avg_lmp_2020": 18.09,
-    "avg_lmp_2025": 21.825,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.09,
+    "avg_lmp_last": 21.825,
+    "pct_change": 20.647,
     "yearly_lmp": {
       "2020": 18.09,
       "2021": 18.31,
@@ -4998,9 +4907,9 @@
   },
   "07856": {
     "county": "Morris",
-    "avg_lmp_2020": 18.047,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 22.3,
+    "avg_lmp_first": 18.047,
+    "avg_lmp_last": 22.07,
+    "pct_change": 22.292,
     "yearly_lmp": {
       "2020": 18.047,
       "2021": 17.267,
@@ -5017,9 +4926,9 @@
   },
   "07857": {
     "county": "Morris",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.165,
-    "pct_change": 22.1,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.165,
+    "pct_change": 22.054,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.605,
@@ -5036,9 +4945,9 @@
   },
   "07860": {
     "county": "Sussex",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 23.3,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.99,
+    "pct_change": 23.262,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 17.175,
@@ -5055,9 +4964,9 @@
   },
   "07863": {
     "county": "Warren",
-    "avg_lmp_2020": 17.95,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 21.8,
+    "avg_lmp_first": 17.95,
+    "avg_lmp_last": 21.86,
+    "pct_change": 21.783,
     "yearly_lmp": {
       "2020": 17.95,
       "2021": 17.57,
@@ -5074,9 +4983,9 @@
   },
   "07865": {
     "county": "Warren",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 23.3,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.97,
+    "pct_change": 23.288,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 17.24,
@@ -5093,9 +5002,9 @@
   },
   "07866": {
     "county": "Morris",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 22.035,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 22.035,
+    "pct_change": 21.606,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 17.015,
@@ -5112,9 +5021,9 @@
   },
   "07869": {
     "county": "Morris",
-    "avg_lmp_2020": 17.79,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 22.1,
+    "avg_lmp_first": 17.79,
+    "avg_lmp_last": 21.73,
+    "pct_change": 22.147,
     "yearly_lmp": {
       "2020": 17.79,
       "2021": 17.63,
@@ -5131,9 +5040,9 @@
   },
   "07870": {
     "county": "Morris",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 23.1,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.99,
+    "pct_change": 23.055,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 17.34,
@@ -5150,9 +5059,9 @@
   },
   "07871": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.88,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.88,
+    "pct_change": 20.817,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.15,
@@ -5169,9 +5078,9 @@
   },
   "07874": {
     "county": "Sussex",
-    "avg_lmp_2020": 18.115,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.115,
+    "avg_lmp_last": 21.96,
+    "pct_change": 21.226,
     "yearly_lmp": {
       "2020": 18.115,
       "2021": 18.35,
@@ -5188,9 +5097,9 @@
   },
   "07876": {
     "county": "Morris",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.165,
-    "pct_change": 22.1,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.165,
+    "pct_change": 22.054,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.605,
@@ -5207,9 +5116,9 @@
   },
   "07878": {
     "county": "Morris",
-    "avg_lmp_2020": 18.075,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.075,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.66,
     "yearly_lmp": {
       "2020": 18.075,
       "2021": 17.035,
@@ -5226,9 +5135,9 @@
   },
   "07880": {
     "county": "Warren",
-    "avg_lmp_2020": 18.26,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.26,
+    "avg_lmp_last": 22.18,
+    "pct_change": 21.468,
     "yearly_lmp": {
       "2020": 18.26,
       "2021": 25.85,
@@ -5245,9 +5154,9 @@
   },
   "07881": {
     "county": "Sussex",
-    "avg_lmp_2020": 17.69,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 24.1,
+    "avg_lmp_first": 17.69,
+    "avg_lmp_last": 21.96,
+    "pct_change": 24.138,
     "yearly_lmp": {
       "2020": 17.69,
       "2021": 17.48,
@@ -5264,9 +5173,9 @@
   },
   "07882": {
     "county": "Warren",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.705,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.19,
@@ -5283,9 +5192,9 @@
   },
   "07885": {
     "county": "Morris",
-    "avg_lmp_2020": 18.047,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 22.3,
+    "avg_lmp_first": 18.047,
+    "avg_lmp_last": 22.07,
+    "pct_change": 22.292,
     "yearly_lmp": {
       "2020": 18.047,
       "2021": 17.267,
@@ -5302,9 +5211,9 @@
   },
   "07901": {
     "county": "Union",
-    "avg_lmp_2020": 18.155,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.155,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.537,
     "yearly_lmp": {
       "2020": 18.155,
       "2021": 17.215,
@@ -5321,9 +5230,9 @@
   },
   "07920": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.708,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.37,
@@ -5340,9 +5249,9 @@
   },
   "07921": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.99,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 22.2,
+    "avg_lmp_first": 17.99,
+    "avg_lmp_last": 21.99,
+    "pct_change": 22.235,
     "yearly_lmp": {
       "2020": 17.99,
       "2021": 17.37,
@@ -5359,9 +5268,9 @@
   },
   "07922": {
     "county": "Union",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.708,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.37,
@@ -5378,9 +5287,9 @@
   },
   "07924": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.96,
-    "avg_lmp_2025": 21.67,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.96,
+    "avg_lmp_last": 21.67,
+    "pct_change": 20.657,
     "yearly_lmp": {
       "2020": 17.96,
       "2021": 18.17,
@@ -5397,9 +5306,9 @@
   },
   "07926": {
     "county": "Morris",
-    "avg_lmp_2020": 18.075,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.075,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.66,
     "yearly_lmp": {
       "2020": 18.075,
       "2021": 17.035,
@@ -5416,9 +5325,9 @@
   },
   "07927": {
     "county": "Morris",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.98,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.98,
+    "pct_change": 21.369,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 16.97,
@@ -5435,9 +5344,9 @@
   },
   "07928": {
     "county": "Morris",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.671,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.19,
@@ -5454,9 +5363,9 @@
   },
   "07930": {
     "county": "Morris",
-    "avg_lmp_2020": 17.96,
-    "avg_lmp_2025": 21.67,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.96,
+    "avg_lmp_last": 21.67,
+    "pct_change": 20.657,
     "yearly_lmp": {
       "2020": 17.96,
       "2021": 18.17,
@@ -5473,9 +5382,9 @@
   },
   "07931": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.99,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 22.2,
+    "avg_lmp_first": 17.99,
+    "avg_lmp_last": 21.99,
+    "pct_change": 22.235,
     "yearly_lmp": {
       "2020": 17.99,
       "2021": 17.37,
@@ -5492,9 +5401,9 @@
   },
   "07932": {
     "county": "Morris",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.358,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 16.88,
@@ -5511,9 +5420,9 @@
   },
   "07933": {
     "county": "Morris",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.708,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.37,
@@ -5530,9 +5439,9 @@
   },
   "07934": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.96,
-    "avg_lmp_2025": 21.67,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.96,
+    "avg_lmp_last": 21.67,
+    "pct_change": 20.657,
     "yearly_lmp": {
       "2020": 17.96,
       "2021": 18.17,
@@ -5549,9 +5458,9 @@
   },
   "07935": {
     "county": "Morris",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.671,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.19,
@@ -5568,9 +5477,9 @@
   },
   "07936": {
     "county": "Morris",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.358,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 16.88,
@@ -5587,9 +5496,9 @@
   },
   "07939": {
     "county": "Morris",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.708,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.37,
@@ -5606,9 +5515,9 @@
   },
   "07940": {
     "county": "Morris",
-    "avg_lmp_2020": 18.135,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.135,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.671,
     "yearly_lmp": {
       "2020": 18.135,
       "2021": 17.19,
@@ -5625,9 +5534,9 @@
   },
   "07945": {
     "county": "Morris",
-    "avg_lmp_2020": 17.96,
-    "avg_lmp_2025": 21.67,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.96,
+    "avg_lmp_last": 21.67,
+    "pct_change": 20.657,
     "yearly_lmp": {
       "2020": 17.96,
       "2021": 18.17,
@@ -5644,9 +5553,9 @@
   },
   "07946": {
     "county": "Morris",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.708,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.37,
@@ -5663,9 +5572,9 @@
   },
   "07950": {
     "county": "Morris",
-    "avg_lmp_2020": 18.075,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.075,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.66,
     "yearly_lmp": {
       "2020": 18.075,
       "2021": 17.035,
@@ -5682,9 +5591,9 @@
   },
   "07960": {
     "county": "Morris",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.98,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.98,
+    "pct_change": 21.369,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 16.97,
@@ -5701,9 +5610,9 @@
   },
   "07961": {
     "county": "Morris",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.98,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.98,
+    "pct_change": 21.369,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 16.97,
@@ -5720,9 +5629,9 @@
   },
   "07970": {
     "county": "Morris",
-    "avg_lmp_2020": 18.075,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.075,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.66,
     "yearly_lmp": {
       "2020": 18.075,
       "2021": 17.035,
@@ -5739,9 +5648,9 @@
   },
   "07974": {
     "county": "Union",
-    "avg_lmp_2020": 18.155,
-    "avg_lmp_2025": 22.065,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.155,
+    "avg_lmp_last": 22.065,
+    "pct_change": 21.537,
     "yearly_lmp": {
       "2020": 18.155,
       "2021": 17.215,
@@ -5758,9 +5667,9 @@
   },
   "07976": {
     "county": "Morris",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.708,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.37,
@@ -5777,9 +5686,9 @@
   },
   "07977": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.99,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 22.2,
+    "avg_lmp_first": 17.99,
+    "avg_lmp_last": 21.99,
+    "pct_change": 22.235,
     "yearly_lmp": {
       "2020": 17.99,
       "2021": 17.37,
@@ -5796,9 +5705,9 @@
   },
   "07979": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.81,
-    "pct_change": 21.8,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.81,
+    "pct_change": 21.776,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 17.3,
@@ -5815,9 +5724,9 @@
   },
   "07980": {
     "county": "Morris",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.708,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 17.37,
@@ -5834,9 +5743,9 @@
   },
   "07981": {
     "county": "Morris",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.99,
+    "pct_change": 21.358,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 16.88,
@@ -5853,9 +5762,9 @@
   },
   "08001": {
     "county": "Salem",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.84,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.84,
+    "pct_change": 21.199,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.39,
@@ -5872,9 +5781,9 @@
   },
   "08002": {
     "county": "Camden",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.2,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.176,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.27,
@@ -5891,9 +5800,9 @@
   },
   "08003": {
     "county": "Camden",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.5,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.5,
+    "pct_change": 20.516,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 18.11,
@@ -5910,9 +5819,9 @@
   },
   "08004": {
     "county": "Camden",
-    "avg_lmp_2020": 17.85,
-    "avg_lmp_2025": 21.52,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.85,
+    "avg_lmp_last": 21.52,
+    "pct_change": 20.56,
     "yearly_lmp": {
       "2020": 17.85,
       "2021": 18.14,
@@ -5929,9 +5838,9 @@
   },
   "08005": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.992,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.3,
@@ -5948,9 +5857,9 @@
   },
   "08006": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.047,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.25,
@@ -5967,9 +5876,9 @@
   },
   "08007": {
     "county": "Camden",
-    "avg_lmp_2020": 17.96,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.2,
+    "avg_lmp_first": 17.96,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.156,
     "yearly_lmp": {
       "2020": 17.96,
       "2021": 18.28,
@@ -5986,9 +5895,9 @@
   },
   "08008": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.792,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 18.36,
@@ -6005,9 +5914,9 @@
   },
   "08009": {
     "county": "Camden",
-    "avg_lmp_2020": 17.8,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.8,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.618,
     "yearly_lmp": {
       "2020": 17.8,
       "2021": 18.11,
@@ -6024,9 +5933,9 @@
   },
   "08010": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.53,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.53,
+    "pct_change": 20.481,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.145,
@@ -6043,9 +5952,9 @@
   },
   "08011": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.9,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.9,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.503,
     "yearly_lmp": {
       "2020": 17.9,
       "2021": 18.15,
@@ -6062,9 +5971,9 @@
   },
   "08012": {
     "county": "Camden",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.59,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.59,
+    "pct_change": 20.547,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 18.2,
@@ -6081,9 +5990,9 @@
   },
   "08014": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.95,
-    "avg_lmp_2025": 21.69,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.95,
+    "avg_lmp_last": 21.69,
+    "pct_change": 20.836,
     "yearly_lmp": {
       "2020": 17.95,
       "2021": 18.35,
@@ -6100,9 +6009,9 @@
   },
   "08015": {
     "county": "Burlington",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 21.98,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 21.98,
+    "pct_change": 20.969,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 18.24,
@@ -6119,9 +6028,9 @@
   },
   "08016": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.867,
-    "avg_lmp_2025": 21.533,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.867,
+    "avg_lmp_last": 21.533,
+    "pct_change": 20.518,
     "yearly_lmp": {
       "2020": 17.867,
       "2021": 18.127,
@@ -6138,9 +6047,9 @@
   },
   "08019": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.61,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.61,
+    "pct_change": 20.524,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.19,
@@ -6157,9 +6066,9 @@
   },
   "08020": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.49,
+    "pct_change": 20.595,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.153,
@@ -6176,9 +6085,9 @@
   },
   "08021": {
     "county": "Camden",
-    "avg_lmp_2020": 17.86,
-    "avg_lmp_2025": 21.53,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.86,
+    "avg_lmp_last": 21.53,
+    "pct_change": 20.549,
     "yearly_lmp": {
       "2020": 17.86,
       "2021": 18.15,
@@ -6195,13 +6104,10 @@
   },
   "08022": {
     "county": "Burlington",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.63,
-    "pct_change": null,
+    "avg_lmp_first": 23.29,
+    "avg_lmp_last": 21.63,
+    "pct_change": -7.128,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.29,
       "2024": 17.52,
       "2025": 21.63
@@ -6214,9 +6120,9 @@
   },
   "08023": {
     "county": "Salem",
-    "avg_lmp_2020": 17.75,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 21.0,
+    "avg_lmp_first": 17.75,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.958,
     "yearly_lmp": {
       "2020": 17.75,
       "2021": 18.08,
@@ -6233,18 +6139,15 @@
   },
   "08026": {
     "county": "Camden",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 19.82,
+    "pct_change": 11.099,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 18.12,
-      "2022": 19.82,
-      "2023": null,
-      "2024": null,
-      "2025": null
+      "2022": 19.82
     },
-    "selected_year": "2025",
+    "selected_year": "2022",
     "nearest_node": "LINDENWO",
     "node_zone": "AECO",
     "dist_miles": 0.95,
@@ -6252,9 +6155,9 @@
   },
   "08027": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.86,
-    "avg_lmp_2025": 21.5,
-    "pct_change": 20.4,
+    "avg_lmp_first": 17.86,
+    "avg_lmp_last": 21.5,
+    "pct_change": 20.381,
     "yearly_lmp": {
       "2020": 17.86,
       "2021": 18.16,
@@ -6271,9 +6174,9 @@
   },
   "08028": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.705,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.19,
@@ -6290,13 +6193,10 @@
   },
   "08029": {
     "county": "Camden",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.5,
-    "pct_change": null,
+    "avg_lmp_first": 23.52,
+    "avg_lmp_last": 21.5,
+    "pct_change": -8.588,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.52,
       "2024": 17.36,
       "2025": 21.5
@@ -6309,9 +6209,9 @@
   },
   "08030": {
     "county": "Camden",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.51,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.51,
+    "pct_change": 20.572,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 18.16,
@@ -6328,9 +6228,9 @@
   },
   "08031": {
     "county": "Camden",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.49,
+    "pct_change": 20.595,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.14,
@@ -6347,9 +6247,9 @@
   },
   "08032": {
     "county": "Camden",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.59,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.59,
+    "pct_change": 20.547,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 18.2,
@@ -6366,9 +6266,9 @@
   },
   "08033": {
     "county": "Camden",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.62,
-    "pct_change": 20.3,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.62,
+    "pct_change": 20.312,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.3,
@@ -6385,9 +6285,9 @@
   },
   "08034": {
     "county": "Camden",
-    "avg_lmp_2020": 17.99,
-    "avg_lmp_2025": 21.65,
-    "pct_change": 20.3,
+    "avg_lmp_first": 17.99,
+    "avg_lmp_last": 21.65,
+    "pct_change": 20.345,
     "yearly_lmp": {
       "2020": 17.99,
       "2021": 18.3,
@@ -6404,9 +6304,9 @@
   },
   "08035": {
     "county": "Camden",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.49,
+    "pct_change": 20.595,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.14,
@@ -6423,14 +6323,10 @@
   },
   "08036": {
     "county": "Burlington",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.66,
-    "pct_change": null,
+    "avg_lmp_first": 17.49,
+    "avg_lmp_last": 21.66,
+    "pct_change": 23.842,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 17.49,
       "2025": 21.66
     },
@@ -6442,9 +6338,9 @@
   },
   "08037": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.01,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.01,
+    "avg_lmp_last": 21.86,
+    "pct_change": 21.377,
     "yearly_lmp": {
       "2020": 18.01,
       "2021": 18.43,
@@ -6461,9 +6357,9 @@
   },
   "08038": {
     "county": "Salem",
-    "avg_lmp_2020": 17.64,
-    "avg_lmp_2025": 21.23,
-    "pct_change": 20.4,
+    "avg_lmp_first": 17.64,
+    "avg_lmp_last": 21.23,
+    "pct_change": 20.351,
     "yearly_lmp": {
       "2020": 17.64,
       "2021": 17.95,
@@ -6480,9 +6376,9 @@
   },
   "08039": {
     "county": "Gloucester",
-    "avg_lmp_2020": 18.0,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.0,
+    "avg_lmp_last": 21.73,
+    "pct_change": 20.722,
     "yearly_lmp": {
       "2020": 18.0,
       "2021": 18.31,
@@ -6499,13 +6395,10 @@
   },
   "08041": {
     "county": "Burlington",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.63,
-    "pct_change": null,
+    "avg_lmp_first": 23.29,
+    "avg_lmp_last": 21.63,
+    "pct_change": -7.128,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.29,
       "2024": 17.52,
       "2025": 21.63
@@ -6518,9 +6411,9 @@
   },
   "08042": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.9,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.9,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.503,
     "yearly_lmp": {
       "2020": 17.9,
       "2021": 18.15,
@@ -6537,14 +6430,10 @@
   },
   "08043": {
     "county": "Camden",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.48,
-    "pct_change": null,
+    "avg_lmp_first": 17.3,
+    "avg_lmp_last": 21.48,
+    "pct_change": 24.162,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 17.3,
       "2025": 21.48
     },
@@ -6556,9 +6445,9 @@
   },
   "08045": {
     "county": "Camden",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.62,
-    "pct_change": 20.3,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.62,
+    "pct_change": 20.312,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.3,
@@ -6575,9 +6464,9 @@
   },
   "08046": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.53,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.53,
+    "pct_change": 20.481,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.145,
@@ -6594,9 +6483,9 @@
   },
   "08048": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.88,
-    "avg_lmp_2025": 21.55,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.88,
+    "avg_lmp_last": 21.55,
+    "pct_change": 20.526,
     "yearly_lmp": {
       "2020": 17.88,
       "2021": 18.13,
@@ -6613,9 +6502,9 @@
   },
   "08049": {
     "county": "Camden",
-    "avg_lmp_2020": 17.96,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.2,
+    "avg_lmp_first": 17.96,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.156,
     "yearly_lmp": {
       "2020": 17.96,
       "2021": 18.28,
@@ -6632,9 +6521,9 @@
   },
   "08050": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.992,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.3,
@@ -6651,9 +6540,9 @@
   },
   "08051": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.56,
-    "pct_change": 20.2,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.56,
+    "pct_change": 20.245,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.22,
@@ -6670,9 +6559,9 @@
   },
   "08052": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.99,
-    "avg_lmp_2025": 21.65,
-    "pct_change": 20.3,
+    "avg_lmp_first": 17.99,
+    "avg_lmp_last": 21.65,
+    "pct_change": 20.345,
     "yearly_lmp": {
       "2020": 17.99,
       "2021": 18.3,
@@ -6689,14 +6578,10 @@
   },
   "08053": {
     "county": "Burlington",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.48,
-    "pct_change": null,
+    "avg_lmp_first": 17.3,
+    "avg_lmp_last": 21.48,
+    "pct_change": 24.162,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 17.3,
       "2025": 21.48
     },
@@ -6708,14 +6593,10 @@
   },
   "08054": {
     "county": "Burlington",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.66,
-    "pct_change": null,
+    "avg_lmp_first": 17.49,
+    "avg_lmp_last": 21.66,
+    "pct_change": 23.842,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 17.49,
       "2025": 21.66
     },
@@ -6727,9 +6608,9 @@
   },
   "08055": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.59,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.59,
+    "pct_change": 20.547,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 18.17,
@@ -6746,9 +6627,9 @@
   },
   "08056": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.49,
+    "pct_change": 20.595,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.153,
@@ -6765,9 +6646,9 @@
   },
   "08057": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.525,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.525,
+    "pct_change": 20.453,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.16,
@@ -6784,9 +6665,9 @@
   },
   "08059": {
     "county": "Camden",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.51,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.51,
+    "pct_change": 20.572,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 18.16,
@@ -6803,9 +6684,9 @@
   },
   "08060": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.9,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.9,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.503,
     "yearly_lmp": {
       "2020": 17.9,
       "2021": 18.15,
@@ -6822,9 +6703,9 @@
   },
   "08061": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.56,
-    "pct_change": 20.2,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.56,
+    "pct_change": 20.245,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.22,
@@ -6841,9 +6722,9 @@
   },
   "08062": {
     "county": "Gloucester",
-    "avg_lmp_2020": 18.0,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.0,
+    "avg_lmp_last": 21.73,
+    "pct_change": 20.722,
     "yearly_lmp": {
       "2020": 18.0,
       "2021": 18.31,
@@ -6860,9 +6741,9 @@
   },
   "08063": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.785,
-    "avg_lmp_2025": 21.495,
-    "pct_change": 20.9,
+    "avg_lmp_first": 17.785,
+    "avg_lmp_last": 21.495,
+    "pct_change": 20.86,
     "yearly_lmp": {
       "2020": 17.785,
       "2021": 18.15,
@@ -6879,9 +6760,9 @@
   },
   "08064": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.9,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.9,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.559,
     "yearly_lmp": {
       "2020": 17.9,
       "2021": 18.16,
@@ -6898,9 +6779,9 @@
   },
   "08065": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.4,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.436,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 18.19,
@@ -6917,9 +6798,9 @@
   },
   "08066": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.66,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 21.7,
+    "avg_lmp_first": 17.66,
+    "avg_lmp_last": 21.49,
+    "pct_change": 21.687,
     "yearly_lmp": {
       "2020": 17.66,
       "2021": 18.14,
@@ -6936,9 +6817,9 @@
   },
   "08067": {
     "county": "Salem",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.65,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.65,
+    "pct_change": 20.747,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.33,
@@ -6955,9 +6836,9 @@
   },
   "08068": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.9,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.9,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.559,
     "yearly_lmp": {
       "2020": 17.9,
       "2021": 18.16,
@@ -6974,9 +6855,9 @@
   },
   "08069": {
     "county": "Salem",
-    "avg_lmp_2020": 17.75,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 21.0,
+    "avg_lmp_first": 17.75,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.958,
     "yearly_lmp": {
       "2020": 17.75,
       "2021": 18.08,
@@ -6993,9 +6874,9 @@
   },
   "08070": {
     "county": "Salem",
-    "avg_lmp_2020": 17.74,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 21.1,
+    "avg_lmp_first": 17.74,
+    "avg_lmp_last": 21.49,
+    "pct_change": 21.139,
     "yearly_lmp": {
       "2020": 17.74,
       "2021": 18.07,
@@ -7012,9 +6893,9 @@
   },
   "08071": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.6,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.6,
+    "pct_change": 20.468,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.22,
@@ -7031,9 +6912,9 @@
   },
   "08072": {
     "county": "Salem",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.84,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.84,
+    "pct_change": 21.199,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.39,
@@ -7050,14 +6931,10 @@
   },
   "08073": {
     "county": "Burlington",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.66,
-    "pct_change": null,
+    "avg_lmp_first": 17.49,
+    "avg_lmp_last": 21.66,
+    "pct_change": 23.842,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
-      "2023": null,
       "2024": 17.49,
       "2025": 21.66
     },
@@ -7069,9 +6946,9 @@
   },
   "08074": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.6,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.6,
+    "pct_change": 20.468,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.22,
@@ -7088,9 +6965,9 @@
   },
   "08075": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.491,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 18.17,
@@ -7107,9 +6984,9 @@
   },
   "08077": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.525,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.525,
+    "pct_change": 20.453,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.16,
@@ -7126,13 +7003,10 @@
   },
   "08078": {
     "county": "Camden",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.69,
-    "pct_change": null,
+    "avg_lmp_first": 23.46,
+    "avg_lmp_last": 21.69,
+    "pct_change": -7.545,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.46,
       "2024": 17.53,
       "2025": 21.69
@@ -7145,9 +7019,9 @@
   },
   "08079": {
     "county": "Salem",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.84,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.84,
+    "pct_change": 21.199,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.39,
@@ -7164,18 +7038,16 @@
   },
   "08080": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.81,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 17.81,
+    "avg_lmp_last": 23.29,
+    "pct_change": 30.769,
     "yearly_lmp": {
       "2020": 17.81,
       "2021": 18.18,
       "2022": 19.81,
-      "2023": 23.29,
-      "2024": null,
-      "2025": null
+      "2023": 23.29
     },
-    "selected_year": "2025",
+    "selected_year": "2023",
     "nearest_node": "CARNEYPT",
     "node_zone": "AECO",
     "dist_miles": 0.96,
@@ -7183,9 +7055,9 @@
   },
   "08081": {
     "county": "Camden",
-    "avg_lmp_2020": 17.73,
-    "avg_lmp_2025": 21.37,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.73,
+    "avg_lmp_last": 21.37,
+    "pct_change": 20.53,
     "yearly_lmp": {
       "2020": 17.73,
       "2021": 18.02,
@@ -7202,9 +7074,9 @@
   },
   "08083": {
     "county": "Camden",
-    "avg_lmp_2020": 17.8,
-    "avg_lmp_2025": 21.51,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.8,
+    "avg_lmp_last": 21.51,
+    "pct_change": 20.843,
     "yearly_lmp": {
       "2020": 17.8,
       "2021": 18.12,
@@ -7221,9 +7093,9 @@
   },
   "08084": {
     "county": "Camden",
-    "avg_lmp_2020": 17.86,
-    "avg_lmp_2025": 21.53,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.86,
+    "avg_lmp_last": 21.53,
+    "pct_change": 20.549,
     "yearly_lmp": {
       "2020": 17.86,
       "2021": 18.15,
@@ -7240,9 +7112,9 @@
   },
   "08085": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.89,
-    "avg_lmp_2025": 21.62,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.89,
+    "avg_lmp_last": 21.62,
+    "pct_change": 20.85,
     "yearly_lmp": {
       "2020": 17.89,
       "2021": 18.17,
@@ -7259,9 +7131,9 @@
   },
   "08086": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.785,
-    "avg_lmp_2025": 21.495,
-    "pct_change": 20.9,
+    "avg_lmp_first": 17.785,
+    "avg_lmp_last": 21.495,
+    "pct_change": 20.86,
     "yearly_lmp": {
       "2020": 17.785,
       "2021": 18.15,
@@ -7278,9 +7150,9 @@
   },
   "08087": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.792,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 18.36,
@@ -7297,9 +7169,9 @@
   },
   "08088": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.61,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.61,
+    "pct_change": 20.524,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.19,
@@ -7316,9 +7188,9 @@
   },
   "08089": {
     "county": "Camden",
-    "avg_lmp_2020": 17.79,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.79,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.686,
     "yearly_lmp": {
       "2020": 17.79,
       "2021": 18.1,
@@ -7335,9 +7207,9 @@
   },
   "08090": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.56,
-    "pct_change": 20.2,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.56,
+    "pct_change": 20.245,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.22,
@@ -7354,9 +7226,9 @@
   },
   "08091": {
     "county": "Camden",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.5,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.5,
+    "pct_change": 20.516,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 18.12,
@@ -7373,9 +7245,9 @@
   },
   "08092": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.792,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 18.36,
@@ -7392,9 +7264,9 @@
   },
   "08093": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.51,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.51,
+    "pct_change": 20.707,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.15,
@@ -7411,9 +7283,9 @@
   },
   "08094": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.483,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.11,
@@ -7430,9 +7302,9 @@
   },
   "08095": {
     "county": "Camden",
-    "avg_lmp_2020": 17.79,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.79,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.686,
     "yearly_lmp": {
       "2020": 17.79,
       "2021": 18.1,
@@ -7449,11 +7321,10 @@
   },
   "08096": {
     "county": "Gloucester",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.55,
-    "pct_change": null,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.55,
+    "pct_change": 18.667,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.16,
       "2022": 19.91,
       "2023": 23.45,
@@ -7468,11 +7339,10 @@
   },
   "08097": {
     "county": "Gloucester",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.55,
-    "pct_change": null,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.55,
+    "pct_change": 18.667,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.16,
       "2022": 19.91,
       "2023": 23.45,
@@ -7487,9 +7357,9 @@
   },
   "08098": {
     "county": "Salem",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.71,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.71,
+    "pct_change": 20.812,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.15,
@@ -7506,9 +7376,9 @@
   },
   "08102": {
     "county": "Camden",
-    "avg_lmp_2020": 17.92,
-    "avg_lmp_2025": 21.61,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.92,
+    "avg_lmp_last": 21.61,
+    "pct_change": 20.592,
     "yearly_lmp": {
       "2020": 17.92,
       "2021": 18.22,
@@ -7525,9 +7395,9 @@
   },
   "08103": {
     "county": "Camden",
-    "avg_lmp_2020": 17.92,
-    "avg_lmp_2025": 21.61,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.92,
+    "avg_lmp_last": 21.61,
+    "pct_change": 20.592,
     "yearly_lmp": {
       "2020": 17.92,
       "2021": 18.22,
@@ -7544,9 +7414,9 @@
   },
   "08104": {
     "county": "Camden",
-    "avg_lmp_2020": 17.92,
-    "avg_lmp_2025": 21.59,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.92,
+    "avg_lmp_last": 21.59,
+    "pct_change": 20.48,
     "yearly_lmp": {
       "2020": 17.92,
       "2021": 18.21,
@@ -7563,9 +7433,9 @@
   },
   "08105": {
     "county": "Camden",
-    "avg_lmp_2020": 17.92,
-    "avg_lmp_2025": 21.61,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.92,
+    "avg_lmp_last": 21.61,
+    "pct_change": 20.592,
     "yearly_lmp": {
       "2020": 17.92,
       "2021": 18.22,
@@ -7582,9 +7452,9 @@
   },
   "08106": {
     "county": "Camden",
-    "avg_lmp_2020": 17.84,
-    "avg_lmp_2025": 21.51,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.84,
+    "avg_lmp_last": 21.51,
+    "pct_change": 20.572,
     "yearly_lmp": {
       "2020": 17.84,
       "2021": 18.16,
@@ -7601,12 +7471,10 @@
   },
   "08107": {
     "county": "Camden",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.59,
-    "pct_change": null,
+    "avg_lmp_first": 19.9,
+    "avg_lmp_last": 21.59,
+    "pct_change": 8.492,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.9,
       "2023": 23.41,
       "2024": 17.42,
@@ -7620,9 +7488,9 @@
   },
   "08108": {
     "county": "Camden",
-    "avg_lmp_2020": 17.86,
-    "avg_lmp_2025": 21.52,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.86,
+    "avg_lmp_last": 21.52,
+    "pct_change": 20.493,
     "yearly_lmp": {
       "2020": 17.86,
       "2021": 18.16,
@@ -7639,9 +7507,9 @@
   },
   "08109": {
     "county": "Camden",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.2,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.176,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.27,
@@ -7658,9 +7526,9 @@
   },
   "08110": {
     "county": "Camden",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.4,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.436,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 18.19,
@@ -7677,9 +7545,9 @@
   },
   "08201": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.01,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.01,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.933,
     "yearly_lmp": {
       "2020": 18.01,
       "2021": 18.285,
@@ -7696,9 +7564,9 @@
   },
   "08202": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.9,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.9,
+    "pct_change": 20.994,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.45,
@@ -7715,9 +7583,9 @@
   },
   "08203": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 21.93,
+    "pct_change": 20.561,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.39,
@@ -7734,9 +7602,9 @@
   },
   "08204": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.01,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.01,
+    "pct_change": 20.934,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.52,
@@ -7753,9 +7621,9 @@
   },
   "08205": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.01,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.01,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.933,
     "yearly_lmp": {
       "2020": 18.01,
       "2021": 18.285,
@@ -7772,9 +7640,9 @@
   },
   "08210": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.92,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.92,
+    "pct_change": 20.971,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 18.46,
@@ -7791,9 +7659,9 @@
   },
   "08212": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.01,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.01,
+    "pct_change": 20.934,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.52,
@@ -7810,9 +7678,9 @@
   },
   "08215": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.03,
-    "avg_lmp_2025": 21.92,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.03,
+    "avg_lmp_last": 21.92,
+    "pct_change": 21.575,
     "yearly_lmp": {
       "2020": 18.03,
       "2021": 18.45,
@@ -7829,9 +7697,9 @@
   },
   "08217": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.01,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 21.4,
+    "avg_lmp_first": 18.01,
+    "avg_lmp_last": 21.86,
+    "pct_change": 21.377,
     "yearly_lmp": {
       "2020": 18.01,
       "2021": 18.43,
@@ -7848,9 +7716,9 @@
   },
   "08221": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.659,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.41,
@@ -7867,9 +7735,9 @@
   },
   "08223": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.81,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.3,
@@ -7886,9 +7754,9 @@
   },
   "08224": {
     "county": "Burlington",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.792,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 18.36,
@@ -7905,9 +7773,9 @@
   },
   "08225": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.659,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.41,
@@ -7924,9 +7792,9 @@
   },
   "08226": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.866,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.31,
@@ -7943,9 +7811,9 @@
   },
   "08230": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.01,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.01,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.766,
     "yearly_lmp": {
       "2020": 18.01,
       "2021": 18.3,
@@ -7962,18 +7830,15 @@
   },
   "08232": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.0,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 18.0,
+    "avg_lmp_last": 20.01,
+    "pct_change": 11.167,
     "yearly_lmp": {
       "2020": 18.0,
       "2021": 18.28,
-      "2022": 20.01,
-      "2023": null,
-      "2024": null,
-      "2025": null
+      "2022": 20.01
     },
-    "selected_year": "2025",
+    "selected_year": "2022",
     "nearest_node": "LEWIS",
     "node_zone": "AECO",
     "dist_miles": 2.17,
@@ -7981,9 +7846,9 @@
   },
   "08234": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.95,
-    "avg_lmp_2025": 21.68,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.95,
+    "avg_lmp_last": 21.68,
+    "pct_change": 20.78,
     "yearly_lmp": {
       "2020": 17.95,
       "2021": 18.22,
@@ -8000,13 +7865,10 @@
   },
   "08240": {
     "county": "Atlantic",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.795,
-    "pct_change": null,
+    "avg_lmp_first": 23.63,
+    "avg_lmp_last": 21.795,
+    "pct_change": -7.766,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.63,
       "2024": 17.72,
       "2025": 21.795
@@ -8019,9 +7881,9 @@
   },
   "08241": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.91,
-    "pct_change": 21.6,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.91,
+    "pct_change": 21.587,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.42,
@@ -8038,9 +7900,9 @@
   },
   "08242": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.94,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.94,
+    "pct_change": 21.015,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.45,
@@ -8057,9 +7919,9 @@
   },
   "08243": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.015,
-    "avg_lmp_2025": 21.765,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.015,
+    "avg_lmp_last": 21.765,
+    "pct_change": 20.816,
     "yearly_lmp": {
       "2020": 18.015,
       "2021": 18.3,
@@ -8076,9 +7938,9 @@
   },
   "08244": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.81,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.3,
@@ -8095,9 +7957,9 @@
   },
   "08245": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.03,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.03,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.799,
     "yearly_lmp": {
       "2020": 18.03,
       "2021": 18.41,
@@ -8114,9 +7976,9 @@
   },
   "08246": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.01,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.01,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.766,
     "yearly_lmp": {
       "2020": 18.01,
       "2021": 18.3,
@@ -8133,9 +7995,9 @@
   },
   "08247": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.9,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.9,
+    "pct_change": 20.994,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.45,
@@ -8152,9 +8014,9 @@
   },
   "08248": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.015,
-    "avg_lmp_2025": 21.765,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.015,
+    "avg_lmp_last": 21.765,
+    "pct_change": 20.816,
     "yearly_lmp": {
       "2020": 18.015,
       "2021": 18.3,
@@ -8171,9 +8033,9 @@
   },
   "08251": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.94,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.94,
+    "pct_change": 21.015,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.45,
@@ -8190,9 +8052,9 @@
   },
   "08260": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.94,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.94,
+    "pct_change": 21.015,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.45,
@@ -8209,9 +8071,9 @@
   },
   "08270": {
     "county": "Cape May",
-    "avg_lmp_2020": 17.98,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 21.0,
+    "avg_lmp_first": 17.98,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.968,
     "yearly_lmp": {
       "2020": 17.98,
       "2021": 18.27,
@@ -8228,9 +8090,9 @@
   },
   "08302": {
     "county": "Cumberland",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.04,
-    "pct_change": 21.1,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.04,
+    "pct_change": 21.099,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.62,
@@ -8247,9 +8109,9 @@
   },
   "08310": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.761,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.17,
@@ -8266,12 +8128,10 @@
   },
   "08311": {
     "county": "Cumberland",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.51,
-    "pct_change": null,
+    "avg_lmp_first": 19.82,
+    "avg_lmp_last": 21.51,
+    "pct_change": 8.527,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.82,
       "2023": 23.37,
       "2024": 17.37,
@@ -8285,9 +8145,9 @@
   },
   "08312": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.81,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.81,
+    "avg_lmp_last": 21.49,
+    "pct_change": 20.663,
     "yearly_lmp": {
       "2020": 17.81,
       "2021": 18.13,
@@ -8304,9 +8164,9 @@
   },
   "08314": {
     "county": "Cape May",
-    "avg_lmp_2020": 18.03,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.03,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.799,
     "yearly_lmp": {
       "2020": 18.03,
       "2021": 18.41,
@@ -8323,9 +8183,9 @@
   },
   "08316": {
     "county": "Cumberland",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.757,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.27,
@@ -8342,9 +8202,9 @@
   },
   "08317": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.66,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.66,
+    "pct_change": 20.803,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.21,
@@ -8361,9 +8221,9 @@
   },
   "08318": {
     "county": "Salem",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.89,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.89,
+    "pct_change": 20.606,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.48,
@@ -8380,9 +8240,9 @@
   },
   "08319": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.66,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.66,
+    "pct_change": 20.803,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.21,
@@ -8399,12 +8259,10 @@
   },
   "08320": {
     "county": "Cumberland",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.51,
-    "pct_change": null,
+    "avg_lmp_first": 19.82,
+    "avg_lmp_last": 21.51,
+    "pct_change": 8.527,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.82,
       "2023": 23.37,
       "2024": 17.37,
@@ -8418,12 +8276,10 @@
   },
   "08321": {
     "county": "Cumberland",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.51,
-    "pct_change": null,
+    "avg_lmp_first": 19.82,
+    "avg_lmp_last": 21.51,
+    "pct_change": 8.527,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.82,
       "2023": 23.37,
       "2024": 17.37,
@@ -8437,9 +8293,9 @@
   },
   "08322": {
     "county": "Gloucester",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.483,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.11,
@@ -8456,9 +8312,9 @@
   },
   "08323": {
     "county": "Cumberland",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.18,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.52,
@@ -8475,9 +8331,9 @@
   },
   "08324": {
     "county": "Cumberland",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.757,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.27,
@@ -8494,9 +8350,9 @@
   },
   "08326": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.761,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.17,
@@ -8513,9 +8369,9 @@
   },
   "08327": {
     "county": "Cumberland",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.757,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.27,
@@ -8532,9 +8388,9 @@
   },
   "08328": {
     "county": "Gloucester",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.89,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.89,
+    "pct_change": 20.606,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.48,
@@ -8551,9 +8407,9 @@
   },
   "08329": {
     "county": "Cumberland",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.757,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.27,
@@ -8570,9 +8426,9 @@
   },
   "08330": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.66,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.66,
+    "pct_change": 20.803,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.21,
@@ -8589,9 +8445,9 @@
   },
   "08332": {
     "county": "Cumberland",
-    "avg_lmp_2020": 17.96,
-    "avg_lmp_2025": 21.68,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.96,
+    "avg_lmp_last": 21.68,
+    "pct_change": 20.713,
     "yearly_lmp": {
       "2020": 17.96,
       "2021": 18.26,
@@ -8608,9 +8464,9 @@
   },
   "08340": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.757,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.27,
@@ -8627,9 +8483,9 @@
   },
   "08341": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.761,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.17,
@@ -8646,9 +8502,9 @@
   },
   "08343": {
     "county": "Salem",
-    "avg_lmp_2020": 17.81,
-    "avg_lmp_2025": 21.49,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.81,
+    "avg_lmp_last": 21.49,
+    "pct_change": 20.663,
     "yearly_lmp": {
       "2020": 17.81,
       "2021": 18.13,
@@ -8665,12 +8521,10 @@
   },
   "08344": {
     "county": "Gloucester",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.64,
-    "pct_change": null,
+    "avg_lmp_first": 19.89,
+    "avg_lmp_last": 21.64,
+    "pct_change": 8.798,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.89,
       "2023": 23.47,
       "2024": 17.65,
@@ -8684,12 +8538,10 @@
   },
   "08345": {
     "county": "Cumberland",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.51,
-    "pct_change": null,
+    "avg_lmp_first": 19.82,
+    "avg_lmp_last": 21.51,
+    "pct_change": 8.527,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.82,
       "2023": 23.37,
       "2024": 17.37,
@@ -8703,9 +8555,9 @@
   },
   "08346": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.03,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.03,
+    "avg_lmp_last": 21.86,
+    "pct_change": 21.242,
     "yearly_lmp": {
       "2020": 18.03,
       "2021": 18.31,
@@ -8722,9 +8574,9 @@
   },
   "08348": {
     "county": "Cumberland",
-    "avg_lmp_2020": 17.97,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.97,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.757,
     "yearly_lmp": {
       "2020": 17.97,
       "2021": 18.27,
@@ -8741,12 +8593,10 @@
   },
   "08349": {
     "county": "Cumberland",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.51,
-    "pct_change": null,
+    "avg_lmp_first": 19.82,
+    "avg_lmp_last": 21.51,
+    "pct_change": 8.527,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.82,
       "2023": 23.37,
       "2024": 17.37,
@@ -8760,9 +8610,9 @@
   },
   "08350": {
     "county": "Atlantic",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.761,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.17,
@@ -8779,9 +8629,9 @@
   },
   "08352": {
     "county": "Cumberland",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.76,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.76,
+    "pct_change": 20.755,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.33,
@@ -8798,9 +8648,9 @@
   },
   "08353": {
     "county": "Cumberland",
-    "avg_lmp_2020": 18.13,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.13,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.18,
     "yearly_lmp": {
       "2020": 18.13,
       "2021": 18.52,
@@ -8817,9 +8667,9 @@
   },
   "08360": {
     "county": "Cumberland",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.84,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.84,
+    "pct_change": 20.663,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.42,
@@ -8836,9 +8686,9 @@
   },
   "08361": {
     "county": "Cumberland",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.58,
-    "pct_change": 20.8,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.58,
+    "pct_change": 20.761,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.17,
@@ -8855,9 +8705,9 @@
   },
   "08401": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 20.5,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 21.93,
+    "pct_change": 20.495,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.39,
@@ -8874,9 +8724,9 @@
   },
   "08402": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.659,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.41,
@@ -8893,9 +8743,9 @@
   },
   "08403": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.659,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.41,
@@ -8912,9 +8762,9 @@
   },
   "08406": {
     "county": "Atlantic",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.659,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.41,
@@ -8931,9 +8781,9 @@
   },
   "08501": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.91,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.91,
+    "pct_change": 20.65,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.3,
@@ -8950,9 +8800,9 @@
   },
   "08502": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.87,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.87,
+    "pct_change": 20.695,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 18.19,
@@ -8969,9 +8819,9 @@
   },
   "08505": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.8,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.8,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.618,
     "yearly_lmp": {
       "2020": 17.8,
       "2021": 18.11,
@@ -8988,9 +8838,9 @@
   },
   "08510": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.85,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.85,
+    "pct_change": 20.652,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.18,
@@ -9007,9 +8857,9 @@
   },
   "08511": {
     "county": "Burlington",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.81,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.19,
@@ -9026,9 +8876,9 @@
   },
   "08512": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.07,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.07,
+    "pct_change": 21.264,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 18.13,
@@ -9045,9 +8895,9 @@
   },
   "08514": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.91,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.91,
+    "pct_change": 20.65,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.3,
@@ -9064,9 +8914,9 @@
   },
   "08515": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.8,
-    "avg_lmp_2025": 21.47,
-    "pct_change": 20.6,
+    "avg_lmp_first": 17.8,
+    "avg_lmp_last": 21.47,
+    "pct_change": 20.618,
     "yearly_lmp": {
       "2020": 17.8,
       "2021": 18.11,
@@ -9083,9 +8933,9 @@
   },
   "08518": {
     "county": "Burlington",
-    "avg_lmp_2020": 17.93,
-    "avg_lmp_2025": 21.6,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.93,
+    "avg_lmp_last": 21.6,
+    "pct_change": 20.468,
     "yearly_lmp": {
       "2020": 17.93,
       "2021": 18.155,
@@ -9102,9 +8952,9 @@
   },
   "08520": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 20.5,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.86,
+    "pct_change": 20.507,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.0,
@@ -9121,9 +8971,9 @@
   },
   "08525": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.2,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.176,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.27,
@@ -9140,9 +8990,9 @@
   },
   "08527": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.85,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.85,
+    "pct_change": 20.652,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.18,
@@ -9159,11 +9009,10 @@
   },
   "08528": {
     "county": "Middlesex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.77,
-    "pct_change": null,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 21.77,
+    "pct_change": 18.897,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.31,
       "2022": 20.07,
       "2023": 23.223,
@@ -9178,9 +9027,9 @@
   },
   "08530": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.98,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.98,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.69,
     "yearly_lmp": {
       "2020": 17.98,
       "2021": 18.24,
@@ -9197,9 +9046,9 @@
   },
   "08533": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.81,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.19,
@@ -9216,18 +9065,13 @@
   },
   "08534": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 18.1,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": 18.1,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null
+      "2020": 18.1
     },
-    "selected_year": "2025",
+    "selected_year": "2020",
     "nearest_node": "HOPEWEL1",
     "node_zone": "PSEG",
     "dist_miles": 2.05,
@@ -9235,9 +9079,9 @@
   },
   "08535": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.87,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.87,
+    "pct_change": 20.829,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.17,
@@ -9254,18 +9098,14 @@
   },
   "08536": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.09,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 18.09,
+    "avg_lmp_last": 18.3,
+    "pct_change": 1.161,
     "yearly_lmp": {
       "2020": 18.09,
-      "2021": 18.3,
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null
+      "2021": 18.3
     },
-    "selected_year": "2025",
+    "selected_year": "2021",
     "nearest_node": "DEYRD",
     "node_zone": "PSEG",
     "dist_miles": 0.91,
@@ -9273,9 +9113,9 @@
   },
   "08540": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.2,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.176,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.27,
@@ -9292,9 +9132,9 @@
   },
   "08542": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.2,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.176,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.27,
@@ -9311,9 +9151,9 @@
   },
   "08544": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.2,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.176,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.27,
@@ -9330,9 +9170,9 @@
   },
   "08550": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.06,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 20.3,
+    "avg_lmp_first": 18.06,
+    "avg_lmp_last": 21.73,
+    "pct_change": 20.321,
     "yearly_lmp": {
       "2020": 18.06,
       "2021": 18.22,
@@ -9349,9 +9189,9 @@
   },
   "08551": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.04,
-    "avg_lmp_2025": 21.72,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.04,
+    "avg_lmp_last": 21.72,
+    "pct_change": 20.399,
     "yearly_lmp": {
       "2020": 18.04,
       "2021": 18.29,
@@ -9368,11 +9208,10 @@
   },
   "08553": {
     "county": "Somerset",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.77,
-    "pct_change": null,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 21.77,
+    "pct_change": 18.897,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.31,
       "2022": 20.07,
       "2023": 23.223,
@@ -9387,13 +9226,10 @@
   },
   "08554": {
     "county": "Burlington",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.63,
-    "pct_change": null,
+    "avg_lmp_first": 23.29,
+    "avg_lmp_last": 21.63,
+    "pct_change": -7.128,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
-      "2022": null,
       "2023": 23.29,
       "2024": 17.52,
       "2025": 21.63
@@ -9406,9 +9242,9 @@
   },
   "08555": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 20.5,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.86,
+    "pct_change": 20.507,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.0,
@@ -9425,11 +9261,10 @@
   },
   "08558": {
     "county": "Somerset",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.77,
-    "pct_change": null,
+    "avg_lmp_first": 18.31,
+    "avg_lmp_last": 21.77,
+    "pct_change": 18.897,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.31,
       "2022": 20.07,
       "2023": 23.223,
@@ -9444,9 +9279,9 @@
   },
   "08559": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.98,
-    "avg_lmp_2025": 21.7,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.98,
+    "avg_lmp_last": 21.7,
+    "pct_change": 20.69,
     "yearly_lmp": {
       "2020": 17.98,
       "2021": 18.24,
@@ -9463,18 +9298,13 @@
   },
   "08560": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 18.1,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": 18.1,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null
+      "2020": 18.1
     },
-    "selected_year": "2025",
+    "selected_year": "2020",
     "nearest_node": "HOPEWEL1",
     "node_zone": "PSEG",
     "dist_miles": 3.89,
@@ -9482,9 +9312,9 @@
   },
   "08561": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 20.5,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.86,
+    "pct_change": 20.507,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 18.0,
@@ -9501,9 +9331,9 @@
   },
   "08562": {
     "county": "Burlington",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.81,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.19,
@@ -9520,9 +9350,9 @@
   },
   "08608": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.3,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.331,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.3,
@@ -9539,9 +9369,9 @@
   },
   "08609": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.06,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.06,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.432,
     "yearly_lmp": {
       "2020": 18.06,
       "2021": 18.31,
@@ -9558,9 +9388,9 @@
   },
   "08610": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.73,
+    "pct_change": 20.588,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.28,
@@ -9577,9 +9407,9 @@
   },
   "08611": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.73,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.73,
+    "pct_change": 20.588,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.28,
@@ -9596,9 +9426,9 @@
   },
   "08618": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.3,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.331,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.3,
@@ -9615,9 +9445,9 @@
   },
   "08619": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.74,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.74,
+    "pct_change": 20.644,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.302,
@@ -9634,8 +9464,8 @@
   },
   "08620": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.0,
-    "avg_lmp_2025": 21.69,
+    "avg_lmp_first": 18.0,
+    "avg_lmp_last": 21.69,
     "pct_change": 20.5,
     "yearly_lmp": {
       "2020": 18.0,
@@ -9653,18 +9483,13 @@
   },
   "08628": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 18.1,
+    "pct_change": 0.0,
     "yearly_lmp": {
-      "2020": 18.1,
-      "2021": null,
-      "2022": null,
-      "2023": null,
-      "2024": null,
-      "2025": null
+      "2020": 18.1
     },
-    "selected_year": "2025",
+    "selected_year": "2020",
     "nearest_node": "HOPEWEL1",
     "node_zone": "PSEG",
     "dist_miles": 3.29,
@@ -9672,9 +9497,9 @@
   },
   "08629": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.74,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.74,
+    "pct_change": 20.644,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.302,
@@ -9691,9 +9516,9 @@
   },
   "08638": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.78,
-    "pct_change": 20.3,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.78,
+    "pct_change": 20.331,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 18.3,
@@ -9710,9 +9535,9 @@
   },
   "08640": {
     "county": "Burlington",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.81,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.19,
@@ -9729,9 +9554,9 @@
   },
   "08641": {
     "county": "Burlington",
-    "avg_lmp_2020": 18.02,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.8,
+    "avg_lmp_first": 18.02,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.81,
     "yearly_lmp": {
       "2020": 18.02,
       "2021": 18.19,
@@ -9748,9 +9573,9 @@
   },
   "08648": {
     "county": "Mercer",
-    "avg_lmp_2020": 18.07,
-    "avg_lmp_2025": 21.74,
-    "pct_change": 20.3,
+    "avg_lmp_first": 18.07,
+    "avg_lmp_last": 21.74,
+    "pct_change": 20.31,
     "yearly_lmp": {
       "2020": 18.07,
       "2021": 18.25,
@@ -9767,11 +9592,10 @@
   },
   "08690": {
     "county": "Mercer",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.74,
-    "pct_change": null,
+    "avg_lmp_first": 18.29,
+    "avg_lmp_last": 21.74,
+    "pct_change": 18.863,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.29,
       "2022": 20.03,
       "2023": 23.33,
@@ -9786,11 +9610,10 @@
   },
   "08691": {
     "county": "Mercer",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.74,
-    "pct_change": null,
+    "avg_lmp_first": 18.29,
+    "avg_lmp_last": 21.74,
+    "pct_change": 18.863,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.29,
       "2022": 20.03,
       "2023": 23.33,
@@ -9805,9 +9628,9 @@
   },
   "08701": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.21,
@@ -9824,9 +9647,9 @@
   },
   "08720": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.95,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.95,
+    "pct_change": 20.937,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.19,
@@ -9843,9 +9666,9 @@
   },
   "08721": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.22,
@@ -9862,9 +9685,9 @@
   },
   "08722": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.145,
-    "avg_lmp_2025": 21.987,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.145,
+    "avg_lmp_last": 21.987,
+    "pct_change": 21.174,
     "yearly_lmp": {
       "2020": 18.145,
       "2021": 18.473,
@@ -9881,9 +9704,9 @@
   },
   "08723": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.21,
@@ -9900,9 +9723,9 @@
   },
   "08724": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.21,
@@ -9919,9 +9742,9 @@
   },
   "08730": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.21,
@@ -9938,9 +9761,9 @@
   },
   "08731": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.145,
-    "avg_lmp_2025": 21.987,
-    "pct_change": 21.2,
+    "avg_lmp_first": 18.145,
+    "avg_lmp_last": 21.987,
+    "pct_change": 21.174,
     "yearly_lmp": {
       "2020": 18.145,
       "2021": 18.473,
@@ -9957,9 +9780,9 @@
   },
   "08732": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.22,
@@ -9976,9 +9799,9 @@
   },
   "08733": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 21.1,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.93,
+    "pct_change": 21.093,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.21,
@@ -9995,9 +9818,9 @@
   },
   "08734": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.047,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.25,
@@ -10014,9 +9837,9 @@
   },
   "08735": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.21,
@@ -10033,9 +9856,9 @@
   },
   "08736": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -10052,9 +9875,9 @@
   },
   "08738": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.21,
@@ -10071,9 +9894,9 @@
   },
   "08740": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.22,
@@ -10090,9 +9913,9 @@
   },
   "08741": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.22,
@@ -10109,9 +9932,9 @@
   },
   "08742": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.21,
@@ -10128,9 +9951,9 @@
   },
   "08750": {
     "county": "Monmouth",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.06,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.06,
+    "pct_change": 21.275,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 18.13,
@@ -10147,9 +9970,9 @@
   },
   "08751": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.22,
@@ -10166,9 +9989,9 @@
   },
   "08752": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.97,
+    "pct_change": 21.047,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.25,
@@ -10185,9 +10008,9 @@
   },
   "08753": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 21.97,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 21.97,
+    "pct_change": 20.98,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 18.22,
@@ -10204,9 +10027,9 @@
   },
   "08755": {
     "county": "Ocean",
-    "avg_lmp_2020": 17.94,
-    "avg_lmp_2025": 21.82,
-    "pct_change": 21.6,
+    "avg_lmp_first": 17.94,
+    "avg_lmp_last": 21.82,
+    "pct_change": 21.628,
     "yearly_lmp": {
       "2020": 17.94,
       "2021": 17.59,
@@ -10223,9 +10046,9 @@
   },
   "08757": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 21.98,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 21.98,
+    "pct_change": 20.969,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 18.24,
@@ -10242,9 +10065,9 @@
   },
   "08758": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.992,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.3,
@@ -10261,9 +10084,9 @@
   },
   "08759": {
     "county": "Ocean",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 21.98,
-    "pct_change": 21.0,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 21.98,
+    "pct_change": 20.969,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 18.24,
@@ -10280,9 +10103,9 @@
   },
   "08801": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.76,
-    "pct_change": 20.1,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.76,
+    "pct_change": 20.088,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 18.28,
@@ -10299,9 +10122,9 @@
   },
   "08802": {
     "county": "Warren",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.705,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.19,
@@ -10318,9 +10141,9 @@
   },
   "08804": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.68,
-    "pct_change": 21.7,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.68,
+    "pct_change": 21.661,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 17.6,
@@ -10337,9 +10160,9 @@
   },
   "08805": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.726,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 17.98,
@@ -10356,9 +10179,9 @@
   },
   "08807": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 21.1,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.93,
+    "pct_change": 21.093,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 17.87,
@@ -10375,9 +10198,9 @@
   },
   "08809": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.923,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.8,
@@ -10394,9 +10217,9 @@
   },
   "08810": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.04,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.04,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.565,
     "yearly_lmp": {
       "2020": 18.04,
       "2021": 18.36,
@@ -10413,9 +10236,9 @@
   },
   "08812": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.11,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.11,
+    "pct_change": 21.751,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.575,
@@ -10432,9 +10255,9 @@
   },
   "08816": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 21.93,
+    "pct_change": 20.693,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 18.33,
@@ -10451,9 +10274,9 @@
   },
   "08817": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.097,
-    "avg_lmp_2025": 21.88,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.097,
+    "avg_lmp_last": 21.88,
+    "pct_change": 20.904,
     "yearly_lmp": {
       "2020": 18.097,
       "2021": 18.407,
@@ -10470,9 +10293,9 @@
   },
   "08820": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.699,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.8,
@@ -10489,9 +10312,9 @@
   },
   "08821": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.66,
-    "avg_lmp_2025": 21.25,
-    "pct_change": 20.3,
+    "avg_lmp_first": 17.66,
+    "avg_lmp_last": 21.25,
+    "pct_change": 20.328,
     "yearly_lmp": {
       "2020": 17.66,
       "2021": 17.98,
@@ -10508,9 +10331,9 @@
   },
   "08822": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.04,
-    "avg_lmp_2025": 21.72,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.04,
+    "avg_lmp_last": 21.72,
+    "pct_change": 20.399,
     "yearly_lmp": {
       "2020": 18.04,
       "2021": 18.29,
@@ -10527,9 +10350,9 @@
   },
   "08823": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.075,
-    "avg_lmp_2025": 21.79,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.075,
+    "avg_lmp_last": 21.79,
+    "pct_change": 20.553,
     "yearly_lmp": {
       "2020": 18.075,
       "2021": 18.22,
@@ -10546,9 +10369,9 @@
   },
   "08824": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.04,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.04,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.565,
     "yearly_lmp": {
       "2020": 18.04,
       "2021": 18.36,
@@ -10565,18 +10388,16 @@
   },
   "08825": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.74,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 17.74,
+    "avg_lmp_last": 23.31,
+    "pct_change": 31.398,
     "yearly_lmp": {
       "2020": 17.74,
       "2021": 18.1,
       "2022": 19.77,
-      "2023": 23.31,
-      "2024": null,
-      "2025": null
+      "2023": 23.31
     },
-    "selected_year": "2025",
+    "selected_year": "2023",
     "nearest_node": "BRIDGEPO",
     "node_zone": "AECO",
     "dist_miles": 4.17,
@@ -10584,9 +10405,9 @@
   },
   "08826": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.923,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.8,
@@ -10603,9 +10424,9 @@
   },
   "08827": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.923,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.8,
@@ -10622,9 +10443,9 @@
   },
   "08828": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.04,
-    "avg_lmp_2025": 21.75,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.04,
+    "avg_lmp_last": 21.75,
+    "pct_change": 20.565,
     "yearly_lmp": {
       "2020": 18.04,
       "2021": 18.36,
@@ -10641,9 +10462,9 @@
   },
   "08829": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.76,
-    "pct_change": 20.1,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.76,
+    "pct_change": 20.088,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 18.28,
@@ -10660,9 +10481,9 @@
   },
   "08830": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.25,
-    "avg_lmp_2025": 22.21,
-    "pct_change": 21.7,
+    "avg_lmp_first": 18.25,
+    "avg_lmp_last": 22.21,
+    "pct_change": 21.699,
     "yearly_lmp": {
       "2020": 18.25,
       "2021": 24.8,
@@ -10679,9 +10500,9 @@
   },
   "08831": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.122,
-    "avg_lmp_2025": 21.977,
-    "pct_change": 21.3,
+    "avg_lmp_first": 18.122,
+    "avg_lmp_last": 21.977,
+    "pct_change": 21.272,
     "yearly_lmp": {
       "2020": 18.122,
       "2021": 18.135,
@@ -10698,9 +10519,9 @@
   },
   "08832": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 22.16,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 22.16,
+    "pct_change": 21.892,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 17.79,
@@ -10717,9 +10538,9 @@
   },
   "08833": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.12,
-    "avg_lmp_2025": 21.76,
-    "pct_change": 20.1,
+    "avg_lmp_first": 18.12,
+    "avg_lmp_last": 21.76,
+    "pct_change": 20.088,
     "yearly_lmp": {
       "2020": 18.12,
       "2021": 18.28,
@@ -10736,12 +10557,10 @@
   },
   "08835": {
     "county": "Somerset",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.47,
-    "pct_change": null,
+    "avg_lmp_first": 19.79,
+    "avg_lmp_last": 21.47,
+    "pct_change": 8.489,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.79,
       "2023": 23.29,
       "2024": 17.37,
@@ -10755,9 +10574,9 @@
   },
   "08836": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 21.1,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.93,
+    "pct_change": 21.093,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 17.87,
@@ -10774,9 +10593,9 @@
   },
   "08837": {
     "county": "Middlesex",
-    "avg_lmp_2020": 17.82,
-    "avg_lmp_2025": 21.505,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.82,
+    "avg_lmp_last": 21.505,
+    "pct_change": 20.679,
     "yearly_lmp": {
       "2020": 17.82,
       "2021": 18.15,
@@ -10793,9 +10612,9 @@
   },
   "08840": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.11,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 21.1,
+    "avg_lmp_first": 18.11,
+    "avg_lmp_last": 21.93,
+    "pct_change": 21.093,
     "yearly_lmp": {
       "2020": 18.11,
       "2021": 18.44,
@@ -10812,9 +10631,9 @@
   },
   "08844": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.66,
-    "avg_lmp_2025": 21.25,
-    "pct_change": 20.3,
+    "avg_lmp_first": 17.66,
+    "avg_lmp_last": 21.25,
+    "pct_change": 20.328,
     "yearly_lmp": {
       "2020": 17.66,
       "2021": 17.98,
@@ -10831,9 +10650,9 @@
   },
   "08846": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.11,
-    "pct_change": 21.8,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.11,
+    "pct_change": 21.751,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.575,
@@ -10850,18 +10669,16 @@
   },
   "08848": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.74,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 17.74,
+    "avg_lmp_last": 23.31,
+    "pct_change": 31.398,
     "yearly_lmp": {
       "2020": 17.74,
       "2021": 18.1,
       "2022": 19.77,
-      "2023": 23.31,
-      "2024": null,
-      "2025": null
+      "2023": 23.31
     },
-    "selected_year": "2025",
+    "selected_year": "2023",
     "nearest_node": "BRIDGEPO",
     "node_zone": "AECO",
     "dist_miles": 3.46,
@@ -10869,9 +10686,9 @@
   },
   "08850": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.08,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.08,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.575,
     "yearly_lmp": {
       "2020": 18.08,
       "2021": 18.31,
@@ -10888,9 +10705,9 @@
   },
   "08852": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.15,
-    "avg_lmp_2025": 21.86,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.15,
+    "avg_lmp_last": 21.86,
+    "pct_change": 20.441,
     "yearly_lmp": {
       "2020": 18.15,
       "2021": 18.27,
@@ -10907,9 +10724,9 @@
   },
   "08853": {
     "county": "Somerset",
-    "avg_lmp_2020": 17.66,
-    "avg_lmp_2025": 21.25,
-    "pct_change": 20.3,
+    "avg_lmp_first": 17.66,
+    "avg_lmp_last": 21.25,
+    "pct_change": 20.328,
     "yearly_lmp": {
       "2020": 17.66,
       "2021": 17.98,
@@ -10926,9 +10743,9 @@
   },
   "08854": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 22.1,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 22.1,
+    "pct_change": 21.495,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 17.87,
@@ -10945,9 +10762,9 @@
   },
   "08857": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.507,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 17.95,
@@ -10964,9 +10781,9 @@
   },
   "08858": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.91,
-    "avg_lmp_2025": 21.81,
-    "pct_change": 21.8,
+    "avg_lmp_first": 17.91,
+    "avg_lmp_last": 21.81,
+    "pct_change": 21.776,
     "yearly_lmp": {
       "2020": 17.91,
       "2021": 17.3,
@@ -10983,9 +10800,9 @@
   },
   "08859": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.16,
-    "avg_lmp_2025": 22.15,
-    "pct_change": 22.0,
+    "avg_lmp_first": 18.16,
+    "avg_lmp_last": 22.15,
+    "pct_change": 21.971,
     "yearly_lmp": {
       "2020": 18.16,
       "2021": 17.85,
@@ -11002,9 +10819,9 @@
   },
   "08861": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.923,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.85,
@@ -11021,9 +10838,9 @@
   },
   "08863": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.06,
-    "avg_lmp_2025": 21.77,
-    "pct_change": 20.5,
+    "avg_lmp_first": 18.06,
+    "avg_lmp_last": 21.77,
+    "pct_change": 20.543,
     "yearly_lmp": {
       "2020": 18.06,
       "2021": 18.115,
@@ -11040,9 +10857,9 @@
   },
   "08865": {
     "county": "Warren",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.705,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.19,
@@ -11059,18 +10876,16 @@
   },
   "08867": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.74,
-    "avg_lmp_2025": null,
-    "pct_change": null,
+    "avg_lmp_first": 17.74,
+    "avg_lmp_last": 23.31,
+    "pct_change": 31.398,
     "yearly_lmp": {
       "2020": 17.74,
       "2021": 18.1,
       "2022": 19.77,
-      "2023": 23.31,
-      "2024": null,
-      "2025": null
+      "2023": 23.31
     },
-    "selected_year": "2025",
+    "selected_year": "2023",
     "nearest_node": "BRIDGEPO",
     "node_zone": "AECO",
     "dist_miles": 7.14,
@@ -11078,9 +10893,9 @@
   },
   "08869": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.1,
-    "avg_lmp_2025": 21.88,
-    "pct_change": 20.9,
+    "avg_lmp_first": 18.1,
+    "avg_lmp_last": 21.88,
+    "pct_change": 20.884,
     "yearly_lmp": {
       "2020": 18.1,
       "2021": 17.9,
@@ -11097,9 +10912,9 @@
   },
   "08872": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 22.18,
-    "pct_change": 22.0,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 22.18,
+    "pct_change": 22.002,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 17.87,
@@ -11116,9 +10931,9 @@
   },
   "08873": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.075,
-    "avg_lmp_2025": 21.79,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.075,
+    "avg_lmp_last": 21.79,
+    "pct_change": 20.553,
     "yearly_lmp": {
       "2020": 18.075,
       "2021": 18.22,
@@ -11135,9 +10950,9 @@
   },
   "08876": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.14,
-    "avg_lmp_2025": 21.85,
-    "pct_change": 20.5,
+    "avg_lmp_first": 18.14,
+    "avg_lmp_last": 21.85,
+    "pct_change": 20.452,
     "yearly_lmp": {
       "2020": 18.14,
       "2021": 17.85,
@@ -11154,9 +10969,9 @@
   },
   "08879": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.2,
-    "avg_lmp_2025": 22.19,
-    "pct_change": 21.9,
+    "avg_lmp_first": 18.2,
+    "avg_lmp_last": 22.19,
+    "pct_change": 21.923,
     "yearly_lmp": {
       "2020": 18.2,
       "2021": 17.85,
@@ -11173,9 +10988,9 @@
   },
   "08880": {
     "county": "Somerset",
-    "avg_lmp_2020": 18.19,
-    "avg_lmp_2025": 21.96,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.19,
+    "avg_lmp_last": 21.96,
+    "pct_change": 20.726,
     "yearly_lmp": {
       "2020": 18.19,
       "2021": 17.98,
@@ -11192,9 +11007,9 @@
   },
   "08882": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.17,
-    "avg_lmp_2025": 21.93,
-    "pct_change": 20.7,
+    "avg_lmp_first": 18.17,
+    "avg_lmp_last": 21.93,
+    "pct_change": 20.693,
     "yearly_lmp": {
       "2020": 18.17,
       "2021": 18.33,
@@ -11211,9 +11026,9 @@
   },
   "08884": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.18,
-    "avg_lmp_2025": 22.09,
-    "pct_change": 21.5,
+    "avg_lmp_first": 18.18,
+    "avg_lmp_last": 22.09,
+    "pct_change": 21.507,
     "yearly_lmp": {
       "2020": 18.18,
       "2021": 17.95,
@@ -11230,9 +11045,9 @@
   },
   "08886": {
     "county": "Warren",
-    "avg_lmp_2020": 17.87,
-    "avg_lmp_2025": 21.57,
-    "pct_change": 20.7,
+    "avg_lmp_first": 17.87,
+    "avg_lmp_last": 21.57,
+    "pct_change": 20.705,
     "yearly_lmp": {
       "2020": 17.87,
       "2021": 18.19,
@@ -11249,9 +11064,9 @@
   },
   "08887": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 18.04,
-    "avg_lmp_2025": 21.72,
-    "pct_change": 20.4,
+    "avg_lmp_first": 18.04,
+    "avg_lmp_last": 21.72,
+    "pct_change": 20.399,
     "yearly_lmp": {
       "2020": 18.04,
       "2021": 18.29,
@@ -11268,9 +11083,9 @@
   },
   "08889": {
     "county": "Hunterdon",
-    "avg_lmp_2020": 17.99,
-    "avg_lmp_2025": 21.99,
-    "pct_change": 22.2,
+    "avg_lmp_first": 17.99,
+    "avg_lmp_last": 21.99,
+    "pct_change": 22.235,
     "yearly_lmp": {
       "2020": 17.99,
       "2021": 17.37,
@@ -11287,12 +11102,10 @@
   },
   "08890": {
     "county": "Somerset",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.47,
-    "pct_change": null,
+    "avg_lmp_first": 19.79,
+    "avg_lmp_last": 21.47,
+    "pct_change": 8.489,
     "yearly_lmp": {
-      "2020": null,
-      "2021": null,
       "2022": 19.79,
       "2023": 23.29,
       "2024": 17.37,
@@ -11306,9 +11119,9 @@
   },
   "08901": {
     "county": "Middlesex",
-    "avg_lmp_2020": 17.86,
-    "avg_lmp_2025": 21.53,
-    "pct_change": 20.5,
+    "avg_lmp_first": 17.86,
+    "avg_lmp_last": 21.53,
+    "pct_change": 20.549,
     "yearly_lmp": {
       "2020": 17.86,
       "2021": 18.12,
@@ -11325,9 +11138,9 @@
   },
   "08902": {
     "county": "Middlesex",
-    "avg_lmp_2020": 18.08,
-    "avg_lmp_2025": 21.8,
-    "pct_change": 20.6,
+    "avg_lmp_first": 18.08,
+    "avg_lmp_last": 21.8,
+    "pct_change": 20.575,
     "yearly_lmp": {
       "2020": 18.08,
       "2021": 18.285,
@@ -11344,11 +11157,10 @@
   },
   "08904": {
     "county": "Middlesex",
-    "avg_lmp_2020": null,
-    "avg_lmp_2025": 21.85,
-    "pct_change": null,
+    "avg_lmp_first": 18.33,
+    "avg_lmp_last": 21.85,
+    "pct_change": 19.203,
     "yearly_lmp": {
-      "2020": null,
       "2021": 18.33,
       "2022": 20.12,
       "2023": 23.27,

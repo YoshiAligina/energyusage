@@ -3,17 +3,16 @@
 NJ Zip Code LMP Pipeline
 ========================
 Pulls PJM Day-Ahead LMP for all NJ load nodes (PSEG, JCPL, AECO, RECO)
-for January 1st of each year 2020-2025, maps to NJ zip codes, and
-outputs a CSV with one row per zip code.
+for a specified date range, maps to NJ zip codes, and writes to SQLite.
 
 Requirements:
     pip install requests pandas numpy thefuzz python-Levenshtein
 
 Output:
-    nj_zip_lmp_jan1_2020_2025.csv
+    nj_lmp.db  (SQLite — tables: zips, lmp_daily)
 """
 
-import os, re, time, requests, zipfile, io
+import os, re, time, requests, zipfile, io, sqlite3
 import pandas as pd
 import numpy as np
 from math import radians, cos, sin, asin, sqrt
@@ -26,7 +25,7 @@ PJM_API_KEY = "624c152b81f2406cb9f36aa0891b644c"   # from dataminer2.pjm.com/con
 PJM_API_URL = "https://api.pjm.com/api/v1/da_hrl_lmps"
 NJ_ZONES    = {"PSEG", "JCPL", "AECO", "RECO"}
 YEARS       = range(2020, 2026)
-OUT_FILE    = "nj_zip_lmp_jan1_2020_2025.csv"
+DB_FILE     = "nj_lmp.db"
 
 HEADERS = {
     "Ocp-Apim-Subscription-Key": PJM_API_KEY,
@@ -326,40 +325,59 @@ if __name__ == "__main__":
         print(f"  WARNING: {len(unresolved)} nodes still unresolved: {unresolved['pnode_name'].tolist()}")
     print(f"  Coord breakdown: {node_coords['coord_method'].value_counts().to_dict()}\n")
 
-    print("=== Step 4: Build LMP wide table ===")
-    lmp_wide = (lmp.groupby(["pnode_name","zone","jan1_year"])["total_lmp_da"]
-                   .mean().unstack("jan1_year").reset_index())
-    lmp_wide.columns.name = None
-    lmp_wide.columns = (["pnode_name","zone"] +
-                        [f"lmp_{c}" for c in lmp_wide.columns[2:]])
-    nodes_with_lmp = lmp_wide.merge(
-        node_coords[["pnode_name","lat","lon","coord_method"]],
-        on="pnode_name", how="left"
-    ).dropna(subset=["lat","lon"])
+    print("=== Step 4: Build node LMP table ===")
+    # Average hourly readings → one daily value per (node, date)
+    lmp_daily = (lmp.groupby(["pnode_name", "jan1_year"])["total_lmp_da"]
+                    .mean().reset_index())
+    lmp_daily["date"] = lmp_daily["jan1_year"].apply(lambda y: f"{y}-01-01")
+    lmp_daily = lmp_daily.rename(columns={"pnode_name": "node", "total_lmp_da": "lmp"})
+    lmp_daily["lmp"] = lmp_daily["lmp"].round(4)
+
+    # Keep only nodes we have coordinates for
+    resolved_nodes = node_coords.dropna(subset=["lat","lon"])
+    nodes_for_zip = node_coords[["pnode_name","lat","lon","coord_method","zone"]].dropna(subset=["lat","lon"])
 
     print("=== Step 5: Zip → nearest node ===")
-    zip_nodes = assign_zips_to_nodes(zips, nodes_with_lmp)
+    zip_nodes = assign_zips_to_nodes(zips, nodes_for_zip)
 
-    print("=== Step 6: Final join + output ===")
-    lmp_yr_cols = [f"lmp_{y}" for y in YEARS]
-    final = zip_nodes.merge(
-        nodes_with_lmp[["pnode_name"] + lmp_yr_cols],
-        left_on="nearest_node", right_on="pnode_name", how="left"
-    ).drop(columns=["pnode_name"])
+    print("=== Step 6: Write to SQLite ===")
+    conn = sqlite3.connect(DB_FILE)
+    try:
+        conn.executescript("""
+            CREATE TABLE IF NOT EXISTS zips (
+                zip           TEXT PRIMARY KEY,
+                zip_lat       REAL,
+                zip_lon       REAL,
+                nearest_node  TEXT,
+                node_zone     TEXT,
+                dist_miles    REAL,
+                coord_quality TEXT
+            );
+            CREATE TABLE IF NOT EXISTS lmp_daily (
+                node  TEXT NOT NULL,
+                date  TEXT NOT NULL,
+                lmp   REAL,
+                PRIMARY KEY (node, date)
+            );
+            CREATE INDEX IF NOT EXISTS idx_lmp_daily_node ON lmp_daily (node);
+            CREATE INDEX IF NOT EXISTS idx_lmp_daily_date ON lmp_daily (date);
+            CREATE INDEX IF NOT EXISTS idx_zips_node      ON zips (nearest_node);
+        """)
 
-    for col in lmp_yr_cols:
-        final[col] = pd.to_numeric(final[col], errors="coerce").round(4)
+        zip_nodes.to_sql("zips", conn, if_exists="replace", index=False)
+        print(f"  Wrote {len(zip_nodes)} rows → zips")
 
-    final["pct_chg_2020_2025"] = (
-        (final["lmp_2025"] - final["lmp_2020"]) / final["lmp_2020"] * 100
-    ).round(1)
+        lmp_out = lmp_daily[lmp_daily["node"].isin(resolved_nodes["pnode_name"])][["node","date","lmp"]]
+        lmp_out.to_sql("lmp_daily", conn, if_exists="replace", index=False)
+        print(f"  Wrote {len(lmp_out)} rows → lmp_daily ({lmp_out['node'].nunique()} nodes)")
 
-    final = final.sort_values("zip").reset_index(drop=True)
-    final.to_csv(OUT_FILE, index=False)
+        conn.commit()
+    finally:
+        conn.close()
 
-    print(f"\nSaved {len(final)} rows → {OUT_FILE}")
-    print(f"Avg dist to node: {final['dist_miles'].mean():.1f} miles")
-    print(f"\nSample:")
-    print(final.sample(5, random_state=1)[
-        ["zip","node_zone","nearest_node","dist_miles"] + lmp_yr_cols + ["pct_chg_2020_2025"]
+    print(f"\nSaved → {DB_FILE}")
+    print(f"Avg dist to node: {zip_nodes['dist_miles'].mean():.1f} miles")
+    print(f"\nSample zips:")
+    print(zip_nodes.sample(5, random_state=1)[
+        ["zip","node_zone","nearest_node","dist_miles"]
     ].to_string(index=False))
