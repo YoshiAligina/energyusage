@@ -3,7 +3,8 @@
 NJ Zip Code LMP Pipeline
 ========================
 Pulls PJM Day-Ahead LMP for all NJ load nodes (PSEG, JCPL, AECO, RECO)
-for a specified date range, maps to NJ zip codes, and writes to SQLite.
+for the 1st of every month 2020-2025 (all 24 hours averaged to a daily value),
+maps to NJ zip codes, and writes to SQLite.
 
 Requirements:
     pip install requests pandas numpy thefuzz python-Levenshtein
@@ -25,6 +26,7 @@ PJM_API_KEY = "624c152b81f2406cb9f36aa0891b644c"   # from dataminer2.pjm.com/con
 PJM_API_URL = "https://api.pjm.com/api/v1/da_hrl_lmps"
 NJ_ZONES    = {"PSEG", "JCPL", "AECO", "RECO"}
 YEARS       = range(2020, 2026)
+MONTHS      = range(1, 13)
 DB_FILE     = "nj_lmp.db"
 
 HEADERS = {
@@ -35,16 +37,17 @@ HEADERS = {
 
 # ─────────────────────────────────────────────
 # STEP 1: Pull NJ LOAD node LMPs from PJM API
-# Jan 1 midnight (hour 0) for each year
+# 1st of every month, all 24 hours → averaged to one daily value
 # ─────────────────────────────────────────────
-def fetch_nj_lmp_jan1(year: int) -> pd.DataFrame:
+def fetch_nj_lmp_day(year: int, month: int) -> pd.DataFrame:
     """
-    Fetch all LOAD nodes for Jan 1 of `year`, hour 0 only.
+    Fetch all LOAD nodes for the 1st of `month`/`year`, all 24 hours.
     The `zone` filter is not supported for archived data (>60 days old),
     so we pull all LOAD nodes and filter client-side.
     Rate limit: 6 requests/minute for non-members.
     """
-    date_str = f"01/01/{year} 00:00to01/01/{year} 00:00"
+    d = f"{month:02d}/01/{year}"
+    date_str = f"{d} 00:00to{d} 23:00"
     all_items = []
     row = 1
     while True:
@@ -68,18 +71,22 @@ def fetch_nj_lmp_jan1(year: int) -> pd.DataFrame:
 
     df = pd.DataFrame(all_items)
     df = df[df["zone"].isin(NJ_ZONES)].copy()
-    df["jan1_year"] = year
+    df["date"] = f"{year}-{month:02d}-01"
     return df
 
 
-def pull_all_years() -> pd.DataFrame:
+def pull_all_month_firsts() -> pd.DataFrame:
     frames = []
+    total = len(YEARS) * len(MONTHS)
+    done = 0
     for year in YEARS:
-        print(f"  Fetching Jan 1, {year}...", end=" ", flush=True)
-        df = fetch_nj_lmp_jan1(year)
-        frames.append(df)
-        print(f"{len(df)} NJ rows  ({df['pnode_name'].nunique()} unique nodes)")
-        time.sleep(5)
+        for month in MONTHS:
+            done += 1
+            print(f"  [{done}/{total}] Fetching {year}-{month:02d}-01...", end=" ", flush=True)
+            df = fetch_nj_lmp_day(year, month)
+            frames.append(df)
+            print(f"{len(df)} NJ rows  ({df['pnode_name'].nunique()} unique nodes)")
+            time.sleep(5)
     return pd.concat(frames, ignore_index=True)
 
 
@@ -310,7 +317,7 @@ def assign_zips_to_nodes(zips: pd.DataFrame, nodes: pd.DataFrame) -> pd.DataFram
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
     print("=== Step 1: Pull NJ LMP data from PJM API ===")
-    lmp = pull_all_years()
+    lmp = pull_all_month_firsts()
     print(f"Total rows: {len(lmp)}, unique nodes: {lmp['pnode_name'].nunique()}\n")
 
     print("=== Step 2: NJ zip code centroids ===")
@@ -326,10 +333,9 @@ if __name__ == "__main__":
     print(f"  Coord breakdown: {node_coords['coord_method'].value_counts().to_dict()}\n")
 
     print("=== Step 4: Build node LMP table ===")
-    # Average hourly readings → one daily value per (node, date)
-    lmp_daily = (lmp.groupby(["pnode_name", "jan1_year"])["total_lmp_da"]
+    # Average 24 hourly readings → one daily value per (node, date)
+    lmp_daily = (lmp.groupby(["pnode_name", "date"])["total_lmp_da"]
                     .mean().reset_index())
-    lmp_daily["date"] = lmp_daily["jan1_year"].apply(lambda y: f"{y}-01-01")
     lmp_daily = lmp_daily.rename(columns={"pnode_name": "node", "total_lmp_da": "lmp"})
     lmp_daily["lmp"] = lmp_daily["lmp"].round(4)
 
