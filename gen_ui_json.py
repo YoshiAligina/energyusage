@@ -227,75 +227,70 @@ def get_county_for_zip(zip_code):
     return NJ_ZIP_COUNTY.get(zip_str)
 
 def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
-    """Read from SQLite and generate UI JSON with yearly LMP data."""
+    """Read from SQLite and generate UI JSON with monthly LMP data."""
     if not os.path.exists(db_path):
         raise FileNotFoundError(f"Database not found: {db_path}. Run init_db.py first.")
 
     conn = sqlite3.connect(db_path)
     try:
-        # One row per (zip, year) — average of all daily readings in that year
+        # One row per (zip, YYYY-MM) — average of all daily readings in that month
         lmp_df = pd.read_sql_query("""
             SELECT
                 z.zip,
                 z.nearest_node,
                 z.node_zone,
                 z.dist_miles,
-                z.coord_quality,
-                strftime('%Y', l.date) AS year,
-                AVG(l.lmp)             AS avg_lmp
+                strftime('%Y-%m', l.date) AS month,
+                AVG(l.lmp)               AS avg_lmp
             FROM zips z
             JOIN lmp_daily l ON z.nearest_node = l.node
-            GROUP BY z.zip, year
-            ORDER BY z.zip, year
+            GROUP BY z.zip, month
+            ORDER BY z.zip, month
         """, conn)
 
-        # zip metadata (no LMP) for zips that have no readings yet
         zips_df = pd.read_sql_query(
             "SELECT zip, nearest_node, node_zone, dist_miles FROM zips", conn
         )
     finally:
         conn.close()
 
-    # Pivot yearly LMP into a dict per zip
-    zip_years = (lmp_df.groupby("zip")
-                       .apply(lambda g: {row["year"]: round(row["avg_lmp"], 3)
-                                         for _, row in g.iterrows()},
-                              include_groups=False)
-                       .to_dict())
+    # monthly_lmp dict per zip: {"2020-01": 18.11, "2020-02": ..., ...}
+    zip_months = (lmp_df.groupby("zip")
+                        .apply(lambda g: {row["month"]: round(row["avg_lmp"], 3)
+                                          for _, row in g.iterrows()},
+                               include_groups=False)
+                        .to_dict())
 
-    # Build metadata lookup
     meta = zips_df.set_index("zip").to_dict("index")
-
-    all_zips = set(meta.keys()) | set(zip_years.keys())
+    all_zips = set(meta.keys()) | set(zip_months.keys())
     payload = {}
 
     for zip_code in sorted(all_zips):
         zip_code = str(zip_code).zfill(5)
-        yearly_lmp = zip_years.get(zip_code, {})
+        monthly_lmp = zip_months.get(zip_code, {})
         m = meta.get(zip_code, {})
 
-        years_sorted = sorted(yearly_lmp.keys())
-        first_year = years_sorted[0]  if years_sorted else None
-        last_year  = years_sorted[-1] if years_sorted else None
-        lmp_first  = yearly_lmp.get(first_year)
-        lmp_last   = yearly_lmp.get(last_year)
+        months_sorted = sorted(monthly_lmp.keys())
+        first_month = months_sorted[0]  if months_sorted else None
+        last_month  = months_sorted[-1] if months_sorted else None
+        lmp_first   = monthly_lmp.get(first_month)
+        lmp_last    = monthly_lmp.get(last_month)
 
         if lmp_first and lmp_last and lmp_first != 0:
             pct_change = round((lmp_last - lmp_first) / lmp_first * 100, 3)
         else:
             pct_change = None
 
-        node     = m.get("nearest_node", "")
-        zone     = m.get("node_zone", "")
-        dist     = m.get("dist_miles")
+        node = m.get("nearest_node", "")
+        zone = m.get("node_zone", "")
+        dist = m.get("dist_miles")
 
         payload[zip_code] = {
-            "county":       get_county_for_zip(zip_code),
+            "county":        get_county_for_zip(zip_code),
             "avg_lmp_first": lmp_first,
             "avg_lmp_last":  lmp_last,
             "pct_change":    pct_change,
-            "yearly_lmp":    yearly_lmp,
-            "selected_year": last_year or "",
+            "monthly_lmp":   monthly_lmp,
             "nearest_node":  node,
             "node_zone":     zone,
             "dist_miles":    float(dist) if dist is not None else None,
@@ -306,7 +301,7 @@ def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
 
-    print(f"Generated {output_path}: {len(payload)} ZIPs with LMP data + county names")
+    print(f"Generated {output_path}: {len(payload)} ZIPs with monthly LMP data + county names")
 
 if __name__ == "__main__":
     build_ui_json()

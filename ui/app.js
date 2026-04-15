@@ -1,6 +1,11 @@
 const NJ_GEOJSON_URL =
   "https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/nj_new_jersey_zip_codes_geo.min.json";
 
+const MONTH_NAMES = [
+  "January","February","March","April","May","June",
+  "July","August","September","October","November","December"
+];
+
 const map = L.map("map", {
   zoomControl: true,
 }).setView([40.0583, -74.4057], 8);
@@ -10,10 +15,12 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap contributors",
 }).addTo(map);
 
-const infoEl = document.getElementById("info");
-const zipSearchEl = document.getElementById("zipSearch");
-const searchBtnEl = document.getElementById("searchBtn");
-const yearSelectEl = document.getElementById("yearSelect");
+const infoEl          = document.getElementById("info");
+const zipSearchEl     = document.getElementById("zipSearch");
+const searchBtnEl     = document.getElementById("searchBtn");
+const yearSelectEl    = document.getElementById("yearSelect");
+const monthSliderEl   = document.getElementById("monthSlider");
+const monthLabelEl    = document.getElementById("monthLabel");
 const heatmapToggleEl = document.getElementById("heatmapToggle");
 
 const layerByZip = new Map();
@@ -23,6 +30,8 @@ let selectedZip = null;
 let heatmapEnabled = false;
 let legendControl = null;
 
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
 function safeNum(value) {
   if (value === null || value === undefined || Number.isNaN(Number(value))) {
     return "N/A";
@@ -30,127 +39,187 @@ function safeNum(value) {
   return Number(value).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
 
+function monthKey(year, month) {
+  return `${year}-${String(month).padStart(2, "0")}`;
+}
+
+function getMonthLmp(zip, year, month) {
+  const d = zipDetails[zip];
+  if (!d) return null;
+  const v = d.monthly_lmp?.[monthKey(year, month)];
+  return v !== null && v !== undefined && Number.isFinite(Number(v)) ? Number(v) : null;
+}
+
 function collectAvailableYears() {
   const years = new Set();
-
-  Object.values(zipDetails).forEach((details) => {
-    if (details && details.yearly_lmp && typeof details.yearly_lmp === "object") {
-      Object.keys(details.yearly_lmp).forEach((year) => years.add(String(year)));
-    }
-
-    if (details && typeof details === "object") {
-      Object.keys(details).forEach((k) => {
-        const match = k.match(/^avg_lmp_(\d{4})$/);
-        if (match) {
-          years.add(match[1]);
-        }
-      });
+  Object.values(zipDetails).forEach((d) => {
+    if (d?.monthly_lmp) {
+      Object.keys(d.monthly_lmp).forEach((k) => years.add(k.slice(0, 4)));
     }
   });
-
   if (years.size === 0) {
-    ["2020", "2021", "2022", "2023", "2024", "2025"].forEach((year) => years.add(year));
+    ["2020","2021","2022","2023","2024","2025"].forEach((y) => years.add(y));
   }
-
-  return Array.from(years).sort((a, b) => Number(a) - Number(b));
+  return Array.from(years).sort();
 }
 
 function populateYearSelect() {
   const years = collectAvailableYears();
   yearSelectEl.innerHTML = "";
-
   years.forEach((year) => {
-    const option = document.createElement("option");
-    option.value = year;
-    option.textContent = year;
-    yearSelectEl.appendChild(option);
+    const opt = document.createElement("option");
+    opt.value = year;
+    opt.textContent = year;
+    yearSelectEl.appendChild(opt);
+  });
+  if (years.length > 0) yearSelectEl.value = years[years.length - 1];
+}
+
+function updateMonthLabel() {
+  monthLabelEl.textContent = MONTH_NAMES[Number(monthSliderEl.value) - 1];
+}
+
+// ─── Info card ────────────────────────────────────────────────────────────────
+
+function buildSparkline(monthly_lmp, year) {
+  const W = 270, H = 56, PAD = 4;
+  const values = Array.from({ length: 12 }, (_, i) => {
+    const v = monthly_lmp?.[monthKey(year, i + 1)];
+    return v !== undefined && v !== null ? Number(v) : null;
   });
 
-  if (years.length > 0) {
-    yearSelectEl.value = years[years.length - 1];
-  }
+  const present = values.filter((v) => v !== null);
+  if (present.length < 2) return "";
+
+  const min = Math.min(...present);
+  const max = Math.max(...present);
+  const range = max - min || 1;
+
+  const xOf = (i) => PAD + (i / 11) * (W - PAD * 2);
+  const yOf = (v) => H - PAD - ((v - min) / range) * (H - PAD * 2);
+
+  // Build polyline segments (split on nulls)
+  const segments = [];
+  let seg = [];
+  values.forEach((v, i) => {
+    if (v !== null) {
+      seg.push(`${xOf(i).toFixed(1)},${yOf(v).toFixed(1)}`);
+    } else if (seg.length) {
+      segments.push(seg);
+      seg = [];
+    }
+  });
+  if (seg.length) segments.push(seg);
+
+  const lines = segments
+    .map((s) => `<polyline points="${s.join(" ")}" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/>`)
+    .join("");
+
+  const dots = values
+    .map((v, i) => v !== null
+      ? `<circle cx="${xOf(i).toFixed(1)}" cy="${yOf(v).toFixed(1)}" r="2.5" fill="var(--accent)"/>`
+      : "")
+    .join("");
+
+  const selectedMonth = Number(monthSliderEl.value);
+  const sv = values[selectedMonth - 1];
+  const highlight = sv !== null
+    ? `<circle cx="${xOf(selectedMonth - 1).toFixed(1)}" cy="${yOf(sv).toFixed(1)}" r="4" fill="var(--accent)" stroke="#fff" stroke-width="1.5"/>`
+    : "";
+
+  return `
+    <div class="sparkline-wrap">
+      <div class="sparkline-label">Monthly DA LMP ${year} ($/MWh)</div>
+      <svg class="sparkline" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+        ${lines}${dots}${highlight}
+      </svg>
+      <div class="spark-axis">
+        <span>Jan</span><span>Jun</span><span>Dec</span>
+      </div>
+    </div>`;
 }
 
 function renderZipInfo(zip) {
   const details = zipDetails[zip];
-
   if (!details) {
-    infoEl.innerHTML = `
-      <h2>ZIP ${zip}</h2>
-      <p>No local metrics loaded for this ZIP yet.</p>
-      <p class="info-row">Tip: add this ZIP in nj_zip_info.json</p>
-    `;
+    infoEl.innerHTML = `<h2>ZIP ${zip}</h2><p class="info-empty">No data loaded for this ZIP.</p>`;
     return;
   }
 
-  const yearly = details.yearly_lmp || {};
-  const selectedYear = String(yearSelectEl.value || details.selected_year || "");
-  const selectedYearValue = yearly[selectedYear] ?? details[`avg_lmp_${selectedYear}`];
+  const year  = yearSelectEl.value;
+  const month = Number(monthSliderEl.value);
+  const key   = monthKey(year, month);
 
-  const allYears = collectAvailableYears();
-  const baseYear = allYears.length > 0 ? allYears[0] : "2020";
-  const baseValue = yearly[baseYear] ?? details[`avg_lmp_${baseYear}`];
+  const currentVal = details.monthly_lmp?.[key] ?? null;
 
-  let selectedVsBase = null;
-  if (Number(baseValue) > 0 && Number.isFinite(Number(selectedYearValue))) {
-    selectedVsBase = ((Number(selectedYearValue) - Number(baseValue)) / Number(baseValue)) * 100;
+  // Same month, first available year for baseline
+  const allYears  = collectAvailableYears();
+  const baseYear  = allYears[0] ?? year;
+  const baseKey   = monthKey(baseYear, month);
+  const baseVal   = details.monthly_lmp?.[baseKey] ?? null;
+
+  let pctVsBase = null;
+  if (baseVal && currentVal && baseVal !== 0) {
+    pctVsBase = ((currentVal - baseVal) / baseVal) * 100;
   }
+
+  const deltaClass = pctVsBase === null ? "" : pctVsBase >= 0 ? "delta-up" : "delta-down";
+  const deltaSign  = pctVsBase !== null && pctVsBase > 0 ? "+" : "";
 
   infoEl.innerHTML = `
     <h2>ZIP ${zip}</h2>
-    <div class="info-row"><strong>County:</strong> ${details.county || "N/A"}</div>
-    <div class="info-row"><strong>Avg DA LMP ${selectedYear} ($/MWh):</strong> ${safeNum(selectedYearValue)}</div>
-    <div class="info-row"><strong>Avg DA LMP ${baseYear} ($/MWh):</strong> ${safeNum(baseValue)}</div>
-    <div class="info-row"><strong>Change ${baseYear} to ${selectedYear}:</strong> ${safeNum(selectedVsBase)}%</div>
-    <div class="info-row"><strong>Notes:</strong> ${details.notes || "-"}</div>
+    <div class="info-row"><strong>County</strong> <span class="info-value">${details.county || "N/A"}</span></div>
+    <div class="info-row"><strong>LMP ${MONTH_NAMES[month - 1]} ${year}</strong> <span class="info-value">$${safeNum(currentVal)}/MWh</span></div>
+    <div class="info-row"><strong>LMP ${MONTH_NAMES[month - 1]} ${baseYear}</strong> <span class="info-value">$${safeNum(baseVal)}/MWh</span></div>
+    <div class="info-row">
+      <strong>vs ${baseYear}</strong>
+      <span class="info-value ${deltaClass}">${pctVsBase !== null ? `${deltaSign}${pctVsBase.toFixed(1)}%` : "N/A"}</span>
+    </div>
+    <div class="info-row"><strong>Node</strong> <span class="info-value">${details.nearest_node || "N/A"} (${details.node_zone || "N/A"})</span></div>
+    ${buildSparkline(details.monthly_lmp, year)}
   `;
 }
 
-// Interpolate between blue → yellow → red based on t in [0,1]
+// ─── Heatmap ──────────────────────────────────────────────────────────────────
+
 function lmpColor(t) {
   const stops = [
-    [68, 170, 213],   // blue  (low)
-    [255, 209, 102],  // yellow (mid)
-    [239, 71, 111],   // red   (high)
+    [68, 170, 213],
+    [255, 209, 102],
+    [239, 71, 111],
   ];
   const scaled = t * (stops.length - 1);
   const i = Math.min(Math.floor(scaled), stops.length - 2);
   const f = scaled - i;
   const [r1, g1, b1] = stops[i];
   const [r2, g2, b2] = stops[i + 1];
-  return `rgb(${Math.round(r1 + f * (r2 - r1))},${Math.round(g1 + f * (g2 - g1))},${Math.round(b1 + f * (b2 - b1))})`;
+  return `rgb(${Math.round(r1 + f*(r2-r1))},${Math.round(g1 + f*(g2-g1))},${Math.round(b1 + f*(b2-b1))})`;
 }
 
-function getYearLmp(zip, year) {
-  const d = zipDetails[zip];
-  if (!d) return null;
-  const v = d.yearly_lmp?.[String(year)] ?? d[`avg_lmp_${year}`];
-  return (v !== null && v !== undefined && Number.isFinite(Number(v))) ? Number(v) : null;
-}
-
-function computeMinMax(year) {
+function computeMinMax(year, month) {
   let min = Infinity, max = -Infinity;
   for (const zip of layerByZip.keys()) {
-    const v = getYearLmp(zip, year);
+    const v = getMonthLmp(zip, year, month);
     if (v !== null) { if (v < min) min = v; if (v > max) max = v; }
   }
   return min <= max ? { min, max } : { min: 0, max: 1 };
 }
 
 function applyHeatmap() {
-  const year = yearSelectEl.value;
-  const { min, max } = computeMinMax(year);
+  const year  = yearSelectEl.value;
+  const month = Number(monthSliderEl.value);
+  const { min, max } = computeMinMax(year, month);
   const range = max - min || 1;
+
   layerByZip.forEach((layer, zip) => {
-    const v = getYearLmp(zip, year);
+    const v = getMonthLmp(zip, year, month);
     const style = v !== null
       ? { fillColor: lmpColor((v - min) / range), fillOpacity: 0.75, color: "#555", weight: 0.5 }
       : { fillColor: "#cccccc", fillOpacity: 0.45, color: "#555", weight: 0.5 };
     layer.setStyle(style);
   });
-  // Keep selected ZIP highlighted
   if (selectedLayer) selectedLayer.setStyle({ ...selectedLayer.options, color: "#003049", weight: 2 });
-  showLegend(min, max, year);
+  showLegend(min, max, year, month);
 }
 
 function clearHeatmap() {
@@ -160,13 +229,13 @@ function clearHeatmap() {
   if (legendControl) { legendControl.remove(); legendControl = null; }
 }
 
-function showLegend(min, max, year) {
+function showLegend(min, max, year, month) {
   if (legendControl) legendControl.remove();
   legendControl = L.control({ position: "bottomright" });
   legendControl.onAdd = () => {
     const div = L.DomUtil.create("div", "legend");
     div.innerHTML = `
-      <div class="legend-title">Avg DA LMP ${year} ($/MWh)</div>
+      <div class="legend-title">DA LMP ${MONTH_NAMES[month - 1]} ${year} ($/MWh)</div>
       <div class="legend-bar"></div>
       <div class="legend-labels">
         <span>${min.toFixed(1)}</span>
@@ -180,48 +249,39 @@ function showLegend(min, max, year) {
   legendControl.addTo(map);
 }
 
+// ─── Map styles ───────────────────────────────────────────────────────────────
+
 function baseStyle() {
-  return {
-    color: "#3b4f62",
-    weight: 1,
-    fillColor: "#7cc6d4",
-    fillOpacity: 0.35,
-  };
+  return { color: "#3b4f62", weight: 1, fillColor: "#7cc6d4", fillOpacity: 0.35 };
 }
 
 function selectedStyle() {
-  return {
-    color: "#003049",
-    weight: 2,
-    fillColor: "#006d77",
-    fillOpacity: 0.55,
-  };
+  return { color: "#003049", weight: 2, fillColor: "#006d77", fillOpacity: 0.55 };
 }
 
 function selectLayer(layer, zip) {
   if (selectedLayer) {
-    selectedLayer.setStyle(heatmapEnabled ? (() => {
-      const year = yearSelectEl.value;
-      const { min, max } = computeMinMax(year);
-      const v = getYearLmp(selectedZip, year);
-      return v !== null
+    if (heatmapEnabled) {
+      const year  = yearSelectEl.value;
+      const month = Number(monthSliderEl.value);
+      const { min, max } = computeMinMax(year, month);
+      const v = getMonthLmp(selectedZip, year, month);
+      selectedLayer.setStyle(v !== null
         ? { fillColor: lmpColor((v - min) / (max - min || 1)), fillOpacity: 0.75, color: "#555", weight: 0.5 }
-        : { fillColor: "#cccccc", fillOpacity: 0.45, color: "#555", weight: 0.5 };
-    })() : baseStyle());
+        : { fillColor: "#cccccc", fillOpacity: 0.45, color: "#555", weight: 0.5 });
+    } else {
+      selectedLayer.setStyle(baseStyle());
+    }
   }
   selectedLayer = layer;
   selectedLayer.setStyle(heatmapEnabled
     ? { ...selectedLayer.options, color: "#003049", weight: 2.5 }
     : selectedStyle());
   selectedZip = zip;
-
-  const details = zipDetails[zip];
-  if (details && details.selected_year) {
-    yearSelectEl.value = String(details.selected_year);
-  }
-
   renderZipInfo(zip);
 }
+
+// ─── Data loading ─────────────────────────────────────────────────────────────
 
 async function loadZipDetails() {
   try {
@@ -242,13 +302,8 @@ async function buildZipLayer() {
     onEachFeature: (feature, featureLayer) => {
       const zip = String(feature.properties.ZCTA5CE10 || "");
       layerByZip.set(zip, featureLayer);
-      featureLayer.bindTooltip(`ZIP ${zip}`, {
-        className: "zip-label",
-        sticky: true,
-      });
-      featureLayer.on("click", () => {
-        selectLayer(featureLayer, zip);
-      });
+      featureLayer.bindTooltip(`ZIP ${zip}`, { className: "zip-label", sticky: true });
+      featureLayer.on("click", () => selectLayer(featureLayer, zip));
     },
   });
 
@@ -256,31 +311,30 @@ async function buildZipLayer() {
   map.fitBounds(layer.getBounds());
 }
 
+// ─── Controls ─────────────────────────────────────────────────────────────────
+
 function setupSearch() {
   function goToZip() {
     const zip = zipSearchEl.value.trim();
     const target = layerByZip.get(zip);
-
     if (!target) {
-      infoEl.innerHTML = `
-        <h2>ZIP not found</h2>
-        <p>No shape found for ZIP ${zip || "(blank)"}.</p>
-      `;
+      infoEl.innerHTML = `<h2>ZIP not found</h2><p>No shape found for ZIP ${zip || "(blank)"}.</p>`;
       return;
     }
-
     map.fitBounds(target.getBounds(), { maxZoom: 11 });
     selectLayer(target, zip);
   }
 
   searchBtnEl.addEventListener("click", goToZip);
-  zipSearchEl.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      goToZip();
-    }
-  });
+  zipSearchEl.addEventListener("keydown", (e) => { if (e.key === "Enter") goToZip(); });
 
   yearSelectEl.addEventListener("change", () => {
+    if (selectedZip) renderZipInfo(selectedZip);
+    if (heatmapEnabled) applyHeatmap();
+  });
+
+  monthSliderEl.addEventListener("input", () => {
+    updateMonthLabel();
     if (selectedZip) renderZipInfo(selectedZip);
     if (heatmapEnabled) applyHeatmap();
   });
@@ -292,9 +346,19 @@ function setupSearch() {
   });
 }
 
+// ─── Init ─────────────────────────────────────────────────────────────────────
+
 (async function init() {
   await loadZipDetails();
   populateYearSelect();
+  updateMonthLabel();
   await buildZipLayer();
   setupSearch();
+
+  // Fade out the loading overlay
+  const loader = document.getElementById("loader");
+  if (loader) {
+    loader.classList.add("hidden");
+    setTimeout(() => loader.remove(), 500);
+  }
 })();

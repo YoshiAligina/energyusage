@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NJ Zipcode Map Viewer</title>
+  <title>NJ Energy Explorer</title>
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -13,34 +13,68 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <span>Loading map data&hellip;</span>
+    </div>
+  </div>
+
   <div class="app-shell">
     <aside class="panel">
-      <h1>NJ Zipcode Viewer</h1>
-      <p class="subtle">Click a zipcode on the map to view details.</p>
+      <div class="panel-header">
+        <div class="brand-mark"></div>
+        <div>
+          <h1>NJ Energy Explorer</h1>
+          <p class="subtle">Day-Ahead LMP by ZIP Code</p>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
 
       <label for="zipSearch">Jump to ZIP code</label>
       <div class="search-row">
         <input id="zipSearch" type="text" maxlength="5" placeholder="e.g. 07030" />
-        <button id="searchBtn" type="button">Find</button>
+        <button id="searchBtn" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
       </div>
 
       <label for="yearSelect">Year</label>
       <select id="yearSelect" class="year-select"></select>
 
+      <div class="month-slider-section">
+        <div class="month-slider-header">
+          <label for="monthSlider">Month</label>
+          <span id="monthLabel" class="month-label-value">January</span>
+        </div>
+        <input type="range" id="monthSlider" min="1" max="12" value="1" step="1" />
+        <div class="month-ticks">
+          <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
+          <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
+          <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+        </div>
+      </div>
+
       <div class="heatmap-row">
         <label class="toggle-label">
           <input type="checkbox" id="heatmapToggle" />
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
           Heatmap (LMP by ZIP)
         </label>
       </div>
 
+      <div class="section-divider"></div>
+
       <div id="info" class="info-card">
-        <h2>No ZIP selected</h2>
-        <p>Select an area on the map.</p>
+        <div class="info-empty">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.2" opacity="0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Click a ZIP on the map to explore LMP data.</p>
+        </div>
       </div>
 
       <p class="footnote">
-        Base map: OpenStreetMap. ZIP boundaries: OpenDataDE NJ ZIP GeoJSON.
+        Data: PJM Interconnection &middot; Map: OpenStreetMap &middot; Boundaries: OpenDataDE
       </p>
     </aside>
 
