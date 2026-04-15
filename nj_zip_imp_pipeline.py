@@ -75,19 +75,25 @@ def fetch_nj_lmp_day(year: int, month: int) -> pd.DataFrame:
     return df
 
 
-def pull_all_month_firsts() -> pd.DataFrame:
+def pull_all_month_firsts(skip_dates: set = None) -> pd.DataFrame:
+    if skip_dates is None:
+        skip_dates = set()
     frames = []
     total = len(YEARS) * len(MONTHS)
     done = 0
     for year in YEARS:
         for month in MONTHS:
             done += 1
-            print(f"  [{done}/{total}] Fetching {year}-{month:02d}-01...", end=" ", flush=True)
+            date_str = f"{year}-{month:02d}-01"
+            if date_str in skip_dates:
+                print(f"  [{done}/{total}] Skipping {date_str} (already in DB)", flush=True)
+                continue
+            print(f"  [{done}/{total}] Fetching {date_str}...", end=" ", flush=True)
             df = fetch_nj_lmp_day(year, month)
             frames.append(df)
             print(f"{len(df)} NJ rows  ({df['pnode_name'].nunique()} unique nodes)")
             time.sleep(5)
-    return pd.concat(frames, ignore_index=True)
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 
 # ─────────────────────────────────────────────
@@ -315,10 +321,58 @@ def assign_zips_to_nodes(zips: pd.DataFrame, nodes: pd.DataFrame) -> pd.DataFram
 # ─────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────
+DB_SCHEMA = """
+    CREATE TABLE IF NOT EXISTS zips (
+        zip           TEXT PRIMARY KEY,
+        zip_lat       REAL,
+        zip_lon       REAL,
+        nearest_node  TEXT,
+        node_zone     TEXT,
+        dist_miles    REAL,
+        coord_quality TEXT
+    );
+    CREATE TABLE IF NOT EXISTS lmp_daily (
+        node  TEXT NOT NULL,
+        date  TEXT NOT NULL,
+        lmp   REAL,
+        PRIMARY KEY (node, date)
+    );
+    CREATE INDEX IF NOT EXISTS idx_lmp_daily_node ON lmp_daily (node);
+    CREATE INDEX IF NOT EXISTS idx_lmp_daily_date ON lmp_daily (date);
+    CREATE INDEX IF NOT EXISTS idx_zips_node      ON zips (nearest_node);
+"""
+
+
 if __name__ == "__main__":
+    # ── Init schema & find already-fetched dates ──────────────────────────────
+    conn = sqlite3.connect(DB_FILE)
+    conn.executescript(DB_SCHEMA)
+    existing_dates = set(
+        r[0] for r in conn.execute("SELECT DISTINCT date FROM lmp_daily").fetchall()
+    )
+    # Load existing node→zone mapping from lmp so coord resolution stays complete
+    existing_lmp_for_nodes = pd.read_sql(
+        "SELECT z.nearest_node AS pnode_name, z.node_zone AS zone "
+        "FROM zips z", conn
+    ) if existing_dates else pd.DataFrame(columns=["pnode_name", "zone"])
+    conn.close()
+
+    if existing_dates:
+        print(f"  Resuming: {len(existing_dates)}/72 dates already in DB — skipping them.\n")
+
     print("=== Step 1: Pull NJ LMP data from PJM API ===")
-    lmp = pull_all_month_firsts()
-    print(f"Total rows: {len(lmp)}, unique nodes: {lmp['pnode_name'].nunique()}\n")
+    lmp_new = pull_all_month_firsts(skip_dates=existing_dates)
+
+    if lmp_new.empty:
+        print("  All 72 dates already fetched — nothing new to add.\n")
+        lmp_all_nodes = existing_lmp_for_nodes
+    else:
+        print(f"  New rows: {len(lmp_new)}, unique nodes: {lmp_new['pnode_name'].nunique()}\n")
+        # Merge new + existing node/zone info for complete coord resolution
+        lmp_all_nodes = pd.concat(
+            [lmp_new[["pnode_name","zone"]].drop_duplicates(), existing_lmp_for_nodes],
+            ignore_index=True
+        ).drop_duplicates(subset=["pnode_name"])
 
     print("=== Step 2: NJ zip code centroids ===")
     zips = get_nj_zip_centroids()
@@ -326,22 +380,23 @@ if __name__ == "__main__":
 
     print("=== Step 3: Node coordinates ===")
     osm_df = get_osm_substations()
-    node_coords = build_node_coords(lmp, osm_df)
+    node_coords = build_node_coords(lmp_all_nodes, osm_df)
     unresolved = node_coords[node_coords["coord_method"] == "unresolved"]
     if len(unresolved):
         print(f"  WARNING: {len(unresolved)} nodes still unresolved: {unresolved['pnode_name'].tolist()}")
     print(f"  Coord breakdown: {node_coords['coord_method'].value_counts().to_dict()}\n")
 
     print("=== Step 4: Build node LMP table ===")
-    # Average 24 hourly readings → one daily value per (node, date)
-    lmp_daily = (lmp.groupby(["pnode_name", "date"])["total_lmp_da"]
-                    .mean().reset_index())
-    lmp_daily = lmp_daily.rename(columns={"pnode_name": "node", "total_lmp_da": "lmp"})
-    lmp_daily["lmp"] = lmp_daily["lmp"].round(4)
+    if not lmp_new.empty:
+        lmp_daily_new = (lmp_new.groupby(["pnode_name", "date"])["total_lmp_da"]
+                                .mean().reset_index())
+        lmp_daily_new = lmp_daily_new.rename(columns={"pnode_name": "node", "total_lmp_da": "lmp"})
+        lmp_daily_new["lmp"] = lmp_daily_new["lmp"].round(4)
+    else:
+        lmp_daily_new = pd.DataFrame(columns=["node", "date", "lmp"])
 
-    # Keep only nodes we have coordinates for
     resolved_nodes = node_coords.dropna(subset=["lat","lon"])
-    nodes_for_zip = node_coords[["pnode_name","lat","lon","coord_method","zone"]].dropna(subset=["lat","lon"])
+    nodes_for_zip  = node_coords[["pnode_name","lat","lon","coord_method","zone"]].dropna(subset=["lat","lon"])
 
     print("=== Step 5: Zip → nearest node ===")
     zip_nodes = assign_zips_to_nodes(zips, nodes_for_zip)
@@ -349,35 +404,24 @@ if __name__ == "__main__":
     print("=== Step 6: Write to SQLite ===")
     conn = sqlite3.connect(DB_FILE)
     try:
-        conn.executescript("""
-            CREATE TABLE IF NOT EXISTS zips (
-                zip           TEXT PRIMARY KEY,
-                zip_lat       REAL,
-                zip_lon       REAL,
-                nearest_node  TEXT,
-                node_zone     TEXT,
-                dist_miles    REAL,
-                coord_quality TEXT
-            );
-            CREATE TABLE IF NOT EXISTS lmp_daily (
-                node  TEXT NOT NULL,
-                date  TEXT NOT NULL,
-                lmp   REAL,
-                PRIMARY KEY (node, date)
-            );
-            CREATE INDEX IF NOT EXISTS idx_lmp_daily_node ON lmp_daily (node);
-            CREATE INDEX IF NOT EXISTS idx_lmp_daily_date ON lmp_daily (date);
-            CREATE INDEX IF NOT EXISTS idx_zips_node      ON zips (nearest_node);
-        """)
-
+        # zips table: always rewrite (static mapping)
         zip_nodes.to_sql("zips", conn, if_exists="replace", index=False)
         print(f"  Wrote {len(zip_nodes)} rows → zips")
 
-        lmp_out = lmp_daily[lmp_daily["node"].isin(resolved_nodes["pnode_name"])][["node","date","lmp"]]
-        lmp_out.to_sql("lmp_daily", conn, if_exists="replace", index=False)
-        print(f"  Wrote {len(lmp_out)} rows → lmp_daily ({lmp_out['node'].nunique()} nodes)")
+        # lmp_daily: INSERT OR REPLACE so existing rows are preserved
+        lmp_out = lmp_daily_new[lmp_daily_new["node"].isin(resolved_nodes["pnode_name"])][["node","date","lmp"]]
+        if not lmp_out.empty:
+            conn.executemany(
+                "INSERT OR REPLACE INTO lmp_daily (node, date, lmp) VALUES (?, ?, ?)",
+                lmp_out.itertuples(index=False, name=None)
+            )
+            conn.commit()
+            print(f"  Wrote {len(lmp_out)} new rows → lmp_daily ({lmp_out['node'].nunique()} nodes)")
+        else:
+            print("  No new lmp_daily rows to write.")
 
-        conn.commit()
+        total_dates = conn.execute("SELECT COUNT(DISTINCT date) FROM lmp_daily").fetchone()[0]
+        print(f"  lmp_daily now covers {total_dates}/72 dates")
     finally:
         conn.close()
 
