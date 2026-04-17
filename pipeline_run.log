@@ -19,4 +19,146 @@
   [15/72] Fetching 2021-03-01... 21048 NJ rows  (343 unique nodes)
   [16/72] Fetching 2021-04-01... 20976 NJ rows  (345 unique nodes)
   [17/72] Fetching 2021-05-01... 20976 NJ rows  (345 unique nodes)
-  [18/72] Fetching 2021-06-01... 
+  [18/72] Fetching 2021-06-01...   Resuming: 6/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Fetching 2020-02-01... 19800 NJ rows  (331 unique nodes)
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 395, in <module>
+    print(f"    \u2192 Saved {len(daily)} rows to DB ({new_count} new dates so far)")
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 4: character maps to <undefined>
+  Resuming: 7/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Skipping 2020-02-01 (already in DB)
+  [3/72] Fetching 2020-03-01... 19800 NJ rows  (331 unique nodes)
+    Saved 331 rows to DB (1 new dates so far)
+  [4/72] Fetching 2020-04-01... 20064 NJ rows  (333 unique nodes)
+    Saved 333 rows to DB (2 new dates so far)
+  [5/72] Fetching 2020-05-01... 20064 NJ rows  (333 unique nodes)
+    Saved 333 rows to DB (3 new dates so far)
+  [6/72] Fetching 2020-06-01... 20640 NJ rows  (339 unique nodes)
+    Saved 339 rows to DB (4 new dates so far)
+  [7/72] Fetching 2020-07-01... 20640 NJ rows  (339 unique nodes)
+    Saved 339 rows to DB (5 new dates so far)
+  [8/72] Fetching 2020-08-01... 20640 NJ rows  (339 unique nodes)
+    Saved 339 rows to DB (6 new dates so far)
+  [9/72] Fetching 2020-09-01... 20640 NJ rows  (339 unique nodes)
+    Saved 339 rows to DB (7 new dates so far)
+  [10/72] Fetching 2020-10-01... 20712 NJ rows  (340 unique nodes)
+    Saved 340 rows to DB (8 new dates so far)
+  [11/72] Fetching 2020-11-01... 21575 NJ rows  (340 unique nodes)
+    Saved 340 rows to DB (9 new dates so far)
+  [12/72] Fetching 2020-12-01... 20712 NJ rows  (340 unique nodes)
+    Saved 340 rows to DB (10 new dates so far)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Fetching 2021-02-01... 21048 NJ rows  (343 unique nodes)
+    Saved 343 rows to DB (11 new dates so far)
+  [15/72] Fetching 2021-03-01... 21048 NJ rows  (343 unique nodes)
+    Saved 343 rows to DB (12 new dates so far)
+  [16/72] Fetching 2021-04-01... 20976 NJ rows  (345 unique nodes)
+    Saved 345 rows to DB (13 new dates so far)
+  [17/72] Fetching 2021-05-01... 20976 NJ rows  (345 unique nodes)
+    Saved 345 rows to DB (14 new dates so far)
+  [18/72] Fetching 2021-06-01... 21000 NJ rows  (346 unique nodes)
+    Saved 346 rows to DB (15 new dates so far)
+  [19/72] Fetching 2021-07-01... Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.pjm.com', port=443): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 377, in <module>
+    df = fetch_nj_lmp_day(year, month)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 61, in fetch_nj_lmp_day
+    r = requests.get(PJM_API_URL, params=params, headers=HEADERS, timeout=60)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\adapters.py", line 691, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.pjm.com', port=443): Read timed out. (read timeout=60)
+  Resuming: 22/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Skipping 2020-02-01 (already in DB)
+  [3/72] Skipping 2020-03-01 (already in DB)
+  [4/72] Skipping 2020-04-01 (already in DB)
+  [5/72] Skipping 2020-05-01 (already in DB)
+  [6/72] Skipping 2020-06-01 (already in DB)
+  [7/72] Skipping 2020-07-01 (already in DB)
+  [8/72] Skipping 2020-08-01 (already in DB)
+  [9/72] Skipping 2020-09-01 (already in DB)
+  [10/72] Skipping 2020-10-01 (already in DB)
+  [11/72] Skipping 2020-11-01 (already in DB)
+  [12/72] Skipping 2020-12-01 (already in DB)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Skipping 2021-02-01 (already in DB)
+  [15/72] Skipping 2021-03-01 (already in DB)
+  [16/72] Skipping 2021-04-01 (already in DB)
+  [17/72] Skipping 2021-05-01 (already in DB)
+  [18/72] Skipping 2021-06-01 (already in DB)
+  [19/72] Fetching 2021-07-01... 

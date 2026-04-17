@@ -58,8 +58,17 @@ def fetch_nj_lmp_day(year: int, month: int) -> pd.DataFrame:
             "datetime_beginning_ept": date_str,
             "type": "LOAD",
         }
-        r = requests.get(PJM_API_URL, params=params, headers=HEADERS, timeout=60)
-        r.raise_for_status()
+        for attempt in range(3):
+            try:
+                r = requests.get(PJM_API_URL, params=params, headers=HEADERS, timeout=90)
+                r.raise_for_status()
+                break
+            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+                if attempt < 2:
+                    print(f"\n    Retry {attempt+1}/2 after {e.__class__.__name__}...", end=" ", flush=True)
+                    time.sleep(15)
+                else:
+                    raise
         data = r.json()
         items = data.get("items", [])
         all_items.extend(items)
@@ -392,7 +401,7 @@ if __name__ == "__main__":
                 conn.commit()
                 conn.close()
                 new_count += 1
-                print(f"    → Saved {len(daily)} rows to DB ({new_count} new dates so far)")
+                print(f"    Saved {len(daily)} rows to DB ({new_count} new dates so far)")
 
                 all_node_zones.append(df[["pnode_name","zone"]].drop_duplicates())
 
