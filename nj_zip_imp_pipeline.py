@@ -360,19 +360,53 @@ if __name__ == "__main__":
     if existing_dates:
         print(f"  Resuming: {len(existing_dates)}/72 dates already in DB — skipping them.\n")
 
-    print("=== Step 1: Pull NJ LMP data from PJM API ===")
-    lmp_new = pull_all_month_firsts(skip_dates=existing_dates)
+    # ── Step 1: Pull NJ LMP data, write each date to DB immediately ──────────
+    print("=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===")
+    all_node_zones = []
+    total = len(YEARS) * len(MONTHS)
+    done = 0
+    new_count = 0
+    for year in YEARS:
+        for month in MONTHS:
+            done += 1
+            date_str = f"{year}-{month:02d}-01"
+            if date_str in existing_dates:
+                print(f"  [{done}/{total}] Skipping {date_str} (already in DB)", flush=True)
+                continue
+            print(f"  [{done}/{total}] Fetching {date_str}...", end=" ", flush=True)
+            df = fetch_nj_lmp_day(year, month)
+            print(f"{len(df)} NJ rows  ({df['pnode_name'].nunique()} unique nodes)")
 
-    if lmp_new.empty:
+            # Compute daily averages and write to DB immediately
+            if not df.empty:
+                daily = (df.groupby(["pnode_name", "date"])["total_lmp_da"]
+                           .mean().reset_index())
+                daily = daily.rename(columns={"pnode_name": "node", "total_lmp_da": "lmp"})
+                daily["lmp"] = daily["lmp"].round(4)
+
+                conn = sqlite3.connect(DB_FILE)
+                conn.executemany(
+                    "INSERT OR REPLACE INTO lmp_daily (node, date, lmp) VALUES (?, ?, ?)",
+                    daily[["node","date","lmp"]].itertuples(index=False, name=None)
+                )
+                conn.commit()
+                conn.close()
+                new_count += 1
+                print(f"    → Saved {len(daily)} rows to DB ({new_count} new dates so far)")
+
+                all_node_zones.append(df[["pnode_name","zone"]].drop_duplicates())
+
+            time.sleep(5)
+
+    if all_node_zones:
+        new_node_zones = pd.concat(all_node_zones, ignore_index=True).drop_duplicates(subset=["pnode_name"])
+        lmp_all_nodes = pd.concat(
+            [new_node_zones, existing_lmp_for_nodes], ignore_index=True
+        ).drop_duplicates(subset=["pnode_name"])
+        print(f"\n  New dates written: {new_count}, unique nodes: {len(lmp_all_nodes)}\n")
+    else:
         print("  All 72 dates already fetched — nothing new to add.\n")
         lmp_all_nodes = existing_lmp_for_nodes
-    else:
-        print(f"  New rows: {len(lmp_new)}, unique nodes: {lmp_new['pnode_name'].nunique()}\n")
-        # Merge new + existing node/zone info for complete coord resolution
-        lmp_all_nodes = pd.concat(
-            [lmp_new[["pnode_name","zone"]].drop_duplicates(), existing_lmp_for_nodes],
-            ignore_index=True
-        ).drop_duplicates(subset=["pnode_name"])
 
     print("=== Step 2: NJ zip code centroids ===")
     zips = get_nj_zip_centroids()
@@ -386,39 +420,17 @@ if __name__ == "__main__":
         print(f"  WARNING: {len(unresolved)} nodes still unresolved: {unresolved['pnode_name'].tolist()}")
     print(f"  Coord breakdown: {node_coords['coord_method'].value_counts().to_dict()}\n")
 
-    print("=== Step 4: Build node LMP table ===")
-    if not lmp_new.empty:
-        lmp_daily_new = (lmp_new.groupby(["pnode_name", "date"])["total_lmp_da"]
-                                .mean().reset_index())
-        lmp_daily_new = lmp_daily_new.rename(columns={"pnode_name": "node", "total_lmp_da": "lmp"})
-        lmp_daily_new["lmp"] = lmp_daily_new["lmp"].round(4)
-    else:
-        lmp_daily_new = pd.DataFrame(columns=["node", "date", "lmp"])
-
     resolved_nodes = node_coords.dropna(subset=["lat","lon"])
     nodes_for_zip  = node_coords[["pnode_name","lat","lon","coord_method","zone"]].dropna(subset=["lat","lon"])
 
-    print("=== Step 5: Zip → nearest node ===")
+    print("=== Step 4: Zip → nearest node ===")
     zip_nodes = assign_zips_to_nodes(zips, nodes_for_zip)
 
-    print("=== Step 6: Write to SQLite ===")
+    print("=== Step 5: Write zip mapping to SQLite ===")
     conn = sqlite3.connect(DB_FILE)
     try:
-        # zips table: always rewrite (static mapping)
         zip_nodes.to_sql("zips", conn, if_exists="replace", index=False)
         print(f"  Wrote {len(zip_nodes)} rows → zips")
-
-        # lmp_daily: INSERT OR REPLACE so existing rows are preserved
-        lmp_out = lmp_daily_new[lmp_daily_new["node"].isin(resolved_nodes["pnode_name"])][["node","date","lmp"]]
-        if not lmp_out.empty:
-            conn.executemany(
-                "INSERT OR REPLACE INTO lmp_daily (node, date, lmp) VALUES (?, ?, ?)",
-                lmp_out.itertuples(index=False, name=None)
-            )
-            conn.commit()
-            print(f"  Wrote {len(lmp_out)} new rows → lmp_daily ({lmp_out['node'].nunique()} nodes)")
-        else:
-            print("  No new lmp_daily rows to write.")
 
         total_dates = conn.execute("SELECT COUNT(DISTINCT date) FROM lmp_daily").fetchone()[0]
         print(f"  lmp_daily now covers {total_dates}/72 dates")

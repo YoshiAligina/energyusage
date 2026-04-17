@@ -1,2 +1,22 @@
 === Step 1: Pull NJ LMP data from PJM API ===
-  [1/72] Fetching 2020-01-01... 
+  [1/72] Fetching 2020-01-01...   Resuming: 6/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Fetching 2020-02-01... 19800 NJ rows  (331 unique nodes)
+  [3/72] Fetching 2020-03-01... 19800 NJ rows  (331 unique nodes)
+  [4/72] Fetching 2020-04-01... 20064 NJ rows  (333 unique nodes)
+  [5/72] Fetching 2020-05-01... 20064 NJ rows  (333 unique nodes)
+  [6/72] Fetching 2020-06-01... 20640 NJ rows  (339 unique nodes)
+  [7/72] Fetching 2020-07-01... 20640 NJ rows  (339 unique nodes)
+  [8/72] Fetching 2020-08-01... 20640 NJ rows  (339 unique nodes)
+  [9/72] Fetching 2020-09-01... 20640 NJ rows  (339 unique nodes)
+  [10/72] Fetching 2020-10-01... 20712 NJ rows  (340 unique nodes)
+  [11/72] Fetching 2020-11-01... 21575 NJ rows  (340 unique nodes)
+  [12/72] Fetching 2020-12-01... 20712 NJ rows  (340 unique nodes)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Fetching 2021-02-01... 21048 NJ rows  (343 unique nodes)
+  [15/72] Fetching 2021-03-01... 21048 NJ rows  (343 unique nodes)
+  [16/72] Fetching 2021-04-01... 20976 NJ rows  (345 unique nodes)
+  [17/72] Fetching 2021-05-01... 20976 NJ rows  (345 unique nodes)
+  [18/72] Fetching 2021-06-01... 
