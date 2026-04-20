@@ -671,3 +671,134 @@ Traceback (most recent call last):
   File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\models.py", line 982, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
 requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 16, in <module>
+    import os, re, time, datetime, requests, zipfile, io, sqlite3
+ModuleNotFoundError: No module named 'requests'
+  Resuming: 72/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/84] Skipping 2020-01-01 (already in DB)
+  [2/84] Skipping 2020-02-01 (already in DB)
+  [3/84] Skipping 2020-03-01 (already in DB)
+  [4/84] Skipping 2020-04-01 (already in DB)
+  [5/84] Skipping 2020-05-01 (already in DB)
+  [6/84] Skipping 2020-06-01 (already in DB)
+  [7/84] Skipping 2020-07-01 (already in DB)
+  [8/84] Skipping 2020-08-01 (already in DB)
+  [9/84] Skipping 2020-09-01 (already in DB)
+  [10/84] Skipping 2020-10-01 (already in DB)
+  [11/84] Skipping 2020-11-01 (already in DB)
+  [12/84] Skipping 2020-12-01 (already in DB)
+  [13/84] Skipping 2021-01-01 (already in DB)
+  [14/84] Skipping 2021-02-01 (already in DB)
+  [15/84] Skipping 2021-03-01 (already in DB)
+  [16/84] Skipping 2021-04-01 (already in DB)
+  [17/84] Skipping 2021-05-01 (already in DB)
+  [18/84] Skipping 2021-06-01 (already in DB)
+  [19/84] Skipping 2021-07-01 (already in DB)
+  [20/84] Skipping 2021-08-01 (already in DB)
+  [21/84] Skipping 2021-09-01 (already in DB)
+  [22/84] Skipping 2021-10-01 (already in DB)
+  [23/84] Skipping 2021-11-01 (already in DB)
+  [24/84] Skipping 2021-12-01 (already in DB)
+  [25/84] Skipping 2022-01-01 (already in DB)
+  [26/84] Skipping 2022-02-01 (already in DB)
+  [27/84] Skipping 2022-03-01 (already in DB)
+  [28/84] Skipping 2022-04-01 (already in DB)
+  [29/84] Skipping 2022-05-01 (already in DB)
+  [30/84] Skipping 2022-06-01 (already in DB)
+  [31/84] Skipping 2022-07-01 (already in DB)
+  [32/84] Skipping 2022-08-01 (already in DB)
+  [33/84] Skipping 2022-09-01 (already in DB)
+  [34/84] Skipping 2022-10-01 (already in DB)
+  [35/84] Skipping 2022-11-01 (already in DB)
+  [36/84] Skipping 2022-12-01 (already in DB)
+  [37/84] Skipping 2023-01-01 (already in DB)
+  [38/84] Skipping 2023-02-01 (already in DB)
+  [39/84] Skipping 2023-03-01 (already in DB)
+  [40/84] Skipping 2023-04-01 (already in DB)
+  [41/84] Skipping 2023-05-01 (already in DB)
+  [42/84] Skipping 2023-06-01 (already in DB)
+  [43/84] Skipping 2023-07-01 (already in DB)
+  [44/84] Skipping 2023-08-01 (already in DB)
+  [45/84] Skipping 2023-09-01 (already in DB)
+  [46/84] Skipping 2023-10-01 (already in DB)
+  [47/84] Skipping 2023-11-01 (already in DB)
+  [48/84] Skipping 2023-12-01 (already in DB)
+  [49/84] Skipping 2024-01-01 (already in DB)
+  [50/84] Skipping 2024-02-01 (already in DB)
+  [51/84] Skipping 2024-03-01 (already in DB)
+  [52/84] Skipping 2024-04-01 (already in DB)
+  [53/84] Skipping 2024-05-01 (already in DB)
+  [54/84] Skipping 2024-06-01 (already in DB)
+  [55/84] Skipping 2024-07-01 (already in DB)
+  [56/84] Skipping 2024-08-01 (already in DB)
+  [57/84] Skipping 2024-09-01 (already in DB)
+  [58/84] Skipping 2024-10-01 (already in DB)
+  [59/84] Skipping 2024-11-01 (already in DB)
+  [60/84] Skipping 2024-12-01 (already in DB)
+  [61/84] Skipping 2025-01-01 (already in DB)
+  [62/84] Skipping 2025-02-01 (already in DB)
+  [63/84] Skipping 2025-03-01 (already in DB)
+  [64/84] Skipping 2025-04-01 (already in DB)
+  [65/84] Skipping 2025-05-01 (already in DB)
+  [66/84] Skipping 2025-06-01 (already in DB)
+  [67/84] Skipping 2025-07-01 (already in DB)
+  [68/84] Skipping 2025-08-01 (already in DB)
+  [69/84] Skipping 2025-09-01 (already in DB)
+  [70/84] Skipping 2025-10-01 (already in DB)
+  [71/84] Skipping 2025-11-01 (already in DB)
+  [72/84] Skipping 2025-12-01 (already in DB)
+  [73/84] Fetching 2026-01-01... 22488 NJ rows  (371 unique nodes)
+    Saved 371 rows to DB (1 new dates so far)
+  [74/84] Fetching 2026-02-01... 22488 NJ rows  (371 unique nodes)
+    Saved 371 rows to DB (2 new dates so far)
+  [75/84] Fetching 2026-03-01... 22488 NJ rows  (371 unique nodes)
+    Saved 371 rows to DB (3 new dates so far)
+  [76/84] Fetching 2026-04-01... 23112 NJ rows  (380 unique nodes)
+    Saved 380 rows to DB (4 new dates so far)
+  [77/84] Skipping 2026-05-01 (future)
+  [78/84] Skipping 2026-06-01 (future)
+  [79/84] Skipping 2026-07-01 (future)
+  [80/84] Skipping 2026-08-01 (future)
+  [81/84] Skipping 2026-09-01 (future)
+  [82/84] Skipping 2026-10-01 (future)
+  [83/84] Skipping 2026-11-01 (future)
+  [84/84] Skipping 2026-12-01 (future)
+
+  New dates written: 4, unique nodes: 386
+
+=== Step 2: NJ zip code centroids ===
+  Downloading Census ZCTA gazetteer... 598 NJ zip codes
+
+=== Step 3: Node coordinates ===
+  Querying OpenStreetMap for NJ substations... 
+    OSM rate limit (406), waiting 30s... 
+    OSM rate limit (406), waiting 30s... 
+    OSM rate limit (406), waiting 30s... Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\models.py", line 978, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 437, in <module>
+    osm_df = get_osm_substations()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 155, in get_osm_substations
+    elements = r.json().get("elements", [])
+               ^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\models.py", line 982, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
