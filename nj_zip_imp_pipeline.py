@@ -13,7 +13,7 @@ Output:
     nj_lmp.db  (SQLite — tables: zips, lmp_daily)
 """
 
-import os, re, time, requests, zipfile, io, sqlite3
+import os, re, time, datetime, requests, zipfile, io, sqlite3
 import pandas as pd
 import numpy as np
 from math import radians, cos, sin, asin, sqrt
@@ -25,8 +25,9 @@ from thefuzz import process, fuzz
 PJM_API_KEY = "624c152b81f2406cb9f36aa0891b644c"   # from dataminer2.pjm.com/config/settings.json
 PJM_API_URL = "https://api.pjm.com/api/v1/da_hrl_lmps"
 NJ_ZONES    = {"PSEG", "JCPL", "AECO", "RECO"}
-YEARS       = range(2020, 2026)
+YEARS       = range(2020, 2027)
 MONTHS      = range(1, 13)
+TODAY       = datetime.date.today()
 DB_FILE     = "nj_lmp.db"
 
 HEADERS = {
@@ -142,8 +143,15 @@ def get_osm_substations() -> pd.DataFrame:
     out center;
     """
     print("  Querying OpenStreetMap for NJ substations...", end=" ", flush=True)
-    r = requests.post(overpass_url, data={"data": query}, timeout=90)
-    r.raise_for_status()
+    for attempt in range(3):
+        r = requests.post(overpass_url, data={"data": query}, timeout=90,
+                          headers={"Content-Type": "application/x-www-form-urlencoded"})
+        if r.status_code == 429 or r.status_code == 406:
+            print(f"\n    OSM rate limit ({r.status_code}), waiting 30s...", end=" ", flush=True)
+            time.sleep(30)
+            continue
+        r.raise_for_status()
+        break
     elements = r.json().get("elements", [])
     rows = []
     for el in elements:
@@ -379,6 +387,10 @@ if __name__ == "__main__":
         for month in MONTHS:
             done += 1
             date_str = f"{year}-{month:02d}-01"
+            target = datetime.date(year, month, 1)
+            if target > TODAY:
+                print(f"  [{done}/{total}] Skipping {date_str} (future)", flush=True)
+                continue
             if date_str in existing_dates:
                 print(f"  [{done}/{total}] Skipping {date_str} (already in DB)", flush=True)
                 continue

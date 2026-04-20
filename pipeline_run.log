@@ -161,4 +161,513 @@ requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.pjm.com', port=44
   [16/72] Skipping 2021-04-01 (already in DB)
   [17/72] Skipping 2021-05-01 (already in DB)
   [18/72] Skipping 2021-06-01 (already in DB)
-  [19/72] Fetching 2021-07-01... 
+  [19/72] Fetching 2021-07-01... 21000 NJ rows  (346 unique nodes)
+    Saved 346 rows to DB (1 new dates so far)
+  [20/72] Fetching 2021-08-01... 
+    Retry 1/2 after ReadTimeout... 
+    Retry 1/2 after ReadTimeout... 
+    Retry 1/2 after ReadTimeout... 21000 NJ rows  (346 unique nodes)
+    Saved 346 rows to DB (2 new dates so far)
+  [21/72] Fetching 2021-09-01... 
+    Retry 1/2 after ReadTimeout... 
+    Retry 1/2 after ReadTimeout... 
+    Retry 1/2 after ReadTimeout... 21000 NJ rows  (346 unique nodes)
+    Saved 346 rows to DB (3 new dates so far)
+  [22/72] Fetching 2021-10-01... 
+    Retry 1/2 after ReadTimeout... 21048 NJ rows  (347 unique nodes)
+    Saved 347 rows to DB (4 new dates so far)
+  [23/72] Fetching 2021-11-01... 21048 NJ rows  (347 unique nodes)
+    Saved 347 rows to DB (5 new dates so far)
+  [24/72] Fetching 2021-12-01... 21048 NJ rows  (347 unique nodes)
+    Saved 347 rows to DB (6 new dates so far)
+  [25/72] Skipping 2022-01-01 (already in DB)
+  [26/72] Fetching 2022-02-01... 21336 NJ rows  (350 unique nodes)
+    Saved 350 rows to DB (7 new dates so far)
+  [27/72] Fetching 2022-03-01... 21336 NJ rows  (350 unique nodes)
+    Saved 350 rows to DB (8 new dates so far)
+  [28/72] Fetching 2022-04-01... 21432 NJ rows  (351 unique nodes)
+    Saved 351 rows to DB (9 new dates so far)
+  [29/72] Fetching 2022-05-01... 21432 NJ rows  (351 unique nodes)
+    Saved 351 rows to DB (10 new dates so far)
+  [30/72] Fetching 2022-06-01... 
+    Retry 1/2 after ReadTimeout... 
+    Retry 1/2 after ReadTimeout... 21360 NJ rows  (352 unique nodes)
+    Saved 352 rows to DB (11 new dates so far)
+  [31/72] Fetching 2022-07-01... 21360 NJ rows  (352 unique nodes)
+    Saved 352 rows to DB (12 new dates so far)
+  [32/72] Fetching 2022-08-01...   Resuming: 34/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Skipping 2020-02-01 (already in DB)
+  [3/72] Skipping 2020-03-01 (already in DB)
+  [4/72] Skipping 2020-04-01 (already in DB)
+  [5/72] Skipping 2020-05-01 (already in DB)
+  [6/72] Skipping 2020-06-01 (already in DB)
+  [7/72] Skipping 2020-07-01 (already in DB)
+  [8/72] Skipping 2020-08-01 (already in DB)
+  [9/72] Skipping 2020-09-01 (already in DB)
+  [10/72] Skipping 2020-10-01 (already in DB)
+  [11/72] Skipping 2020-11-01 (already in DB)
+  [12/72] Skipping 2020-12-01 (already in DB)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Skipping 2021-02-01 (already in DB)
+  [15/72] Skipping 2021-03-01 (already in DB)
+  [16/72] Skipping 2021-04-01 (already in DB)
+  [17/72] Skipping 2021-05-01 (already in DB)
+  [18/72] Skipping 2021-06-01 (already in DB)
+  [19/72] Skipping 2021-07-01 (already in DB)
+  [20/72] Skipping 2021-08-01 (already in DB)
+  [21/72] Skipping 2021-09-01 (already in DB)
+  [22/72] Skipping 2021-10-01 (already in DB)
+  [23/72] Skipping 2021-11-01 (already in DB)
+  [24/72] Skipping 2021-12-01 (already in DB)
+  [25/72] Skipping 2022-01-01 (already in DB)
+  [26/72] Skipping 2022-02-01 (already in DB)
+  [27/72] Skipping 2022-03-01 (already in DB)
+  [28/72] Skipping 2022-04-01 (already in DB)
+  [29/72] Skipping 2022-05-01 (already in DB)
+  [30/72] Skipping 2022-06-01 (already in DB)
+  [31/72] Skipping 2022-07-01 (already in DB)
+  [32/72] Fetching 2022-08-01... 21360 NJ rows  (352 unique nodes)
+    Saved 352 rows to DB (1 new dates so far)
+  [33/72] Fetching 2022-09-01... 21360 NJ rows  (352 unique nodes)
+    Saved 352 rows to DB (2 new dates so far)
+  [34/72] Fetching 2022-10-01... 21456 NJ rows  (353 unique nodes)
+    Saved 353 rows to DB (3 new dates so far)
+  [35/72] Fetching 2022-11-01... 
+    Retry 1/2 after ConnectionError... 21456 NJ rows  (353 unique nodes)
+    Saved 353 rows to DB (4 new dates so far)
+  [36/72] Fetching 2022-12-01... 21456 NJ rows  (353 unique nodes)
+    Saved 353 rows to DB (5 new dates so far)
+  [37/72] Skipping 2023-01-01 (already in DB)
+  [38/72] Fetching 2023-02-01... 21600 NJ rows  (354 unique nodes)
+    Saved 354 rows to DB (6 new dates so far)
+  [39/72] Fetching 2023-03-01... 21600 NJ rows  (354 unique nodes)
+    Saved 354 rows to DB (7 new dates so far)
+  [40/72] Fetching 2023-04-01... 21840 NJ rows  (355 unique nodes)
+    Saved 355 rows to DB (8 new dates so far)
+  [41/72] Fetching 2023-05-01... 21840 NJ rows  (355 unique nodes)
+    Saved 355 rows to DB (9 new dates so far)
+  [42/72] Fetching 2023-06-01... 21840 NJ rows  (355 unique nodes)
+    Saved 355 rows to DB (10 new dates so far)
+  [43/72] Fetching 2023-07-01...   Resuming: 44/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Skipping 2020-02-01 (already in DB)
+  [3/72] Skipping 2020-03-01 (already in DB)
+  [4/72] Skipping 2020-04-01 (already in DB)
+  [5/72] Skipping 2020-05-01 (already in DB)
+  [6/72] Skipping 2020-06-01 (already in DB)
+  [7/72] Skipping 2020-07-01 (already in DB)
+  [8/72] Skipping 2020-08-01 (already in DB)
+  [9/72] Skipping 2020-09-01 (already in DB)
+  [10/72] Skipping 2020-10-01 (already in DB)
+  [11/72] Skipping 2020-11-01 (already in DB)
+  [12/72] Skipping 2020-12-01 (already in DB)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Skipping 2021-02-01 (already in DB)
+  [15/72] Skipping 2021-03-01 (already in DB)
+  [16/72] Skipping 2021-04-01 (already in DB)
+  [17/72] Skipping 2021-05-01 (already in DB)
+  [18/72] Skipping 2021-06-01 (already in DB)
+  [19/72] Skipping 2021-07-01 (already in DB)
+  [20/72] Skipping 2021-08-01 (already in DB)
+  [21/72] Skipping 2021-09-01 (already in DB)
+  [22/72] Skipping 2021-10-01 (already in DB)
+  [23/72] Skipping 2021-11-01 (already in DB)
+  [24/72] Skipping 2021-12-01 (already in DB)
+  [25/72] Skipping 2022-01-01 (already in DB)
+  [26/72] Skipping 2022-02-01 (already in DB)
+  [27/72] Skipping 2022-03-01 (already in DB)
+  [28/72] Skipping 2022-04-01 (already in DB)
+  [29/72] Skipping 2022-05-01 (already in DB)
+  [30/72] Skipping 2022-06-01 (already in DB)
+  [31/72] Skipping 2022-07-01 (already in DB)
+  [32/72] Skipping 2022-08-01 (already in DB)
+  [33/72] Skipping 2022-09-01 (already in DB)
+  [34/72] Skipping 2022-10-01 (already in DB)
+  [35/72] Skipping 2022-11-01 (already in DB)
+  [36/72] Skipping 2022-12-01 (already in DB)
+  [37/72] Skipping 2023-01-01 (already in DB)
+  [38/72] Skipping 2023-02-01 (already in DB)
+  [39/72] Skipping 2023-03-01 (already in DB)
+  [40/72] Skipping 2023-04-01 (already in DB)
+  [41/72] Skipping 2023-05-01 (already in DB)
+  [42/72] Skipping 2023-06-01 (already in DB)
+  [43/72] Fetching 2023-07-01... 21912 NJ rows  (355 unique nodes)
+    Saved 355 rows to DB (1 new dates so far)
+  [44/72] Fetching 2023-08-01... 21912 NJ rows  (355 unique nodes)
+    Saved 355 rows to DB (2 new dates so far)
+  [45/72] Fetching 2023-09-01... 21912 NJ rows  (355 unique nodes)
+    Saved 355 rows to DB (3 new dates so far)
+  [46/72] Fetching 2023-10-01... 21792 NJ rows  (354 unique nodes)
+    Saved 354 rows to DB (4 new dates so far)
+  [47/72] Fetching 2023-11-01... 21792 NJ rows  (354 unique nodes)
+    Saved 354 rows to DB (5 new dates so far)
+  [48/72] Fetching 2023-12-01... 21792 NJ rows  (354 unique nodes)
+    Saved 354 rows to DB (6 new dates so far)
+  [49/72] Skipping 2024-01-01 (already in DB)
+  [50/72] Fetching 2024-02-01... 21864 NJ rows  (359 unique nodes)
+    Saved 359 rows to DB (7 new dates so far)
+  [51/72] Fetching 2024-03-01... 21864 NJ rows  (359 unique nodes)
+    Saved 359 rows to DB (8 new dates so far)
+  [52/72] Fetching 2024-04-01... 21744 NJ rows  (359 unique nodes)
+    Saved 359 rows to DB (9 new dates so far)
+  [53/72] Fetching 2024-05-01... 21744 NJ rows  (359 unique nodes)
+    Saved 359 rows to DB (10 new dates so far)
+  [54/72] Fetching 2024-06-01... 21744 NJ rows  (359 unique nodes)
+    Saved 359 rows to DB (11 new dates so far)
+  [55/72] Fetching 2024-07-01... 21792 NJ rows  (360 unique nodes)
+    Saved 360 rows to DB (12 new dates so far)
+  [56/72] Fetching 2024-08-01... 21792 NJ rows  (360 unique nodes)
+    Saved 360 rows to DB (13 new dates so far)
+  [57/72] Fetching 2024-09-01... 
+    Retry 1/2 after ConnectTimeout... 
+    Retry 2/2 after ConnectionError... Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.pjm.com', port=443): Failed to resolve 'api.pjm.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\urllib3\util\retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.pjm.com', port=443): Max retries exceeded with url: /api/v1/da_hrl_lmps?startRow=70001&isActiveMetadata=true&rowCount=5000&datetime_beginning_ept=09%2F01%2F2024+00%3A00to09%2F01%2F2024+23%3A00&type=LOAD (Caused by NameResolutionError("HTTPSConnection(host='api.pjm.com', port=443): Failed to resolve 'api.pjm.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 386, in <module>
+    df = fetch_nj_lmp_day(year, month)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 63, in fetch_nj_lmp_day
+    r = requests.get(PJM_API_URL, params=params, headers=HEADERS, timeout=90)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\adapters.py", line 678, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.pjm.com', port=443): Max retries exceeded with url: /api/v1/da_hrl_lmps?startRow=70001&isActiveMetadata=true&rowCount=5000&datetime_beginning_ept=09%2F01%2F2024+00%3A00to09%2F01%2F2024+23%3A00&type=LOAD (Caused by NameResolutionError("HTTPSConnection(host='api.pjm.com', port=443): Failed to resolve 'api.pjm.com' ([Errno 11001] getaddrinfo failed)"))
+  Resuming: 57/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Skipping 2020-02-01 (already in DB)
+  [3/72] Skipping 2020-03-01 (already in DB)
+  [4/72] Skipping 2020-04-01 (already in DB)
+  [5/72] Skipping 2020-05-01 (already in DB)
+  [6/72] Skipping 2020-06-01 (already in DB)
+  [7/72] Skipping 2020-07-01 (already in DB)
+  [8/72] Skipping 2020-08-01 (already in DB)
+  [9/72] Skipping 2020-09-01 (already in DB)
+  [10/72] Skipping 2020-10-01 (already in DB)
+  [11/72] Skipping 2020-11-01 (already in DB)
+  [12/72] Skipping 2020-12-01 (already in DB)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Skipping 2021-02-01 (already in DB)
+  [15/72] Skipping 2021-03-01 (already in DB)
+  [16/72] Skipping 2021-04-01 (already in DB)
+  [17/72] Skipping 2021-05-01 (already in DB)
+  [18/72] Skipping 2021-06-01 (already in DB)
+  [19/72] Skipping 2021-07-01 (already in DB)
+  [20/72] Skipping 2021-08-01 (already in DB)
+  [21/72] Skipping 2021-09-01 (already in DB)
+  [22/72] Skipping 2021-10-01 (already in DB)
+  [23/72] Skipping 2021-11-01 (already in DB)
+  [24/72] Skipping 2021-12-01 (already in DB)
+  [25/72] Skipping 2022-01-01 (already in DB)
+  [26/72] Skipping 2022-02-01 (already in DB)
+  [27/72] Skipping 2022-03-01 (already in DB)
+  [28/72] Skipping 2022-04-01 (already in DB)
+  [29/72] Skipping 2022-05-01 (already in DB)
+  [30/72] Skipping 2022-06-01 (already in DB)
+  [31/72] Skipping 2022-07-01 (already in DB)
+  [32/72] Skipping 2022-08-01 (already in DB)
+  [33/72] Skipping 2022-09-01 (already in DB)
+  [34/72] Skipping 2022-10-01 (already in DB)
+  [35/72] Skipping 2022-11-01 (already in DB)
+  [36/72] Skipping 2022-12-01 (already in DB)
+  [37/72] Skipping 2023-01-01 (already in DB)
+  [38/72] Skipping 2023-02-01 (already in DB)
+  [39/72] Skipping 2023-03-01 (already in DB)
+  [40/72] Skipping 2023-04-01 (already in DB)
+  [41/72] Skipping 2023-05-01 (already in DB)
+  [42/72] Skipping 2023-06-01 (already in DB)
+  [43/72] Skipping 2023-07-01 (already in DB)
+  [44/72] Skipping 2023-08-01 (already in DB)
+  [45/72] Skipping 2023-09-01 (already in DB)
+  [46/72] Skipping 2023-10-01 (already in DB)
+  [47/72] Skipping 2023-11-01 (already in DB)
+  [48/72] Skipping 2023-12-01 (already in DB)
+  [49/72] Skipping 2024-01-01 (already in DB)
+  [50/72] Skipping 2024-02-01 (already in DB)
+  [51/72] Skipping 2024-03-01 (already in DB)
+  [52/72] Skipping 2024-04-01 (already in DB)
+  [53/72] Skipping 2024-05-01 (already in DB)
+  [54/72] Skipping 2024-06-01 (already in DB)
+  [55/72] Skipping 2024-07-01 (already in DB)
+  [56/72] Skipping 2024-08-01 (already in DB)
+  [57/72] Fetching 2024-09-01... 21792 NJ rows  (360 unique nodes)
+    Saved 360 rows to DB (1 new dates so far)
+  [58/72] Fetching 2024-10-01... 21888 NJ rows  (360 unique nodes)
+    Saved 360 rows to DB (2 new dates so far)
+  [59/72] Fetching 2024-11-01...   Resuming: 59/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Skipping 2020-02-01 (already in DB)
+  [3/72] Skipping 2020-03-01 (already in DB)
+  [4/72] Skipping 2020-04-01 (already in DB)
+  [5/72] Skipping 2020-05-01 (already in DB)
+  [6/72] Skipping 2020-06-01 (already in DB)
+  [7/72] Skipping 2020-07-01 (already in DB)
+  [8/72] Skipping 2020-08-01 (already in DB)
+  [9/72] Skipping 2020-09-01 (already in DB)
+  [10/72] Skipping 2020-10-01 (already in DB)
+  [11/72] Skipping 2020-11-01 (already in DB)
+  [12/72] Skipping 2020-12-01 (already in DB)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Skipping 2021-02-01 (already in DB)
+  [15/72] Skipping 2021-03-01 (already in DB)
+  [16/72] Skipping 2021-04-01 (already in DB)
+  [17/72] Skipping 2021-05-01 (already in DB)
+  [18/72] Skipping 2021-06-01 (already in DB)
+  [19/72] Skipping 2021-07-01 (already in DB)
+  [20/72] Skipping 2021-08-01 (already in DB)
+  [21/72] Skipping 2021-09-01 (already in DB)
+  [22/72] Skipping 2021-10-01 (already in DB)
+  [23/72] Skipping 2021-11-01 (already in DB)
+  [24/72] Skipping 2021-12-01 (already in DB)
+  [25/72] Skipping 2022-01-01 (already in DB)
+  [26/72] Skipping 2022-02-01 (already in DB)
+  [27/72] Skipping 2022-03-01 (already in DB)
+  [28/72] Skipping 2022-04-01 (already in DB)
+  [29/72] Skipping 2022-05-01 (already in DB)
+  [30/72] Skipping 2022-06-01 (already in DB)
+  [31/72] Skipping 2022-07-01 (already in DB)
+  [32/72] Skipping 2022-08-01 (already in DB)
+  [33/72] Skipping 2022-09-01 (already in DB)
+  [34/72] Skipping 2022-10-01 (already in DB)
+  [35/72] Skipping 2022-11-01 (already in DB)
+  [36/72] Skipping 2022-12-01 (already in DB)
+  [37/72] Skipping 2023-01-01 (already in DB)
+  [38/72] Skipping 2023-02-01 (already in DB)
+  [39/72] Skipping 2023-03-01 (already in DB)
+  [40/72] Skipping 2023-04-01 (already in DB)
+  [41/72] Skipping 2023-05-01 (already in DB)
+  [42/72] Skipping 2023-06-01 (already in DB)
+  [43/72] Skipping 2023-07-01 (already in DB)
+  [44/72] Skipping 2023-08-01 (already in DB)
+  [45/72] Skipping 2023-09-01 (already in DB)
+  [46/72] Skipping 2023-10-01 (already in DB)
+  [47/72] Skipping 2023-11-01 (already in DB)
+  [48/72] Skipping 2023-12-01 (already in DB)
+  [49/72] Skipping 2024-01-01 (already in DB)
+  [50/72] Skipping 2024-02-01 (already in DB)
+  [51/72] Skipping 2024-03-01 (already in DB)
+  [52/72] Skipping 2024-04-01 (already in DB)
+  [53/72] Skipping 2024-05-01 (already in DB)
+  [54/72] Skipping 2024-06-01 (already in DB)
+  [55/72] Skipping 2024-07-01 (already in DB)
+  [56/72] Skipping 2024-08-01 (already in DB)
+  [57/72] Skipping 2024-09-01 (already in DB)
+  [58/72] Skipping 2024-10-01 (already in DB)
+  [59/72] Fetching 2024-11-01... 21888 NJ rows  (360 unique nodes)
+    Saved 360 rows to DB (1 new dates so far)
+  [60/72] Fetching 2024-12-01... 21888 NJ rows  (360 unique nodes)
+    Saved 360 rows to DB (2 new dates so far)
+  [61/72] Skipping 2025-01-01 (already in DB)
+  [62/72] Fetching 2025-02-01... 22104 NJ rows  (363 unique nodes)
+    Saved 363 rows to DB (3 new dates so far)
+  [63/72] Fetching 2025-03-01... 22104 NJ rows  (363 unique nodes)
+    Saved 363 rows to DB (4 new dates so far)
+  [64/72] Fetching 2025-04-01... 22152 NJ rows  (364 unique nodes)
+    Saved 364 rows to DB (5 new dates so far)
+  [65/72] Fetching 2025-05-01... 22152 NJ rows  (364 unique nodes)
+    Saved 364 rows to DB (6 new dates so far)
+  [66/72] Fetching 2025-06-01... 22152 NJ rows  (364 unique nodes)
+    Saved 364 rows to DB (7 new dates so far)
+  [67/72] Fetching 2025-07-01... 22224 NJ rows  (367 unique nodes)
+    Saved 367 rows to DB (8 new dates so far)
+  [68/72] Fetching 2025-08-01... 22224 NJ rows  (367 unique nodes)
+    Saved 367 rows to DB (9 new dates so far)
+  [69/72] Fetching 2025-09-01... 22224 NJ rows  (367 unique nodes)
+    Saved 367 rows to DB (10 new dates so far)
+  [70/72] Fetching 2025-10-01... 22296 NJ rows  (368 unique nodes)
+    Saved 368 rows to DB (11 new dates so far)
+  [71/72] Fetching 2025-11-01... 22296 NJ rows  (368 unique nodes)
+    Saved 368 rows to DB (12 new dates so far)
+  [72/72] Fetching 2025-12-01... 22296 NJ rows  (368 unique nodes)
+    Saved 368 rows to DB (13 new dates so far)
+
+  New dates written: 13, unique nodes: 374
+
+=== Step 2: NJ zip code centroids ===
+  Downloading Census ZCTA gazetteer... 598 NJ zip codes
+
+=== Step 3: Node coordinates ===
+  Querying OpenStreetMap for NJ substations... Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 425, in <module>
+    osm_df = get_osm_substations()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 146, in get_osm_substations
+    r.raise_for_status()
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 406 Client Error: Not Acceptable for url: https://overpass-api.de/api/interpreter
+  Resuming: 72/72 dates already in DB — skipping them.
+
+=== Step 1: Pull NJ LMP data from PJM API (incremental writes) ===
+  [1/72] Skipping 2020-01-01 (already in DB)
+  [2/72] Skipping 2020-02-01 (already in DB)
+  [3/72] Skipping 2020-03-01 (already in DB)
+  [4/72] Skipping 2020-04-01 (already in DB)
+  [5/72] Skipping 2020-05-01 (already in DB)
+  [6/72] Skipping 2020-06-01 (already in DB)
+  [7/72] Skipping 2020-07-01 (already in DB)
+  [8/72] Skipping 2020-08-01 (already in DB)
+  [9/72] Skipping 2020-09-01 (already in DB)
+  [10/72] Skipping 2020-10-01 (already in DB)
+  [11/72] Skipping 2020-11-01 (already in DB)
+  [12/72] Skipping 2020-12-01 (already in DB)
+  [13/72] Skipping 2021-01-01 (already in DB)
+  [14/72] Skipping 2021-02-01 (already in DB)
+  [15/72] Skipping 2021-03-01 (already in DB)
+  [16/72] Skipping 2021-04-01 (already in DB)
+  [17/72] Skipping 2021-05-01 (already in DB)
+  [18/72] Skipping 2021-06-01 (already in DB)
+  [19/72] Skipping 2021-07-01 (already in DB)
+  [20/72] Skipping 2021-08-01 (already in DB)
+  [21/72] Skipping 2021-09-01 (already in DB)
+  [22/72] Skipping 2021-10-01 (already in DB)
+  [23/72] Skipping 2021-11-01 (already in DB)
+  [24/72] Skipping 2021-12-01 (already in DB)
+  [25/72] Skipping 2022-01-01 (already in DB)
+  [26/72] Skipping 2022-02-01 (already in DB)
+  [27/72] Skipping 2022-03-01 (already in DB)
+  [28/72] Skipping 2022-04-01 (already in DB)
+  [29/72] Skipping 2022-05-01 (already in DB)
+  [30/72] Skipping 2022-06-01 (already in DB)
+  [31/72] Skipping 2022-07-01 (already in DB)
+  [32/72] Skipping 2022-08-01 (already in DB)
+  [33/72] Skipping 2022-09-01 (already in DB)
+  [34/72] Skipping 2022-10-01 (already in DB)
+  [35/72] Skipping 2022-11-01 (already in DB)
+  [36/72] Skipping 2022-12-01 (already in DB)
+  [37/72] Skipping 2023-01-01 (already in DB)
+  [38/72] Skipping 2023-02-01 (already in DB)
+  [39/72] Skipping 2023-03-01 (already in DB)
+  [40/72] Skipping 2023-04-01 (already in DB)
+  [41/72] Skipping 2023-05-01 (already in DB)
+  [42/72] Skipping 2023-06-01 (already in DB)
+  [43/72] Skipping 2023-07-01 (already in DB)
+  [44/72] Skipping 2023-08-01 (already in DB)
+  [45/72] Skipping 2023-09-01 (already in DB)
+  [46/72] Skipping 2023-10-01 (already in DB)
+  [47/72] Skipping 2023-11-01 (already in DB)
+  [48/72] Skipping 2023-12-01 (already in DB)
+  [49/72] Skipping 2024-01-01 (already in DB)
+  [50/72] Skipping 2024-02-01 (already in DB)
+  [51/72] Skipping 2024-03-01 (already in DB)
+  [52/72] Skipping 2024-04-01 (already in DB)
+  [53/72] Skipping 2024-05-01 (already in DB)
+  [54/72] Skipping 2024-06-01 (already in DB)
+  [55/72] Skipping 2024-07-01 (already in DB)
+  [56/72] Skipping 2024-08-01 (already in DB)
+  [57/72] Skipping 2024-09-01 (already in DB)
+  [58/72] Skipping 2024-10-01 (already in DB)
+  [59/72] Skipping 2024-11-01 (already in DB)
+  [60/72] Skipping 2024-12-01 (already in DB)
+  [61/72] Skipping 2025-01-01 (already in DB)
+  [62/72] Skipping 2025-02-01 (already in DB)
+  [63/72] Skipping 2025-03-01 (already in DB)
+  [64/72] Skipping 2025-04-01 (already in DB)
+  [65/72] Skipping 2025-05-01 (already in DB)
+  [66/72] Skipping 2025-06-01 (already in DB)
+  [67/72] Skipping 2025-07-01 (already in DB)
+  [68/72] Skipping 2025-08-01 (already in DB)
+  [69/72] Skipping 2025-09-01 (already in DB)
+  [70/72] Skipping 2025-10-01 (already in DB)
+  [71/72] Skipping 2025-11-01 (already in DB)
+  [72/72] Skipping 2025-12-01 (already in DB)
+  All 72 dates already fetched — nothing new to add.
+
+=== Step 2: NJ zip code centroids ===
+  Downloading Census ZCTA gazetteer... 598 NJ zip codes
+
+=== Step 3: Node coordinates ===
+  Querying OpenStreetMap for NJ substations... 
+    OSM rate limit (406), waiting 30s... 
+    OSM rate limit (406), waiting 30s... 
+    OSM rate limit (406), waiting 30s... Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\models.py", line 978, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 432, in <module>
+    osm_df = get_osm_substations()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\nj_zip_imp_pipeline.py", line 154, in get_osm_substations
+    elements = r.json().get("elements", [])
+               ^^^^^^^^
+  File "C:\Users\yoshi\Desktop\bloombergdata\venv\Lib\site-packages\requests\models.py", line 982, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

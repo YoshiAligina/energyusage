@@ -15,6 +15,10 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap contributors",
 }).addTo(map);
 
+// Dedicated pane so data-center markers always render above ZIP polygons.
+map.createPane("dcPane");
+map.getPane("dcPane").style.zIndex = 650;
+
 const infoEl          = document.getElementById("info");
 const zipSearchEl     = document.getElementById("zipSearch");
 const searchBtnEl     = document.getElementById("searchBtn");
@@ -22,6 +26,7 @@ const yearSelectEl    = document.getElementById("yearSelect");
 const monthSliderEl   = document.getElementById("monthSlider");
 const monthLabelEl    = document.getElementById("monthLabel");
 const heatmapToggleEl = document.getElementById("heatmapToggle");
+const dcToggleEl      = document.getElementById("dcToggle");
 
 const layerByZip = new Map();
 let selectedLayer = null;
@@ -29,6 +34,8 @@ let zipDetails = {};
 let selectedZip = null;
 let heatmapEnabled = false;
 let legendControl = null;
+let dataCenters = [];
+let dcLayerGroup = null;
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -176,6 +183,11 @@ function renderZipInfo(zip) {
       <span class="info-value ${deltaClass}">${pctVsBase !== null ? `${deltaSign}${pctVsBase.toFixed(1)}%` : "N/A"}</span>
     </div>
     <div class="info-row"><strong>Node</strong> <span class="info-value">${details.nearest_node || "N/A"} (${details.node_zone || "N/A"})</span></div>
+    <div class="info-row"><strong>Nearest data center</strong> <span class="info-value">${
+      details.nearest_dc
+        ? `${details.nearest_dc.name} (${details.nearest_dc.miles.toFixed(1)} mi)`
+        : "N/A"
+    }</span></div>
     ${buildSparkline(details.monthly_lmp, year)}
   `;
 }
@@ -293,6 +305,41 @@ async function loadZipDetails() {
   }
 }
 
+async function loadDataCenters() {
+  try {
+    const res = await fetch("data_centers.json");
+    dataCenters = await res.json();
+  } catch (err) {
+    console.warn("Could not load data_centers.json", err);
+    dataCenters = [];
+  }
+}
+
+function buildDcLayer() {
+  dcLayerGroup = L.layerGroup();
+  dataCenters.forEach((dc) => {
+    const marker = L.circleMarker([dc.lat, dc.lon], {
+      pane: "dcPane",
+      radius: 8,
+      color: "#1b1b1b",
+      weight: 1.5,
+      fillColor: "#ffb703",
+      fillOpacity: 1,
+    });
+    const popup = `
+      <div class="dc-popup">
+        <strong>${dc.name || "(unnamed)"}</strong><br/>
+        ${dc.operator ? `${dc.operator}<br/>` : ""}
+        ${dc.address || ""}<br/>
+        <em>${dc.status || ""}${dc.capacity ? " · " + dc.capacity : ""}</em>
+        ${dc.hyperscaler && dc.hyperscaler !== "No" ? `<br/>Hyperscaler: ${dc.hyperscaler}` : ""}
+      </div>`;
+    marker.bindPopup(popup);
+    marker.bindTooltip(dc.name || "Data center", { direction: "top" });
+    dcLayerGroup.addLayer(marker);
+  });
+}
+
 async function buildZipLayer() {
   const response = await fetch(NJ_GEOJSON_URL);
   const geo = await response.json();
@@ -344,15 +391,29 @@ function setupSearch() {
     if (heatmapEnabled) applyHeatmap();
     else clearHeatmap();
   });
+
+  if (dcToggleEl) {
+    dcToggleEl.addEventListener("change", () => {
+      if (!dcLayerGroup) return;
+      if (dcToggleEl.checked) dcLayerGroup.addTo(map);
+      else map.removeLayer(dcLayerGroup);
+    });
+  }
 }
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
 
 (async function init() {
-  await loadZipDetails();
+  await Promise.all([loadZipDetails(), loadDataCenters()]);
   populateYearSelect();
   updateMonthLabel();
   await buildZipLayer();
+  buildDcLayer();
+  if (dcLayerGroup) {
+    dcLayerGroup.addTo(map);
+    if (dcToggleEl) dcToggleEl.checked = true;
+    console.log(`Rendered ${dataCenters.length} data center markers`);
+  }
   setupSearch();
 
   // Fade out the loading overlay
