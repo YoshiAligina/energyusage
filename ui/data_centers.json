@@ -14,7 +14,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/c11dacb3",
     "lat": 40.71908,
-    "lon": -74.03262
+    "lon": -74.03262,
+    "application_year": 2017,
+    "approval_year": 2017,
+    "start_year": 2017
   },
   {
     "name": "365 Data Centers",
@@ -31,7 +34,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/cff26732",
     "lat": 40.59643,
-    "lon": -74.61884
+    "lon": -74.61884,
+    "application_year": 2016,
+    "approval_year": 2016,
+    "start_year": 2016
   },
   {
     "name": "Bloomberg",
@@ -48,7 +54,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/c5782693",
     "lat": 40.907419999999995,
-    "lon": -74.21978
+    "lon": -74.21978,
+    "application_year": 2022,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "Barclays Capital",
@@ -65,7 +74,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/95aee2a2",
     "lat": 40.543659999999996,
-    "lon": -74.46279
+    "lon": -74.46279,
+    "application_year": 2009,
+    "approval_year": 2009,
+    "start_year": 2009
   },
   {
     "name": "Centersquare",
@@ -82,7 +94,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/d528378a",
     "lat": 40.785959999999996,
-    "lon": -74.06765
+    "lon": -74.06765,
+    "application_year": 2022,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "Bloomberg",
@@ -99,7 +114,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/60345c00",
     "lat": 40.36829,
-    "lon": -74.491
+    "lon": -74.491,
+    "application_year": 2022,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "365 Data Centers",
@@ -116,7 +134,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/97559ff5",
     "lat": 40.82643,
-    "lon": -74.06234
+    "lon": -74.06234,
+    "application_year": 2007,
+    "approval_year": 2013,
+    "start_year": 2013
   },
   {
     "name": "Centersquare",
@@ -133,7 +154,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/7efddce4",
     "lat": 40.5408960679775,
-    "lon": -74.45778405876995
+    "lon": -74.45778405876995,
+    "application_year": 2007,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "Cologix",
@@ -150,7 +174,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/243b53d3",
     "lat": 40.85377,
-    "lon": -74.40157
+    "lon": -74.40157,
+    "application_year": 2017,
+    "approval_year": 2017,
+    "start_year": 2017
   },
   {
     "name": "CyrusOne",
@@ -167,7 +194,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/3f4cf4d5",
     "lat": 40.50367,
-    "lon": -74.53184
+    "lon": -74.53184,
+    "application_year": 2019,
+    "approval_year": 2019,
+    "start_year": 2019
   },
   {
     "name": "Continent 8",
@@ -184,7 +214,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/4a4e2646",
     "lat": 39.37734,
-    "lon": -74.45107
+    "lon": -74.45107,
+    "application_year": 2021,
+    "approval_year": 2021,
+    "start_year": 2021
   },
   {
     "name": "Cologix",
@@ -201,7 +234,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/3b6d6dd0",
     "lat": 40.82373,
-    "lon": -74.45635
+    "lon": -74.45635,
+    "application_year": 2018,
+    "approval_year": 2018,
+    "start_year": 2018
   },
   {
     "name": "CyrusOne",
@@ -218,7 +254,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/2a96cf83",
     "lat": 40.90342,
-    "lon": -74.2144876953374
+    "lon": -74.2144876953374,
+    "application_year": 2016,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "CoreSite",
@@ -235,7 +274,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/a2e3f17c",
     "lat": 40.78396,
-    "lon": -74.06307498350915
+    "lon": -74.06307498350915,
+    "application_year": 2013,
+    "approval_year": 2013,
+    "start_year": 2013
   },
   {
     "name": "DataBank",
@@ -252,7 +294,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/a7a8052d",
     "lat": 40.5364239320225,
-    "lon": -74.45969636469702
+    "lon": -74.45969636469702,
+    "application_year": 2011,
+    "approval_year": 2011,
+    "start_year": 2011
   },
   {
     "name": "CyrusOne",
@@ -269,7 +314,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/adfd20d0",
     "lat": 40.89942,
-    "lon": -74.21978
+    "lon": -74.21978,
+    "application_year": 2018,
+    "approval_year": 2018,
+    "start_year": 2018
   },
   {
     "name": "DataBank",
@@ -286,7 +334,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/84f25f0f",
     "lat": 40.73966,
-    "lon": -74.1736
+    "lon": -74.1736,
+    "application_year": 2018,
+    "approval_year": 2018,
+    "start_year": 2018
   },
   {
     "name": "Digital Realty",
@@ -303,7 +354,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/7f4245a3",
     "lat": 40.90342,
-    "lon": -74.2250723046626
+    "lon": -74.2250723046626,
+    "application_year": 2021,
+    "approval_year": 2021,
+    "start_year": 2021
   },
   {
     "name": "Digital Realty",
@@ -320,7 +374,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/7329a853",
     "lat": 40.835339999999995,
-    "lon": -74.13542
+    "lon": -74.13542,
+    "application_year": 2020,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "Digital Realty",
@@ -337,7 +394,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/065ddf49",
     "lat": 40.82734,
-    "lon": -74.13542
+    "lon": -74.13542,
+    "application_year": 2020,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "Equinix",
@@ -354,7 +414,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/4fa9dd8b",
     "lat": 40.779959999999996,
-    "lon": -74.063075259021
+    "lon": -74.063075259021,
+    "application_year": 2014,
+    "approval_year": 2021,
+    "start_year": 2021
   },
   {
     "name": "Digital Realty",
@@ -371,7 +434,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/91720ec0",
     "lat": 40.82174,
-    "lon": -74.31015
+    "lon": -74.31015,
+    "application_year": 2018,
+    "approval_year": 2018,
+    "start_year": 2018
   },
   {
     "name": "Equinix",
@@ -388,7 +454,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/3fb0eb74",
     "lat": 40.58779,
-    "lon": -74.22746
+    "lon": -74.22746,
+    "application_year": 2010,
+    "approval_year": 2023,
+    "start_year": 2023
   },
   {
     "name": "Digital Realty",
@@ -405,7 +474,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/618677f3",
     "lat": 40.5364239320225,
-    "lon": -74.46588363530297
+    "lon": -74.46588363530297,
+    "application_year": 2021,
+    "approval_year": 2021,
+    "start_year": 2021
   },
   {
     "name": "Equinix",
@@ -422,7 +494,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/f463b0c1",
     "lat": 40.79364,
-    "lon": -74.02503
+    "lon": -74.02503,
+    "application_year": 2017,
+    "approval_year": 2017,
+    "start_year": 2017
   },
   {
     "name": "Equinix",
@@ -439,7 +514,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/8e2a2bd7",
     "lat": 40.77796,
-    "lon": -74.06765
+    "lon": -74.06765,
+    "application_year": 2023,
+    "approval_year": 2023,
+    "start_year": 2023
   },
   {
     "name": "Equinix",
@@ -456,7 +534,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/cb6a4392",
     "lat": 40.736896067977504,
-    "lon": -74.16857933945495
+    "lon": -74.16857933945495,
+    "application_year": 2016,
+    "approval_year": 2016,
+    "start_year": 2016
   },
   {
     "name": "Equinix",
@@ -473,7 +554,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/535c3d33",
     "lat": 40.732423932022506,
-    "lon": -74.17049726970598
+    "lon": -74.17049726970598,
+    "application_year": 2019,
+    "approval_year": 2019,
+    "start_year": 2019
   },
   {
     "name": "Fiserv",
@@ -490,7 +574,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/a1a61676",
     "lat": 40.722809999999996,
-    "lon": -74.04463
+    "lon": -74.04463,
+    "application_year": 2019,
+    "approval_year": 2019,
+    "start_year": 2019
   },
   {
     "name": "Equinix",
@@ -507,7 +594,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/6c46c265",
     "lat": 40.5408960679775,
-    "lon": -74.46779594123005
+    "lon": -74.46779594123005,
+    "application_year": 2016,
+    "approval_year": 2016,
+    "start_year": 2016
   },
   {
     "name": "Ernst & Young",
@@ -524,7 +614,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/a59875ba",
     "lat": 40.779959999999996,
-    "lon": -74.072224740979
+    "lon": -74.072224740979,
+    "application_year": 2020,
+    "approval_year": 2020,
+    "start_year": 2020
   },
   {
     "name": "Evocative Data Centers",
@@ -541,7 +634,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/59cac350",
     "lat": 40.78396,
-    "lon": -74.07222501649085
+    "lon": -74.07222501649085,
+    "application_year": 2014,
+    "approval_year": 2014,
+    "start_year": 2014
   },
   {
     "name": "Iron Mountain",
@@ -558,7 +654,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/389fa9cb",
     "lat": 40.42912,
-    "lon": -74.41629
+    "lon": -74.41629,
+    "application_year": 2021,
+    "approval_year": 2021,
+    "start_year": 2021
   },
   {
     "name": "Iron Mountain",
@@ -575,7 +674,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/acdab1df",
     "lat": 40.693,
-    "lon": -74.06965
+    "lon": -74.06965,
+    "application_year": 2017,
+    "approval_year": 2017,
+    "start_year": 2017
   },
   {
     "name": "Lightpath",
@@ -592,7 +694,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/f9178f6c",
     "lat": 40.58843,
-    "lon": -74.61884
+    "lon": -74.61884,
+    "application_year": 2022,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "Lumen Technologies",
@@ -609,7 +714,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/2cbe7fa1",
     "lat": 40.732423932022506,
-    "lon": -74.17670273029401
+    "lon": -74.17670273029401,
+    "application_year": 2016,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "Lumen Technologies",
@@ -626,7 +734,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/0ddcbf9c",
     "lat": 40.716809999999995,
-    "lon": -74.04005960132109
+    "lon": -74.04005960132109,
+    "application_year": 2017,
+    "approval_year": 2017,
+    "start_year": 2017
   },
   {
     "name": "Lightpath",
@@ -643,7 +754,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/93abac5f",
     "lat": 40.57979,
-    "lon": -74.22746
+    "lon": -74.22746,
+    "application_year": 2007,
+    "approval_year": 2008,
+    "start_year": 2008
   },
   {
     "name": "Morgan Stanley",
@@ -660,7 +774,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/642dd858",
     "lat": 40.49967,
-    "lon": -74.52657967787667
+    "lon": -74.52657967787667,
+    "application_year": 2015,
+    "approval_year": 2020,
+    "start_year": 2020
   },
   {
     "name": "Lumen Technologies",
@@ -677,7 +794,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/3c7d45bc",
     "lat": 40.76801,
-    "lon": -74.01701
+    "lon": -74.01701,
+    "application_year": 2000,
+    "approval_year": 2019,
+    "start_year": 2019
   },
   {
     "name": "NJFX",
@@ -694,7 +814,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/98acb801",
     "lat": 40.172909999999995,
-    "lon": -74.07323
+    "lon": -74.07323,
+    "application_year": 2016,
+    "approval_year": 2016,
+    "start_year": 2016
   },
   {
     "name": "QTS",
@@ -711,7 +834,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/dc3c7d6d",
     "lat": 40.25813,
-    "lon": -74.53931
+    "lon": -74.53931,
+    "application_year": 2017,
+    "approval_year": 2017,
+    "start_year": 2017
   },
   {
     "name": "Rackspace",
@@ -728,7 +854,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/23164436",
     "lat": 40.495670000000004,
-    "lon": -74.53184
+    "lon": -74.53184,
+    "application_year": 2010,
+    "approval_year": 2010,
+    "start_year": 2010
   },
   {
     "name": "Rackspace",
@@ -745,7 +874,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/1de2dcb0",
     "lat": 40.49967,
-    "lon": -74.53710032212334
+    "lon": -74.53710032212334,
+    "application_year": 2014,
+    "approval_year": 2014,
+    "start_year": 2014
   },
   {
     "name": "Tata Communications",
@@ -762,7 +894,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/ed8c3628",
     "lat": 40.16491,
-    "lon": -74.07323
+    "lon": -74.07323,
+    "application_year": 2016,
+    "approval_year": 2016,
+    "start_year": 2016
   },
   {
     "name": "TD Bank",
@@ -779,7 +914,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/6d3949bf",
     "lat": 39.95299,
-    "lon": -74.90025
+    "lon": -74.90025,
+    "application_year": 2022,
+    "approval_year": 2022,
+    "start_year": 2022
   },
   {
     "name": "QTS",
@@ -796,7 +934,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/ac5c0c7a",
     "lat": 40.716809999999995,
-    "lon": -74.0492003986789
+    "lon": -74.0492003986789,
+    "application_year": 2016,
+    "approval_year": 2016,
+    "start_year": 2016
   },
   {
     "name": "TD Bank",
@@ -813,7 +954,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/fbc5b148",
     "lat": 39.94699,
-    "lon": -74.89573144247679
+    "lon": -74.89573144247679,
+    "application_year": 2020,
+    "approval_year": 2020,
+    "start_year": 2020
   },
   {
     "name": "TD Bank",
@@ -830,7 +974,10 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/5172e46f",
     "lat": 39.94699,
-    "lon": -74.90476855752321
+    "lon": -74.90476855752321,
+    "application_year": 2020,
+    "approval_year": 2020,
+    "start_year": 2020
   },
   {
     "name": "Verizon",
@@ -847,6 +994,9 @@
     "hyperscaler": "No",
     "url": "https://www.interconnection.fyi/data-center/project/cc77a966",
     "lat": 40.736896067977504,
-    "lon": -74.17862066054504
+    "lon": -74.17862066054504,
+    "application_year": 2018,
+    "approval_year": 2018,
+    "start_year": 2018
   }
 ]

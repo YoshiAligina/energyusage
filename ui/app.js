@@ -315,6 +315,8 @@ async function loadDataCenters() {
   }
 }
 
+const dcMarkers = []; // { marker, startYear }
+
 function buildDcLayer() {
   dcLayerGroup = L.layerGroup();
   dataCenters.forEach((dc) => {
@@ -326,6 +328,8 @@ function buildDcLayer() {
       fillColor: "#ffb703",
       fillOpacity: 1,
     });
+    const startYear = Number.isFinite(Number(dc.start_year)) ? Number(dc.start_year) : null;
+    const startLine = startYear ? `<br/>Online since: ${startYear}` : "";
     const popup = `
       <div class="dc-popup">
         <strong>${dc.name || "(unnamed)"}</strong><br/>
@@ -333,10 +337,26 @@ function buildDcLayer() {
         ${dc.address || ""}<br/>
         <em>${dc.status || ""}${dc.capacity ? " · " + dc.capacity : ""}</em>
         ${dc.hyperscaler && dc.hyperscaler !== "No" ? `<br/>Hyperscaler: ${dc.hyperscaler}` : ""}
+        ${startLine}
       </div>`;
     marker.bindPopup(popup);
     marker.bindTooltip(dc.name || "Data center", { direction: "top" });
-    dcLayerGroup.addLayer(marker);
+    dcMarkers.push({ marker, startYear });
+  });
+  updateDcVisibility();
+}
+
+function updateDcVisibility() {
+  if (!dcLayerGroup) return;
+  const year  = Number(yearSelectEl.value);
+  const month = Number(monthSliderEl.value);
+  // Only year-level precision available; treat start as January of start_year.
+  const currentKey = year * 12 + month;
+  dcMarkers.forEach(({ marker, startYear }) => {
+    const visible = startYear === null || currentKey >= startYear * 12 + 1;
+    const present = dcLayerGroup.hasLayer(marker);
+    if (visible && !present) dcLayerGroup.addLayer(marker);
+    else if (!visible && present) dcLayerGroup.removeLayer(marker);
   });
 }
 
@@ -378,12 +398,14 @@ function setupSearch() {
   yearSelectEl.addEventListener("change", () => {
     if (selectedZip) renderZipInfo(selectedZip);
     if (heatmapEnabled) applyHeatmap();
+    updateDcVisibility();
   });
 
   monthSliderEl.addEventListener("input", () => {
     updateMonthLabel();
     if (selectedZip) renderZipInfo(selectedZip);
     if (heatmapEnabled) applyHeatmap();
+    updateDcVisibility();
   });
 
   heatmapToggleEl.addEventListener("change", () => {
