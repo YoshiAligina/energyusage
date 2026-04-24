@@ -226,6 +226,56 @@ def get_county_for_zip(zip_code):
     zip_str = str(int(zip_code)).zfill(5)
     return NJ_ZIP_COUNTY.get(zip_str)
 
+
+# ── ZIP → distribution utility ────────────────────────────────────────────────
+# Approximation. NJ utility boundaries don't cleanly follow counties, but the
+# 4 IOUs' territories are close enough to county-dominant that this gives a
+# reasonable residential-bill surface. Refine per-ZIP as needed.
+#
+#  963   — Atlantic City Electric  (south NJ)
+#  9726  — JCP&L                   (NW + shore)
+#  15477 — PSE&G                   (central/urban corridor)
+#  16213 — Rockland Electric       (small pocket in far north Bergen)
+
+COUNTY_TO_UTILITY = {
+    # PSE&G dominant (with Rockland overrides below for a few Bergen ZIPs)
+    "Bergen":    15477, "Hudson":  15477, "Essex":     15477, "Union":   15477,
+    "Middlesex": 15477, "Mercer":  15477, "Somerset":  15477, "Passaic": 15477,
+    "Camden":    15477,
+    # JCP&L dominant
+    "Morris":    9726,  "Sussex":  9726,  "Warren":    9726,  "Hunterdon": 9726,
+    "Monmouth":  9726,  "Ocean":   9726,
+    # Atlantic City Electric dominant
+    "Atlantic":   963,  "Cape May": 963,  "Cumberland": 963,  "Salem":     963,
+    "Gloucester": 963,  "Burlington": 963,
+}
+
+# Rockland Electric NJ service-area ZIPs (Mahwah-Ramsey corridor).
+ZIP_UTILITY_OVERRIDE = {
+    "07401": 16213,  # Allendale
+    "07430": 16213,  # Mahwah
+    "07436": 16213,  # Oakland
+    "07446": 16213,  # Ramsey
+    "07458": 16213,  # Upper Saddle River
+}
+
+UTILITY_NAME = {
+    963:   "Atlantic City Electric",
+    9726:  "JCP&L",
+    15477: "PSE&G",
+    16213: "Rockland Electric",
+}
+
+
+def get_utility_for_zip(zip_code):
+    """Return EIA utility_id for a ZIP, or None if not in our NJ mapping."""
+    z = str(zip_code).zfill(5)
+    if z in ZIP_UTILITY_OVERRIDE:
+        return ZIP_UTILITY_OVERRIDE[z]
+    county = NJ_ZIP_COUNTY.get(z)
+    return COUNTY_TO_UTILITY.get(county)
+
+
 def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
     """Read from SQLite and generate UI JSON with monthly LMP data."""
     if not os.path.exists(db_path):
@@ -251,8 +301,36 @@ def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
         zips_df = pd.read_sql_query(
             "SELECT zip, nearest_node, node_zone, dist_miles FROM zips", conn
         )
+
+        # EIA-861M residential rate & bill by utility×month.
+        try:
+            util_df = pd.read_sql_query("""
+                SELECT utility_id,
+                       printf('%04d-%02d', year, month) AS month,
+                       rate_cents_per_kwh,
+                       bill_dollars,
+                       kwh_per_customer
+                FROM utility_monthly
+                ORDER BY utility_id, year, month
+            """, conn)
+        except pd.errors.DatabaseError:
+            util_df = pd.DataFrame(columns=[
+                "utility_id", "month", "rate_cents_per_kwh",
+                "bill_dollars", "kwh_per_customer"])
     finally:
         conn.close()
+
+    # Per-utility dicts: {utility_id: {"YYYY-MM": value, ...}}
+    rate_by_util = {}
+    bill_by_util = {}
+    kwh_by_util  = {}
+    for uid, g in util_df.groupby("utility_id"):
+        rate_by_util[int(uid)] = {r["month"]: round(r["rate_cents_per_kwh"], 3)
+                                  for _, r in g.iterrows()}
+        bill_by_util[int(uid)] = {r["month"]: round(r["bill_dollars"], 2)
+                                  for _, r in g.iterrows()}
+        kwh_by_util[int(uid)]  = {r["month"]: round(r["kwh_per_customer"], 1)
+                                  for _, r in g.iterrows()}
 
     # monthly_lmp dict per zip: {"2020-01": 18.11, "2020-02": ..., ...}
     zip_months = (lmp_df.groupby("zip")
@@ -285,12 +363,19 @@ def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
         zone = m.get("node_zone", "")
         dist = m.get("dist_miles")
 
+        utility_id = get_utility_for_zip(zip_code)
+
         payload[zip_code] = {
             "county":        get_county_for_zip(zip_code),
             "avg_lmp_first": lmp_first,
             "avg_lmp_last":  lmp_last,
             "pct_change":    pct_change,
             "monthly_lmp":   monthly_lmp,
+            "monthly_rate":  rate_by_util.get(utility_id, {}) if utility_id else {},
+            "monthly_bill":  bill_by_util.get(utility_id, {}) if utility_id else {},
+            "monthly_kwh":   kwh_by_util.get(utility_id, {}) if utility_id else {},
+            "utility_id":    utility_id,
+            "utility_name":  UTILITY_NAME.get(utility_id) if utility_id else None,
             "nearest_node":  node,
             "node_zone":     zone,
             "dist_miles":    float(dist) if dist is not None else None,
@@ -301,7 +386,9 @@ def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
 
-    print(f"Generated {output_path}: {len(payload)} ZIPs with monthly LMP data + county names")
+    with_utility = sum(1 for p in payload.values() if p["utility_id"])
+    print(f"Generated {output_path}: {len(payload)} ZIPs "
+          f"({with_utility} mapped to a utility) with LMP + residential rate/bill")
 
 if __name__ == "__main__":
     build_ui_json()

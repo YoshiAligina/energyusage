@@ -10,6 +10,8 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -56,11 +58,18 @@
         </div>
       </div>
 
+      <label for="metricSelect">Heatmap metric</label>
+      <select id="metricSelect" class="year-select">
+        <option value="lmp">Wholesale LMP ($/MWh)</option>
+        <option value="rate">Residential rate (¢/kWh)</option>
+        <option value="bill">Residential bill ($/month)</option>
+      </select>
+
       <div class="heatmap-row">
         <label class="toggle-label">
           <input type="checkbox" id="heatmapToggle" />
           <span class="toggle-track"><span class="toggle-thumb"></span></span>
-          Heatmap (LMP by ZIP)
+          Heatmap on
         </label>
       </div>
 
@@ -82,7 +91,7 @@
       </div>
 
       <p class="footnote">
-        Data: PJM Interconnection &middot; Map: OpenStreetMap &middot; Boundaries: OpenDataDE
+        Data: PJM Day-Ahead LMP &middot; EIA-861M residential sales &middot; Map: OpenStreetMap
       </p>
     </aside>
 
