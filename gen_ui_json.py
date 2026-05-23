@@ -276,6 +276,77 @@ def get_utility_for_zip(zip_code):
     return COUNTY_TO_UTILITY.get(county)
 
 
+# ── Consumption-index model ──────────────────────────────────────────────────
+# Per-ZIP residential bill is modeled as
+#     modeled_bill_zip(t) = bill_util(t) × c_zip
+# where c_zip is a unitless consumption index derived from ACS housing
+# characteristics and renormalized so the housing-weighted average of c_zip
+# across a utility's ZIPs equals 1. That preserves the EIA-861M aggregate
+# (we redistribute the utility-average bill across ZIPs, not invent new dollars).
+#
+# c_zip = housing_mix_factor × size_factor
+#
+# housing_mix_factor uses EIA RECS Middle-Atlantic kWh-per-housing-type ratios
+# (relative to a detached single-family unit). A ZIP full of high-rise
+# apartments has factor ~0.55; a leafy detached-SFH ZIP is ~1.0.
+HOUSING_TYPE_WEIGHT = {
+    "u_1_detached": 1.00,
+    "u_1_attached": 0.85,
+    "u_2":          0.78,
+    "u_3_4":        0.72,
+    "u_5_9":        0.62,
+    "u_10_19":      0.55,
+    "u_20_49":      0.52,
+    "u_50_plus":    0.50,
+    "u_mobile":     0.75,
+    "u_other":      0.70,
+}
+# size_factor: +5% kWh per extra room above the per-utility median, clipped
+# to +/-30% so a single outlier ZIP can't dominate.
+ROOMS_ELASTICITY = 0.05
+SIZE_FACTOR_CLIP = 0.30
+
+
+def compute_consumption_index(acs_df: pd.DataFrame, zip_to_util: dict) -> dict:
+    """Return {zip: c_zip} where c_zip is normalized per utility."""
+    df = acs_df.copy()
+    df["zip"]        = df["zip"].astype(str).str.zfill(5)
+    df["utility_id"] = df["zip"].map(zip_to_util)
+    df = df[df["utility_id"].notna()].copy()
+
+    type_cols = list(HOUSING_TYPE_WEIGHT.keys())
+    weights   = pd.Series(HOUSING_TYPE_WEIGHT)
+    unit_totals = df[type_cols].sum(axis=1).replace(0, pd.NA)
+    df["housing_mix_factor"] = (df[type_cols] * weights).sum(axis=1) / unit_totals
+
+    # size_factor anchored to utility median rooms (computed below per group)
+    util_median_rooms = (df.groupby("utility_id")["median_rooms"]
+                          .median().rename("util_median_rooms"))
+    df = df.join(util_median_rooms, on="utility_id")
+    raw_size = 1.0 + ROOMS_ELASTICITY * (df["median_rooms"] - df["util_median_rooms"])
+    df["size_factor"] = raw_size.clip(1 - SIZE_FACTOR_CLIP, 1 + SIZE_FACTOR_CLIP)
+
+    df["c_raw"] = df["housing_mix_factor"] * df["size_factor"]
+
+    # Normalize within each utility so the housing-unit-weighted mean = 1.
+    # Weighting by total_units (≈ household count) preserves the EIA-861M
+    # utility total when modeled bills are summed × per-ZIP customer counts.
+    df["c_zip"] = None
+    for uid, g in df.groupby("utility_id"):
+        valid = g["c_raw"].notna() & g["total_units"].notna() & (g["total_units"] > 0)
+        if not valid.any():
+            continue
+        w = g.loc[valid, "total_units"]
+        mean = (g.loc[valid, "c_raw"] * w).sum() / w.sum()
+        if mean == 0 or pd.isna(mean):
+            continue
+        df.loc[valid[valid].index, "c_zip"] = g.loc[valid, "c_raw"] / mean
+
+    return {row["zip"]: float(row["c_zip"])
+            for _, row in df.iterrows()
+            if row["c_zip"] is not None and not pd.isna(row["c_zip"])}
+
+
 def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
     """Read from SQLite and generate UI JSON with monthly LMP data."""
     if not os.path.exists(db_path):
@@ -317,6 +388,18 @@ def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
             util_df = pd.DataFrame(columns=[
                 "utility_id", "month", "rate_cents_per_kwh",
                 "bill_dollars", "kwh_per_customer"])
+
+        # ACS housing characteristics for consumption index.
+        try:
+            acs_df = pd.read_sql_query("""
+                SELECT zip, total_units, median_rooms,
+                       u_1_detached, u_1_attached, u_2, u_3_4,
+                       u_5_9, u_10_19, u_20_49, u_50_plus,
+                       u_mobile, u_other
+                FROM acs_zcta
+            """, conn)
+        except pd.errors.DatabaseError:
+            acs_df = pd.DataFrame()
     finally:
         conn.close()
 
@@ -331,6 +414,15 @@ def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
                                   for _, r in g.iterrows()}
         kwh_by_util[int(uid)]  = {r["month"]: round(r["kwh_per_customer"], 1)
                                   for _, r in g.iterrows()}
+
+    # Per-ZIP consumption index from ACS housing mix + size.
+    if not acs_df.empty:
+        zip_to_util = {z: get_utility_for_zip(z) for z in acs_df["zip"]}
+        c_index = compute_consumption_index(acs_df, zip_to_util)
+        acs_meta = acs_df.set_index(acs_df["zip"].astype(str).str.zfill(5)).to_dict("index")
+    else:
+        c_index = {}
+        acs_meta = {}
 
     # monthly_lmp dict per zip: {"2020-01": 18.11, "2020-02": ..., ...}
     zip_months = (lmp_df.groupby("zip")
@@ -364,31 +456,60 @@ def build_ui_json(db_path=DB_FILE, output_path="ui/nj_zip_info.json"):
         dist = m.get("dist_miles")
 
         utility_id = get_utility_for_zip(zip_code)
+        util_bill_series = bill_by_util.get(utility_id, {}) if utility_id else {}
+
+        c_zip = c_index.get(zip_code)
+        if c_zip is not None and util_bill_series:
+            monthly_modeled_bill = {mk: round(v * c_zip, 2)
+                                    for mk, v in util_bill_series.items()}
+        else:
+            monthly_modeled_bill = {}
+
+        acs_row = acs_meta.get(zip_code, {})
+        total_units = acs_row.get("total_units")
+        if pd.isna(total_units):
+            total_units = None
+        sfh_share = None
+        if total_units and total_units > 0:
+            detached = acs_row.get("u_1_detached")
+            if pd.notna(detached):
+                sfh_share = round(detached / total_units, 3)
+        median_rooms = acs_row.get("median_rooms")
+        median_rooms = float(median_rooms) if pd.notna(median_rooms) else None
 
         payload[zip_code] = {
-            "county":        get_county_for_zip(zip_code),
-            "avg_lmp_first": lmp_first,
-            "avg_lmp_last":  lmp_last,
-            "pct_change":    pct_change,
-            "monthly_lmp":   monthly_lmp,
-            "monthly_rate":  rate_by_util.get(utility_id, {}) if utility_id else {},
-            "monthly_bill":  bill_by_util.get(utility_id, {}) if utility_id else {},
-            "monthly_kwh":   kwh_by_util.get(utility_id, {}) if utility_id else {},
-            "utility_id":    utility_id,
-            "utility_name":  UTILITY_NAME.get(utility_id) if utility_id else None,
-            "nearest_node":  node,
-            "node_zone":     zone,
-            "dist_miles":    float(dist) if dist is not None else None,
+            "county":               get_county_for_zip(zip_code),
+            "avg_lmp_first":        lmp_first,
+            "avg_lmp_last":         lmp_last,
+            "pct_change":           pct_change,
+            "monthly_lmp":          monthly_lmp,
+            "monthly_rate":         rate_by_util.get(utility_id, {}) if utility_id else {},
+            "monthly_bill":         util_bill_series,
+            "monthly_modeled_bill": monthly_modeled_bill,
+            "monthly_kwh":          kwh_by_util.get(utility_id, {}) if utility_id else {},
+            "utility_id":           utility_id,
+            "utility_name":         UTILITY_NAME.get(utility_id) if utility_id else None,
+            "nearest_node":         node,
+            "node_zone":            zone,
+            "dist_miles":           float(dist) if dist is not None else None,
+            "consumption_index":    round(c_zip, 3) if c_zip is not None else None,
+            "acs_total_units":      int(total_units) if total_units else None,
+            "acs_median_rooms":     median_rooms,
+            "acs_sfh_share":        sfh_share,
             "notes": f"Nearest PJM node: {node or 'N/A'} ({zone or 'N/A'}) — {dist or 'N/A'} miles away",
         }
 
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2)
+        # allow_nan=False -> raise on stray NaN/Infinity instead of emitting
+        # invalid JSON tokens that JavaScript's JSON.parse would reject.
+        json.dump(payload, f, indent=2, allow_nan=False)
 
     with_utility = sum(1 for p in payload.values() if p["utility_id"])
+    with_index   = sum(1 for p in payload.values() if p["consumption_index"] is not None)
     print(f"Generated {output_path}: {len(payload)} ZIPs "
-          f"({with_utility} mapped to a utility) with LMP + residential rate/bill")
+          f"({with_utility} mapped to a utility, "
+          f"{with_index} with ACS-modeled bill)")
 
 if __name__ == "__main__":
     build_ui_json()

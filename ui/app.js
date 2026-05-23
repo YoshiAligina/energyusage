@@ -32,9 +32,10 @@ const dcToggleEl      = document.getElementById("dcToggle");
 
 // Metric definitions. `key` is the per-ZIP field in nj_zip_info.json.
 const METRICS = {
-  lmp:  { key: "monthly_lmp",  label: "Day-Ahead LMP",    unit: "$/MWh",   prefix: "$", decimals: 2 },
-  rate: { key: "monthly_rate", label: "Residential rate", unit: "¢/kWh",   prefix: "",  decimals: 2 },
-  bill: { key: "monthly_bill", label: "Residential bill", unit: "$/month", prefix: "$", decimals: 0 },
+  lmp:     { key: "monthly_lmp",           label: "Day-Ahead LMP",       unit: "$/MWh",   prefix: "$", decimals: 2 },
+  rate:    { key: "monthly_rate",          label: "Residential rate",    unit: "¢/kWh",   prefix: "",  decimals: 2 },
+  bill:    { key: "monthly_bill",          label: "Residential bill",    unit: "$/month", prefix: "$", decimals: 0 },
+  modeled: { key: "monthly_modeled_bill",  label: "Modeled per-ZIP bill",unit: "$/month", prefix: "$", decimals: 0 },
 };
 
 function currentMetric() {
@@ -135,9 +136,10 @@ function polySegments(values, xOf, yOf) {
 
 // Per-metric color so each sparkline reads as distinct when stacked.
 const METRIC_STROKE = {
-  lmp:  "#fb923c",    // orange — LMP
-  rate: "#2dd4bf",    // teal   — rate
-  bill: "#fbbf24",    // amber  — bill
+  lmp:     "#fb923c",    // orange — LMP
+  rate:    "#2dd4bf",    // teal   — rate
+  bill:    "#fbbf24",    // amber  — bill
+  modeled: "#a78bfa",    // violet — modeled per-ZIP bill
 };
 
 function metricKeyFromLabel(metric) {
@@ -286,10 +288,11 @@ function renderZipInfo(zip) {
   const key   = monthKey(year, month);
   const mon   = MONTH_NAMES[month - 1];
 
-  const lmpVal  = details.monthly_lmp?.[key]  ?? null;
-  const rateVal = details.monthly_rate?.[key] ?? null;
-  const billVal = details.monthly_bill?.[key] ?? null;
-  const kwhVal  = details.monthly_kwh?.[key]  ?? null;
+  const lmpVal     = details.monthly_lmp?.[key]           ?? null;
+  const rateVal    = details.monthly_rate?.[key]          ?? null;
+  const billVal    = details.monthly_bill?.[key]          ?? null;
+  const modeledVal = details.monthly_modeled_bill?.[key]  ?? null;
+  const kwhVal     = details.monthly_kwh?.[key]           ?? null;
 
   // Baselines: same month, earliest available year for each metric.
   const allYears  = collectAvailableYears();
@@ -316,6 +319,10 @@ function renderZipInfo(zip) {
         deltaSpan(pctDelta(rateVal, rateBase), baseYear))}
       ${buildMetricCard(METRICS.bill, "bill", billVal,
         kwhVal !== null ? `${safeNum(kwhVal)} kWh used` : deltaSpan(pctDelta(billVal, billBase), baseYear))}
+      ${buildMetricCard(METRICS.modeled, "modeled", modeledVal,
+        details.consumption_index !== null && details.consumption_index !== undefined
+          ? `index ${details.consumption_index.toFixed(2)} vs utility avg`
+          : "ACS data unavailable")}
     </div>
 
     <div class="info-row"><strong>Node</strong> <span class="info-value">${details.nearest_node || "—"} · ${details.node_zone || "—"}</span></div>
@@ -324,11 +331,21 @@ function renderZipInfo(zip) {
         ? `${details.nearest_dc.name} · ${details.nearest_dc.miles.toFixed(1)} mi`
         : "—"
     }</span></div>
+    <div class="info-row"><strong>Housing mix</strong> <span class="info-value">${
+      details.acs_sfh_share !== null && details.acs_sfh_share !== undefined
+        ? `${Math.round(details.acs_sfh_share * 100)}% detached SFH`
+        : "—"
+    }${
+      details.acs_median_rooms
+        ? ` · ${details.acs_median_rooms.toFixed(1)} median rooms`
+        : ""
+    }</span></div>
 
     <div class="info-section-label">All years — monthly trend</div>
-    ${buildSparkline(details.monthly_lmp,  year, METRICS.lmp)}
-    ${buildSparkline(details.monthly_rate, year, METRICS.rate)}
-    ${buildSparkline(details.monthly_bill, year, METRICS.bill)}
+    ${buildSparkline(details.monthly_lmp,           year, METRICS.lmp)}
+    ${buildSparkline(details.monthly_rate,          year, METRICS.rate)}
+    ${buildSparkline(details.monthly_bill,          year, METRICS.bill)}
+    ${buildSparkline(details.monthly_modeled_bill,  year, METRICS.modeled)}
   `;
 }
 

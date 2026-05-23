@@ -20,3 +20,7 @@ dist/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+# Secrets (Census API key etc.)
+.env
+.env.local
