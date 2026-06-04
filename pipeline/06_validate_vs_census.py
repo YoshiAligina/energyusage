@@ -2,11 +2,19 @@
 Validate the modeled per-ZIP bills (ui/nj_zip_info.json) against the
 Census/ACS-derived ground-truth bills (data/raw/census_acs_electricity_bills.csv).
 
-Aggregates our monthly modeled bills to an annual mean per ZIP, merges with the
-census ZIP-year bills on the overlapping years, and reports fit diagnostics
-(Pearson/Spearman correlation, bias, MAE, MAPE) pooled, per year, and per
-utility. Writes the merged per-row table to
-data/outputs/nj_modeled_vs_census.csv for inspection.
+The calibration multiplier baked into the modeled bills is fit by
+05_build_ui_json.py on the pooled TRAIN years (2021-2023) via OLS-through-origin.
+This script evaluates that choice with a temporal split:
+
+    TRAIN      2021-2023  — in-sample fit, pooled (all overlap years up to 2024)
+    VALIDATE   2024        — out-of-sample fit (the honest test of the multiplier)
+    PREDICT    2025, 2026  — modeled bills exist (EIA has these months) but the
+                             census has not released them, so these are genuine
+                             forward predictions with no ground truth yet.
+
+The headline metric is the correlation coefficient (Pearson r) — does the model
+rank/track ZIP bills correctly — supported by Spearman, bias, MAE, and MAPE. The
+merged per-row table is written to data/outputs/nj_modeled_vs_census.csv.
 
 Run (from anywhere):
     python pipeline/06_validate_vs_census.py
@@ -21,6 +29,10 @@ ROOT        = Path(__file__).resolve().parent.parent
 UI_JSON     = ROOT / "ui" / "nj_zip_info.json"
 CENSUS_CSV  = ROOT / "data" / "raw" / "census_acs_electricity_bills.csv"
 OUT_CSV     = ROOT / "data" / "outputs" / "nj_modeled_vs_census.csv"
+
+TRAIN_YEARS    = (2021, 2022, 2023)   # pooled training (all overlap years up to 2024)
+VALIDATE_YEAR  = 2024                  # held-out, out-of-sample
+PREDICT_YEARS  = (2025, 2026)          # no census ground truth yet
 
 
 def load_modeled() -> pd.DataFrame:
@@ -50,36 +62,32 @@ def load_census() -> pd.DataFrame:
     return cen[["YEAR", "ZIP_Code", "census_bill"]]
 
 
-def report(m: pd.DataFrame) -> None:
-    def block(g):
-        pr = g[["modeled_bill", "census_bill"]].corr(method="pearson").iloc[0, 1]
-        sp = g[["modeled_bill", "census_bill"]].corr(method="spearman").iloc[0, 1]
-        err = g["modeled_bill"] - g["census_bill"]
-        mape = (err / g["census_bill"] * 100).abs().mean()
-        return pr, sp, err.mean(), err.abs().mean(), mape
+def fit_stats(g: pd.DataFrame) -> dict:
+    """Correlation + error metrics for one modeled-vs-census slice."""
+    pr = g[["modeled_bill", "census_bill"]].corr(method="pearson").iloc[0, 1]
+    sp = g[["modeled_bill", "census_bill"]].corr(method="spearman").iloc[0, 1]
+    err = g["modeled_bill"] - g["census_bill"]
+    return {
+        "n": len(g),
+        "pearson": pr,
+        "spearman": sp,
+        "bias": err.mean(),
+        "mae": err.abs().mean(),
+        "mape": (err / g["census_bill"] * 100).abs().mean(),
+        "mean_modeled": g["modeled_bill"].mean(),
+        "mean_census": g["census_bill"].mean(),
+    }
 
-    pr, sp, bias, mae, mape = block(m)
-    print(f"\n=== POOLED ({sorted(m.YEAR.unique())}) ===")
-    print(f"  n={len(m)}  Pearson={pr:.4f}  Spearman={sp:.4f}")
-    print(f"  mean modeled=${m.modeled_bill.mean():.2f}  "
-          f"mean census=${m.census_bill.mean():.2f}")
-    print(f"  bias=${bias:+.2f}  MAE=${mae:.2f}  MAPE={mape:.1f}%")
 
-    print("\n=== PER YEAR ===")
-    for yr, g in m.groupby("YEAR"):
-        pr, _, bias, _, _ = block(g)
-        print(f"  {yr}: n={len(g):3d}  Pearson={pr:.3f}  "
-              f"modeled=${g.modeled_bill.mean():.2f}  "
-              f"census=${g.census_bill.mean():.2f}  bias=${bias:+.2f}")
-
-    print("\n=== PER UTILITY ===")
-    for u, g in m.groupby("utility"):
-        if g.utility.iloc[0] is None:
-            continue
-        pr, _, bias, _, _ = block(g)
-        print(f"  {u:25s}: n={len(g):4d}  r={pr:.3f}  "
-              f"modeled=${g.modeled_bill.mean():.2f}  "
-              f"census=${g.census_bill.mean():.2f}  bias=${bias:+.2f}")
+def print_block(title: str, g: pd.DataFrame) -> None:
+    s = fit_stats(g)
+    print(f"\n--- {title} ---")
+    print(f"  n={s['n']}   correlation coefficient (Pearson r) = {s['pearson']:.4f}"
+          f"   Spearman = {s['spearman']:.4f}")
+    print(f"  mean modeled = ${s['mean_modeled']:.2f}   "
+          f"mean census = ${s['mean_census']:.2f}")
+    print(f"  bias = ${s['bias']:+.2f}   MAE = ${s['mae']:.2f}   "
+          f"MAPE = {s['mape']:.1f}%")
 
 
 def main() -> None:
@@ -89,7 +97,47 @@ def main() -> None:
     if m.empty:
         print("No overlapping ZIP-years between modeled and census data.")
         return
-    report(m)
+
+    print("=" * 70)
+    print(f"CALIBRATION VALIDATION  —  multiplier trained on {TRAIN_YEARS}, "
+          f"validated on {VALIDATE_YEAR}")
+    print("=" * 70)
+
+    # TRAIN: pooled in-sample fit (multiplier was fit on these years).
+    train_mask = m.YEAR.isin(TRAIN_YEARS)
+    if train_mask.any():
+        print_block(f"TRAIN  {TRAIN_YEARS}  pooled (in-sample)", m[train_mask])
+        # also per training year, so drift across the training window is visible
+        for yr in sorted(TRAIN_YEARS):
+            if (m.YEAR == yr).any():
+                print_block(f"  train year {yr}", m[m.YEAR == yr])
+
+    # VALIDATE: out-of-sample — the honest test.
+    if (m.YEAR == VALIDATE_YEAR).any():
+        print_block(f"VALIDATE  {VALIDATE_YEAR}  (out-of-sample — the honest test)",
+                    m[m.YEAR == VALIDATE_YEAR])
+
+    # PREDICT: modeled bills exist but census does not yet — no ground truth.
+    print(f"\n--- PREDICT  {PREDICT_YEARS}  (no census ground truth yet) ---")
+    for yr in PREDICT_YEARS:
+        g = mod[mod.YEAR == yr]
+        if g.empty:
+            print(f"  {yr}: no modeled data")
+            continue
+        print(f"  {yr}: n={len(g):3d}   mean modeled = ${g.modeled_bill.mean():.2f}"
+              f"   (census unavailable — forward prediction)")
+
+    # Per-utility breakdown on the validation year.
+    print(f"\n--- PER UTILITY  (validation year {VALIDATE_YEAR}) ---")
+    vy = m[m.YEAR == VALIDATE_YEAR]
+    for u, g in vy.groupby("utility"):
+        if g.utility.iloc[0] is None:
+            continue
+        s = fit_stats(g)
+        print(f"  {u:25s}: n={s['n']:4d}  r={s['pearson']:.3f}  "
+              f"modeled=${s['mean_modeled']:.2f}  census=${s['mean_census']:.2f}  "
+              f"bias=${s['bias']:+.2f}")
+
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     m.sort_values(["YEAR", "ZIP_Code"]).to_csv(OUT_CSV, index=False,
                                                float_format="%.2f")

@@ -54,7 +54,23 @@ B25024_VARS = {
     "B25024_011E": "u_other",
 }
 B25018_VARS = {"B25018_001E": "median_rooms"}
-ALL_VARS = {**B25024_VARS, **B25018_VARS}
+
+# B25040 — House Heating Fuel. Electric vs gas heat is the single biggest swing
+# in residential kWh (an electric-heat home uses 2-3x an identical gas one), so
+# the electricity share is a high-value feature for the consumption model.
+B25040_VARS = {
+    "B25040_001E": "heat_total",
+    "B25040_002E": "heat_utility_gas",
+    "B25040_003E": "heat_lp_gas",
+    "B25040_004E": "heat_electricity",
+    "B25040_005E": "heat_fuel_oil",
+}
+
+# B19013 — Median household income. Wealth drives square footage, central AC,
+# pools, EVs — all consumption.
+B19013_VARS = {"B19013_001E": "median_income"}
+
+ALL_VARS = {**B25024_VARS, **B25018_VARS, **B25040_VARS, **B19013_VARS}
 
 
 def load_dotenv(path: str = str(ROOT / ".env")) -> None:
@@ -116,9 +132,12 @@ def fetch_acs(api_key: str) -> pd.DataFrame:
 
 
 def create_table(conn: sqlite3.Connection) -> None:
+    # Drop and recreate so newly added ACS variables become columns. This is a
+    # full-refresh pull from the API, so nothing is lost.
     cols = ",\n            ".join(f"{name} REAL" for name in ALL_VARS.values())
     conn.executescript(f"""
-        CREATE TABLE IF NOT EXISTS acs_zcta (
+        DROP TABLE IF EXISTS acs_zcta;
+        CREATE TABLE acs_zcta (
             zip TEXT PRIMARY KEY,
             {cols},
             acs_year INTEGER

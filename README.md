@@ -146,25 +146,41 @@ The index is then **renormalized within each utility** so the housing-unit
 weighted mean = 1.0. This preserves the EIA-861M total: we *redistribute* a
 utility's bill across its ZIPs, we don't invent new aggregate dollars.
 
-**Step B — census calibration.** EIA's `revenue / customers` systematically
-under-states the per-household bill (a household can sit behind multiple billing
-accounts), so the raw modeled bills ran ~$69/month below the Census ground truth.
-We apply a **per-utility multiplicative level shift** equal to
-`census_mean / modeled_mean` over the overlap years (2021–2024). This corrects
-the level while leaving the within-utility shape (the part the ACS index
-produces) untouched. The fitted factors:
+**Step B — census calibration (regression multiplier, pooled training).**
+EIA's `revenue / customers` systematically under-states the per-household bill (a
+household can sit behind multiple billing accounts), so the raw modeled bills ran
+well below the Census ground truth. We correct the level with a **per-utility
+multiplier fit by least-squares regression through the origin**, pooled over the
+training years:
 
-| Utility                 | calibration factor |
-|-------------------------|--------------------|
-| PSE&G                   | 1.737              |
-| Atlantic City Electric  | 1.446              |
-| JCP&L                   | 1.432              |
-| Rockland Electric       | 1.304              |
+```
+beta_utility = Σ(census · modeled) / Σ(modeled²)   over that utility's ZIPs × train years
+```
+
+This is a pure multiplier (0 → 0, no intercept), so it fixes the level while
+leaving the within-utility *shape* (the part the ACS index produces) untouched.
+We **train on 2021–2023** (every census year that overlaps the modeled data
+except the most recent) and **hold out 2024** to validate out-of-sample (§3.5);
+the multiplier is then extrapolated to 2025–2026, which the census has not
+released. (Census runs 2014–2024, but the modeled bill needs an EIA utility bill,
+which starts 2020, and census has no 2020 — so the trainable overlap is 2021–2023.)
+For Rockland (only 5 NJ ZIPs) the regression is unstable, so it falls back to the
+ratio of means. The fitted multipliers (pooled 2021–2023):
+
+| Utility                 | multiplier (2021–2023 fit) |
+|-------------------------|----------------------------|
+| PSE&G                   | 1.736                      |
+| Atlantic City Electric  | 1.446                      |
+| JCP&L                   | 1.443                      |
+| Rockland Electric       | 1.354                      |
 
 PSE&G needs the largest lift, consistent with dense urban service territories
-having the most multi-account households per dwelling.
+having the most multi-account households per dwelling. Pooling over three years
+(vs fitting on 2023 alone) more than halved the out-of-sample bias — see §4.
 
-**Output:** modeled bill per ZIP-month = `EIA utility bill × c_zip × calibration`.
+**Output:** modeled bill per ZIP-month = `EIA utility bill × c_zip × beta`.
+The same multiplier is applied to **every** month, including 2025–2026, which is
+what lets the model estimate recent bills before the census releases those years.
 Written into `ui/nj_zip_info.json` (per-ZIP series) and exported flat to
 `data/outputs/nj_zip_prices.txt`.
 
@@ -175,10 +191,17 @@ Written into `ui/nj_zip_info.json` (per-ZIP series) and exported flat to
   derived from ACS household-reported expenditure. This is the same family of
   measurement used in the reference data-center paper, and is the right yardstick
   because it is a *measured* household bill, not an accounting figure.
-- **Method:** our monthly modeled bills are aggregated to an annual mean per ZIP
-  and merged with the census bills on the overlapping years (2021–2024); we
-  report Pearson/Spearman correlation, bias, MAE, and MAPE — pooled, per year,
-  and per utility.
+- **Temporal split.** The multiplier is trained on the pooled history and tested
+  on a held-out future year:
+  - **Train — 2021–2023 (pooled):** in-sample fit on all overlap years up to 2024.
+  - **Validate — 2024:** out-of-sample fit — the honest test of whether the
+    multiplier generalizes to a year it never saw.
+  - **Predict — 2025, 2026:** EIA has these months but the census has not released
+    them, so these are genuine forward predictions with no ground truth yet.
+- **Method:** modeled monthly bills are aggregated to an annual mean per ZIP and
+  merged with census bills per year; we report the correlation coefficient
+  (Pearson r) plus Spearman, bias, MAE, and MAPE for the pooled train set, each
+  individual train year, the validation year, and a per-utility breakdown on 2024.
 
 ### 3.6 The quantities we measure — units and why they matter
 
@@ -252,22 +275,48 @@ compares to its utility's average: 1.0 = average household, 1.3 = uses ~30% more
 
 ## 4. Results
 
-Fit of the modeled bill against Census ground truth (2021–2024, n = 2,298
-ZIP-years):
+Fit of the modeled bill against Census ground truth, with the multiplier trained
+on pooled 2021–2023 and tested on the held-out 2024 (n ≈ 575 ZIPs per year):
 
-| Metric            | Before calibration | After calibration |
-|-------------------|--------------------|-------------------|
-| Pearson r         | 0.420              | **0.527**         |
-| Spearman r        | 0.420              | **0.536**         |
-| Mean bias         | −$68.70            | **$0.00**         |
-| MAE               | $68.72             | **$26.06**        |
-| MAPE              | 35.1%              | **13.9%**         |
+| Split                      | Correlation (Pearson r) | Spearman | Bias    | MAE    | MAPE  |
+|----------------------------|-------------------------|----------|---------|--------|-------|
+| **Train 2021–2023** (pooled, in-sample) | 0.490      | 0.500    | −$2.24  | $25.56 | 13.9% |
+| &nbsp;&nbsp;train year 2021 | 0.589                  | 0.575    | +$13.49 | $23.49 | 14.7% |
+| &nbsp;&nbsp;train year 2022 | 0.461                  | 0.438    | −$7.70  | $24.47 | 12.8% |
+| &nbsp;&nbsp;train year 2023 | 0.514                  | 0.538    | −$12.47 | $28.71 | 14.1% |
+| **Validate 2024** (out-of-sample) | **0.522**        | 0.516    | +$8.14  | $27.65 | 14.1% |
+| **Predict 2025**           | — (no census yet)       | —        | —       | —      | —     |
+| **Predict 2026**           | — (no census yet)       | —        | —       | —      | —     |
 
-The per-utility level shift removes the entire $69 bias and cuts mean absolute
-error to ~$26/month (14% MAPE). The remaining correlation (~0.53) is the honest
-ceiling for this approach: the census ground truth is itself smoothed across
-sub-ZIP geographies, so genuine within-area variation that our housing-mix index
-captures is partly scored as "error" against a smoothed reference.
+Two findings:
+
+1. **The correlation generalizes.** Out-of-sample (2024) r = 0.522 is in line with
+   the in-sample pooled fit (0.490) and the individual train years (0.46–0.59). The
+   model's *pattern* — which ZIPs are cheaper or pricier within a utility — is real
+   and not overfit: a multiplier learned on 2021–2023 ranks the ZIP bills of a year
+   it never saw about as well as the years it trained on.
+
+2. **Pooling the training years cuts the level drift.** A multiplier fit on 2023
+   alone over-predicted 2024 by **+$19.61** (MAE $32.70, MAPE 16.9%), because
+   EIA-861M bills jumped ~14% from 2023→2024 while census bills rose ~3%. Training
+   on the pooled 2021–2023 history instead pulls the multiplier toward the
+   multi-year average, **more than halving the out-of-sample bias to +$8.14** (MAE
+   $27.65, MAPE 14.1%). The remaining +$8 is the honest residual cost of
+   extrapolating any fixed multiplier into a year of rising bills. Forward
+   predictions for 2025–2026 (~\$246/mo mean) should be read with this small upward
+   drift in mind until census releases those years.
+
+The within-year correlation (~0.52) is close to the honest ceiling for this
+approach: the census ground truth is itself smoothed across sub-ZIP geographies,
+so genuine within-area variation that our housing-mix index captures is partly
+scored as "error" against a smoothed reference.
+
+**Per-utility (validation year 2024):** the multiplier holds the level well for
+the big territories (ACE bias +$2.78, PSE&G +$9.06, JCP&L +$9.59) but
+within-utility correlation varies — PSE&G r = 0.43 (large, varied stock), JCP&L
+r = 0.14 (sprawling territory mixing dense shore towns with rural NW NJ), Rockland
+r = 0.85 (only 5 ZIPs, unstable). The model tracks within-territory structure best
+where the housing stock is genuinely diverse.
 
 ### 4.1 How to read the fit metrics
 
@@ -283,11 +332,10 @@ how tightly the points fall on a straight line. r = 1 is a perfect linear match,
 0 is no linear relationship.
 - *Why it matters:* this is the headline "does the model capture the shape of the
   variation" metric. Crucially, **r is immune to level and scale** — adding $50 to
-  every modeled bill, or multiplying them all by 1.7, leaves r unchanged. That is
-  exactly why r barely cares about the calibration step (it went from 0.42 to 0.53
-  only because re-weighting interacts slightly with which ZIPs overlap), and why we
-  *also* report bias and MAE, which calibration does fix.
-- *Reading ours:* ~0.53 means the model explains roughly r² ≈ 28% of the
+  every modeled bill, or multiplying them all by a constant, leaves r unchanged.
+  That is exactly why the calibration multiplier barely moves r (it fixes level,
+  not shape), and why we *also* report bias and MAE, which the calibration does fix.
+- *Reading ours:* ~0.52 means the model explains roughly r² ≈ 27% of the
   cross-ZIP variance in bills. Moderate — good enough to be informative, limited by
   the smoothed reference and by the fact that we model only housing structure, not
   behavior, income, or heating fuel.
@@ -299,22 +347,24 @@ expensive), regardless of the exact spacing.
 - *Why it matters:* it is robust to outliers and to non-linear-but-monotonic
   relationships. If our model systematically compresses or stretches the high end
   but still orders ZIPs correctly, Spearman stays high while Pearson drops.
-  Comparing the two diagnoses the *type* of error: here Pearson (0.527) and
-  Spearman (0.536) are nearly equal, which tells us the relationship is essentially
-  linear with no major rank-vs-magnitude discrepancy.
+  Comparing the two diagnoses the *type* of error: in the validation year Pearson
+  (0.522) and Spearman (0.516) are nearly equal, which tells us the relationship is
+  essentially linear with no major rank-vs-magnitude discrepancy.
 
 **Mean bias — "are we systematically too high or too low?"**
 `mean(modeled − census)`, in dollars. The average signed error. Positive = we
 over-predict, negative = we under-predict.
-- *Why it matters:* bias is the one error a *level* calibration can eliminate
-  completely, and it is the most visible failure to a non-technical viewer — if
-  every bill on the map reads $69 too low, the map is simply wrong even if the
-  pattern is right. Pre-calibration bias was −$68.70 (we under-predicted by ~$69
-  everywhere because EIA's revenue/customer under-states the household bill).
-  Post-calibration it is $0.00 **by construction** — the per-utility factor is
-  defined as `census_mean / modeled_mean`, which forces the means to match. So a
-  $0 bias is not evidence the model is good; it is evidence the calibration did its
-  one job. The metrics that show real quality are the next two.
+- *Why it matters:* bias is the error the calibration multiplier is meant to
+  control, and it is the most visible failure to a non-technical viewer — if every
+  bill on the map reads $20 too high, the map looks wrong even when the pattern is
+  right. On the pooled **train** set (2021–2023) bias is near zero (−$2.24); it is
+  not exactly zero because OLS-through-origin minimizes squared ZIP-level error, not
+  the mean. In the held-out **validation** year (2024) bias is +$8.14 — the honest
+  signal that a fixed multiplier still drifts a little when EIA bills rise faster
+  than census bills (training on 2023 alone made this +$19.61; pooling 2021–2023
+  more than halved it). Because bias can be driven by the calibration choice, it is
+  *not* by itself evidence of model quality; the correlation and the next two
+  metrics carry that.
 
 **MAE — Mean Absolute Error — "how far off is a typical ZIP, in dollars?"**
 `mean(|modeled − census|)`. Unlike bias, it does not let positive and negative
@@ -322,42 +372,46 @@ errors cancel, so it reflects the typical magnitude of error regardless of
 direction.
 - *Why it matters:* this is the most intuitive accuracy number — "on average we are
   off by $X per month." It is in the original units (dollars), so it is directly
-  meaningful. It fell from $68.72 to $26.06 with calibration: once the level bias
-  is removed, the average remaining miss on any given ZIP is about $26/month. MAE
-  treats a $10 miss and a $50 miss proportionally (unlike RMSE, which would
-  penalize the $50 miss far more) — we use MAE because we care about typical error,
-  not about being dominated by a few extreme ZIPs.
+  meaningful: ~$26 on the pooled train set, ~$28 in the validation year. The gap
+  between validation MAE (\$28) and bias (\$8) shows that most of the error is
+  genuine per-ZIP miss rather than systematic level drift. MAE treats a $10 miss
+  and a $50 miss proportionally (unlike RMSE, which would penalize the $50 miss far
+  more) — we use MAE because we care about typical error, not about being dominated
+  by a few extreme ZIPs.
 
 **MAPE — Mean Absolute Percentage Error — "how far off in relative terms?"**
 `mean(|modeled − census| / census) × 100`, a percentage.
 - *Why it matters:* MAE in dollars can look large or small depending on the
   baseline — $26 off a $190 bill is very different from $26 off a $40 bill. MAPE
   normalizes by the true value so errors are comparable across high- and low-bill
-  ZIPs, and it is the most portable way to state accuracy ("within ~14%"). Our 13.9%
-  means a typical modeled bill lands within about one-seventh of the true value —
-  reasonable for a structural model that uses no household-level data.
+  ZIPs, and it is the most portable way to state accuracy. Our ~14% on both the
+  train set and the validation year means a typical modeled bill lands within about
+  one-seventh of the true value — reasonable for a structural model that uses no
+  household-level data.
 - *Caveat:* MAPE is asymmetric and blows up when the denominator is small; it is
   safe here because residential bills are never near zero.
 
-**Why pooled, per-year, and per-utility.**
-The same metrics are reported three ways. *Pooled* gives the overall headline.
-*Per-year* checks whether the fit is stable over time or driven by one good year
-(ours holds ~0.46–0.59 across 2021–2024). *Per-utility* checks where the model
-works best — the calibration forces per-utility bias to ~$0 by construction, so the
-informative per-utility number is the correlation, which reveals that the model
-tracks within-territory variation better in some service areas (e.g. Rockland
-r ≈ 0.66) than others (JCP&L r ≈ 0.27, a sprawling territory mixing dense shore
-towns with rural northwest NJ).
+**Why train / validate / predict, and per-utility.**
+The metrics are reported across a temporal split. *Train (2021–2023, pooled)* is
+the in-sample fit. *Validate (2024)* is the out-of-sample test — the number that
+actually says whether the model generalizes (it does: r = 0.522, in line with the
+0.49–0.59 train range). *Predict (2025–2026)* has no census yet, so only the
+modeled values are shown. *Per-utility* on the validation year checks where the
+model works best: the correlation reveals that within-territory structure is
+tracked better in diverse service areas (PSE&G
+r ≈ 0.43) than in sprawling mixed ones (JCP&L r ≈ 0.14); Rockland (r ≈ 0.85) has
+only 5 ZIPs and is not statistically meaningful.
 
 **Example — within PSE&G (same utility-average bill, different housing stock):**
 
-| ZIP   | Area              | % detached SFH | modeled bill |
-|-------|-------------------|----------------|--------------|
-| 07310 | Jersey City       | ~0% (high-rise)| ~$72/mo (pre-cal) |
-| 07021 | Essex Fells       | 92%            | ~$202/mo (pre-cal) |
+| ZIP   | Area              | % detached SFH | relative modeled bill |
+|-------|-------------------|----------------|-----------------------|
+| 07310 | Jersey City       | ~0% (high-rise)| well below utility avg |
+| 07021 | Essex Fells       | 92%            | well above utility avg |
 
 Before this work every PSE&G ZIP showed an identical bill. The model now produces
-plausible geographic structure that tracks housing density and home size.
+plausible geographic structure that tracks housing density and home size, and the
+2023→2024 validation shows that structure is stable out-of-sample.
 
 ---
 

@@ -323,58 +323,97 @@ SIZE_FACTOR_CLIP = 0.30
 # can hold multiple billing accounts), so a multiplicative per-utility shift
 # brings modeled levels into line with the survey ground truth without
 # changing the within-utility shape produced by the consumption index.
-CENSUS_BILL_CSV    = str(ROOT / "data" / "raw" / "census_acs_electricity_bills.csv")
-CALIBRATION_YEARS  = (2021, 2022, 2023, 2024)
+#
+# The multiplier per utility is the least-squares slope through the origin
+#     beta = sum(census * modeled) / sum(modeled^2)
+# fit across that utility's ZIPs, POOLED over all training years.
+# OLS-through-origin (rather than a ratio of means) makes the multiplier the
+# value that minimizes squared ZIP-level error, and keeps it a pure
+# multiplier (0 -> 0, no intercept) so the within-utility shape is preserved.
+#
+# We train on every census year that overlaps the modeled data EXCEPT the last
+# one (2021-2023), validate out-of-sample on the held-out 2024 (see
+# 06_validate_vs_census.py), then apply the multiplier forward to 2025-2026 which
+# the census has not released yet. (Census runs 2014-2024 but the modeled bill
+# needs an EIA utility bill, which starts 2020, and census has no 2020 -- so the
+# trainable overlap is 2021-2023.)
+CENSUS_BILL_CSV         = str(ROOT / "data" / "raw" / "census_acs_electricity_bills.csv")
+CALIBRATION_TRAIN_YEARS = (2021, 2022, 2023)   # pooled fit; 2024 held out to validate
+CALIBRATION_MIN_ZIPS    = 3                     # below this, fall back to ratio-of-means
 
 
-def compute_utility_calibration(util_bill: dict, c_index: dict,
-                                zip_to_util: dict,
-                                csv_path: str = CENSUS_BILL_CSV) -> dict:
-    """Return {utility_id: scalar} where multiplying every modeled bill by
-    its utility scalar makes the per-utility mean match the census mean
-    over CALIBRATION_YEARS. Empty dict if the CSV isn't available."""
-    if not os.path.exists(csv_path):
-        return {}
-
+def load_census_bills(csv_path: str = CENSUS_BILL_CSV) -> pd.DataFrame:
+    """Read the census ZIP-year ground-truth bills into a tidy frame."""
     cen = pd.read_csv(csv_path, dtype={"ZIP_Code": str, "YEAR": int})
     cen["ZIP_Code"] = cen["ZIP_Code"].str.zfill(5)
     cen["census_bill"] = (cen["Avg_Monthly_Electricity_Bill"]
                             .str.replace("$", "", regex=False)
                             .str.replace(",", "")
                             .astype(float))
-    cen = cen[cen["YEAR"].isin(CALIBRATION_YEARS)]
-    cen["utility_id"] = cen["ZIP_Code"].map(zip_to_util)
-    cen = cen.dropna(subset=["utility_id"])
+    return cen[["YEAR", "ZIP_Code", "census_bill"]]
 
-    # Pre-calibration modeled annual mean per (utility, year).
-    # bill_zip_t = util_bill[uid][YYYY-MM] * c_index[zip]
-    pre = []
+
+def precal_modeled_annual(util_bill: dict, c_index: dict,
+                          zip_to_util: dict) -> pd.DataFrame:
+    """Pre-calibration modeled bill per (utility, ZIP, year):
+       bill_zip_t = annual_mean(util_bill[uid]) * c_index[zip]."""
+    util_to_zips = {}
+    for zip_code, uid in zip_to_util.items():
+        util_to_zips.setdefault(uid, []).append(zip_code)
+
+    rows = []
     for uid, monthly in util_bill.items():
-        if not monthly: continue
+        if not monthly:
+            continue
         s = pd.Series(monthly)
         s.index = pd.to_datetime(s.index, format="%Y-%m")
         ann = s.groupby(s.index.year).mean()
         for yr, util_avg in ann.items():
-            if yr not in CALIBRATION_YEARS: continue
-            for zip_code, util_for_zip in zip_to_util.items():
-                if util_for_zip != uid: continue
+            for zip_code in util_to_zips.get(uid, []):
                 cz = c_index.get(zip_code)
-                if cz is None: continue
-                pre.append({"utility_id": uid, "YEAR": int(yr),
-                            "ZIP_Code": zip_code,
-                            "modeled_bill": float(util_avg) * float(cz)})
-    pre_df = pd.DataFrame(pre)
+                if cz is None:
+                    continue
+                rows.append({"utility_id": uid, "YEAR": int(yr),
+                             "ZIP_Code": zip_code,
+                             "modeled_bill": float(util_avg) * float(cz)})
+    return pd.DataFrame(rows)
 
-    merged = pre_df.merge(cen[["YEAR", "ZIP_Code", "census_bill", "utility_id"]],
-                          on=["YEAR", "ZIP_Code", "utility_id"], how="inner")
+
+def compute_utility_calibration(util_bill: dict, c_index: dict,
+                                zip_to_util: dict,
+                                train_years=CALIBRATION_TRAIN_YEARS,
+                                csv_path: str = CENSUS_BILL_CSV) -> dict:
+    """Return {utility_id: beta} fit by OLS-through-origin, pooled over
+    `train_years`. Multiplying a utility's modeled bills by beta best matches
+    the census ZIP bills across those years. Empty dict if no CSV."""
+    if not os.path.exists(csv_path):
+        return {}
+
+    train_years = set(train_years)
+    cen = load_census_bills(csv_path)
+    cen = cen[cen["YEAR"].isin(train_years)]
+
+    pre_df = precal_modeled_annual(util_bill, c_index, zip_to_util)
+    if pre_df.empty:
+        return {}
+    pre_df = pre_df[pre_df["YEAR"].isin(train_years)]
+
+    merged = pre_df.merge(cen, on=["YEAR", "ZIP_Code"], how="inner")
 
     factors = {}
     for uid, g in merged.groupby("utility_id"):
-        if len(g) == 0: continue
-        mod_mean = g["modeled_bill"].mean()
-        cen_mean = g["census_bill"].mean()
-        if mod_mean > 0:
-            factors[int(uid)] = round(float(cen_mean / mod_mean), 4)
+        x = g["modeled_bill"].to_numpy(dtype=float)
+        y = g["census_bill"].to_numpy(dtype=float)
+        denom = float((x * x).sum())
+        if denom <= 0 or len(g) == 0:
+            continue
+        if len(g) < CALIBRATION_MIN_ZIPS:
+            # Too few ZIPs for a stable slope (e.g. Rockland, n=5):
+            # fall back to the ratio of means.
+            beta = float(y.mean() / x.mean()) if x.mean() > 0 else 1.0
+        else:
+            beta = float((x * y).sum() / denom)        # OLS through origin
+        factors[int(uid)] = round(beta, 4)
     return factors
 
 
@@ -503,7 +542,8 @@ def build_ui_json(db_path=DB_FILE, output_path=UI_JSON_OUT):
     calibration = compute_utility_calibration(bill_by_util, c_index, zip_to_util)
     if calibration:
         named = {UTILITY_NAME.get(uid, uid): v for uid, v in calibration.items()}
-        print(f"Census calibration factors (× modeled bill): {named}")
+        print(f"Census calibration multipliers (OLS-through-origin, "
+              f"trained on {CALIBRATION_TRAIN_YEARS}): {named}")
     else:
         print("Census calibration: skipped (no CSV found or no overlap)")
 
